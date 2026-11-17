@@ -1,0 +1,30 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:34:39Z
+  sourceSlug:       photography
+  sourcePrototype:  stardust/prototypes/photography-proposed.html
+  region:           module:collection-index (hub: selected-works sequence + grouped collections)
+  css:              stardust/canon/canon.css [from canon.css [from pending/copy-of-iowa.css]] + canon.css [from pending/photography.css]
+  stardustVersion:  0.32.1
+-->
+<section class="darkroom selected" data-section="selected-works" data-intent="lead with the strongest frame of each collection" data-layout="justified-wall" data-items="8" data-media="image" data-module="collection-index" data-slot-role="selected-works" aria-labelledby="selected-h">
+  <div class="shell">
+    <div class="section-head"><div><h2 id="selected-h">Selected works</h2><p class="darkroom__lead">One photograph from each of the 8 collections. Open any frame to see it full-size.</p></div></div>
+    <div class="photo-wall photo-wall--lead" data-slot="selected-works" data-lightbox-group>
+      <!-- one per collection: highest-resolution landscape frame, titled preferred, never the cover; opens photo-lightbox -->
+      <figure class="photo" style="--ar: {{w/h}}"><a class="photo__open" href="{{2400w}}" data-lb data-w="{{w}}" data-h="{{h}}" aria-haspopup="dialog">{{img}}</a><figcaption><span class="label">{{title}} · {{kind label}}</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="darkroom collections" id="collections" data-section="collections" data-intent="choose a collection" data-layout="grid" data-items="8" data-media="image" data-module="collection-index" aria-labelledby="collections-h">
+  <div class="shell">
+    <div class="section-head"><h2 id="collections-h">Collections</h2></div>
+    <div class="wall" data-slot="collections">
+      <h3 class="wall__divider dim dim--start"><span>Regions</span></h3>
+      <!-- spans [5,4,3t+solo-sm][3t,3t,6]; exhibits [7,5]; frame--tall requests a 4:5 fill crop -->
+      <figure class="frame span-{{span}} {{frame--tall frame--solo-sm?}}"><div class="frame__img">{{img}}</div><figcaption><span class="frame__title"><a href="/photography/{{name}}">{{title}}</a></span><span class="frame__kind label">{{N}} photographs · {{kind label}}</span></figcaption>{{<p class="frame__note">captured exhibit note</p>}}</figure>
+      <h3 class="wall__divider dim dim--start"><span>Exhibits</span></h3>
+      <div class="exhibit-notes" data-slot="exhibit-notes"><p>{{photography.json#body[3]}}</p><a class="link-arrow" href="{{captured discoversma URL}}" rel="external">{{link text from URL}}<span class="visually-hidden"> (external site)</span></a></div>
+    </div>
+  </div>
+</section>

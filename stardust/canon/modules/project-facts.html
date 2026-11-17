@@ -1,0 +1,20 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:40:00Z
+  sourceSlug:       willy-street
+  sourcePrototype:  stardust/prototypes/willy-street-proposed.html
+  region:           module:project-facts (project-hero facts slot; chain dimension)
+  status:           merged into stardust/canon/canon.css (canon merge 2026-11-17)
+  stardustVersion:  0.32.1
+-->
+<section class="facts shell" data-section="facts" data-intent="say what, where and for whom (dimension string)" data-layout="contained" data-module="project-hero" aria-labelledby="facts-h">
+  <h2 id="facts-h" class="visually-hidden">Project facts</h2>
+  <dl class="factbar" data-slot="facts">
+    <!-- order: Sector · Project type · Location · Client (slots.clientType; omit when it repeats the title) · Approach (taxonomy theme; omit when none) -->
+    <div><dt class="label">Sector</dt><dd><a href="{{/residential | /commercial}}">{{sector}}</a></dd></div>
+    <div><dt class="label">Project type</dt><dd><a href="/projects?type={{scope}}">{{Scope label}}</a>, <a href="/projects?type={{scope2}}">{{scope label 2}}</a></dd></div>
+    <div><dt class="label">Location</dt><dd><a href="/projects?location={{loc}}">{{location label}}</a></dd></div>
+    <div><dt class="label">Client</dt><dd>{{clientType}}</dd></div>
+    <div><dt class="label">Approach</dt><dd><a href="/projects?approach={{theme}}">{{theme label}}</a></dd></div>
+  </dl>
+</section>

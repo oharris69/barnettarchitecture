@@ -1,0 +1,16 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-11-17T18:43:06Z
+  sourceSlug:       index
+  sourcePrototype:  stardust/prototypes/index-proposed.html
+  region:           module:testimonial-list
+  stardustVersion:  0.32.1
+-->
+<section class="testimonial shell band" data-section="testimonial" data-intent="build trust" data-layout="contained" data-module="testimonial-list" aria-labelledby="{{id}}">
+  <h2 id="{{id}}" class="visually-hidden">{{heading}}</h2>
+  <figure class="testimonial__figure">
+    <blockquote data-slot="quote"><p>“{{quote: verbatim}}”</p></blockquote>
+    <figcaption class="dim dim--start" data-slot="attribution"><span>{{attribution: initials · place}}</span></figcaption>
+  </figure>
+  <p class="testimonial__more"><a class="link-arrow" href="/testimonials">{{link label}}</a></p>
+</section>

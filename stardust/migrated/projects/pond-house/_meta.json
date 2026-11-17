@@ -1,0 +1,200 @@
+{
+  "slug": "copy-of-folded-roof",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-folded-roof",
+      "newPath": "/projects/pond-house",
+      "outputPath": "projects/pond-house/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-folded-roof.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Pond — New home, Westchester County, NY | Barnett Architecture",
+    "description": "Pond — new home, Westchester County, NY. This new home is situated on a scenic lot featuring mature trees, remnant gardens set for restoration and a…",
+    "canonical": "https://www.barnettarchitecture.com/projects/pond-house",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/pond-house#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential architecture",
+            "item": "https://www.barnettarchitecture.com/residential"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Pond",
+            "item": "https://www.barnettarchitecture.com/projects/pond-house"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/pond-house#work",
+        "name": "Pond",
+        "url": "https://www.barnettarchitecture.com/projects/pond-house",
+        "description": "This new home is situated on a scenic lot featuring mature trees, remnant gardens set for restoration and a spring-fed pond.",
+        "genre": "Architecture",
+        "keywords": "Residential, New home",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Westchester County, NY",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_457b4b125c6a434b836c26585af74d55~mv2_d_3400_2200_s_2.jpg/v1/fill/w_2400,h_1553,al_c,q_85,enc_auto/5c8b97_457b4b125c6a434b836c26585af74d55~mv2_d_3400_2200_s_2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_f6d4608f6df0461c91a7ddce27052393~mv2_d_3400_2200_s_2.jpg/v1/fill/w_2400,h_1553,al_c,q_85,enc_auto/5c8b97_f6d4608f6df0461c91a7ddce27052393~mv2_d_3400_2200_s_2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_b1df785831f04ec6b4a679b656d645ce~mv2_d_1959_1469_s_2.jpg/v1/fill/w_1959,h_1469,al_c,q_85,enc_auto/5c8b97_b1df785831f04ec6b4a679b656d645ce~mv2_d_1959_1469_s_2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_3a7befacb28042e196e386e2dc6219af~mv2_d_3264_1836_s_2.jpg/v1/fill/w_2400,h_1350,al_c,q_85,enc_auto/5c8b97_3a7befacb28042e196e386e2dc6219af~mv2_d_3264_1836_s_2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_4f3461adda0c4b69a0760670ee8b1f8c~mv2_d_2716_1536_s_2.jpeg/v1/fill/w_2400,h_1357,al_c,q_85,enc_auto/5c8b97_4f3461adda0c4b69a0760670ee8b1f8c~mv2_d_2716_1536_s_2.jpeg",
+          "https://static.wixstatic.com/media/5c8b97_cc6b6898b6154188bb9dc1b11c1d5629~mv2.png/v1/fill/w_616,h_429,al_c,q_85,enc_auto/5c8b97_cc6b6898b6154188bb9dc1b11c1d5629~mv2.png",
+          "https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_2400,h_1553,al_c,q_85,enc_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:54Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "b1c723b3ceb7",
+  "sourceProposedSha": "1f4e942abfa0",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 4/4 captured strings verbatim; photos 7/7 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/pond-house/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/pond-house/_meta.json",
+  "driverVersion": "1"
+}

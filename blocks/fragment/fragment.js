@@ -12,6 +12,7 @@ import {
 import {
   loadSections,
 } from '../../scripts/aem.js';
+import { contentBase } from '../../scripts/utils.js';
 
 /**
  * Loads a fragment.
@@ -20,7 +21,10 @@ import {
  */
 export async function loadFragment(path) {
   if (path && path.startsWith('/') && !path.startsWith('//')) {
-    const resp = await fetch(`${path}.plain.html`);
+    // local preview mounts content under /content (aem up --html-folder content)
+    const base = contentBase();
+    const src = base && !path.startsWith(`${base}/`) ? `${base}${path}` : path;
+    const resp = await fetch(`${src}.plain.html`);
     if (resp.ok) {
       const main = document.createElement('main');
       main.innerHTML = await resp.text();
@@ -35,6 +39,9 @@ export async function loadFragment(path) {
       resetAttributeBase('source', 'srcset');
 
       decorateMain(main);
+      // tag the fragment's sections (e.g. .fragment-enquiry) so styles.css can paint them
+      const name = path.split('/').filter(Boolean).pop();
+      main.querySelectorAll(':scope > .section').forEach((s) => s.classList.add('fragment-section', `fragment-${name}`));
       await loadSections(main);
       return main;
     }

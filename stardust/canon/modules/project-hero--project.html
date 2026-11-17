@@ -1,0 +1,17 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:40:00Z
+  sourceSlug:       willy-street
+  sourcePrototype:  stardust/prototypes/willy-street-proposed.html
+  region:           module:project-hero (project instance)
+  status:           merged into stardust/canon/canon.css (canon merge 2026-11-17)
+  stardustVersion:  0.32.1
+-->
+<section class="hero hero--project" data-section="hero" data-intent="show the building; name the project" data-layout="full-bleed" data-media="image" data-module="project-hero">
+  <div class="hero__media" data-slot="image">{{image: cover photo — first non-403 landscape ≥1600w, else first ≥1600w, else first landscape, else first; responsive <img>, loading="eager" fetchpriority="high", sizes="100vw", alt "<title> — <type>, <location> — photograph"}}</div>
+  <div class="hero__content shell">
+    <h1 class="hero__title" data-slot="title"><span class="hero__thesis">{{title}}</span></h1>
+    <nav class="hero__caption dim dim--stack hero__crumbs" aria-label="Breadcrumb"><ol><li><a href="/projects">Projects</a></li><li><a href="{{/residential | /commercial}}">{{sector label}}</a></li></ol></nav>
+  </div>
+</section>
+<!-- body[data-template="project"][data-hero="media"] -->

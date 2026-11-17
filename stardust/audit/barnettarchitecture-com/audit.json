@@ -1,0 +1,1671 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:audit",
+    "writtenAt": "2026-11-17T17:18:11.445Z",
+    "againstInput": "https://www.barnettarchitecture.com",
+    "readArtifacts": [
+      "stardust/state.json",
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/_galleries.clean.json",
+      "stardust/current/_crawl-log.json",
+      "stardust/current/brand-review.html",
+      "stardust/current/pages/*.json",
+      "stardust/current/pages/*.html",
+      "stardust/current/assets/screenshots/index.png",
+      "stardust/current/assets/thumbs/*-vp.png",
+      "https://www.barnettarchitecture.com/robots.txt",
+      "https://www.barnettarchitecture.com/sitemap.xml",
+      "https://www.barnettarchitecture.com/pages-sitemap.xml",
+      "https://www.barnettarchitecture.com/llms.txt",
+      "stardust/audit/barnettarchitecture-com/_evidence/cwv.json",
+      "stardust/audit/barnettarchitecture-com/_evidence/ai-readability.json"
+    ],
+    "synthesizedInputs": [
+      "scorecard (rubric judgment per reference/scoring.md)",
+      "upliftDirections"
+    ],
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "url": "https://www.barnettarchitecture.com",
+    "domainSlug": "barnettarchitecture-com",
+    "pagesAudited": [
+      "about",
+      "blank",
+      "box-house",
+      "channel-house",
+      "commercial",
+      "contact",
+      "copy-of-40-s-re-make",
+      "copy-of-barnett-architecture",
+      "copy-of-channel-1",
+      "copy-of-channel-2",
+      "copy-of-channel-house",
+      "copy-of-channel",
+      "copy-of-folded-roof-1",
+      "copy-of-folded-roof-2",
+      "copy-of-folded-roof",
+      "copy-of-green-ribbon",
+      "copy-of-illinois",
+      "copy-of-iowa-2022-exhbit",
+      "copy-of-iowa-color",
+      "copy-of-iowa",
+      "copy-of-island-kitchen-1",
+      "copy-of-island-kitchen",
+      "copy-of-meeting-house",
+      "copy-of-mexico-places-1",
+      "copy-of-mexico-places",
+      "copy-of-micro-house-1",
+      "copy-of-micro-house",
+      "copy-of-minnesota",
+      "copy-of-pond",
+      "copy-of-push-pull",
+      "copy-of-testimonials",
+      "copy-of-wil-mar-center",
+      "designcraft",
+      "folded-roof",
+      "green-ribbon",
+      "hill-farm-swim-club",
+      "index",
+      "meeting-house",
+      "mexico",
+      "photography",
+      "process",
+      "residential",
+      "ridgewood-swim-club",
+      "stone-house",
+      "team",
+      "testimonials",
+      "wil-mar-center",
+      "willy-street"
+    ],
+    "extraction": {
+      "reused": true,
+      "extractedAt": "2026-11-17T16:42:14.715Z",
+      "newestFetchedAt": "2026-11-17T16:37:48.729Z",
+      "pageCount": 48,
+      "freshnessCheck": "same origin as stardust/state.json site.originUrl; newest pages/*.json _provenance.fetchedAt is today (2026-11-17) < 7 days"
+    }
+  },
+  "assumptions": [
+    "Primary conversion action assumed to be a project enquiry via /contact (the only form on the site; no other CTA exists).",
+    "Audience assumed to be Madison-area homeowners and community/non-profit boards, per PRODUCT.md (inferred from project copy).",
+    "Core Web Vitals sampled on 5 representative pages (/, /about, /residential, /green-ribbon, /copy-of-iowa) rather than all 48; all pages share the same Wix runtime.",
+    "Social icon links, footer year and placeholder alt values read from the captured HTML of 2026-11-17; _brand-extraction.json's '© 2015 … unlinked' is superseded.",
+    "The brief's premise that project slideshows are 'mostly 1024px source images' was tested against Wix gallery data and not confirmed (16% <=1024px); the finding is framed on display size instead."
+  ],
+  "scorecard": {
+    "overall": 37,
+    "scoredWeight": 100,
+    "dimensions": {
+      "brand-expression": {
+        "score": 35,
+        "weight": 10,
+        "evidence": [
+          "measurements.brandColorShare",
+          "T-color-imbalance",
+          "T-logo-variants",
+          "F-023",
+          "F-024"
+        ],
+        "notMeasured": [],
+        "basis": "40-anchor matched (brand share 0.01% < 5%, Wix theme tokens unrelated to brand, Arial-only) and template placeholders live; below anchor."
+      },
+      "visual-hierarchy-craft": {
+        "score": 38,
+        "weight": 15,
+        "evidence": [
+          "measurements.typeScale",
+          "T-scale",
+          "F-020",
+          "F-021",
+          "F-022",
+          "F-026"
+        ],
+        "notMeasured": [],
+        "basis": "40-anchor: ad-hoc scale, carousel-as-homepage dominating the hero; plus fixed canvas and collapsed mobile site."
+      },
+      "conversion-focus": {
+        "score": 25,
+        "weight": 20,
+        "evidence": [
+          "measurements.ctaFragmentation",
+          "measurements.projectDiscoverability",
+          "F-005",
+          "F-006",
+          "F-017"
+        ],
+        "notMeasured": [],
+        "basis": "Worse than the 40-anchor: no primary CTA anywhere, what-it-is absent from home, Contact hidden in a dropdown, portfolio reachable only by nav."
+      },
+      "accessibility": {
+        "score": 35,
+        "weight": 10,
+        "evidence": [
+          "measurements.altCoverage",
+          "measurements.contrast",
+          "T-img-alt-empty",
+          "F-007",
+          "F-008",
+          "F-009"
+        ],
+        "notMeasured": [],
+        "basis": "40-anchor alt failure (45% empty, 4% text alt) with unlabeled form and failing interactive contrast; landmarks and body contrast pass."
+      },
+      "technical-seo": {
+        "score": 50,
+        "weight": 15,
+        "evidence": [
+          "measurements.metaDescriptions",
+          "measurements.h1",
+          "measurements.sitemapValid",
+          "measurements.canonical",
+          "F-001",
+          "F-002"
+        ],
+        "notMeasured": [],
+        "basis": "Crawlable/indexable (robots sane, sitemap valid, self-canonicals, https) = 70-band traits, but 0/48 descriptions and wordmark H1s = 40-band traits; interpolated."
+      },
+      "content-llm-visibility": {
+        "score": 42,
+        "weight": 15,
+        "evidence": [
+          "measurements.extractableProseWords",
+          "measurements.keyFactsInStructuredData",
+          "measurements.llmsTxt",
+          "measurements.aiReadability",
+          "F-003",
+          "F-004"
+        ],
+        "notMeasured": [],
+        "basis": "Key facts exist in crawlable SSR text (AI readability 84-99%) but home has 0 words, no Organization schema, headings are the wordmark; llms.txt present but inaccurate."
+      },
+      "performance": {
+        "score": 38,
+        "weight": 15,
+        "evidence": [
+          "measurements.cwv",
+          "measurements.pageWeight",
+          "F-010",
+          "F-027"
+        ],
+        "notMeasured": [],
+        "basis": "40-anchor: mobile TBT poor on all sampled pages (lab); mobile LCP needs-improvement; CLS good; desktop good."
+      }
+    }
+  },
+  "measurements": {
+    "brandColorShare": {
+      "value": 0.0001,
+      "unit": "share-of-painted-pixels",
+      "status": "measured",
+      "method": "pixel-sample",
+      "detail": {
+        "screenshot": "stardust/current/assets/screenshots/index.png",
+        "grid": "every 8th px",
+        "tolerance": "RGB distance <= 40",
+        "paintedPixels": 9465,
+        "brandPixels": 1,
+        "nearestPalette": {
+          "text": 887,
+          "heading": 312,
+          "accent": 1,
+          "surface": 654,
+          "other": 7611
+        },
+        "note": "Brand hue = accent #ea04b8 (the only saturated captured color). 80% of painted samples are photograph pixels matching no palette entry; navy-nearest samples include dark photo pixels."
+      }
+    },
+    "ctaFragmentation": {
+      "value": 0,
+      "unit": "distinct-labels-per-bucket",
+      "status": "measured",
+      "method": "pages-json-aggregation",
+      "detail": {
+        "bucketCollisions": {},
+        "note": "No CTA label on any of 48 pages falls in a CTA-equivalence bucket; the only non-nav, non-URL labels are 'Press to Zoom' (Wix lightbox hint, 39x incl. '_press to zoom') and 'Send' (contact form, 1x). There is no conversion CTA to fragment."
+      }
+    },
+    "typeScale": {
+      "value": "ad-hoc",
+      "unit": "scale-kind",
+      "status": "measured",
+      "method": "brand-extraction",
+      "detail": {
+        "headingSizes": [
+          28,
+          24,
+          18
+        ],
+        "bodyPx": 13,
+        "weights": [
+          "400"
+        ],
+        "ratio": null,
+        "note": "h1 28 is the firm wordmark on every page, not a page title"
+      }
+    },
+    "radiusSprawl": {
+      "value": 0,
+      "unit": "distinct-radii",
+      "status": "measured",
+      "method": "brand-extraction",
+      "detail": {
+        "occurrences": {},
+        "note": "motifs.borderRadius.values = [] — square corners site-wide"
+      }
+    },
+    "contrast": {
+      "status": "measured",
+      "method": "wcag-computed",
+      "detail": {
+        "pairs": [
+          {
+            "fg": "#1e2f3b",
+            "bg": "#ffffff",
+            "ratio": 13.77,
+            "role": "body text",
+            "passesAA": true
+          },
+          {
+            "fg": "#000000",
+            "bg": "#ffffff",
+            "ratio": 21,
+            "role": "headings / nav labels",
+            "passesAA": true
+          },
+          {
+            "fg": "#ea04b8",
+            "bg": "#ffffff",
+            "ratio": 4.03,
+            "role": "active nav label (12px, interactive)",
+            "passesAA": false
+          },
+          {
+            "fg": "#ffffff",
+            "bg": "#999999",
+            "ratio": 2.85,
+            "role": "contact form Send button label",
+            "passesAA": false
+          }
+        ]
+      }
+    },
+    "altCoverage": {
+      "value": 0.038,
+      "unit": "share-of-content-images-with-non-placeholder-alt",
+      "status": "measured",
+      "method": "pages-json-aggregation",
+      "detail": {
+        "renderedImages": 304,
+        "socialIcons": 96,
+        "contentImages": 208,
+        "emptyAlt": 136,
+        "placeholderAlt": 64,
+        "placeholderValues": {
+          "_": 62,
+          ".": 2
+        },
+        "withTextAlt": 8,
+        "textAltValues": [
+          "Second",
+          "Existing Purchase.jpg",
+          "Hill Farms #03B",
+          "Hill Farms #05",
+          "Hill Farms #04A",
+          "Orussa 1"
+        ],
+        "emptyShareOfAll": 0.447
+      }
+    },
+    "bodyTextSize": {
+      "value": 13,
+      "unit": "px",
+      "status": "measured",
+      "method": "computed-style-census",
+      "detail": {
+        "textNodesAt13px": 173,
+        "textNodesSampled": 183,
+        "mobileLiveBodyFont": "11-14px (Playwright, Wix mobile site)",
+        "source": "_computed-styles.json § aggregate.type.sizes"
+      }
+    },
+    "titles": {
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "pages": 48,
+        "withSuffixBarnettDashArchitecture": 48,
+        "duplicates": 0,
+        "minLen": 27,
+        "maxLen": 52,
+        "examples": [
+          "Home | barnett-architecture",
+          "1990-2006 | barnett-architecture",
+          "2007-Current | barnett-architecture",
+          "tHree Gables | barnett-architecture",
+          "Potter Studio + | barnett-architecture"
+        ]
+      }
+    },
+    "metaDescriptions": {
+      "value": 0,
+      "unit": "pages-with-meta-description",
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "pages": 48,
+        "ogDescription": 0
+      }
+    },
+    "openGraph": {
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "ogTitle": 48,
+        "ogDescription": 0,
+        "ogImage": 0,
+        "twitterCardSummaryLargeImage": 48
+      }
+    },
+    "canonical": {
+      "value": 48,
+      "unit": "pages-with-self-canonical",
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "pages": 48,
+        "metaRobotsNoindex": 0
+      }
+    },
+    "h1": {
+      "status": "measured",
+      "method": "pages-json-aggregation",
+      "detail": {
+        "pagesWhoseFirstH1IsWordmark": 48,
+        "pages": 48,
+        "pagesWithH1CountNot1": {
+          "photography": 6
+        },
+        "note": "photography has 6 h1 elements: wordmark, 'Photography', 4 empty (zero-width space)"
+      }
+    },
+    "jsonldTypes": {
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "pagesWithJsonLd": 1,
+        "types": {
+          "WebSite": 1
+        },
+        "parseErrors": 0,
+        "homeEntity": {
+          "@type": "WebSite",
+          "name": "barnett-architecture",
+          "url": "https://www.barnettarchitecture.com"
+        }
+      }
+    },
+    "favicon": {
+      "value": "generic-wix",
+      "unit": "favicon-kind",
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "href": "https://static.parastorage.com/client/pfavico.ico",
+        "pages": 48,
+        "alsoAppleTouchIcon": true
+      }
+    },
+    "slugs": {
+      "value": 27,
+      "unit": "wix-generated-slugs",
+      "status": "measured",
+      "method": "state-json",
+      "detail": {
+        "copyOfSlugs": 26,
+        "blank": 1,
+        "mismatches": [
+          "/copy-of-folded-roof-2 = \"Potter Studio +\"",
+          "/blank = \"40's Re-Make\"",
+          "/copy-of-illinois = \"Wisconsin\"",
+          "/copy-of-iowa-color = \"Illinois\"",
+          "/copy-of-mexico-places-1 = \"Minnesota\"",
+          "/copy-of-minnesota = \"Iowa 2022 Exhbit\"",
+          "/copy-of-iowa-2022-exhbit = \"Fields of Vision 2024 Exhibit\"",
+          "/box-house = \"Push-Pull\"",
+          "/copy-of-barnett-architecture = \"1990-2006\"",
+          "/copy-of-testimonials = \"2007-Current\""
+        ]
+      }
+    },
+    "robotsTxt": {
+      "value": "present",
+      "status": "measured",
+      "method": "curl",
+      "detail": {
+        "http": 200,
+        "sitemapDeclared": true,
+        "disallow": [
+          "*?lightbox= (all agents)",
+          "PetalBot: /",
+          "AdsBot: /_partials*, /pro-gallery-webapp/v1/galleries/*"
+        ],
+        "aiCrawlersBlocked": false,
+        "evidence": "stardust/audit/barnettarchitecture-com/_evidence/robots.txt"
+      }
+    },
+    "sitemapValid": {
+      "value": true,
+      "status": "measured",
+      "method": "curl",
+      "detail": {
+        "index": "https://www.barnettarchitecture.com/sitemap.xml",
+        "child": "pages-sitemap.xml",
+        "urls": 48,
+        "matchesCrawl": true,
+        "distinctLastmod": [
+          "2026-10-05"
+        ],
+        "imageEntries": 0
+      }
+    },
+    "redirectChain": {
+      "value": 2,
+      "unit": "hops",
+      "status": "measured",
+      "method": "curl -I",
+      "detail": {
+        "chain": [
+          "http://barnettarchitecture.com/ 301",
+          "https://barnettarchitecture.com/ 301",
+          "https://www.barnettarchitecture.com/ 200"
+        ],
+        "httpWww": "http://www.barnettarchitecture.com/ 301 -> https://www.barnettarchitecture.com/ (1 hop)"
+      }
+    },
+    "llmsTxt": {
+      "value": "present",
+      "status": "measured",
+      "method": "curl",
+      "detail": {
+        "http": 200,
+        "bytes": 3278,
+        "generator": "Wix (auto-generated; advertises Wix site MCP endpoint /_api/mcp)",
+        "summaryClaim": "specializing in residential, library, religious, educational, and healthcare projects",
+        "claimSource": "Todd Barnett's career history on /team, not the firm's 29-project portfolio (22 residential, 7 commercial/civic)",
+        "linksListed": [
+          "home"
+        ],
+        "evidence": "stardust/audit/barnettarchitecture-com/_evidence/llms.txt"
+      }
+    },
+    "extractableProseWords": {
+      "status": "measured",
+      "method": "pages-json-body",
+      "detail": {
+        "home": 0,
+        "about": 332,
+        "process": 579,
+        "team": 404,
+        "contact": 12,
+        "residential": 0,
+        "commercial": 0,
+        "testimonials": 0,
+        "photography": 163,
+        "galleryPagesZeroWords": 6,
+        "projectMedian": 155
+      }
+    },
+    "aiReadability": {
+      "status": "measured",
+      "method": "skills/deploy/scripts/ai-readability.mjs (ChatGPT-User UA, no JS vs rendered DOM, landmarks excluded)",
+      "detail": {
+        "/": {
+          "strict": 91,
+          "served": 31,
+          "rendered": 34
+        },
+        "/about": {
+          "strict": 99,
+          "served": 348,
+          "rendered": 351
+        },
+        "/process": {
+          "strict": 99,
+          "served": 594,
+          "rendered": 597
+        },
+        "/team": {
+          "strict": 99,
+          "served": 418,
+          "rendered": 421
+        },
+        "/contact": {
+          "strict": 91,
+          "served": 29,
+          "rendered": 32
+        },
+        "/residential": {
+          "strict": 88,
+          "served": 23,
+          "rendered": 26
+        },
+        "/green-ribbon": {
+          "strict": 98,
+          "served": 171,
+          "rendered": 174
+        },
+        "/copy-of-folded-roof-2": {
+          "strict": 99,
+          "served": 203,
+          "rendered": 206
+        },
+        "/photography": {
+          "strict": 98,
+          "served": 187,
+          "rendered": 190
+        },
+        "/copy-of-iowa": {
+          "strict": 84,
+          "served": 16,
+          "rendered": 19
+        }
+      }
+    },
+    "headingQuestionCoverage": {
+      "value": 0,
+      "unit": "share-of-h2-h3-as-questions-or-topics",
+      "status": "measured",
+      "method": "pages-json-aggregation",
+      "detail": {
+        "h2h3": [
+          "About Us",
+          "Please Contact Us",
+          "Testimonials",
+          "Process"
+        ],
+        "questions": 0,
+        "note": "Only 4 distinct h2/h3 strings exist site-wide; project pages carry no h2/h3 at all"
+      }
+    },
+    "keyFactsInStructuredData": {
+      "value": 0,
+      "unit": "facts-present",
+      "status": "measured",
+      "method": "captured-html",
+      "detail": {
+        "checked": [
+          "address",
+          "telephone",
+          "email",
+          "foundingDate 2007",
+          "founder Todd Barnett",
+          "areaServed Madison WI",
+          "service types",
+          "project location/type"
+        ],
+        "napInBodyText": {
+          "address": [
+            "contact"
+          ],
+          "phone": [
+            "contact"
+          ]
+        },
+        "napInFooter": false,
+        "napText": "118 North Breese Terrace Suite I, Madison, WI 53726-4133 · 608-233-4538 · todd@barnettarchitecture.com"
+      }
+    },
+    "projectNameOnPage": {
+      "value": 8,
+      "unit": "project-pages-showing-project-name-in-body",
+      "status": "measured",
+      "method": "pages-json-body vs slots.title",
+      "detail": {
+        "projects": 29,
+        "missing": 21
+      }
+    },
+    "projectDiscoverability": {
+      "status": "measured",
+      "method": "pages-json + crawl-log",
+      "detail": {
+        "projectPages": 29,
+        "navDropdown": {
+          "Residential": 22,
+          "Commercial": 7,
+          "Photography": 8,
+          "Testimonials": 2
+        },
+        "listingPages": [
+          {
+            "slug": "residential",
+            "bodyWords": 0,
+            "bodyBlocks": 0
+          },
+          {
+            "slug": "commercial",
+            "bodyWords": 0,
+            "bodyBlocks": 0
+          }
+        ],
+        "projectIndexPage": false,
+        "filters": false,
+        "siteSearchForms": 0,
+        "facetDataAvailable": {
+          "clientType": {
+            "Private Residence": 21,
+            "Two-Flat": 1,
+            "Synagogue Study": 1,
+            "Ridgewood Swim Club": 2,
+            "designCraft Advertising": 1,
+            "Hill Farm Swim Club": 1,
+            "Meeting House": 1,
+            "Wil-Mar Neighborhood Center": 1
+          },
+          "location": {
+            "Madison, WI": 23,
+            "Middleton, WI": 1,
+            "Highland Park, IL": 1,
+            "Westchester County, NY": 1,
+            "WI": 1,
+            "Downers Grove, IL": 1,
+            "Mequon, WI": 1
+          }
+        }
+      }
+    },
+    "imageDelivery": {
+      "status": "measured",
+      "method": "pages-json media.imgs URLs + Playwright network (cwv.json)",
+      "detail": {
+        "contentImageUrlsAvif": "208/208",
+        "sizing": "Wix fill transform sized to rendered box (desktop DPR1: 646x443 project slide, 980x615 home; mobile DPR2: 560x330 for 280x165 box)",
+        "loadingAttr": "auto on every sampled image",
+        "fetchpriorityHigh": "every sampled in-view slide image",
+        "projectSlideDisplay": "646x443 on a 1440 viewport (45% of width)"
+      }
+    },
+    "projectSourceResolution": {
+      "status": "measured",
+      "method": "_galleries.clean.json (Wix gallery data, original upload dimensions)",
+      "detail": {
+        "photos": 156,
+        "longEdgeExactly1024": 6,
+        "longEdgeAtMost1024": 25,
+        "longEdgeOver2000": 97,
+        "medianLongEdge": 3264,
+        "note": "The brief's premise 'project slideshows mostly 1024px source images' is NOT supported: 16% of project photos are <=1024px on the long edge, 62% exceed 2000px."
+      }
+    },
+    "photographyMetadata": {
+      "status": "measured",
+      "method": "_galleries.clean.json",
+      "detail": {
+        "collections": 8,
+        "photos": 298,
+        "titleEmpty": 69,
+        "titlePlaceholder": 226,
+        "titleCameraFilename": 3,
+        "withAlt": 0,
+        "withDescription": 0,
+        "minLongEdge": 2048,
+        "longEdgeOver2000": 298
+      }
+    },
+    "cwv": {
+      "status": "measured",
+      "method": "playwright-lab",
+      "detail": {
+        "mobile": {
+          "/": {
+            "lcp": {
+              "value": 2.84,
+              "unit": "s",
+              "class": "needs-improvement",
+              "element": "IMG"
+            },
+            "cls": {
+              "value": 0.031,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 1904,
+              "unit": "ms",
+              "class": "poor"
+            },
+            "fcp": {
+              "value": 0.43,
+              "unit": "s"
+            },
+            "requests": 141,
+            "transferKB": 1436,
+            "jsKB": 973,
+            "imgKB": 162,
+            "hosts": 15,
+            "consoleErrors": 1
+          },
+          "/green-ribbon": {
+            "lcp": {
+              "value": 3.64,
+              "unit": "s",
+              "class": "needs-improvement",
+              "element": "IMG"
+            },
+            "cls": {
+              "value": 0.031,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 1948,
+              "unit": "ms",
+              "class": "poor"
+            },
+            "fcp": {
+              "value": 1.04,
+              "unit": "s"
+            },
+            "requests": 148,
+            "transferKB": 1457,
+            "jsKB": 974,
+            "imgKB": 182,
+            "hosts": 16,
+            "consoleErrors": 1
+          },
+          "/copy-of-iowa": {
+            "lcp": {
+              "value": 0.91,
+              "unit": "s",
+              "class": "good",
+              "element": "H1"
+            },
+            "cls": {
+              "value": 0.022,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 1957,
+              "unit": "ms",
+              "class": "poor"
+            },
+            "fcp": {
+              "value": 0.91,
+              "unit": "s"
+            },
+            "requests": 142,
+            "transferKB": 1355,
+            "jsKB": 974,
+            "imgKB": 78,
+            "hosts": 15,
+            "consoleErrors": 4
+          },
+          "/residential": {
+            "lcp": {
+              "value": 2.92,
+              "unit": "s",
+              "class": "needs-improvement",
+              "element": "IMG"
+            },
+            "cls": {
+              "value": 0.023,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 1861,
+              "unit": "ms",
+              "class": "poor"
+            },
+            "fcp": {
+              "value": 0.59,
+              "unit": "s"
+            },
+            "requests": 141,
+            "transferKB": 1424,
+            "jsKB": 973,
+            "imgKB": 152,
+            "hosts": 15,
+            "consoleErrors": 1
+          },
+          "/about": {
+            "lcp": {
+              "value": 0.54,
+              "unit": "s",
+              "class": "good",
+              "element": "P"
+            },
+            "cls": {
+              "value": 0.031,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 1925,
+              "unit": "ms",
+              "class": "poor"
+            },
+            "fcp": {
+              "value": 0.54,
+              "unit": "s"
+            },
+            "requests": 134,
+            "transferKB": 1291,
+            "jsKB": 963,
+            "imgKB": 36,
+            "hosts": 16,
+            "consoleErrors": 1
+          }
+        },
+        "desktop": {
+          "/": {
+            "lcp": {
+              "value": 0.22,
+              "unit": "s",
+              "class": "good",
+              "element": "IMG"
+            },
+            "cls": {
+              "value": 0.018,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 256,
+              "unit": "ms",
+              "class": "needs-improvement"
+            },
+            "fcp": {
+              "value": 0.12,
+              "unit": "s"
+            },
+            "requests": 133,
+            "transferKB": 1581,
+            "jsKB": 989,
+            "imgKB": 294,
+            "hosts": 15,
+            "consoleErrors": 3
+          },
+          "/green-ribbon": {
+            "lcp": {
+              "value": 0.37,
+              "unit": "s",
+              "class": "good",
+              "element": "IMG"
+            },
+            "cls": {
+              "value": 0.018,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 275,
+              "unit": "ms",
+              "class": "needs-improvement"
+            },
+            "fcp": {
+              "value": 0.16,
+              "unit": "s"
+            },
+            "requests": 135,
+            "transferKB": 1501,
+            "jsKB": 989,
+            "imgKB": 214,
+            "hosts": 15,
+            "consoleErrors": 3
+          },
+          "/copy-of-iowa": {
+            "lcp": {
+              "value": 0.16,
+              "unit": "s",
+              "class": "good",
+              "element": "H1"
+            },
+            "cls": {
+              "value": 0.018,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 247,
+              "unit": "ms",
+              "class": "needs-improvement"
+            },
+            "fcp": {
+              "value": 0.16,
+              "unit": "s"
+            },
+            "requests": 136,
+            "transferKB": 1443,
+            "jsKB": 989,
+            "imgKB": 154,
+            "hosts": 15,
+            "consoleErrors": 5
+          },
+          "/residential": {
+            "lcp": {
+              "value": 0.3,
+              "unit": "s",
+              "class": "good",
+              "element": "IMG"
+            },
+            "cls": {
+              "value": 0.018,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 297,
+              "unit": "ms",
+              "class": "needs-improvement"
+            },
+            "fcp": {
+              "value": 0.16,
+              "unit": "s"
+            },
+            "requests": 134,
+            "transferKB": 1574,
+            "jsKB": 989,
+            "imgKB": 288,
+            "hosts": 15,
+            "consoleErrors": 3
+          },
+          "/about": {
+            "lcp": {
+              "value": 0.15,
+              "unit": "s",
+              "class": "good",
+              "element": "IMG#img_comp-igqu0lhd"
+            },
+            "cls": {
+              "value": 0.018,
+              "unit": "score",
+              "class": "good"
+            },
+            "tbt": {
+              "value": 33,
+              "unit": "ms",
+              "class": "good"
+            },
+            "fcp": {
+              "value": 0.15,
+              "unit": "s"
+            },
+            "requests": 132,
+            "transferKB": 1288,
+            "jsKB": 979,
+            "imgKB": 19,
+            "hosts": 15,
+            "consoleErrors": 3
+          }
+        },
+        "profiles": {
+          "mobile": "375x667 DPR2, CPU 4x throttle, ~1.6Mbps/150ms RTT (CDP emulation)",
+          "desktop": "1440x900 DPR1, no throttle"
+        },
+        "measuredAt": "2026-11-17T16:59:58.504Z",
+        "pagesSampled": [
+          "/",
+          "/green-ribbon",
+          "/copy-of-iowa",
+          "/residential",
+          "/about"
+        ],
+        "note": "PageSpeed Insights API was network-reachable without a key but returned HTTP 429 (daily quota exhausted) — field data (CrUX/INP) unavailable. Lab TBT is a proxy for INP. Desktop run unthrottled on a fast datacenter link; treat desktop LCP as a best case."
+      }
+    },
+    "pageWeight": {
+      "status": "measured",
+      "method": "playwright-lab (CDP encodedDataLength)",
+      "detail": {
+        "requestsRange": [
+          132,
+          148
+        ],
+        "jsKBRange": [
+          963,
+          989
+        ],
+        "hostsRange": [
+          15,
+          16
+        ],
+        "consoleErrorsRange": [
+          1,
+          5
+        ]
+      }
+    },
+    "impeccable": {
+      "status": "measured",
+      "method": "impeccable critique + audit (subagent, live /, /green-ribbon)",
+      "detail": {
+        "critique": "14/32 (Poor); 6 of 8 cognitive-load checks failed",
+        "audit": "7/20 (Poor): accessibility 2, performance 2, responsive 1, theming 1, implementation 1",
+        "touchTargetsUnder44": "15 of 18 interactive elements",
+        "desktopUaOverflowAt375": "scrollWidth 1160 vs innerWidth 375",
+        "mobileSiteViewport": "320px separate Wix mobile site; home 613-652px tall",
+        "focusVisible": "pass",
+        "formLabels": "Name, Email have no <label> (placeholder only)",
+        "evidenceDir": "/tmp/ba-critique (session scratch, not persisted)"
+      }
+    }
+  },
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "P1",
+      "dimension": "technical-seo",
+      "title": "No meta description on any of the 48 pages",
+      "evidence": {
+        "type": "check",
+        "ref": "check:meta-description",
+        "observed": "metaDescriptions = 0/48; og:description 0/48"
+      },
+      "businessImpact": "Google writes its own snippet from nav labels and the wordmark; every result reads the same and nothing tells a searcher this is a Madison architect.",
+      "fix": "Write a 140-160 character description per page. Projects: '<Project> — <client type> <scope> in <location>. Designed by Barnett Architecture, Madison WI.' Home/about: who, where, since 2007, what kinds of work.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-002",
+      "severity": "P1",
+      "dimension": "technical-seo",
+      "title": "Every page's only real H1 is the firm wordmark",
+      "evidence": {
+        "type": "check",
+        "ref": "check:single-h1",
+        "observed": "first H1 = \"Barnett Architecture LLC\" on 48/48 pages; /photography has 6 H1s (4 empty)"
+      },
+      "businessImpact": "Search engines and screen readers get the same headline on all 48 pages, so no page ranks for its own subject (project name, collection, service).",
+      "fix": "Render the wordmark as a logo link (not a heading); give each page one H1 with its subject ('Green Ribbon — whole-house re-imagining, Madison WI'); remove empty H1s on /photography.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-003",
+      "severity": "P1",
+      "dimension": "content-llm-visibility",
+      "title": "Home page states nothing — zero body text",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.extractableProseWords",
+        "observed": "home body words = 0; AI-readability rendered words on / = 34 (wordmark + footer only); screenshot index.png: wordmark, nav, one slideshow photo"
+      },
+      "businessImpact": "An answer engine or first-time visitor landing on / cannot learn what the firm does, where, or for whom; AI summaries fall back to the Wix-generated llms.txt.",
+      "fix": "Add an 80-150 word introduction on home: 'Barnett Architecture is a design-focused architectural practice in Madison, Wisconsin, founded in 2007 by architect Todd Barnett…' plus links to Residential, Commercial and Contact.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-004",
+      "severity": "P1",
+      "dimension": "content-llm-visibility",
+      "title": "Firm facts (location, founding year, services) are absent from structured data; NAP appears only on /contact",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.keyFactsInStructuredData",
+        "observed": "JSON-LD: WebSite{name:\"barnett-architecture\"} on 1/48 pages, no Organization/LocalBusiness; address + phone in body text only on contact: 118 North Breese Terrace Suite I, Madison, WI 53726-4133, 608-233-4538"
+      },
+      "businessImpact": "Local and AI search cannot attach the firm to Madison or to architecture services; 'architect near me' and 'who designed X' answers skip it.",
+      "fix": "Site-wide JSON-LD ProfessionalService (additionalType Architect) with name 'Barnett Architecture LLC', address, telephone, email, foundingDate 2007, founder Todd Barnett, areaServed Madison/Dane County WI, sameAs; repeat NAP in the footer on every page.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-005",
+      "severity": "P1",
+      "dimension": "conversion-focus",
+      "title": "Projects are discoverable only through dropdown menus — no project index, no links from the listing pages",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.projectDiscoverability",
+        "observed": "29 project pages; /residential body = 0 words (photo credit), /commercial = 0; both are a single slideshow with 0 in-content project links; Residential dropdown 22 children, Commercial 7"
+      },
+      "businessImpact": "Prospects see one slideshow per category and must hover a 22-item menu to find comparable work; most of the portfolio is effectively hidden, and crawlers see it only through nav links.",
+      "fix": "Turn /residential and /commercial into project index grids (lead photo, name, type, location) and link them from home.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-006",
+      "severity": "P1",
+      "dimension": "conversion-focus",
+      "title": "No call to action anywhere; Contact is buried and its button is low-contrast",
+      "evidence": {
+        "type": "screenshot",
+        "ref": "stardust/current/assets/screenshots/index.png + contact.png",
+        "observed": "ctas on 48 pages = nav labels + 'Press to Zoom' + 'Send'; Contact sits under the About dropdown (0x0 until hover, impeccable audit); Send button white on #999999 = 2.85:1"
+      },
+      "businessImpact": "A visitor who likes a project has no next step; enquiries depend on the visitor hunting for Contact.",
+      "fix": "Make Contact a top-level nav item, end every project with 'Start a project like this' linking to /contact, and put phone + email in the footer.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-007",
+      "severity": "P1",
+      "dimension": "accessibility",
+      "title": "Images have no usable alt text",
+      "evidence": {
+        "type": "tension",
+        "ref": "T-img-alt-empty",
+        "observed": "136/304 rendered images empty alt (45%), 64 more '_' or '.'; content images with any text alt 8/208; photography 298 photos with alt = 0"
+      },
+      "businessImpact": "Blind visitors get nothing from a portfolio that is almost entirely photographs; image search cannot index the work.",
+      "fix": "Write alt per photo: subject + project + view ('Green Ribbon, rear elevation with new screened porch, Madison WI'). Decorative duplicates get alt=\"\" deliberately.",
+      "guides": [
+        "accessibility",
+        "html"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-008",
+      "severity": "P1",
+      "dimension": "accessibility",
+      "title": "Active-nav magenta and the Send button fail WCAG AA",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.contrast",
+        "observed": "#ea04b8 on #ffffff = 4.03:1 (12px nav label); #ffffff on #999999 = 2.85:1 (Send)"
+      },
+      "businessImpact": "Low-vision visitors cannot read the current location or the form's only action.",
+      "fix": "Darken the accent to >=4.5:1 (e.g. #b8008f) or mark the active item with weight/underline; Send button dark fill (#1e2f3b, 13.77:1 with white).",
+      "guides": [
+        "accessibility"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-009",
+      "severity": "P1",
+      "dimension": "accessibility",
+      "title": "Contact form fields have no labels",
+      "evidence": {
+        "type": "screenshot",
+        "ref": "measurements.impeccable",
+        "observed": "Name and Email are placeholder-only (no <label>); empty submit shows only the browser default message"
+      },
+      "businessImpact": "Screen-reader and autofill users struggle with the site's only conversion point.",
+      "fix": "Visible <label> per field, required markers, inline error text.",
+      "guides": [
+        "forms",
+        "accessibility"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-010",
+      "severity": "P1",
+      "dimension": "performance",
+      "title": "Mobile Total Blocking Time is poor on every sampled page",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.cwv",
+        "observed": "mobile TBT 1861-1957 ms (poor > 600; 4x CPU throttle, lab); ~963-989 KB JavaScript, 132-148 requests per page for a static portfolio"
+      },
+      "businessImpact": "On mid-range phones the page stays unresponsive for ~2 s after it appears; lab TBT is the proxy for INP.",
+      "fix": "Rebuild as static HTML (Edge Delivery) with no framework runtime; until then remove unused Wix apps and the tag manager.",
+      "guides": [
+        "performance"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-011",
+      "severity": "P2",
+      "dimension": "technical-seo",
+      "title": "Titles carry the Wix site-name slug and no value term",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.titles",
+        "observed": "48/48 titles end ' | barnett-architecture'; examples \"1990-2006\", \"2007-Current\", \"tHree Gables\", \"Potter Studio +\"; 0 duplicates"
+      },
+      "businessImpact": "Results show a hyphenated slug instead of the firm name, and nothing signals 'architect' or 'Madison'; testimonial pages titled by year range are unclickable.",
+      "fix": "Set the Wix site name to 'Barnett Architecture'; title pattern '<Subject> — <type>, <city> | Barnett Architecture' under 60 chars; retitle the two testimonial pages.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-012",
+      "severity": "P2",
+      "dimension": "technical-seo",
+      "title": "Wix-generated slugs unrelated to page content",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.slugs",
+        "observed": "27 of 48 slugs are copy-of-* or /blank; e.g. /copy-of-folded-roof-2 = \"Potter Studio +\"; /blank = \"40's Re-Make\"; /copy-of-illinois = \"Wisconsin\"; /copy-of-iowa-color = \"Illinois\"; /copy-of-mexico-places-1 = \"Minnesota\"; /copy-of-minnesota = \"Iowa 2022 Exhbit\""
+      },
+      "businessImpact": "URLs mislead users and crawlers (/copy-of-illinois is Wisconsin) and waste the one ranking signal every page has.",
+      "fix": "Rename to descriptive slugs under /projects/ and /photography/ (e.g. /projects/potter-studio) with 301 redirects from every old URL.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-013",
+      "severity": "P2",
+      "dimension": "technical-seo",
+      "title": "Structured data limited to one WebSite entity on the home page",
+      "evidence": {
+        "type": "check",
+        "ref": "check:jsonld",
+        "observed": "pages with JSON-LD = 1/48; types {\"WebSite\":1}; name \"barnett-architecture\""
+      },
+      "businessImpact": "No rich-result or knowledge-panel eligibility; projects and photo collections are invisible as entities.",
+      "fix": "Per page type: ProfessionalService (site-wide), CreativeWork/Place for each project (name, locationCreated, about, image), ImageGallery for each photography collection, BreadcrumbList.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-014",
+      "severity": "P2",
+      "dimension": "technical-seo",
+      "title": "No og:image on any page although twitter:card is summary_large_image",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.openGraph",
+        "observed": "og:image 0/48, og:description 0/48, twitter:card summary_large_image 48/48"
+      },
+      "businessImpact": "Links shared on social or messaging apps render without a photo — a poor showing for a visual portfolio.",
+      "fix": "Set og:image to each page's lead photograph (1200x630) and og:description to the meta description.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-015",
+      "severity": "P2",
+      "dimension": "content-llm-visibility",
+      "title": "llms.txt exists but is Wix-generated and misstates the practice",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.llmsTxt",
+        "observed": "llms.txt summary: 'specializing in residential, library, religious, educational, and healthcare projects' — sourced from Todd Barnett's career history on /team; portfolio is 22 residential + 7 commercial/civic; lists only the home link"
+      },
+      "businessImpact": "AI assistants that read llms.txt describe the firm as a healthcare/library specialist and get no route to the projects.",
+      "fix": "Replace with an authored llms.txt: one-paragraph firm summary (Madison WI, 2007, residential renovations/additions/new homes, community buildings), contact block, and a linked list of projects and collections.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-016",
+      "severity": "P2",
+      "dimension": "content-llm-visibility",
+      "title": "Project pages never state the project name in the page body",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.projectNameOnPage",
+        "observed": "21/29 project pages lack the project name in body text; it appears only in <title> and nav; project pages have no h2/h3"
+      },
+      "businessImpact": "Answer engines cannot connect a narrative ('A young couple bought a foreclosed house…') to the project it describes.",
+      "fix": "Lead each project with H1 name and a facts line: client type · location · scope · year (year is stated on only 4 project pages).",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-017",
+      "severity": "P2",
+      "dimension": "conversion-focus",
+      "title": "No filters by project type or location, no site search",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.projectDiscoverability",
+        "observed": "facet data already on every project: clientType 8 values (Private Residence 21), location 7 values (Madison, WI 23); search forms 0"
+      },
+      "businessImpact": "A homeowner looking for 'kitchen' or 'addition' work, or a board looking for civic work, cannot narrow 29 projects.",
+      "fix": "Tag projects by type (new home, addition, remodel, kitchen, multi-family, civic/community) and location; filter chips on the project index.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-018",
+      "severity": "P2",
+      "dimension": "accessibility",
+      "title": "Body text set at 13px (11px on the Wix mobile site)",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.bodyTextSize",
+        "observed": "173 of 183 sampled text nodes at 13px Arial 400; mobile live body 11-14px"
+      },
+      "businessImpact": "Project narratives, the site's only differentiating copy, are tiring to read, especially for the older homeowners the practice serves.",
+      "fix": "Body 17-18px, line length 60-70ch, with a real heading scale.",
+      "guides": [
+        "typography",
+        "improve-text-layout-and-legibility"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-019",
+      "severity": "P2",
+      "dimension": "content-llm-visibility",
+      "title": "Photography collections: ~300 images, almost all untitled",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.photographyMetadata",
+        "observed": "298 photos in 8 collections: title empty 69, placeholder ('_','-','=') 226, camera filename 3; alt 0; description 0; gallery pages with 0 body words 6/8"
+      },
+      "businessImpact": "The exhibited photography (Fields of Vision 2024, Iowa 2022) is unsearchable and uncitable; no place names or years are machine-readable.",
+      "fix": "Caption every photo with place, county/state and year; add a 50-100 word introduction per collection; ImageGallery schema.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-020",
+      "severity": "P2",
+      "dimension": "visual-hierarchy-craft",
+      "title": "Project photography displayed small inside a fixed 980px canvas",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.projectSourceResolution",
+        "observed": "project slides render at 646x443 on a 1440 viewport; source long edge >2000px for 97/156 photos, <=1024px for 25 (exactly 1024: 6); portraits cropped to landscape"
+      },
+      "businessImpact": "The work is the product, yet it is shown at under half the screen width; the high-resolution originals the firm already owns are wasted.",
+      "fix": "Full-bleed responsive gallery with srcset up to 2400w and aspect-aware frames; re-export the ~25 sub-1024px images or keep them at smaller sizes.",
+      "guides": [
+        "responsive-design",
+        "html"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-021",
+      "severity": "P2",
+      "dimension": "visual-hierarchy-craft",
+      "title": "Home is an uncaptioned slideshow (carousel-as-homepage)",
+      "evidence": {
+        "type": "screenshot",
+        "ref": "stardust/current/assets/screenshots/index.png (hero)",
+        "observed": "9-photo slideshow, no caption or link; LCP image on / is the same file as /green-ribbon's lead photo (5c8b97_b1d8e90c...)"
+      },
+      "businessImpact": "Visitors see a good house and cannot find out which project it is or open it.",
+      "fix": "A hero with the practice statement and a captioned, linked featured project, followed by the project index.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-022",
+      "severity": "P2",
+      "dimension": "visual-hierarchy-craft",
+      "title": "Flat, ad-hoc type hierarchy in a single weight",
+      "evidence": {
+        "type": "tension",
+        "ref": "T-scale",
+        "observed": "headings 28/24/18px, weight 400 only; project label 'Private Residence' 15px over 13px body (1.15 ratio, impeccable)"
+      },
+      "businessImpact": "Nothing on a project page tells the eye where to start; pages read as undifferentiated grey text beside a photo.",
+      "fix": "Modular scale (e.g. 1.25) with a display face for names and a distinct meta style for type/location.",
+      "guides": [
+        "typography"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-023",
+      "severity": "P2",
+      "dimension": "brand-expression",
+      "title": "Brand accent appears only on the active nav label; the chrome is the Wix template's",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.brandColorShare",
+        "observed": "#ea04b8 = 0.01% of painted pixels on index.png; used as text only, 48x (T-color-imbalance); Wix theme action blue #5b8db0 declared but never rendered; Arial 400 only"
+      },
+      "businessImpact": "Nothing in the chrome is ownable or connected to the work; the site reads as a 2015 template rather than a design practice.",
+      "fix": "Define a small owned palette drawn from the photography and a distinctive type pairing; retire the magenta or give it a deliberate role.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-024",
+      "severity": "P2",
+      "dimension": "brand-expression",
+      "title": "Template placeholders still live: social links, favicon, copyright",
+      "evidence": {
+        "type": "check",
+        "ref": "measurements.favicon",
+        "observed": "social icons link to http://www.twitter.com/wix and http://www.facebook.com/; favicon static.parastorage.com/client/pfavico.ico on 48/48 pages (also apple-touch-icon); footer '© 2021'"
+      },
+      "businessImpact": "Template leftovers signal an unmaintained site to prospects comparing architects.",
+      "fix": "Remove or correct social links, ship a brand favicon set (SVG + 180px touch icon), current copyright with the address line.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-025",
+      "severity": "P2",
+      "dimension": "accessibility",
+      "title": "Heading order skips and unnamed gallery controls",
+      "evidence": {
+        "type": "check",
+        "ref": "check:single-h1",
+        "observed": "/residential H1 -> H6; /contact empty H2 then wordmark H6; gallery slides role=button with no accessible name (impeccable audit)"
+      },
+      "businessImpact": "Screen-reader users cannot navigate by headings or know what a slide button does.",
+      "fix": "Ordered h1-h3 per page; name slide controls from the photo caption or remove the button role.",
+      "guides": [
+        "accessibility"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-026",
+      "severity": "P2",
+      "dimension": "visual-hierarchy-craft",
+      "title": "Fixed 980px desktop canvas plus a separate collapsed mobile site",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.impeccable",
+        "observed": "desktop UA at 375px: scrollWidth 1160 vs 375; phone UA gets a 320px Wix mobile site whose home is wordmark + one 286x380 crop (613-652px tall); touch targets <44px on 15/18 controls"
+      },
+      "businessImpact": "Phone visitors — most first visits — see the least of the work and small targets.",
+      "fix": "One fluid, responsive layout; 44px minimum targets; project index as the second screen on mobile.",
+      "guides": [
+        "responsive-design"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-027",
+      "severity": "P2",
+      "dimension": "performance",
+      "title": "Mobile LCP needs improvement on image-led pages",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.cwv",
+        "observed": "mobile LCP / 2.84s, /green-ribbon 3.64s, /residential 2.92s (needs-improvement 2.5-4.0s); desktop LCP all good (best case, unthrottled)"
+      },
+      "businessImpact": "The first photograph — the whole pitch — arrives late on phones.",
+      "fix": "Serve the LCP image from static HTML with fetchpriority=high on that image only, preload it, lazy-load the remaining slides.",
+      "guides": [
+        "optimize-image-priority",
+        "performance"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-028",
+      "severity": "P3",
+      "dimension": "technical-seo",
+      "title": "Generic Wix favicon in tabs and search results",
+      "evidence": {
+        "type": "check",
+        "ref": "measurements.favicon",
+        "observed": "pfavico.ico on 48/48 pages"
+      },
+      "businessImpact": "Google shows a favicon next to mobile results; the Wix icon makes the listing look generic.",
+      "fix": "Brand favicon (SVG + ICO + 180px apple-touch-icon).",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-029",
+      "severity": "P3",
+      "dimension": "technical-seo",
+      "title": "Sitemap valid but carries no image entries and one bulk lastmod",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.sitemapValid",
+        "observed": "sitemap index -> pages-sitemap.xml, 48 URLs (= crawl); lastmod values [\"2026-10-05\"]; image entries 0"
+      },
+      "businessImpact": "Search engines get no hint of ~450 portfolio photographs or of which pages actually changed.",
+      "fix": "Image sitemap entries (or image:image per URL) with captions; real per-page lastmod after the migration.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-030",
+      "severity": "P3",
+      "dimension": "technical-seo",
+      "title": "http apex redirects in two hops",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.redirectChain",
+        "observed": "http://barnettarchitecture.com -> https://barnettarchitecture.com -> https://www.barnettarchitecture.com"
+      },
+      "businessImpact": "Minor crawl and latency cost on old links.",
+      "fix": "Redirect every variant to https://www.barnettarchitecture.com in one 301.",
+      "guides": [],
+      "ledgerId": null
+    },
+    {
+      "id": "F-031",
+      "severity": "P3",
+      "dimension": "performance",
+      "title": "Every slide requested at high priority, none lazy-loaded",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.imageDelivery",
+        "observed": "AVIF served for 208/208 content image URLs, sized to the rendered box (good); loading=auto and fetchpriority=high on every sampled slide"
+      },
+      "businessImpact": "Off-screen slides compete with the LCP image for bandwidth on mobile.",
+      "fix": "Keep AVIF + exact sizing; one fetchpriority=high LCP image, loading=lazy for the rest, srcset for 2x desktops.",
+      "guides": [
+        "optimize-image-priority",
+        "deliver-optimized-decorative-images"
+      ],
+      "ledgerId": null
+    },
+    {
+      "id": "F-032",
+      "severity": "P3",
+      "dimension": "performance",
+      "title": "Console errors on every page from the Wix runtime",
+      "evidence": {
+        "type": "measurement",
+        "ref": "measurements.pageWeight",
+        "observed": "console errors per page 1-5; 15-16 hosts contacted per page"
+      },
+      "businessImpact": "Noise rather than visible breakage, but a symptom of the heavy third-party stack.",
+      "fix": "Resolved by the static rebuild; until then audit installed Wix apps.",
+      "guides": [],
+      "ledgerId": null
+    }
+  ],
+  "findingCounts": {
+    "P1": 10,
+    "P2": 17,
+    "P3": 5
+  },
+  "benchmarks": {
+    "status": "skipped",
+    "reason": "refero MCP not available in this session (tool not found)",
+    "references": []
+  },
+  "upliftDirections": [
+    {
+      "id": "A",
+      "pitch": "Tomorrow's version of the site you have today.",
+      "summary": "Same seven-section IA re-platformed to static Edge Delivery: H1 per page, descriptions, ProfessionalService + CreativeWork JSON-LD, a home introduction, Contact in the top nav with an enquiry CTA on every project, 17px body on a modular scale, labelled form, AA contrast, descriptive slugs with 301s.",
+      "addressesFindings": [
+        "F-001",
+        "F-002",
+        "F-003",
+        "F-004",
+        "F-006",
+        "F-008",
+        "F-009",
+        "F-010",
+        "F-011",
+        "F-012",
+        "F-013",
+        "F-014",
+        "F-015",
+        "F-016",
+        "F-018",
+        "F-022",
+        "F-024",
+        "F-025",
+        "F-028",
+        "F-030"
+      ]
+    },
+    {
+      "id": "B",
+      "pitch": "What if we amplified the photography?",
+      "summary": "The ~450 captured photographs (most >2000px originals) become the compositional spine: full-bleed project galleries, a filterable project index by type and location, photography collections as captioned exhibitions with place and year.",
+      "addressesFindings": [
+        "F-005",
+        "F-007",
+        "F-017",
+        "F-019",
+        "F-020",
+        "F-021",
+        "F-023",
+        "F-026",
+        "F-029",
+        "F-031"
+      ]
+    },
+    {
+      "id": "C",
+      "pitch": "What if motion was part of the identity?",
+      "register": "editorial",
+      "summary": "Same IA as A; slow, reading-paced editorial motion — photographs settling into frame, project facts revealing alongside the narrative — matching the plain-spoken, craft-minded voice (register per motion-registers.md: editorial / slow-paced).",
+      "addressesFindings": [
+        "F-021",
+        "F-022"
+      ]
+    }
+  ],
+  "degradations": [
+    {
+      "capability": "impeccable",
+      "status": "available",
+      "effect": "critique + audit ran via subagent; report rendered via craft"
+    },
+    {
+      "capability": "refero-mcp",
+      "status": "absent",
+      "effect": "Phase 5 benchmarking skipped"
+    },
+    {
+      "capability": "marketing-skills",
+      "status": "absent",
+      "effect": "SEO/LLM checks run directly (curl + captured HTML + Playwright)"
+    },
+    {
+      "capability": "modern-web-guidance",
+      "status": "available",
+      "effect": "guide ids cited in findings[].guides"
+    },
+    {
+      "capability": "pagespeed-insights",
+      "status": "unreachable",
+      "effect": "API reachable without key but HTTP 429 quota exceeded; Playwright-only lab metrics, no field INP"
+    },
+    {
+      "capability": "rollout-ledger",
+      "status": "absent",
+      "effect": "no findings.mjs recording; ledgerId null"
+    },
+    {
+      "capability": "deploy",
+      "status": "not-requested",
+      "effect": "--deploy skipped by instruction; nothing written to any remote service"
+    }
+  ]
+}

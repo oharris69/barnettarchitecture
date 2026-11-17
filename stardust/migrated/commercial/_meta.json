@@ -1,0 +1,224 @@
+{
+  "slug": "commercial",
+  "type": "listing",
+  "renderBranch": "A'",
+  "template": "residential",
+  "modules": [
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "index-head",
+    "shell",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/commercial",
+      "newPath": "/commercial",
+      "outputPath": "commercial/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/commercial.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Commercial, community &amp; recreation architecture — Madison, WI | Barnett Architecture",
+    "description": "Commercial, community and recreation projects by Barnett Architecture in Madison, WI: swim clubs, a neighborhood center, a meeting house and studies.",
+    "canonical": "https://www.barnettarchitecture.com/commercial",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/commercial#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Commercial, community & recreation",
+            "item": "https://www.barnettarchitecture.com/commercial"
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.barnettarchitecture.com/commercial#webpage",
+        "url": "https://www.barnettarchitecture.com/commercial",
+        "name": "Commercial, community & recreation",
+        "description": "Commercial, community and recreation projects by Barnett Architecture in Madison, WI: swim clubs, a neighborhood center, a meeting house and studies.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.barnettarchitecture.com/#website",
+          "url": "https://www.barnettarchitecture.com/",
+          "name": "Barnett Architecture"
+        },
+        "about": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.barnettarchitecture.com/commercial#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://www.barnettarchitecture.com/commercial#projects"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.barnettarchitecture.com/commercial#projects",
+        "name": "Commercial, community & recreation",
+        "numberOfItems": 7,
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.barnettarchitecture.com/projects/designcraft",
+            "name": "designCraft"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.barnettarchitecture.com/projects/wil-mar-center",
+            "name": "Wil-Mar Center"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club",
+            "name": "Ridgewood Swim Club I"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii",
+            "name": "Ridgewood Swim Club II"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://www.barnettarchitecture.com/projects/hill-farm-swim-club",
+            "name": "Hill Farm Swim Club"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://www.barnettarchitecture.com/projects/meeting-house",
+            "name": "Meeting House"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://www.barnettarchitecture.com/projects/synagogue-study",
+            "name": "Synagogue Study"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:57Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "7044146dbe5f",
+  "sourceProposedSha": "6a76de225bad",
+  "fidelityTier": "sibling",
+  "archetypeSource": "residential",
+  "archetypeSha": "7f287581850a",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 0/0 captured strings verbatim; photos 0/0 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F4 listing filters (client-only over authored rows; no index)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "commercial/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "commercial/_meta.json",
+  "driverVersion": "1"
+}

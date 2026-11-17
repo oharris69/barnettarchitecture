@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/projects/pond-house",
+  "path": "projects/pond-house",
+  "timestamp": "2026-11-17T20:58:43.810Z",
+  "title": "Pond — New home, Westchester County, NY | Barnett Architecture",
+  "template": "project",
+  "blocks": [
+    "hero",
+    "breadcrumbs",
+    "facts",
+    "big-idea",
+    "gallery",
+    "pager",
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "73cd0c8f0c8f"
+}

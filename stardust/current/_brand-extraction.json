@@ -1,0 +1,53 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "mode": "prep",
+    "writtenAt": "2026-11-17T16:58:00Z",
+    "read": ["stardust/current/_computed-styles.json", "stardust/current/pages/*.json", "stardust/current/_galleries.clean.json"],
+    "aggregationScope": "all 48 extracted pages",
+    "notes": "Wix template site. Thin brand signal: Arial only, one weight (400), navy text + black headings on white, magenta (#ea04b8) used only for the active nav label. No logo asset (text wordmark set in Arial 28px). Favicon is the generic Wix favicon (static.parastorage.com/client/pfavico.ico). Zero border-radius, zero shadows, zero gradients site-wide."
+  },
+  "origins": [{ "origin": "https://www.barnettarchitecture.com", "role": "primary", "pages": 48 }],
+  "logo": { "source": "synthesized-placeholder", "kind": "text-wordmark", "text": "Barnett Architecture LLC", "font": "arial 28px/400", "selector": "#SITE_STRUCTURE_WRichText_0 > h1", "url": null },
+  "favicon": { "path": "stardust/current/assets/favicon.ico", "source": "https://static.parastorage.com/client/pfavico.ico", "generic": true },
+  "palette": [
+    { "role": "text", "hex": "#1e2f3b", "weight": 792, "source": "_computed-styles.json aggregate.colors[0]" },
+    { "role": "heading", "hex": "#000000", "weight": 407, "source": "aggregate.colors[1]" },
+    { "role": "background", "hex": "#ffffff", "weight": 96, "source": "aggregate.colors[2]" },
+    { "role": "accent", "hex": "#ea04b8", "weight": 48, "usage": "active nav label only", "source": "https://www.barnettarchitecture.com/ #DrpDwnMn00label" },
+    { "role": "surface", "hex": "#999999", "weight": 1, "usage": "contact form button", "source": "contact #comp-kf4prqry > button" }
+  ],
+  "type": {
+    "headingFamily": { "name": "arial", "weights": ["400"], "source": "aggregate.type.headingFamily" },
+    "bodyFamily": { "name": "arial", "weights": ["400"], "source": "aggregate.type.bodyFamily" },
+    "sizes": { "h1": 28, "h2": 24, "h6": 18, "body": 13, "small": [12, 11, 10] },
+    "scaleAudit": { "kind": "ad-hoc", "distinctHeadingSizes": 3, "note": "h1 28 is the firm wordmark on every page, not a page title" },
+    "files": []
+  },
+  "motifs": { "borderRadius": { "mode": null, "values": [] }, "shadows": [], "gradients": [], "patterns": ["full-bleed-less boxed slideshow (980px canvas)", "two-column slideshow + narrative on project pages", "dropdown mega-list nav"] },
+  "voice": {
+    "heroHeadline": "Barnett Architecture LLC",
+    "heroLede": null,
+    "heroImage": { "uri": "5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg", "w": 4368, "h": 2912, "page": "index", "note": "home slideshow, green-and-grey contemporary house" },
+    "heroMedium": null,
+    "firstParagraph": "Barnett Architecture (BA) is a full-service, design-focused architectural practice which was established in 2007. BA's philosophy is straightforward: Projects are meant to \"fit\" the client, not serve as a pedestal for the architect.",
+    "ctaSamples": [],
+    "samples": [
+      "The design process begins with a pencil, sketch book and cup of coffee by looking at the basic site and building relationships. This is where the \"big idea\" is conceived.",
+      "For the highlands, it is for the color, beautiful architecture and warm people who embrace the land. For the backroads, it is for the palpable sense of history, hard work, and honesty of place."
+    ],
+    "tone": "plain-spoken, modest, precise, first-person-plural practice voice"
+  },
+  "systemComponents": [
+    { "id": "site-header", "pages": 48, "contents": "text wordmark + 7-item dropdown nav (Home, About▾, Team, Residential▾(22), Commercial▾(7), Testimonials▾(2), Photography▾(8))" },
+    { "id": "site-footer", "pages": 48, "contents": "© 2015 by Barnett Architecture LLC + Twitter/Facebook icons (unlinked)" }
+  ],
+  "iconFont": null,
+  "photography": {
+    "credit": "Photographs by Joe De Maio (residential listing); personal photography by Todd Barnett",
+    "collections": 8,
+    "collectionPhotos": 298,
+    "projectPhotos": 155,
+    "source": "stardust/current/_galleries.clean.json"
+  }
+}

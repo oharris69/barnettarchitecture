@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/photography",
+  "path": "photography",
+  "timestamp": "2026-11-17T21:00:14.779Z",
+  "title": "Photography — Collections, Midwest and central Mexico | Barnett Architecture",
+  "template": "photo-hub",
+  "blocks": [
+    "hero",
+    "collection-index",
+    "collection-index",
+    "fragment"
+  ],
+  "importScript": "d04dd3e5a3b2"
+}

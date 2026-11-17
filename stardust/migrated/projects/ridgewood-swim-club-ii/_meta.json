@@ -1,0 +1,199 @@
+{
+  "slug": "copy-of-wil-mar-center",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-wil-mar-center",
+      "newPath": "/projects/ridgewood-swim-club-ii",
+      "outputPath": "projects/ridgewood-swim-club-ii/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-wil-mar-center.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Ridgewood Swim Club II — Renovation, Madison, WI | Barnett Architecture",
+    "description": "Ridgewood Swim Club II — renovation, Madison, WI. Five years after completing the Ridgewood Swim Club I Study, programming was further investigated and major…",
+    "canonical": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Commercial, community & recreation",
+            "item": "https://www.barnettarchitecture.com/commercial"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Ridgewood Swim Club II",
+            "item": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii#work",
+        "name": "Ridgewood Swim Club II",
+        "url": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii",
+        "description": "Five years after completing the Ridgewood Swim Club I Study, programming was further investigated and major donation efforts were completed, allowing Ridgewood to be able to address the project as one which essentially created a new facility aside from renovating one of the original vessels.",
+        "genre": "Architecture",
+        "keywords": "Recreation, Renovation",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Madison, WI",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Madison",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_d59dd666f7cb495490f343cbbb3a553e~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_d59dd666f7cb495490f343cbbb3a553e~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_48eefa59ee8647e68e1d19da572a6e62~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_48eefa59ee8647e68e1d19da572a6e62~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_69e40edc698b4925b982450195ca188b~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_69e40edc698b4925b982450195ca188b~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_b8d049e7a42440ba94a578d72b8ed9ac~mv2.jpg/v1/fill/w_2400,h_2121,al_c,q_85,enc_auto/5c8b97_b8d049e7a42440ba94a578d72b8ed9ac~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:55Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "26145f8c2b46",
+  "sourceProposedSha": "2a02f2d84c38",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 5/5 captured strings verbatim; photos 5/5 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/ridgewood-swim-club-ii/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/ridgewood-swim-club-ii/_meta.json",
+  "driverVersion": "1"
+}

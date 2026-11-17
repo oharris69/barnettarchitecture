@@ -1,0 +1,693 @@
+{
+ "_provenance": {
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-17T16:36:54.858Z",
+  "waitMode": "medium",
+  "waitMs": 2500,
+  "httpStatus": 200
+ },
+ "slug": "residential",
+ "url": "https://www.barnettarchitecture.com/residential",
+ "renderedBy": "playwright",
+ "fetchedAt": "2026-11-17T16:36:54.858Z",
+ "finalUrl": "https://www.barnettarchitecture.com/residential",
+ "title": "Residential | barnett-architecture",
+ "description": null,
+ "og": {
+  "title": "Residential | barnett-architecture",
+  "description": null,
+  "image": null,
+  "type": "website"
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Barnett Architecture LLC"
+  },
+  {
+   "tag": "h6",
+   "text": "Photographs by Joe De Maio"
+  }
+ ],
+ "body": [],
+ "codeBlocks": [],
+ "ctas": [
+  {
+   "label": "Home",
+   "href": "https://www.barnettarchitecture.com"
+  },
+  {
+   "label": "About",
+   "href": "https://www.barnettarchitecture.com/about"
+  },
+  {
+   "label": "Team",
+   "href": "https://www.barnettarchitecture.com/team"
+  },
+  {
+   "label": "Residential",
+   "href": "https://www.barnettarchitecture.com/residential"
+  },
+  {
+   "label": "Commercial",
+   "href": "https://www.barnettarchitecture.com/commercial"
+  },
+  {
+   "label": "Testimonials",
+   "href": "https://www.barnettarchitecture.com/testimonials"
+  },
+  {
+   "label": "Photography",
+   "href": "https://www.barnettarchitecture.com/photography"
+  },
+  {
+   "label": "Orussa 1press to zoom",
+   "href": null
+  }
+ ],
+ "links": [
+  "https://www.barnettarchitecture.com/",
+  "https://www.barnettarchitecture.com/about",
+  "https://www.barnettarchitecture.com/process",
+  "https://www.barnettarchitecture.com/contact",
+  "https://www.barnettarchitecture.com/team",
+  "https://www.barnettarchitecture.com/residential",
+  "https://www.barnettarchitecture.com/willy-street",
+  "https://www.barnettarchitecture.com/folded-roof",
+  "https://www.barnettarchitecture.com/copy-of-folded-roof-1",
+  "https://www.barnettarchitecture.com/copy-of-folded-roof-2",
+  "https://www.barnettarchitecture.com/green-ribbon",
+  "https://www.barnettarchitecture.com/copy-of-pond",
+  "https://www.barnettarchitecture.com/copy-of-micro-house-1",
+  "https://www.barnettarchitecture.com/blank",
+  "https://www.barnettarchitecture.com/copy-of-green-ribbon",
+  "https://www.barnettarchitecture.com/copy-of-40-s-re-make",
+  "https://www.barnettarchitecture.com/copy-of-folded-roof",
+  "https://www.barnettarchitecture.com/stone-house",
+  "https://www.barnettarchitecture.com/box-house",
+  "https://www.barnettarchitecture.com/copy-of-push-pull",
+  "https://www.barnettarchitecture.com/channel-house",
+  "https://www.barnettarchitecture.com/copy-of-channel-2",
+  "https://www.barnettarchitecture.com/copy-of-channel-1",
+  "https://www.barnettarchitecture.com/copy-of-channel",
+  "https://www.barnettarchitecture.com/copy-of-island-kitchen",
+  "https://www.barnettarchitecture.com/copy-of-micro-house",
+  "https://www.barnettarchitecture.com/copy-of-island-kitchen-1",
+  "https://www.barnettarchitecture.com/copy-of-channel-house",
+  "https://www.barnettarchitecture.com/commercial",
+  "https://www.barnettarchitecture.com/designcraft",
+  "https://www.barnettarchitecture.com/wil-mar-center",
+  "https://www.barnettarchitecture.com/ridgewood-swim-club",
+  "https://www.barnettarchitecture.com/copy-of-wil-mar-center",
+  "https://www.barnettarchitecture.com/hill-farm-swim-club",
+  "https://www.barnettarchitecture.com/meeting-house",
+  "https://www.barnettarchitecture.com/copy-of-meeting-house",
+  "https://www.barnettarchitecture.com/testimonials",
+  "https://www.barnettarchitecture.com/copy-of-testimonials",
+  "https://www.barnettarchitecture.com/copy-of-barnett-architecture",
+  "https://www.barnettarchitecture.com/photography",
+  "https://www.barnettarchitecture.com/copy-of-iowa-2022-exhbit",
+  "https://www.barnettarchitecture.com/copy-of-minnesota",
+  "https://www.barnettarchitecture.com/copy-of-iowa",
+  "https://www.barnettarchitecture.com/copy-of-iowa-color",
+  "https://www.barnettarchitecture.com/copy-of-illinois",
+  "https://www.barnettarchitecture.com/copy-of-mexico-places-1",
+  "https://www.barnettarchitecture.com/mexico",
+  "https://www.barnettarchitecture.com/copy-of-mexico-places",
+  "http://www.twitter.com/wix",
+  "http://www.facebook.com/"
+ ],
+ "media": {
+  "imgs": [
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+    "alt": "Orussa 1",
+    "w": 801,
+    "h": 500
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+    "alt": "",
+    "w": 801,
+    "h": 500
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_de0377e791b0430b99195313fe96cf66.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_de0377e791b0430b99195313fe96cf66.jpg",
+    "alt": "",
+    "w": 801,
+    "h": 500
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+    "alt": "Orussa 1",
+    "w": 801,
+    "h": 500
+   },
+   {
+    "src": "https://static.wixstatic.com/media/01113281ebb7dfb57a8dc2a02eb1cb92.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01113281ebb7dfb57a8dc2a02eb1cb92.png",
+    "alt": "Twitter Classic",
+    "w": 25,
+    "h": 25
+   },
+   {
+    "src": "https://static.wixstatic.com/media/b1cd13f9d4dfb1450bbb325285106177.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b1cd13f9d4dfb1450bbb325285106177.png",
+    "alt": "Facebook Classic",
+    "w": 25,
+    "h": 25
+   }
+  ],
+  "allImgCount": 6,
+  "cssBackgrounds": [],
+  "modals": [],
+  "videos": [],
+  "iframes": []
+ },
+ "customProps": {},
+ "_signals": {
+  "filteredInterstitials": 0,
+  "distinctHeadings": 2,
+  "mainTextLen": 97,
+  "realImageCount": 6,
+  "trackingOnlyMedia": false,
+  "spaShellSuspect": false,
+  "screenshotMode": "fullPage"
+ },
+ "dynamic": {
+  "endpoints": [
+   {
+    "method": "GET",
+    "host": "siteassets.parastorage.com",
+    "path": "/pages/pages/thunderbolt",
+    "query": [
+     "appDefinitionIdToSiteRevision",
+     "beckyExperiments",
+     "blocksBuilderManifestGeneratorVersion",
+     "contentType",
+     "dfCk",
+     "dfVersion",
+     "editorName",
+     "experiments",
+     "externalBaseUrl",
+     "fileId",
+     "formFactor",
+     "hasTPAWorkerOnSite",
+     "hasUserDomainMedia",
+     "isBuilderComponentModel",
+     "isHttps",
+     "isInSeo",
+     "isPremiumDomain",
+     "isUrlMigrated",
+     "isWixCodeOnPage",
+     "isWixCodeOnSite",
+     "language",
+     "locale",
+     "metaSiteId",
+     "module",
+     "originalLanguage",
+     "pageId",
+     "pilerExperiments",
+     "quickActionsMenuEnabled",
+     "registryLibrariesTopology",
+     "remoteWidgetStructureBuilderVersion",
+     "siteId",
+     "siteRevision",
+     "staticHTMLComponentUrl",
+     "viewMode"
+    ],
+    "resourceType": "other",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 23793,
+    "hits": 10,
+    "example": "https://siteassets.parastorage.com/pages/pages/thunderbolt",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "visits.visitor-analytics.io",
+    "path": "/api/standalone/websites/{uuid}/settings",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "www.barnettarchitecture.com",
+    "path": "/_api/v1/access-tokens",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 10426,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 21878,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 2518,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 1222,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 10471,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 1288,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "www.barnettarchitecture.com",
+    "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+    "query": [
+     "htmlsiteId",
+     "language",
+     "wixSite"
+    ],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 154,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 21855,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.umd.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 6845,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.umd.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "panorama.wixapps.net",
+    "path": "/api/v1/bulklog",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": null,
+    "status": 204,
+    "bytes": null,
+    "hits": 2,
+    "example": "https://panorama.wixapps.net/api/v1/bulklog",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 28779,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae9951.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 2095,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae9951.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].152f157d.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 15611,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].152f157d.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].c1332128.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 1924,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].c1332128.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "frog.wix.com",
+    "path": "/bpm",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": null,
+    "status": 204,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://frog.wix.com/bpm",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "visits.visitor-analytics.io",
+    "path": "/api/wix/websites/{uuid}/settings",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "visits.visitor-analytics.io",
+    "path": "/standalone/worker-log",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 406,
+    "bytes": 5,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/standalone/worker-log",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "visits.visitor-analytics.io",
+    "path": "/worker-log",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 406,
+    "bytes": 5,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/worker-log",
+    "sameSite": false
+   }
+  ],
+  "thirdPartyScriptHosts": [
+   {
+    "host": "static.parastorage.com",
+    "count": 77
+   },
+   {
+    "host": "app-worker.visitor-analytics.io",
+    "count": 3
+   },
+   {
+    "host": "www.googletagmanager.com",
+    "count": 2
+   },
+   {
+    "host": "browser.sentry-cdn.com",
+    "count": 1
+   },
+   {
+    "host": "cdn.jsdelivr.net",
+    "count": 1
+   },
+   {
+    "host": "cdnjs.cloudflare.com",
+    "count": 1
+   }
+  ],
+  "truncated": false,
+  "inlineData": [
+   {
+    "id": "wix-essential-viewer-model",
+    "type": "application/json",
+    "bytes": 3148,
+    "topLevelKeys": [
+     "fleetConfig",
+     "mode",
+     "componentsLibrariesTopology",
+     "siteFeaturesConfigs",
+     "language",
+     "siteAssets",
+     "siteFeatures",
+     "site",
+     "media",
+     "requestUrl",
+     "rollout",
+     "commonConfig"
+    ]
+   },
+   {
+    "id": "wix-fedops",
+    "type": "application/json",
+    "bytes": 712,
+    "topLevelKeys": [
+     "data"
+    ]
+   },
+   {
+    "id": "wix-viewer-model",
+    "type": "application/json",
+    "bytes": 162692,
+    "topLevelKeys": [
+     "siteFeaturesConfigs",
+     "siteFeatures",
+     "experiments",
+     "formFactor",
+     "isMobileDevice",
+     "viewMode",
+     "requestUrl",
+     "fleetConfig",
+     "accessTokensUrl",
+     "interactionSampleRatio",
+     "isPartialRouteMatching",
+     "siteAssetsTestModuleVersion"
+    ]
+   },
+   {
+    "id": "used-platform-apis-data",
+    "type": "application/json",
+    "bytes": 2,
+    "topLevelKeys": []
+   },
+   {
+    "id": "wix-warmup-data",
+    "type": "application/json",
+    "bytes": 962,
+    "topLevelKeys": [
+     "platform",
+     "pages",
+     "appsWarmupData",
+     "ooi",
+     "builderComponentsWarmupData"
+    ]
+   }
+  ],
+  "globalState": [
+   "dataLayer"
+  ],
+  "frameworkHints": [],
+  "forms": [],
+  "ariaLiveRegions": 1,
+  "triggers": [
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/about"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/residential"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/commercial"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/testimonials"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/photography"
+   }
+  ],
+  "mediaIds": [],
+  "summary": {
+   "sameSiteEndpoints": 2,
+   "thirdPartyEndpoints": 20,
+   "thirdPartyScriptHosts": 6,
+   "inlineDataBlobs": 5,
+   "forms": 0,
+   "searchForms": 0,
+   "hydrated": false
+  }
+ },
+ "screenshot": "assets/screenshots/residential.png",
+ "renderedHtml": "pages/residential.html",
+ "slots": {
+  "index-headline": "Residential",
+  "intro": [],
+  "card-grid": "derived from nav children (see _crawl-log nav tree)",
+  "heroPhotos": [
+   {
+    "uri": "5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+    "w": 1024,
+    "h": 683,
+    "title": "Orussa 1",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+    "w": 1024,
+    "h": 683,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_4c92ed54caf048cf849ff5c1783e42d4.jpg",
+    "w": 1024,
+    "h": 683,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_8d08d7a204934394b9ea5197043945d5.jpg",
+    "w": 4368,
+    "h": 2912,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_f9adf059b95447d8a85b7eb8faf5e8aa.jpg",
+    "w": 900,
+    "h": 600,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_b19e454e07264f46829f7c9ee0fb89f3.jpg",
+    "w": 1024,
+    "h": 683,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_de0377e791b0430b99195313fe96cf66.jpg",
+    "w": 4368,
+    "h": 2912,
+    "title": "",
+    "description": ""
+   }
+  ]
+ }
+}

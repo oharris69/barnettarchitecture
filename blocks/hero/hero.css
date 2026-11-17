@@ -1,37 +1,185 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-}
-
+/* hero (canon module project-hero): photograph owns the viewport, the title sits on its own scrim */
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: max(100svh, 620px);
+  display: grid;
+  align-items: end;
+  background: var(--color-darkroom);
+  color: var(--color-print);
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
+.hero .hero-media {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  z-index: -2;
+  overflow: hidden;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-media picture {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
-@media (width >= 900px) {
+.hero .hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 55%;
+}
+
+.hero .hero-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  align-items: end;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-block: var(--spacing-lg) clamp(40px, 6vw, 72px);
+  padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
+}
+
+/* scrim bound to the text block, not the frame: ≥ 0.74 darkroom behind every glyph */
+.hero .hero-content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  inset: -45% calc(50% - 50vw) 0;
+  background: linear-gradient(to top, color-mix(in srgb, var(--color-darkroom) 88%, transparent) 0%, color-mix(in srgb, var(--color-darkroom) 74%, transparent) 68%, transparent 100%);
+}
+
+.hero .hero-title {
+  grid-column: 1 / span 9;
+  display: grid;
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.hero .hero-title > * {
+  margin: 0;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: clamp(3.25rem, 7.4vw, 10rem);
+  font-weight: 300;
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+  max-width: 9.6em;
+  color: var(--color-print);
+}
+
+.hero h1 .h1-thesis,
+.hero h1 .h1-who {
+  display: block;
+}
+
+.hero h1 .h1-who,
+.hero .hero-lede {
+  font-family: var(--body-font-family);
+  font-size: clamp(1.0625rem, 1.5vw, 1.375rem);
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: 0;
+  max-width: 34em;
+}
+
+.hero h1 .h1-who {
+  margin-top: clamp(16px, 2vw, 28px);
+}
+
+/* breadcrumbs hung in the caption slot */
+.hero .hero-crumbs {
+  display: flex;
+  margin: 0 0 0.45em;
+  padding: 0;
+}
+
+.hero .hero-crumbs .breadcrumbs {
+  flex: 0 1 auto;
+}
+
+.hero .hero-crumbs .breadcrumbs ol {
+  gap: 4px 0;
+}
+
+.hero .hero-caption {
+  grid-column: 10 / span 3;
+  margin: 0 0 0.45em;
+  color: var(--color-print);
+}
+
+.hero .hero-caption a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.hero .hero-caption a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.hero :focus-visible {
+  outline-color: var(--color-print);
+}
+
+/* project: the project's name at exhibit scale */
+.hero.project .hero-media img {
+  object-position: 50% 50%;
+}
+
+.hero.project h1 {
+  font-size: var(--heading-xxl);
+  line-height: 0.9;
+  max-width: 11em;
+}
+
+@media (width <= 899px) {
+  .hero .hero-title {
+    grid-column: 1 / -1;
+  }
+
+  .hero .hero-caption {
+    grid-column: 1 / -1;
+    max-width: 26rem;
+    margin-top: var(--spacing-md);
+  }
+
+  .hero .hero-media img {
+    object-position: 22% 55%;
+  }
+
+  .hero.project .hero-media img {
+    object-position: 50% 50%;
+  }
+}
+
+@media (width <= 599px) {
+  .hero h1,
+  .hero.project h1 {
+    font-size: clamp(3.25rem, 13vw, 3.75rem);
+  }
+}
+
+@media (pointer: coarse) {
+  .hero .hero-caption a {
+    display: inline-block;
+    padding-block: 12px;
+    margin-block: -12px;
+  }
+}
+
+@media (height <= 500px) and (orientation: landscape) {
   .hero {
-    padding: 40px 32px;
+    min-height: max(100svh, 420px);
+  }
+
+  .hero h1,
+  .hero.project h1 {
+    font-size: clamp(2rem, 7vw, 3.75rem);
   }
 }

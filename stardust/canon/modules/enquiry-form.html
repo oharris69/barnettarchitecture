@@ -1,0 +1,24 @@
+<!-- stardust:canon (merged 2026-11-17)
+  writtenBy:        stardust:prototype --prep (wave 2)
+  sourceSlug:       contact
+  sourcePrototype:  stardust/prototypes/contact-proposed.html
+  region:           module:enquiry-form
+  css:              stardust/canon/canon.css [from canon.css [from pending/contact.css]] (.enquiry-form*, .field*, .placeholder-note, button.btn-primary)
+  rules:            NO form backend (hands-off decision): form carries data-placeholder="true" data-backend="none"
+                    data-fallback="mailto", action="mailto:todd@barnettarchitecture.com" method="post" enctype="text/plain";
+                    a visible .placeholder-note (PLACEHOLDER signature) states it; JS sets noValidate, validates inline
+                    (aria-invalid + per-field .field__error, focus to first error) and composes
+                    mailto:?subject=Project enquiry — <type> — <location>&body=<labelled lines> then announces in role=status.
+                    Visible <label> per field with "(required)"/"(optional)"; project type options = taxonomy.json
+                    facets.scope.values + "Not sure yet". When a backend is chosen, swap action/JS; markup stays.
+  stardustVersion:  0.32.1
+-->
+<section class="enquiry-form shell band" data-section="enquiry-form" data-intent="collect a project enquiry" data-layout="side-rail" data-module="enquiry-form" aria-labelledby="{{id}}">
+  <div class="enquiry-form__head"><h2 id="{{id}}">{{heading}}</h2><p>{{captured sentence}}</p></div>
+  <form id="enquiry" action="mailto:todd@barnettarchitecture.com" method="post" enctype="text/plain" data-placeholder="true" data-backend="none" data-fallback="mailto" aria-describedby="form-note">
+    <!-- repeat: name (required, autocomplete=name), email (required, type=email), phone (optional, type=tel), location (optional), type <select>, message (required, textarea, .field--wide) -->
+    <div class="field"><label for="{{f}}">{{Label}} <span>({{required|optional}})</span></label><input id="{{f}}" name="{{f}}" aria-describedby="{{f}}-err"><p class="field__error" id="{{f}}-err" aria-live="polite"></p></div>
+    <div class="placeholder-note" id="form-note"><span class="placeholder-note__tag">PLACEHOLDER · form backend</span><span>{{note}}</span></div>
+    <div class="enquiry-form__actions"><button class="btn-primary" type="submit">Send by email</button><p class="enquiry-form__status" role="status"></p></div>
+  </form>
+</section>

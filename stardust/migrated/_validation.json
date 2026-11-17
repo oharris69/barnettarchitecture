@@ -1,0 +1,3171 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:migrate (validation)",
+  "writtenAt": "2026-11-17T20:24:08.627Z",
+  "tools": [
+   ".work/migrate/validate-site.mjs (Playwright 1440×900 + 390×844 + no-JS 390, file://)",
+   ".work/migrate/links-check.mjs",
+   ".work/migrate/content-check.mjs",
+   ".work/migrate/flows.mjs",
+   "plugin fixtures pagemap-audit.mjs + file-protocol-audit.mjs"
+  ]
+ },
+ "summary": {
+  "pages": 48,
+  "pass": 48,
+  "fail": 0,
+  "portability": {
+   "sourceTreeEscapes": 0,
+   "absoluteInternalRefs": 0,
+   "absoluteCssUrls": 0,
+   "directoryOnlyHrefs": 0,
+   "pagemapAudit": {
+    "exit": 1,
+    "findings": 130,
+    "nonQueryFindings": 0,
+    "note": "every finding is a facet link with a query string (projects/index.html?type=…); the fixture splits on # but not ?, so it looks for a file named \"index.html?type=…\". links-check.mjs (query stripped) resolves all 1,778 internal refs; flows.json proves ?type= filters under file://"
+   },
+   "fileProtocolAudit": {
+    "exit": 1,
+    "findings": 130,
+    "nonQueryFindings": 0,
+    "note": "same 130 query-string facet links; 0 asset failures under file://"
+   }
+  },
+  "flows": {
+   "filterQuery": {
+    "visible": 7,
+    "total": 29,
+    "chip": "New home7, selected — activate to remove this filter",
+    "errors": []
+   },
+   "filterNoJs": {
+    "visible": 29
+   },
+   "lightbox": {
+    "open": true,
+    "count": "3 / 89Photo 3 of 89",
+    "hash": "#photo-3",
+    "afterNext": "Photo 4 of 89",
+    "closed": true,
+    "errors": []
+   },
+   "projectLightbox": {
+    "open": true,
+    "count": "1 / 9Photo 1 of 9",
+    "errors": []
+   },
+   "form": {
+    "errorsOnEmpty": 3,
+    "status": "",
+    "note": "“Send by email” opens your email app with this message addressed to todd@barnettarchitecture.com.",
+    "errors": []
+   }
+  }
+ },
+ "pages": {
+  "about/index.html": {
+   "slug": "about",
+   "type": "static",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../about/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../about/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 6,
+    "recomposed": 8,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "About — Architect, Madison, WI | Barnett Architecture",
+    "titleLength": 53,
+    "descriptionLength": 154,
+    "canonical": "https://www.barnettarchitecture.com/about",
+    "jsonLd": [
+     "AboutPage",
+     "BreadcrumbList",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/40s-re-make/index.html": {
+   "slug": "blank",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 7,
+    "recomposed": 0,
+    "photos": 3,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "40's Re-Make — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 61,
+    "descriptionLength": 156,
+    "canonical": "https://www.barnettarchitecture.com/projects/40s-re-make",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/push-pull/index.html": {
+   "slug": "box-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Push-Pull — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 58,
+    "descriptionLength": 151,
+    "canonical": "https://www.barnettarchitecture.com/projects/push-pull",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/channel-house/index.html": {
+   "slug": "channel-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 5,
+    "recomposed": 0,
+    "photos": 5,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Channel — Renovation &amp; addition, Madison, WI | Barnett Architecture",
+    "titleLength": 71,
+    "descriptionLength": 163,
+    "canonical": "https://www.barnettarchitecture.com/projects/channel-house",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "commercial/index.html": {
+   "slug": "commercial",
+   "type": "listing",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Commercial, community &amp; recreation architecture — Madison, WI | Barnett Architecture",
+    "titleLength": 88,
+    "descriptionLength": 149,
+    "canonical": "https://www.barnettarchitecture.com/commercial",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CollectionPage",
+     "ItemList",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "contact/index.html": {
+   "slug": "contact",
+   "type": "form",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../contact/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../contact/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 2,
+    "recomposed": 0,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Contact — Architect, Madison, WI | Barnett Architecture",
+    "titleLength": 55,
+    "descriptionLength": 148,
+    "canonical": "https://www.barnettarchitecture.com/contact",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ContactPage",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/70s-re-make/index.html": {
+   "slug": "copy-of-40-s-re-make",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 15,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 15,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 11,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "70's Re-Make — Renovation &amp; addition, Middleton, WI | Barnett Architecture",
+    "titleLength": 78,
+    "descriptionLength": 162,
+    "canonical": "https://www.barnettarchitecture.com/projects/70s-re-make",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/solar-court/index.html": {
+   "slug": "copy-of-channel-1",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 5,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Solar Court — New home, master plan &amp; study, Highland Park, IL | Barnett Architecture",
+    "titleLength": 89,
+    "descriptionLength": 160,
+    "canonical": "https://www.barnettarchitecture.com/projects/solar-court",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/tudor-extension/index.html": {
+   "slug": "copy-of-channel-2",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 3,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Tudor Extension — Addition &amp; renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 79,
+    "descriptionLength": 161,
+    "canonical": "https://www.barnettarchitecture.com/projects/tudor-extension",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/micro-house/index.html": {
+   "slug": "copy-of-channel-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 5,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Micro-House — New home, Madison, WI | Barnett Architecture",
+    "titleLength": 58,
+    "descriptionLength": 155,
+    "canonical": "https://www.barnettarchitecture.com/projects/micro-house",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/two-flat/index.html": {
+   "slug": "copy-of-channel",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 3,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Two-Flat — Multi-unit &amp; renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 74,
+    "descriptionLength": 160,
+    "canonical": "https://www.barnettarchitecture.com/projects/two-flat",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/folded-roof-patio/index.html": {
+   "slug": "copy-of-folded-roof-1",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 6,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 6,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 2,
+    "recomposed": 0,
+    "photos": 2,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Folded Roof Patio — Outdoor living, Madison, WI | Barnett Architecture",
+    "titleLength": 70,
+    "descriptionLength": 159,
+    "canonical": "https://www.barnettarchitecture.com/projects/folded-roof-patio",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/potter-studio/index.html": {
+   "slug": "copy-of-folded-roof-2",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 10,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 10,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 6,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Potter Studio + — Addition &amp; renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 79,
+    "descriptionLength": 161,
+    "canonical": "https://www.barnettarchitecture.com/projects/potter-studio",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/pond-house/index.html": {
+   "slug": "copy-of-folded-roof",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 11,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 11,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 7,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Pond — New home, Westchester County, NY | Barnett Architecture",
+    "titleLength": 62,
+    "descriptionLength": 149,
+    "canonical": "https://www.barnettarchitecture.com/projects/pond-house",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/three-gables/index.html": {
+   "slug": "copy-of-green-ribbon",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 14,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 14,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 10,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Three Gables — New home, Madison, WI | Barnett Architecture",
+    "titleLength": 59,
+    "descriptionLength": 151,
+    "canonical": "https://www.barnettarchitecture.com/projects/three-gables",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "photography/wisconsin/index.html": {
+   "slug": "copy-of-illinois",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 31,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 31,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 24,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Wisconsin — Photography collection, Midwest | Barnett Architecture",
+    "titleLength": 66,
+    "descriptionLength": 154,
+    "canonical": "https://www.barnettarchitecture.com/photography/wisconsin",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "photography/fields-of-vision-2024/index.html": {
+   "slug": "copy-of-iowa-2022-exhbit",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 2,
+    "recomposed": 2,
+    "photos": 2,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Fields of Vision — Photography collection, exhibit | Barnett Architecture",
+    "titleLength": 73,
+    "descriptionLength": 152,
+    "canonical": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "photography/illinois/index.html": {
+   "slug": "copy-of-iowa-color",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 98,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 98,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 91,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Illinois — Photography collection, Midwest | Barnett Architecture",
+    "titleLength": 65,
+    "descriptionLength": 153,
+    "canonical": "https://www.barnettarchitecture.com/photography/illinois",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "photography/iowa/index.html": {
+   "slug": "copy-of-iowa",
+   "type": "gallery",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 96,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 96,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 89,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Iowa — Photography collection, Midwest | Barnett Architecture",
+    "titleLength": 61,
+    "descriptionLength": 149,
+    "canonical": "https://www.barnettarchitecture.com/photography/iowa",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "projects/condo-kitchen/index.html": {
+   "slug": "copy-of-island-kitchen-1",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 5,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Condo Kitchen — Kitchen, Madison, WI | Barnett Architecture",
+    "titleLength": 59,
+    "descriptionLength": 143,
+    "canonical": "https://www.barnettarchitecture.com/projects/condo-kitchen",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/tube/index.html": {
+   "slug": "copy-of-island-kitchen",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 11,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 11,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 7,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Tube — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 53,
+    "descriptionLength": 159,
+    "canonical": "https://www.barnettarchitecture.com/projects/tube",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/synagogue-study/index.html": {
+   "slug": "copy-of-meeting-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 5,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Synagogue Study — Master plan &amp; study, Wisconsin | Barnett Architecture",
+    "titleLength": 75,
+    "descriptionLength": 160,
+    "canonical": "https://www.barnettarchitecture.com/projects/synagogue-study",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "photography/minnesota/index.html": {
+   "slug": "copy-of-mexico-places-1",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 15,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 15,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 8,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Minnesota — Photography collection, Midwest | Barnett Architecture",
+    "titleLength": 66,
+    "descriptionLength": 153,
+    "canonical": "https://www.barnettarchitecture.com/photography/minnesota",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "photography/mexico-faces/index.html": {
+   "slug": "copy-of-mexico-places",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 31,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 31,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 24,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Mexico — Faces — Photography collection, Central Mexico | Barnett Architecture",
+    "titleLength": 78,
+    "descriptionLength": 156,
+    "canonical": "https://www.barnettarchitecture.com/photography/mexico-faces",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "projects/50s-redoux/index.html": {
+   "slug": "copy-of-micro-house-1",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 13,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 13,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 2,
+    "recomposed": 0,
+    "photos": 9,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "50's Redoux — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 60,
+    "descriptionLength": 158,
+    "canonical": "https://www.barnettarchitecture.com/projects/50s-redoux",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/island-kitchen/index.html": {
+   "slug": "copy-of-micro-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Island Kitchen — Kitchen, Madison, WI | Barnett Architecture",
+    "titleLength": 60,
+    "descriptionLength": 157,
+    "canonical": "https://www.barnettarchitecture.com/projects/island-kitchen",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "photography/iowa-2022-exhibit/index.html": {
+   "slug": "copy-of-minnesota",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 11,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 11,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 1,
+    "recomposed": 1,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Iowa 2022 Exhibit — Photography collection, exhibit | Barnett Architecture",
+    "titleLength": 74,
+    "descriptionLength": 150,
+    "canonical": "https://www.barnettarchitecture.com/photography/iowa-2022-exhibit",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "projects/mid-century/index.html": {
+   "slug": "copy-of-pond",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Mid-Century — Renovation &amp; addition, Madison, WI | Barnett Architecture",
+    "titleLength": 75,
+    "descriptionLength": 153,
+    "canonical": "https://www.barnettarchitecture.com/projects/mid-century",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/passive-light/index.html": {
+   "slug": "copy-of-push-pull",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Passive Light — New home, Madison, WI | Barnett Architecture",
+    "titleLength": 60,
+    "descriptionLength": 143,
+    "canonical": "https://www.barnettarchitecture.com/projects/passive-light",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/ridgewood-swim-club-ii/index.html": {
+   "slug": "copy-of-wil-mar-center",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 9,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 5,
+    "recomposed": 0,
+    "photos": 5,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Ridgewood Swim Club II — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 71,
+    "descriptionLength": 158,
+    "canonical": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/designcraft/index.html": {
+   "slug": "designcraft",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "designCraft — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 60,
+    "descriptionLength": 145,
+    "canonical": "https://www.barnettarchitecture.com/projects/designcraft",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/folded-roof/index.html": {
+   "slug": "folded-roof",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 7,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 3,
+    "recomposed": 0,
+    "photos": 3,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Folded Roof — Addition &amp; renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 75,
+    "descriptionLength": 159,
+    "canonical": "https://www.barnettarchitecture.com/projects/folded-roof",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/green-ribbon/index.html": {
+   "slug": "green-ribbon",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 10,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 10,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 6,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Green Ribbon — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 61,
+    "descriptionLength": 159,
+    "canonical": "https://www.barnettarchitecture.com/projects/green-ribbon",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/hill-farm-swim-club/index.html": {
+   "slug": "hill-farm-swim-club",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Hill Farm Swim Club — Master plan &amp; study, renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 93,
+    "descriptionLength": 155,
+    "canonical": "https://www.barnettarchitecture.com/projects/hill-farm-swim-club",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "index.html": {
+   "slug": "index",
+   "type": "landing",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 16,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 16,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": []
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Architectural practice in Madison, Wisconsin | Barnett Architecture",
+    "titleLength": 67,
+    "descriptionLength": 157,
+    "canonical": "https://www.barnettarchitecture.com/",
+    "jsonLd": [
+     "LocalBusiness",
+     "ProfessionalService",
+     "WebPage",
+     "WebSite"
+    ]
+   }
+  },
+  "projects/meeting-house/index.html": {
+   "slug": "meeting-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 6,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 6,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Meeting House — New building, Downers Grove, IL | Barnett Architecture",
+    "titleLength": 70,
+    "descriptionLength": 159,
+    "canonical": "https://www.barnettarchitecture.com/projects/meeting-house",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "photography/mexico-places/index.html": {
+   "slug": "mexico",
+   "type": "gallery",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 17,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 17,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../../photography/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 10,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Mexico — Places — Photography collection, Central Mexico | Barnett Architecture",
+    "titleLength": 79,
+    "descriptionLength": 157,
+    "canonical": "https://www.barnettarchitecture.com/photography/mexico-places",
+    "jsonLd": [
+     "BreadcrumbList",
+     "ImageGallery",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "photography/index.html": {
+   "slug": "photography",
+   "type": "photo-hub",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 17,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../photography/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 17,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../photography/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 6,
+    "recomposed": 3,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Photography — Collections, Midwest and central Mexico | Barnett Architecture",
+    "titleLength": 76,
+    "descriptionLength": 156,
+    "canonical": "https://www.barnettarchitecture.com/photography",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CollectionPage",
+     "ItemList",
+     "LocalBusiness",
+     "Person",
+     "ProfessionalService",
+     "WebSite"
+    ]
+   }
+  },
+  "about/process/index.html": {
+   "slug": "process",
+   "type": "static",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../about/process/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../about/process/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 10,
+    "recomposed": 1,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Process — Architect, Madison, WI | Barnett Architecture",
+    "titleLength": 55,
+    "descriptionLength": 155,
+    "canonical": "https://www.barnettarchitecture.com/about/process",
+    "jsonLd": [
+     "BreadcrumbList",
+     "FAQPage",
+     "LocalBusiness",
+     "ProfessionalService",
+     "WebPage"
+    ]
+   }
+  },
+  "residential/index.html": {
+   "slug": "residential",
+   "type": "listing",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 22,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 22,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Residential architecture — Madison, WI | Barnett Architecture",
+    "titleLength": 61,
+    "descriptionLength": 158,
+    "canonical": "https://www.barnettarchitecture.com/residential",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CollectionPage",
+     "ItemList",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/ridgewood-swim-club/index.html": {
+   "slug": "ridgewood-swim-club",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 8,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Ridgewood Swim Club I — Master plan &amp; study, Madison, WI | Barnett Architecture",
+    "titleLength": 83,
+    "descriptionLength": 157,
+    "canonical": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/stone-and-siding/index.html": {
+   "slug": "stone-house",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 12,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 12,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 5,
+    "recomposed": 0,
+    "photos": 8,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Stone and Siding — Renovation, Mequon, WI | Barnett Architecture",
+    "titleLength": 64,
+    "descriptionLength": 168,
+    "canonical": "https://www.barnettarchitecture.com/projects/stone-and-siding",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "about/todd-barnett/index.html": {
+   "slug": "team",
+   "type": "static",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../about/todd-barnett/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 1,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../about/todd-barnett/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 9,
+    "recomposed": 2,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Todd Barnett — Architect, Madison, WI | Barnett Architecture",
+    "titleLength": 60,
+    "descriptionLength": 159,
+    "canonical": "https://www.barnettarchitecture.com/about/todd-barnett",
+    "jsonLd": [
+     "BreadcrumbList",
+     "LocalBusiness",
+     "ProfessionalService",
+     "ProfilePage"
+    ]
+   }
+  },
+  "testimonials/index.html": {
+   "slug": "testimonials",
+   "type": "static",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 3,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../testimonials/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 3,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../testimonials/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 0,
+    "recomposed": 0,
+    "photos": 0,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Testimonials — Architect, Madison, WI | Barnett Architecture",
+    "titleLength": 60,
+    "descriptionLength": 153,
+    "canonical": "https://www.barnettarchitecture.com/testimonials",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CollectionPage",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/wil-mar-center/index.html": {
+   "slug": "wil-mar-center",
+   "type": "project",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 8,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 6,
+    "recomposed": 0,
+    "photos": 4,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Wil-Mar Center — Renovation, Madison, WI | Barnett Architecture",
+    "titleLength": 63,
+    "descriptionLength": 154,
+    "canonical": "https://www.barnettarchitecture.com/projects/wil-mar-center",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/willy-street/index.html": {
+   "slug": "willy-street",
+   "type": "project",
+   "renderBranch": "A",
+   "fidelityTier": "archetype",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 13,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "absolute",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 13,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "fixed",
+     "navCurrent": [
+      "../../projects/index.html=true"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": {
+    "capturedStrings": 4,
+    "recomposed": 0,
+    "photos": 9,
+    "missingPhotos": 0
+   },
+   "metadata": {
+    "title": "Willy Street — New home, Madison, WI | Barnett Architecture",
+    "titleLength": 59,
+    "descriptionLength": 150,
+    "canonical": "https://www.barnettarchitecture.com/projects/willy-street",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CreativeWork",
+     "ImageGallery",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "projects/index.html": {
+   "slug": "projects",
+   "type": "listing",
+   "renderBranch": "A'",
+   "fidelityTier": "sibling",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 29,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../projects/index.html=page"
+     ],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 29,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [
+      "../projects/index.html=page"
+     ]
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": "n/a (new page)",
+   "metadata": {
+    "title": "Projects — Residential &amp; commercial architecture, Madison, WI | Barnett Architecture",
+    "titleLength": 88,
+    "descriptionLength": 149,
+    "canonical": "https://www.barnettarchitecture.com/projects",
+    "jsonLd": [
+     "BreadcrumbList",
+     "CollectionPage",
+     "ItemList",
+     "LocalBusiness",
+     "ProfessionalService"
+    ]
+   }
+  },
+  "404.html": {
+   "slug": "404",
+   "type": "unique",
+   "renderBranch": "B",
+   "fidelityTier": "thin",
+   "pass": true,
+   "issues": [],
+   "viewports": {
+    "390": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 0,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": [],
+     "menuButton": "opens/closes (Esc returns focus)"
+    },
+    "1440": {
+     "consoleErrors": 0,
+     "failedRequests": 0,
+     "http4xx5xx": 0,
+     "overflowPx": 0,
+     "h1": 1,
+     "images": 0,
+     "imagesWithoutAlt": 0,
+     "brokenImages": 0,
+     "header": "sticky",
+     "navCurrent": []
+    }
+   },
+   "noJs390": {
+    "navVisible": true,
+    "items": 4,
+    "overflowPx": 0,
+    "burgerShown": false
+   },
+   "internalRefsUnresolved": 0,
+   "contentCount": "n/a (new page)",
+   "metadata": {
+    "title": "Page not found | Barnett Architecture",
+    "titleLength": 37,
+    "descriptionLength": 138,
+    "canonical": null,
+    "jsonLd": [
+     "WebPage"
+    ]
+   }
+  }
+ }
+}

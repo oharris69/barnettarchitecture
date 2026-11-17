@@ -1,0 +1,35 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-11-17T18:43:06Z
+  revisedAt:        2026-11-17T20:00:00Z (canon merge: real <button> burger, collapses only with JS (html.js); aria-current set per page by the shell — see chrome.mjs)
+  sourceSlug:       index
+  sourcePrototype:  stardust/prototypes/index-proposed.html
+  region:           header
+  stardustVersion:  0.32.1
+-->
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="/" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/photography">Photography</a></li>
+        <li class="ds-nav__group">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="/about">About</a></li>
+              <li><a href="/about/process">Process</a></li>
+              <li><a href="/about/todd-barnett">Todd Barnett</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

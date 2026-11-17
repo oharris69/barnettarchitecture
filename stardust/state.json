@@ -1,0 +1,2000 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-11-17T20:24:53Z",
+    "mode": "prep",
+    "stardustVersion": "0.32.1"
+  },
+  "site": {
+    "originUrl": "https://www.barnettarchitecture.com",
+    "deployUrl": null,
+    "extractedAt": "2026-11-17T16:42:14.715Z",
+    "pageCap": 0,
+    "totalDiscovered": 48,
+    "crawled": 48,
+    "platform": "wix",
+    "captureGaps": []
+  },
+  "direction": {
+    "resolvedAt": "2026-11-17T17:20:00Z",
+    "phrase": "Bold new look (hands-off) — migrate with best practices, SEO, GEO, taxonomy, images, curated photography",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "reimagined"
+  },
+  "handsOff": true,
+  "flow": "redesign",
+  "flowChosenAt": "2026-11-17T16:42:14.715Z",
+  "flowSource": "question",
+  "pages": [
+    {
+      "slug": "about",
+      "url": "https://www.barnettarchitecture.com/about",
+      "title": "About",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:29.705Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:18:22Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:18:22Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/about.json",
+      "prototypePath": "stardust/prototypes/about-proposed.html",
+      "migratedPath": "stardust/migrated/about/index.html"
+    },
+    {
+      "slug": "blank",
+      "url": "https://www.barnettarchitecture.com/blank",
+      "title": "40's Re-Make",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:35.195Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blank.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/40s-re-make/index.html"
+    },
+    {
+      "slug": "box-house",
+      "url": "https://www.barnettarchitecture.com/box-house",
+      "title": "Push-Pull",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:39.642Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/box-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/push-pull/index.html"
+    },
+    {
+      "slug": "channel-house",
+      "url": "https://www.barnettarchitecture.com/channel-house",
+      "title": "Channel",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:20.800Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/channel-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/channel-house/index.html"
+    },
+    {
+      "slug": "commercial",
+      "url": "https://www.barnettarchitecture.com/commercial",
+      "title": "Commercial",
+      "type": "listing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:32.102Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/commercial.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/commercial/index.html"
+    },
+    {
+      "slug": "contact",
+      "url": "https://www.barnettarchitecture.com/contact",
+      "title": "Contact",
+      "type": "form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:00.271Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:18:22Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:18:22Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/contact.json",
+      "prototypePath": "stardust/prototypes/contact-proposed.html",
+      "migratedPath": "stardust/migrated/contact/index.html"
+    },
+    {
+      "slug": "copy-of-40-s-re-make",
+      "url": "https://www.barnettarchitecture.com/copy-of-40-s-re-make",
+      "title": "70's Re-Make",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:45.109Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-40-s-re-make.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/70s-re-make/index.html"
+    },
+    {
+      "slug": "copy-of-barnett-architecture",
+      "url": "https://www.barnettarchitecture.com/copy-of-barnett-architecture",
+      "title": "1990-2006",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:47.200Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:53Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-barnett-architecture.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/testimonials/index.html"
+    },
+    {
+      "slug": "copy-of-channel-1",
+      "url": "https://www.barnettarchitecture.com/copy-of-channel-1",
+      "title": "Solar Court",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:50.937Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-channel-1.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/solar-court/index.html"
+    },
+    {
+      "slug": "copy-of-channel-2",
+      "url": "https://www.barnettarchitecture.com/copy-of-channel-2",
+      "title": "Tudor Extension",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:13.902Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-channel-2.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/tudor-extension/index.html"
+    },
+    {
+      "slug": "copy-of-channel-house",
+      "url": "https://www.barnettarchitecture.com/copy-of-channel-house",
+      "title": "Micro-House",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:07.304Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-channel-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/micro-house/index.html"
+    },
+    {
+      "slug": "copy-of-channel",
+      "url": "https://www.barnettarchitecture.com/copy-of-channel",
+      "title": "Two-Flat",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:43.323Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-channel.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/two-flat/index.html"
+    },
+    {
+      "slug": "copy-of-folded-roof-1",
+      "url": "https://www.barnettarchitecture.com/copy-of-folded-roof-1",
+      "title": "Folded Roof Patio",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:30.704Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-folded-roof-1.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/folded-roof-patio/index.html"
+    },
+    {
+      "slug": "copy-of-folded-roof-2",
+      "url": "https://www.barnettarchitecture.com/copy-of-folded-roof-2",
+      "title": "Potter Studio +",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:57.294Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-folded-roof-2.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/potter-studio/index.html"
+    },
+    {
+      "slug": "copy-of-folded-roof",
+      "url": "https://www.barnettarchitecture.com/copy-of-folded-roof",
+      "title": "Pond",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:28.529Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:49Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-folded-roof.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/pond-house/index.html"
+    },
+    {
+      "slug": "copy-of-green-ribbon",
+      "url": "https://www.barnettarchitecture.com/copy-of-green-ribbon",
+      "title": "tHree Gables",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:19.736Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-green-ribbon.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/three-gables/index.html"
+    },
+    {
+      "slug": "copy-of-illinois",
+      "url": "https://www.barnettarchitecture.com/copy-of-illinois",
+      "title": "Wisconsin",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:06.502Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-illinois.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/wisconsin/index.html"
+    },
+    {
+      "slug": "copy-of-iowa-2022-exhbit",
+      "url": "https://www.barnettarchitecture.com/copy-of-iowa-2022-exhbit",
+      "title": "Fields of Vision 2024 Exhibit",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:23.944Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-iowa-2022-exhbit.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/fields-of-vision-2024/index.html"
+    },
+    {
+      "slug": "copy-of-iowa-color",
+      "url": "https://www.barnettarchitecture.com/copy-of-iowa-color",
+      "title": "Illinois",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:44.534Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-iowa-color.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/illinois/index.html"
+    },
+    {
+      "slug": "copy-of-iowa",
+      "url": "https://www.barnettarchitecture.com/copy-of-iowa",
+      "title": "Iowa",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:15.717Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:34:54Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:34:54Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-iowa.json",
+      "prototypePath": "stardust/prototypes/copy-of-iowa-proposed.html",
+      "migratedPath": "stardust/migrated/photography/iowa/index.html"
+    },
+    {
+      "slug": "copy-of-island-kitchen-1",
+      "url": "https://www.barnettarchitecture.com/copy-of-island-kitchen-1",
+      "title": "Condo Kitchen",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:44.930Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-island-kitchen-1.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/condo-kitchen/index.html"
+    },
+    {
+      "slug": "copy-of-island-kitchen",
+      "url": "https://www.barnettarchitecture.com/copy-of-island-kitchen",
+      "title": "Tube",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:41.600Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-island-kitchen.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/tube/index.html"
+    },
+    {
+      "slug": "copy-of-meeting-house",
+      "url": "https://www.barnettarchitecture.com/copy-of-meeting-house",
+      "title": "Synagogue Study",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:22.076Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-meeting-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/synagogue-study/index.html"
+    },
+    {
+      "slug": "copy-of-mexico-places-1",
+      "url": "https://www.barnettarchitecture.com/copy-of-mexico-places-1",
+      "title": "Minnesota",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:47.925Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-mexico-places-1.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/minnesota/index.html"
+    },
+    {
+      "slug": "copy-of-mexico-places",
+      "url": "https://www.barnettarchitecture.com/copy-of-mexico-places",
+      "title": "Mexico - Faces",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:53.752Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:50Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-mexico-places.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/mexico-faces/index.html"
+    },
+    {
+      "slug": "copy-of-micro-house-1",
+      "url": "https://www.barnettarchitecture.com/copy-of-micro-house-1",
+      "title": "50's Redoux",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:09.739Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-micro-house-1.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/50s-redoux/index.html"
+    },
+    {
+      "slug": "copy-of-micro-house",
+      "url": "https://www.barnettarchitecture.com/copy-of-micro-house",
+      "title": "Island Kitchen",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:37.342Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-micro-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/island-kitchen/index.html"
+    },
+    {
+      "slug": "copy-of-minnesota",
+      "url": "https://www.barnettarchitecture.com/copy-of-minnesota",
+      "title": "Iowa 2022 Exhbit",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:17.651Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-minnesota.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/iowa-2022-exhibit/index.html"
+    },
+    {
+      "slug": "copy-of-pond",
+      "url": "https://www.barnettarchitecture.com/copy-of-pond",
+      "title": "Mid-Century",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:38.790Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-pond.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/mid-century/index.html"
+    },
+    {
+      "slug": "copy-of-push-pull",
+      "url": "https://www.barnettarchitecture.com/copy-of-push-pull",
+      "title": "Passive Light",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:03.790Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-push-pull.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/passive-light/index.html"
+    },
+    {
+      "slug": "copy-of-testimonials",
+      "url": "https://www.barnettarchitecture.com/copy-of-testimonials",
+      "title": "2007-Current",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:27.624Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:53Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-testimonials.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/testimonials/index.html"
+    },
+    {
+      "slug": "copy-of-wil-mar-center",
+      "url": "https://www.barnettarchitecture.com/copy-of-wil-mar-center",
+      "title": "Ridgewood Swim Club II",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:03.995Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/copy-of-wil-mar-center.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/ridgewood-swim-club-ii/index.html"
+    },
+    {
+      "slug": "designcraft",
+      "url": "https://www.barnettarchitecture.com/designcraft",
+      "title": "designCraft",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:57.804Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/designcraft.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/designcraft/index.html"
+    },
+    {
+      "slug": "folded-roof",
+      "url": "https://www.barnettarchitecture.com/folded-roof",
+      "title": "Folded Roof",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:48.729Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/folded-roof.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/folded-roof/index.html"
+    },
+    {
+      "slug": "green-ribbon",
+      "url": "https://www.barnettarchitecture.com/green-ribbon",
+      "title": "Green Ribbon",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:10.734Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/green-ribbon.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/green-ribbon/index.html"
+    },
+    {
+      "slug": "hill-farm-swim-club",
+      "url": "https://www.barnettarchitecture.com/hill-farm-swim-club",
+      "title": "Hill Farm Swim Club",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:37.890Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hill-farm-swim-club.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/hill-farm-swim-club/index.html"
+    },
+    {
+      "slug": "index",
+      "url": "https://www.barnettarchitecture.com/",
+      "title": "Home",
+      "type": "landing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:30.499Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T18:41:45Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T18:41:45Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    },
+    {
+      "slug": "meeting-house",
+      "url": "https://www.barnettarchitecture.com/meeting-house",
+      "title": "Meeting House",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:30.695Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/meeting-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/meeting-house/index.html"
+    },
+    {
+      "slug": "mexico",
+      "url": "https://www.barnettarchitecture.com/mexico",
+      "title": "Mexico - Places",
+      "type": "gallery",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:40.015Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/mexico.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/photography/mexico-places/index.html"
+    },
+    {
+      "slug": "photography",
+      "url": "https://www.barnettarchitecture.com/photography",
+      "title": "Photography",
+      "type": "photo-hub",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:12.745Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:34:54Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:34:54Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/photography.json",
+      "prototypePath": "stardust/prototypes/photography-proposed.html",
+      "migratedPath": "stardust/migrated/photography/index.html"
+    },
+    {
+      "slug": "process",
+      "url": "https://www.barnettarchitecture.com/process",
+      "title": "Process",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:32.046Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:18:22Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:18:22Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/process.json",
+      "prototypePath": "stardust/prototypes/process-proposed.html",
+      "migratedPath": "stardust/migrated/about/process/index.html"
+    },
+    {
+      "slug": "residential",
+      "url": "https://www.barnettarchitecture.com/residential",
+      "title": "Residential",
+      "type": "listing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:54.858Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:20:43Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:20:43Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/residential.json",
+      "prototypePath": "stardust/prototypes/residential-proposed.html",
+      "migratedPath": "stardust/migrated/residential/index.html"
+    },
+    {
+      "slug": "ridgewood-swim-club",
+      "url": "https://www.barnettarchitecture.com/ridgewood-swim-club",
+      "title": "Ridgewood Swim Club I",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:37.581Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/ridgewood-swim-club.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/ridgewood-swim-club/index.html"
+    },
+    {
+      "slug": "stone-house",
+      "url": "https://www.barnettarchitecture.com/stone-house",
+      "title": "Stone and Siding",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:47.615Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/stone-house.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/stone-and-siding/index.html"
+    },
+    {
+      "slug": "team",
+      "url": "https://www.barnettarchitecture.com/team",
+      "title": "Team",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:41.300Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/team.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/about/todd-barnett/index.html"
+    },
+    {
+      "slug": "testimonials",
+      "url": "https://www.barnettarchitecture.com/testimonials",
+      "title": "Testimonials",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:01.083Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/testimonials.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/testimonials/index.html"
+    },
+    {
+      "slug": "wil-mar-center",
+      "url": "https://www.barnettarchitecture.com/wil-mar-center",
+      "title": "Wil-Mar Center",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:37:34.523Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/wil-mar-center.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/projects/wil-mar-center/index.html"
+    },
+    {
+      "slug": "willy-street",
+      "url": "https://www.barnettarchitecture.com/willy-street",
+      "title": "Willy Street",
+      "type": "project",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-17T16:36:50.299Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-11-17T17:48:15Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-17T19:20:43Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-17T19:20:43Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-17T20:24:53Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/willy-street.json",
+      "prototypePath": "stardust/prototypes/willy-street-proposed.html",
+      "migratedPath": "stardust/migrated/projects/willy-street/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-11-17T20:16:59Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/about",
+        "outputPath": "about/index.html",
+        "slug": "about",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/about"
+      },
+      {
+        "sourceUrl": "/blank",
+        "outputPath": "projects/40s-re-make/index.html",
+        "slug": "blank",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/40s-re-make"
+      },
+      {
+        "sourceUrl": "/box-house",
+        "outputPath": "projects/push-pull/index.html",
+        "slug": "box-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/push-pull"
+      },
+      {
+        "sourceUrl": "/channel-house",
+        "outputPath": "projects/channel-house/index.html",
+        "slug": "channel-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/channel-house"
+      },
+      {
+        "sourceUrl": "/commercial",
+        "outputPath": "commercial/index.html",
+        "slug": "commercial",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/commercial"
+      },
+      {
+        "sourceUrl": "/contact",
+        "outputPath": "contact/index.html",
+        "slug": "contact",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/contact"
+      },
+      {
+        "sourceUrl": "/copy-of-40-s-re-make",
+        "outputPath": "projects/70s-re-make/index.html",
+        "slug": "copy-of-40-s-re-make",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/70s-re-make"
+      },
+      {
+        "sourceUrl": "/copy-of-channel-1",
+        "outputPath": "projects/solar-court/index.html",
+        "slug": "copy-of-channel-1",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/solar-court"
+      },
+      {
+        "sourceUrl": "/copy-of-channel-2",
+        "outputPath": "projects/tudor-extension/index.html",
+        "slug": "copy-of-channel-2",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/tudor-extension"
+      },
+      {
+        "sourceUrl": "/copy-of-channel-house",
+        "outputPath": "projects/micro-house/index.html",
+        "slug": "copy-of-channel-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/micro-house"
+      },
+      {
+        "sourceUrl": "/copy-of-channel",
+        "outputPath": "projects/two-flat/index.html",
+        "slug": "copy-of-channel",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/two-flat"
+      },
+      {
+        "sourceUrl": "/copy-of-folded-roof-1",
+        "outputPath": "projects/folded-roof-patio/index.html",
+        "slug": "copy-of-folded-roof-1",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/folded-roof-patio"
+      },
+      {
+        "sourceUrl": "/copy-of-folded-roof-2",
+        "outputPath": "projects/potter-studio/index.html",
+        "slug": "copy-of-folded-roof-2",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/potter-studio"
+      },
+      {
+        "sourceUrl": "/copy-of-folded-roof",
+        "outputPath": "projects/pond-house/index.html",
+        "slug": "copy-of-folded-roof",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/pond-house"
+      },
+      {
+        "sourceUrl": "/copy-of-green-ribbon",
+        "outputPath": "projects/three-gables/index.html",
+        "slug": "copy-of-green-ribbon",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/three-gables"
+      },
+      {
+        "sourceUrl": "/copy-of-illinois",
+        "outputPath": "photography/wisconsin/index.html",
+        "slug": "copy-of-illinois",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/wisconsin"
+      },
+      {
+        "sourceUrl": "/copy-of-iowa-2022-exhbit",
+        "outputPath": "photography/fields-of-vision-2024/index.html",
+        "slug": "copy-of-iowa-2022-exhbit",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/fields-of-vision-2024"
+      },
+      {
+        "sourceUrl": "/copy-of-iowa-color",
+        "outputPath": "photography/illinois/index.html",
+        "slug": "copy-of-iowa-color",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/illinois"
+      },
+      {
+        "sourceUrl": "/copy-of-iowa",
+        "outputPath": "photography/iowa/index.html",
+        "slug": "copy-of-iowa",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/iowa"
+      },
+      {
+        "sourceUrl": "/copy-of-island-kitchen-1",
+        "outputPath": "projects/condo-kitchen/index.html",
+        "slug": "copy-of-island-kitchen-1",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/condo-kitchen"
+      },
+      {
+        "sourceUrl": "/copy-of-island-kitchen",
+        "outputPath": "projects/tube/index.html",
+        "slug": "copy-of-island-kitchen",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/tube"
+      },
+      {
+        "sourceUrl": "/copy-of-meeting-house",
+        "outputPath": "projects/synagogue-study/index.html",
+        "slug": "copy-of-meeting-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/synagogue-study"
+      },
+      {
+        "sourceUrl": "/copy-of-mexico-places-1",
+        "outputPath": "photography/minnesota/index.html",
+        "slug": "copy-of-mexico-places-1",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/minnesota"
+      },
+      {
+        "sourceUrl": "/copy-of-mexico-places",
+        "outputPath": "photography/mexico-faces/index.html",
+        "slug": "copy-of-mexico-places",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/mexico-faces"
+      },
+      {
+        "sourceUrl": "/copy-of-micro-house-1",
+        "outputPath": "projects/50s-redoux/index.html",
+        "slug": "copy-of-micro-house-1",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/50s-redoux"
+      },
+      {
+        "sourceUrl": "/copy-of-micro-house",
+        "outputPath": "projects/island-kitchen/index.html",
+        "slug": "copy-of-micro-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/island-kitchen"
+      },
+      {
+        "sourceUrl": "/copy-of-minnesota",
+        "outputPath": "photography/iowa-2022-exhibit/index.html",
+        "slug": "copy-of-minnesota",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/iowa-2022-exhibit"
+      },
+      {
+        "sourceUrl": "/copy-of-pond",
+        "outputPath": "projects/mid-century/index.html",
+        "slug": "copy-of-pond",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/mid-century"
+      },
+      {
+        "sourceUrl": "/copy-of-push-pull",
+        "outputPath": "projects/passive-light/index.html",
+        "slug": "copy-of-push-pull",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/passive-light"
+      },
+      {
+        "sourceUrl": "/copy-of-wil-mar-center",
+        "outputPath": "projects/ridgewood-swim-club-ii/index.html",
+        "slug": "copy-of-wil-mar-center",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/ridgewood-swim-club-ii"
+      },
+      {
+        "sourceUrl": "/designcraft",
+        "outputPath": "projects/designcraft/index.html",
+        "slug": "designcraft",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/designcraft"
+      },
+      {
+        "sourceUrl": "/folded-roof",
+        "outputPath": "projects/folded-roof/index.html",
+        "slug": "folded-roof",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/folded-roof"
+      },
+      {
+        "sourceUrl": "/green-ribbon",
+        "outputPath": "projects/green-ribbon/index.html",
+        "slug": "green-ribbon",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/green-ribbon"
+      },
+      {
+        "sourceUrl": "/hill-farm-swim-club",
+        "outputPath": "projects/hill-farm-swim-club/index.html",
+        "slug": "hill-farm-swim-club",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/hill-farm-swim-club"
+      },
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null,
+        "newUrl": "/"
+      },
+      {
+        "sourceUrl": "/meeting-house",
+        "outputPath": "projects/meeting-house/index.html",
+        "slug": "meeting-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/meeting-house"
+      },
+      {
+        "sourceUrl": "/mexico",
+        "outputPath": "photography/mexico-places/index.html",
+        "slug": "mexico",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography/mexico-places"
+      },
+      {
+        "sourceUrl": "/photography",
+        "outputPath": "photography/index.html",
+        "slug": "photography",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/photography"
+      },
+      {
+        "sourceUrl": "/process",
+        "outputPath": "about/process/index.html",
+        "slug": "process",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/about/process"
+      },
+      {
+        "sourceUrl": "/residential",
+        "outputPath": "residential/index.html",
+        "slug": "residential",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/residential"
+      },
+      {
+        "sourceUrl": "/ridgewood-swim-club",
+        "outputPath": "projects/ridgewood-swim-club/index.html",
+        "slug": "ridgewood-swim-club",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/ridgewood-swim-club"
+      },
+      {
+        "sourceUrl": "/stone-house",
+        "outputPath": "projects/stone-and-siding/index.html",
+        "slug": "stone-house",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/stone-and-siding"
+      },
+      {
+        "sourceUrl": "/team",
+        "outputPath": "about/todd-barnett/index.html",
+        "slug": "team",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/about/todd-barnett"
+      },
+      {
+        "sourceUrl": "/testimonials",
+        "outputPath": "testimonials/index.html",
+        "slug": "testimonials",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/testimonials"
+      },
+      {
+        "sourceUrl": "/wil-mar-center",
+        "outputPath": "projects/wil-mar-center/index.html",
+        "slug": "wil-mar-center",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/wil-mar-center"
+      },
+      {
+        "sourceUrl": "/willy-street",
+        "outputPath": "projects/willy-street/index.html",
+        "slug": "willy-street",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects/willy-street"
+      },
+      {
+        "sourceUrl": null,
+        "outputPath": "projects/index.html",
+        "slug": "projects",
+        "outputPathDefault": "trailing-slash",
+        "newUrl": "/projects"
+      },
+      {
+        "sourceUrl": null,
+        "outputPath": "404.html",
+        "slug": "404",
+        "outputPathDefault": null,
+        "newUrl": "/404.html"
+      }
+    ],
+    "totalAssetsBundled": 14,
+    "bundledAssets": [
+      "apple-touch-icon.png",
+      "canon.css",
+      "favicon-32.png",
+      "favicon-512.png",
+      "favicon.svg",
+      "fonts/hanken-grotesk-var-latin.e9201edd.woff2",
+      "fonts/spectral-300-italic-latin.b1dc3c4e.woff2",
+      "fonts/spectral-300-latin.3ff652c6.woff2",
+      "fonts/spectral-400-latin.cf8daee3.woff2",
+      "icon-192.png",
+      "icon-512.png",
+      "motion/lenis.min.css",
+      "motion/lenis.min.js",
+      "site.webmanifest"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "blank",
+        "file": "stardust/migrated/projects/40s-re-make/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "box-house",
+        "file": "stardust/migrated/projects/push-pull/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "channel-house",
+        "file": "stardust/migrated/projects/channel-house/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-40-s-re-make",
+        "file": "stardust/migrated/projects/70s-re-make/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-channel-1",
+        "file": "stardust/migrated/projects/solar-court/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-channel-2",
+        "file": "stardust/migrated/projects/tudor-extension/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-channel-house",
+        "file": "stardust/migrated/projects/micro-house/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-channel",
+        "file": "stardust/migrated/projects/two-flat/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-folded-roof-1",
+        "file": "stardust/migrated/projects/folded-roof-patio/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "copy-of-folded-roof-2",
+        "file": "stardust/migrated/projects/potter-studio/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-folded-roof",
+        "file": "stardust/migrated/projects/pond-house/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-green-ribbon",
+        "file": "stardust/migrated/projects/three-gables/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-island-kitchen-1",
+        "file": "stardust/migrated/projects/condo-kitchen/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-island-kitchen",
+        "file": "stardust/migrated/projects/tube/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-meeting-house",
+        "file": "stardust/migrated/projects/synagogue-study/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-micro-house-1",
+        "file": "stardust/migrated/projects/50s-redoux/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-micro-house",
+        "file": "stardust/migrated/projects/island-kitchen/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "copy-of-pond",
+        "file": "stardust/migrated/projects/mid-century/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-push-pull",
+        "file": "stardust/migrated/projects/passive-light/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-wil-mar-center",
+        "file": "stardust/migrated/projects/ridgewood-swim-club-ii/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "designcraft",
+        "file": "stardust/migrated/projects/designcraft/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "folded-roof",
+        "file": "stardust/migrated/projects/folded-roof/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "green-ribbon",
+        "file": "stardust/migrated/projects/green-ribbon/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "hill-farm-swim-club",
+        "file": "stardust/migrated/projects/hill-farm-swim-club/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "meeting-house",
+        "file": "stardust/migrated/projects/meeting-house/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "ridgewood-swim-club",
+        "file": "stardust/migrated/projects/ridgewood-swim-club/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "stone-house",
+        "file": "stardust/migrated/projects/stone-and-siding/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "wil-mar-center",
+        "file": "stardust/migrated/projects/wil-mar-center/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "willy-street",
+        "file": "stardust/migrated/projects/willy-street/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "commercial",
+        "file": "stardust/migrated/commercial/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "residential",
+        "file": "stardust/migrated/residential/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "projects",
+        "file": "stardust/migrated/projects/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-illinois",
+        "file": "stardust/migrated/photography/wisconsin/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "copy-of-iowa-2022-exhbit",
+        "file": "stardust/migrated/photography/fields-of-vision-2024/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-iowa-color",
+        "file": "stardust/migrated/photography/illinois/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-iowa",
+        "file": "stardust/migrated/photography/iowa/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-mexico-places-1",
+        "file": "stardust/migrated/photography/minnesota/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-mexico-places",
+        "file": "stardust/migrated/photography/mexico-faces/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "copy-of-minnesota",
+        "file": "stardust/migrated/photography/iowa-2022-exhibit/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "mexico",
+        "file": "stardust/migrated/photography/mexico-places/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "photography",
+        "file": "stardust/migrated/photography/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "about",
+        "file": "stardust/migrated/about/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "process",
+        "file": "stardust/migrated/about/process/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "team",
+        "file": "stardust/migrated/about/todd-barnett/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "testimonials",
+        "file": "stardust/migrated/testimonials/index.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "contact",
+        "file": "stardust/migrated/contact/index.html",
+        "assetsBundled": 9
+      },
+      {
+        "slug": "404",
+        "file": "stardust/migrated/404.html",
+        "assetsBundled": 9
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-11-17T20:16:59Z",
+      "rendered": [
+        "404"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    },
+    "urlMode": "new-urls: output paths follow stardust/taxonomy.json (iaFidelity reimagined), not the source URL — named deviation in stardust/direction.md; every changed URL is a 301 in stardust/migrated/redirects.csv",
+    "derivedState": "stardust/.work/migrate/state.json (driver input: pages at their new URLs; pageMap[].sourceUrl here is the Wix URL, newUrl the migrated path)",
+    "mergedPages": [
+      {
+        "slug": "copy-of-testimonials",
+        "sourceUrl": "/copy-of-testimonials",
+        "redirect": "/testimonials#2007-present",
+        "migratedPath": "stardust/migrated/testimonials/index.html"
+      },
+      {
+        "slug": "copy-of-barnett-architecture",
+        "sourceUrl": "/copy-of-barnett-architecture",
+        "redirect": "/testimonials#1990-2006",
+        "migratedPath": "stardust/migrated/testimonials/index.html"
+      }
+    ],
+    "newPages": [
+      {
+        "slug": "projects",
+        "url": "/projects",
+        "outputPath": "projects/index.html"
+      },
+      {
+        "slug": "404",
+        "url": "/404.html",
+        "outputPath": "404.html"
+      }
+    ],
+    "sitewide": [
+      "robots.txt",
+      "sitemap.xml",
+      "llms.txt",
+      "redirects.csv",
+      "_validation.json",
+      "assets/site.webmanifest"
+    ],
+    "validation": "stardust/migrated/_validation.json"
+  }
+}

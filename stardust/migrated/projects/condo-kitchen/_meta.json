@@ -1,0 +1,199 @@
+{
+  "slug": "copy-of-island-kitchen-1",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-island-kitchen-1",
+      "newPath": "/projects/condo-kitchen",
+      "outputPath": "projects/condo-kitchen/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-island-kitchen-1.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Condo Kitchen — Kitchen, Madison, WI | Barnett Architecture",
+    "description": "Condo Kitchen, a kitchen in Madison, WI by Barnett Architecture. This kitchen was self-designed and self-built by owner/architect Todd Barnett.",
+    "canonical": "https://www.barnettarchitecture.com/projects/condo-kitchen",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/condo-kitchen#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential architecture",
+            "item": "https://www.barnettarchitecture.com/residential"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Condo Kitchen",
+            "item": "https://www.barnettarchitecture.com/projects/condo-kitchen"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/condo-kitchen#work",
+        "name": "Condo Kitchen",
+        "url": "https://www.barnettarchitecture.com/projects/condo-kitchen",
+        "description": "This kitchen was self-designed and self-built by owner/architect Todd Barnett.",
+        "genre": "Architecture",
+        "keywords": "Residential, Kitchen, Historic context",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Madison, WI",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Madison",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_21cd4c69a0624b9fa05dd3d291d22a44~mv2.jpg/v1/fill/w_940,h_612,al_c,q_85,enc_auto/5c8b97_21cd4c69a0624b9fa05dd3d291d22a44~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_0f063b98a8614fc2b1058304f1915606~mv2.jpg/v1/fill/w_796,h_523,al_c,q_85,enc_auto/5c8b97_0f063b98a8614fc2b1058304f1915606~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_82c70c75325f44f1abb5f0d09eb0e129~mv2.jpg/v1/fill/w_1168,h_1794,al_c,q_85,enc_auto/5c8b97_82c70c75325f44f1abb5f0d09eb0e129~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_e7ebd4f41a024dd3b4f5807951987db2~mv2.jpg/v1/fill/w_1165,h_1798,al_c,q_85,enc_auto/5c8b97_e7ebd4f41a024dd3b4f5807951987db2~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png/v1/fill/w_1960,h_3008,al_c,q_85,enc_auto/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:55Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "fa0f2ce58a86",
+  "sourceProposedSha": "ccf6f19cc5ce",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 3/3 captured strings verbatim; photos 5/5 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/condo-kitchen/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/condo-kitchen/_meta.json",
+  "driverVersion": "1"
+}

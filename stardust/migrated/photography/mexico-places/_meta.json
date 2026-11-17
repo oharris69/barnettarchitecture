@@ -1,0 +1,286 @@
+{
+  "slug": "mexico",
+  "type": "gallery",
+  "renderBranch": "A'",
+  "template": "copy-of-iowa",
+  "modules": [
+    "photo-collection",
+    "breadcrumb",
+    "collection-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "darkroom",
+    "darkroom",
+    "darkroom",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/mexico",
+      "newPath": "/photography/mexico-places",
+      "outputPath": "photography/mexico-places/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/mexico.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Mexico — Places — Photography collection, Central Mexico | Barnett Architecture",
+    "description": "Mexico — Places: 10 photographs by Todd Barnett from the highlands of central Mexico: the color, beautiful architecture and warm people who embrace the land.",
+    "canonical": "https://www.barnettarchitecture.com/photography/mexico-places",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "name": "Barnett Architecture LLC",
+        "alternateName": "Barnett Architecture",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person",
+        "name": "Todd Barnett",
+        "jobTitle": "Architect",
+        "url": "https://www.barnettarchitecture.com/about/todd-barnett",
+        "worksFor": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.barnettarchitecture.com/#website",
+        "url": "https://www.barnettarchitecture.com/",
+        "name": "Barnett Architecture",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "ImageGallery",
+        "@id": "https://www.barnettarchitecture.com/photography/mexico-places#gallery",
+        "url": "https://www.barnettarchitecture.com/photography/mexico-places",
+        "name": "Mexico — Places",
+        "headline": "Mexico — Places — photographs by Todd Barnett",
+        "description": "Mexico — Places: 10 photographs by Todd Barnett from the highlands of central Mexico: the color, beautiful architecture and warm people who embrace the land.",
+        "inLanguage": "en-US",
+        "isPartOf": [
+          {
+            "@id": "https://www.barnettarchitecture.com/photography#webpage"
+          },
+          {
+            "@id": "https://www.barnettarchitecture.com/#website"
+          }
+        ],
+        "breadcrumb": {
+          "@id": "https://www.barnettarchitecture.com/photography/mexico-places#breadcrumb"
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_c07b96aa17bd4a90a0ab07a6f222f48d~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_c07b96aa17bd4a90a0ab07a6f222f48d~mv2.jpg",
+        "associatedMedia": [
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_fb249508ef0a481cad98cd46aa227f26~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_fb249508ef0a481cad98cd46aa227f26~mv2_d_4000_3000_s_4_2.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 1,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_90d3288ea10c4abf913c97a4d45724df.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_90d3288ea10c4abf913c97a4d45724df.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 2,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_483c6ed6fa0a4f7ca5eeb7aabaef8617~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_483c6ed6fa0a4f7ca5eeb7aabaef8617~mv2_d_4000_3000_s_4_2.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 3,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 4,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_9e8e969a0d334e93940c3513fcc6e492.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_9e8e969a0d334e93940c3513fcc6e492.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 5,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_1ec39941513a4c5288f9207df9b95956.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1ec39941513a4c5288f9207df9b95956.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 6,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_1f135a4893ed455d9507acb1187385d8.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1f135a4893ed455d9507acb1187385d8.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 7,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_a220801f61f549fb82af686833ec5734.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_a220801f61f549fb82af686833ec5734.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 8,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_c07b96aa17bd4a90a0ab07a6f222f48d~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_c07b96aa17bd4a90a0ab07a6f222f48d~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 9,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_51d759a3f8514521a5e35f9df8f6b566~mv2.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_51d759a3f8514521a5e35f9df8f6b566~mv2.jpg",
+            "width": 2400,
+            "height": 1800,
+            "position": 10,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/photography/mexico-places#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Photography",
+            "item": "https://www.barnettarchitecture.com/photography"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mexico — Places",
+            "item": "https://www.barnettarchitecture.com/photography/mexico-places"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:58Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "8d36ce480a3c",
+  "sourceProposedSha": "ebdd34d3bd65",
+  "fidelityTier": "sibling",
+  "archetypeSource": "copy-of-iowa",
+  "archetypeSha": "832858272f3b",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 0/0 captured strings verbatim; photos 10/10 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → photo-collection + photo-lightbox + wall-balance (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "photography/mexico-places/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "photography/mexico-places/_meta.json",
+  "driverVersion": "1"
+}

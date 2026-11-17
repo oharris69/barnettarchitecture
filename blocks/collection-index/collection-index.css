@@ -1,0 +1,251 @@
+/* collection-index — the darkroom wall (canon collection-index, --hub, --siblings) */
+/* stylelint-disable no-descending-specificity -- rules are ordered by component, not by specificity */
+.collection-index {
+  color: var(--color-bg);
+}
+
+.collection-index :focus-visible {
+  outline-color: var(--color-accent-light);
+}
+
+/* ---- default: wall of covers ---- */
+.collection-index .collection-index-wall {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-lg) 24px;
+  align-items: end;
+}
+
+.collection-index .collection-index-frame {
+  position: relative;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.collection-index .span-3 { grid-column: span 3; }
+.collection-index .span-4 { grid-column: span 4; }
+.collection-index .span-5 { grid-column: span 5; }
+.collection-index .span-6 { grid-column: span 6; }
+.collection-index .span-7 { grid-column: span 7; }
+.collection-index .span-8 { grid-column: span 8; }
+.collection-index .span-9 { grid-column: span 9; }
+.collection-index .span-12 { grid-column: span 12; }
+
+.collection-index .collection-index-img {
+  overflow: hidden;
+  background: var(--color-fg);
+  aspect-ratio: 3 / 2;
+}
+
+.collection-index .is-tall .collection-index-img {
+  aspect-ratio: 4 / 5;
+}
+
+.collection-index .collection-index-img picture {
+  display: block;
+  height: 100%;
+}
+
+.collection-index .collection-index-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms var(--ease-hover);
+}
+
+.collection-index .collection-index-frame:hover img,
+.collection-index .collection-index-card:hover img {
+  transform: scale(1.02);
+}
+
+.collection-index .collection-index-frame figcaption {
+  display: grid;
+  justify-content: start;
+  gap: 6px;
+}
+
+.collection-index .collection-index-title {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.collection-index .collection-index-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* the whole frame is the link target */
+.collection-index .collection-index-title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.collection-index .collection-index-meta {
+  margin: 0;
+  color: var(--color-muted-on-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.collection-index .collection-index-frame:has(a:focus-visible),
+.collection-index .collection-index-card:has(a:focus-visible) {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 6px;
+}
+
+.collection-index .collection-index-title a:focus-visible {
+  outline: none;
+}
+
+.collection-index .collection-index-divider {
+  grid-column: 1 / -1;
+  margin: 0 0 calc(var(--spacing-md) * -1);
+  color: var(--color-muted-on-dark);
+  font-family: var(--body-font-family);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+}
+
+.collection-index .collection-index-note {
+  position: relative;
+  z-index: 2;
+  max-width: 40ch;
+  color: var(--color-muted-on-dark);
+  font-size: var(--body-sm);
+  line-height: 1.5;
+}
+
+.collection-index .collection-index-note > * {
+  margin: 0;
+}
+
+.collection-index .collection-index-note a {
+  color: var(--color-accent-light);
+  text-underline-offset: 3px;
+}
+
+/* ---- selected: justified 2-up lead wall ---- */
+.collection-index .collection-index-selected {
+  --row-h: clamp(150px, 30vw, 420px);
+  --wall-gap: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--wall-gap);
+}
+
+.collection-index .collection-index-photo {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  flex: var(--ar) 1 calc(var(--ar) * var(--row-h));
+  max-width: calc(var(--ar) * var(--row-h) * 1.9);
+  display: grid;
+  gap: 10px;
+}
+
+.collection-index .collection-index-open {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: var(--ar);
+  background: color-mix(in srgb, var(--color-print) 6%, var(--color-darkroom));
+  cursor: zoom-in;
+}
+
+.collection-index .collection-index-open picture {
+  display: block;
+}
+
+.collection-index .collection-index-open img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms var(--ease-hover);
+}
+
+.collection-index .collection-index-open:hover img {
+  transform: scale(1.02);
+}
+
+.collection-index .collection-index-open:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 4px;
+}
+
+.collection-index .collection-index-photo figcaption {
+  padding-top: 2px;
+  color: var(--color-muted-on-dark);
+}
+
+.collection-index .collection-index-photo figcaption a {
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+.collection-index .collection-index-photo figcaption a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---- strip: more collections ---- */
+.collection-index .collection-index-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(150px, 1fr);
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+  scrollbar-color: var(--color-muted) transparent;
+}
+
+.collection-index .collection-index-strip li {
+  scroll-snap-align: start;
+}
+
+.collection-index .collection-index-card {
+  position: relative;
+  display: grid;
+  gap: 10px;
+}
+
+@media (width <= 899px) {
+  .collection-index .collection-index-wall .span-3 {
+    grid-column: span 4;
+  }
+
+  .collection-index .collection-index-wall :is(.span-4, .span-5, .span-6, .span-7, .span-8, .span-9) {
+    grid-column: span 12;
+  }
+}
+
+@media (width <= 599px) {
+  .collection-index .collection-index-wall {
+    row-gap: var(--spacing-md);
+  }
+
+  .collection-index .collection-index-wall .span-3 {
+    grid-column: span 6;
+  }
+
+  .collection-index .collection-index-selected {
+    --wall-gap: 12px;
+  }
+
+  .collection-index .collection-index-strip {
+    grid-auto-columns: 44vw;
+    gap: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collection-index img {
+    transition: none;
+  }
+}

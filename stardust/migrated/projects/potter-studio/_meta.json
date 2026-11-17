@@ -1,0 +1,200 @@
+{
+  "slug": "copy-of-folded-roof-2",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-folded-roof-2",
+      "newPath": "/projects/potter-studio",
+      "outputPath": "projects/potter-studio/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-folded-roof-2.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Potter Studio + — Addition &amp; renovation, Madison, WI | Barnett Architecture",
+    "description": "Potter Studio + — addition &amp; renovation, Madison, WI. This addition and renovation realized the goals of creating a pottery studio, welcoming entry, useable…",
+    "canonical": "https://www.barnettarchitecture.com/projects/potter-studio",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/potter-studio#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential architecture",
+            "item": "https://www.barnettarchitecture.com/residential"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Potter Studio +",
+            "item": "https://www.barnettarchitecture.com/projects/potter-studio"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/potter-studio#work",
+        "name": "Potter Studio +",
+        "url": "https://www.barnettarchitecture.com/projects/potter-studio",
+        "description": "This addition and renovation realized the goals of creating a pottery studio, welcoming entry, useable garage and first-floor laundry.",
+        "genre": "Architecture",
+        "keywords": "Residential, Addition, Renovation",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Madison, WI",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Madison",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_cc003cdf63f442fa808d2db8090a2601~mv2.jpg/v1/fill/w_2400,h_1599,al_c,q_85,enc_auto/5c8b97_cc003cdf63f442fa808d2db8090a2601~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_ac0db4c2f1044a709580f92b5714da86~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ac0db4c2f1044a709580f92b5714da86~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_2df7915f161e495092c38b601d8bce38~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_2df7915f161e495092c38b601d8bce38~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_109d7956487e47abb57815d02ac66d03~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_109d7956487e47abb57815d02ac66d03~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_5b05fbbf0e81490780e3048514113ec7~mv2.jpg/v1/fill/w_2278,h_1519,al_c,q_85,enc_auto/5c8b97_5b05fbbf0e81490780e3048514113ec7~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:54Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "fe2e8a44cd32",
+  "sourceProposedSha": "a9016cefb19c",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 3/3 captured strings verbatim; photos 6/6 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/potter-studio/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/potter-studio/_meta.json",
+  "driverVersion": "1"
+}

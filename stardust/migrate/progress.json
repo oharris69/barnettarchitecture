@@ -1,0 +1,208 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "driver": "/home/node/.excat-marketplaces/excat-extended/stardust/skills/migrate/scripts/migrate.mjs"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [],
+      "pages": 48,
+      "startedAt": "2026-11-17T20:10:01.119Z",
+      "endedAt": "2026-11-17T20:10:01.119Z",
+      "verdict": "49 pages (48 at new URLs + 404); 2 era pages are redirects"
+    },
+    "render-landing": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "slugs": [
+        "index"
+      ],
+      "startedAt": "2026-11-17T20:16:52.915Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:53.407Z"
+    },
+    "render-project-1": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "project"
+      ],
+      "pages": 8,
+      "slugs": [
+        "blank",
+        "box-house",
+        "channel-house",
+        "copy-of-40-s-re-make",
+        "copy-of-channel-1",
+        "copy-of-channel-2",
+        "copy-of-channel-house",
+        "copy-of-channel"
+      ],
+      "startedAt": "2026-11-17T20:16:53.431Z",
+      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:54.316Z"
+    },
+    "render-project-2": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "project"
+      ],
+      "pages": 8,
+      "slugs": [
+        "copy-of-folded-roof-1",
+        "copy-of-folded-roof-2",
+        "copy-of-folded-roof",
+        "copy-of-green-ribbon",
+        "copy-of-island-kitchen-1",
+        "copy-of-island-kitchen",
+        "copy-of-meeting-house",
+        "copy-of-micro-house-1"
+      ],
+      "startedAt": "2026-11-17T20:16:54.339Z",
+      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:55.434Z"
+    },
+    "render-project-3": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "project"
+      ],
+      "pages": 8,
+      "slugs": [
+        "copy-of-micro-house",
+        "copy-of-pond",
+        "copy-of-push-pull",
+        "copy-of-wil-mar-center",
+        "designcraft",
+        "folded-roof",
+        "green-ribbon",
+        "hill-farm-swim-club"
+      ],
+      "startedAt": "2026-11-17T20:16:55.456Z",
+      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:56.381Z"
+    },
+    "render-project-4": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "project"
+      ],
+      "pages": 5,
+      "slugs": [
+        "meeting-house",
+        "ridgewood-swim-club",
+        "stone-house",
+        "wil-mar-center",
+        "willy-street"
+      ],
+      "startedAt": "2026-11-17T20:16:56.404Z",
+      "verdict": "rendered 5, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:57.022Z"
+    },
+    "render-listing": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "listing"
+      ],
+      "pages": 3,
+      "slugs": [
+        "commercial",
+        "residential",
+        "projects"
+      ],
+      "startedAt": "2026-11-17T20:16:57.044Z",
+      "verdict": "rendered 3, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:57.562Z"
+    },
+    "render-gallery": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "gallery"
+      ],
+      "pages": 8,
+      "slugs": [
+        "copy-of-illinois",
+        "copy-of-iowa-2022-exhbit",
+        "copy-of-iowa-color",
+        "copy-of-iowa",
+        "copy-of-mexico-places-1",
+        "copy-of-mexico-places",
+        "copy-of-minnesota",
+        "mexico"
+      ],
+      "startedAt": "2026-11-17T20:16:57.582Z",
+      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:58.607Z"
+    },
+    "render-photo-hub": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "photo-hub"
+      ],
+      "pages": 1,
+      "slugs": [
+        "photography"
+      ],
+      "startedAt": "2026-11-17T20:16:58.628Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:58.885Z"
+    },
+    "render-static": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "static"
+      ],
+      "pages": 4,
+      "slugs": [
+        "about",
+        "process",
+        "team",
+        "testimonials"
+      ],
+      "startedAt": "2026-11-17T20:16:58.906Z",
+      "verdict": "rendered 4, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:59.430Z"
+    },
+    "render-form": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "form"
+      ],
+      "pages": 1,
+      "slugs": [
+        "contact"
+      ],
+      "startedAt": "2026-11-17T20:16:59.454Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:16:59.711Z"
+    },
+    "render-unique": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "unique"
+      ],
+      "pages": 1,
+      "slugs": [
+        "404"
+      ],
+      "startedAt": "2026-11-17T20:16:59.739Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/",
+      "endedAt": "2026-11-17T20:17:00.000Z"
+    }
+  }
+}

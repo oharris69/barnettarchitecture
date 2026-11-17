@@ -1,0 +1,199 @@
+{
+  "slug": "channel-house",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/channel-house",
+      "newPath": "/projects/channel-house",
+      "outputPath": "projects/channel-house/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/channel-house.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Channel — Renovation &amp; addition, Madison, WI | Barnett Architecture",
+    "description": "Channel — renovation &amp; addition, Madison, WI. The client wished to transform their 1940s home into a place which reflected both their lifestyle and aesthetics.",
+    "canonical": "https://www.barnettarchitecture.com/projects/channel-house",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/channel-house#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential architecture",
+            "item": "https://www.barnettarchitecture.com/residential"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Channel",
+            "item": "https://www.barnettarchitecture.com/projects/channel-house"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/channel-house#work",
+        "name": "Channel",
+        "url": "https://www.barnettarchitecture.com/projects/channel-house",
+        "description": "The client wished to transform their 1940s home into a place which reflected both their lifestyle and aesthetics.",
+        "genre": "Architecture",
+        "keywords": "Residential, Renovation, Addition",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Madison, WI",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Madison",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_c173afd8a79e4b848d116fd450d51957~mv2.png/v1/fill/w_928,h_589,al_c,q_85,enc_auto/5c8b97_c173afd8a79e4b848d116fd450d51957~mv2.png",
+          "https://static.wixstatic.com/media/5c8b97_3b457e64c5a14ecda4e9fd71c14d8377~mv2.jpg/v1/fill/w_954,h_591,al_c,q_85,enc_auto/5c8b97_3b457e64c5a14ecda4e9fd71c14d8377~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_c2d7a95fc91f4ce6af6121c9ea008899~mv2_d_3400_2200_s_2.jpg/v1/fill/w_2400,h_1553,al_c,q_85,enc_auto/5c8b97_c2d7a95fc91f4ce6af6121c9ea008899~mv2_d_3400_2200_s_2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_20cdb01f5eb54d14ba8db0628a0ebb2d~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_20cdb01f5eb54d14ba8db0628a0ebb2d~mv2_d_4000_3000_s_4_2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg/v1/fill/w_2400,h_1640,al_c,q_85,enc_auto/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:53Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "9e6e48b1d6c8",
+  "sourceProposedSha": "3e864c2648ea",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 5/5 captured strings verbatim; photos 5/5 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/channel-house/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/channel-house/_meta.json",
+  "driverVersion": "1"
+}

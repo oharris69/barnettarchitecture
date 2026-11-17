@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-17T20:16:57Z
+  page:             Projects
+  slug:             projects
+  pagePath:         migrated/projects/index.html
+  renderBranch:     A'
+  template:         residential
+  archetypePath:    stardust/.work/migrate/final/residential.html
+  archetypeSha:     7f287581850a
+  sourceCurrent:    stardust/current/pages/projects.json
+  againstDirection: stardust/.work/migrate/direction.md (Active 2026-11-17T17:20:00Z)
+  designMd:         DESIGN.md (sha: c8173d8ac4dd)
+  designJson:       DESIGN.json (sha: 624a046b06ec)
+  canonShas:        header:66b29853a09b footer:1212b39c68e1 css:ed4159ae9a2e
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.32.1
+-->
+<meta charset="UTF-8">
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* Error */        --color-error: #8a1f11;            /* form validation only (7.6:1 on sage, 9.2:1 on print white) */
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+}
+</style>
+<link rel="stylesheet" href="../assets/canon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects — Residential &amp; commercial architecture, Madison, WI | Barnett Architecture</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../assets/site.webmanifest">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="All 29 projects by Barnett Architecture, Madison, WI — new homes, additions, renovations, kitchens and master plans, filterable by type and location.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/projects">
+<meta name="theme-color" content="#e7ebe6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/projects">
+<meta property="og:title" content="Projects — Residential &amp; commercial architecture, Madison, WI">
+<meta property="og:description" content="All 29 projects by Barnett Architecture, Madison, WI — new homes, additions, renovations, kitchens and master plans, filterable by type and location.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Willy Street — photograph">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Residential &amp; commercial architecture, Madison, WI">
+<meta name="twitter:description" content="All 29 projects by Barnett Architecture, Madison, WI — new homes, additions, renovations, kitchens and master plans, filterable by type and location.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg">
+<meta name="twitter:image:alt" content="Willy Street — photograph">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "ProfessionalService",
+        "LocalBusiness"
+      ],
+      "name": "Barnett Architecture LLC",
+      "url": "https://www.barnettarchitecture.com/",
+      "foundingDate": "2007",
+      "founder": {
+        "@type": "Person",
+        "name": "Todd Barnett",
+        "jobTitle": "Architect"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "118 North Breese Terrace, Suite I",
+        "addressLocality": "Madison",
+        "addressRegion": "WI",
+        "postalCode": "53726-4133",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-608-233-4538",
+      "email": "todd@barnettarchitecture.com",
+      "areaServed": [
+        "Madison, WI",
+        "Wisconsin",
+        "Illinois"
+      ],
+      "knowsAbout": [
+        "residential architecture",
+        "additions and renovations",
+        "green design",
+        "universal design",
+        "charrette design process"
+      ],
+      "@id": "https://www.barnettarchitecture.com/#organization",
+      "alternateName": "Barnett Architecture"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.barnettarchitecture.com/projects#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.barnettarchitecture.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "https://www.barnettarchitecture.com/projects"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.barnettarchitecture.com/projects#webpage",
+      "url": "https://www.barnettarchitecture.com/projects",
+      "name": "Projects",
+      "description": "All 29 projects by Barnett Architecture, Madison, WI — new homes, additions, renovations, kitchens and master plans, filterable by type and location.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.barnettarchitecture.com/#website",
+        "url": "https://www.barnettarchitecture.com/",
+        "name": "Barnett Architecture"
+      },
+      "about": {
+        "@id": "https://www.barnettarchitecture.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.barnettarchitecture.com/projects#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://www.barnettarchitecture.com/projects#projects"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.barnettarchitecture.com/projects#projects",
+      "name": "Projects",
+      "numberOfItems": 29,
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://www.barnettarchitecture.com/projects/willy-street",
+          "name": "Willy Street"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://www.barnettarchitecture.com/projects/folded-roof",
+          "name": "Folded Roof"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://www.barnettarchitecture.com/projects/folded-roof-patio",
+          "name": "Folded Roof Patio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://www.barnettarchitecture.com/projects/potter-studio",
+          "name": "Potter Studio +"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://www.barnettarchitecture.com/projects/green-ribbon",
+          "name": "Green Ribbon"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://www.barnettarchitecture.com/projects/mid-century",
+          "name": "Mid-Century"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://www.barnettarchitecture.com/projects/50s-redoux",
+          "name": "50's Redoux"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://www.barnettarchitecture.com/projects/40s-re-make",
+          "name": "40's Re-Make"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://www.barnettarchitecture.com/projects/three-gables",
+          "name": "Three Gables"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://www.barnettarchitecture.com/projects/70s-re-make",
+          "name": "70's Re-Make"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "url": "https://www.barnettarchitecture.com/projects/pond-house",
+          "name": "Pond"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "url": "https://www.barnettarchitecture.com/projects/stone-and-siding",
+          "name": "Stone and Siding"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "url": "https://www.barnettarchitecture.com/projects/push-pull",
+          "name": "Push-Pull"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "url": "https://www.barnettarchitecture.com/projects/passive-light",
+          "name": "Passive Light"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "url": "https://www.barnettarchitecture.com/projects/channel-house",
+          "name": "Channel"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "url": "https://www.barnettarchitecture.com/projects/tudor-extension",
+          "name": "Tudor Extension"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "url": "https://www.barnettarchitecture.com/projects/solar-court",
+          "name": "Solar Court"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "url": "https://www.barnettarchitecture.com/projects/two-flat",
+          "name": "Two-Flat"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "url": "https://www.barnettarchitecture.com/projects/tube",
+          "name": "Tube"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "url": "https://www.barnettarchitecture.com/projects/island-kitchen",
+          "name": "Island Kitchen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "url": "https://www.barnettarchitecture.com/projects/condo-kitchen",
+          "name": "Condo Kitchen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "url": "https://www.barnettarchitecture.com/projects/micro-house",
+          "name": "Micro-House"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "url": "https://www.barnettarchitecture.com/projects/designcraft",
+          "name": "designCraft"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "url": "https://www.barnettarchitecture.com/projects/wil-mar-center",
+          "name": "Wil-Mar Center"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "url": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club",
+          "name": "Ridgewood Swim Club I"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "url": "https://www.barnettarchitecture.com/projects/ridgewood-swim-club-ii",
+          "name": "Ridgewood Swim Club II"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "url": "https://www.barnettarchitecture.com/projects/hill-farm-swim-club",
+          "name": "Hill Farm Swim Club"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "url": "https://www.barnettarchitecture.com/projects/meeting-house",
+          "name": "Meeting House"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "url": "https://www.barnettarchitecture.com/projects/synagogue-study",
+          "name": "Synagogue Study"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-template="listing">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="../index.html" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="../projects/index.html" aria-current="page">Projects</a></li>
+        <li><a href="../photography/index.html">Photography</a></li>
+        <li class="ds-nav__group">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="../about/process/index.html">Process</a></li>
+              <li><a href="../about/todd-barnett/index.html">Todd Barnett</a></li>
+              <li><a href="../testimonials/index.html">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" data-template="residential">
+  <section class="index-head shell" data-section="listing-head" data-intent="name the set; say what the practice does" data-layout="contained" data-deviation="listing opens on its H1 and index, not a full-bleed photograph (canon move 1): the index rows are the photographs and reach the first viewport" aria-labelledby="page-h">
+    <h1 id="page-h" data-slot="title">Projects</h1>
+    <p class="index-head__lead" data-slot="intro">Although stylistic examples range from traditional to modern, all projects strive to create places that are well-built, facilitate their intended use and raise the spirit.</p>
+    <div class="index-head__meta">
+      <p class="dim dim--stack"><span>29 projects · Projects</span></p>
+      
+    </div>
+  </section>
+
+  <section class="shell" data-section="project-index" data-intent="let people find their project" data-layout="stack" data-items="29" data-module="project-index" aria-labelledby="index-h">
+    <h2 id="index-h" class="visually-hidden">All projects</h2>
+    <div class="index">
+    <details class="filters-fold" open data-filters-fold>
+    <summary class="filters-fold__summary">Filter projects</summary>
+    <nav class="filters" aria-label="Filter projects" data-slot="facets">
+      <div class="filters__group" role="group" aria-labelledby="f-sector">
+        <p id="f-sector" class="filters__label label">Sector</p>
+        <ul class="facets"><li><a class="facet-chip" href="../projects/index.html?sector=residential" data-facet="sector" data-value="residential">Residential<span class="facet-chip__n" aria-hidden="true">22</span><span class="visually-hidden" data-chip-sr>, 22 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?sector=commercial" data-facet="sector" data-value="commercial">Commercial<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?sector=community" data-facet="sector" data-value="community">Community &amp; Faith<span class="facet-chip__n" aria-hidden="true">3</span><span class="visually-hidden" data-chip-sr>, 3 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?sector=recreation" data-facet="sector" data-value="recreation">Recreation<span class="facet-chip__n" aria-hidden="true">3</span><span class="visually-hidden" data-chip-sr>, 3 projects</span></a></li></ul>
+      </div>
+      <div class="filters__group" role="group" aria-labelledby="f-type">
+        <p id="f-type" class="filters__label label">Project type</p>
+        <ul class="facets"><li><a class="facet-chip" href="../projects/index.html?type=new-home" data-facet="type" data-value="new-home">New home<span class="facet-chip__n" aria-hidden="true">7</span><span class="visually-hidden" data-chip-sr>, 7 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?type=addition" data-facet="type" data-value="addition">Addition<span class="facet-chip__n" aria-hidden="true">6</span><span class="visually-hidden" data-chip-sr>, 6 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?type=renovation" data-facet="type" data-value="renovation">Renovation<span class="facet-chip__n" aria-hidden="true">17</span><span class="visually-hidden" data-chip-sr>, 17 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?type=kitchen" data-facet="type" data-value="kitchen">Kitchen<span class="facet-chip__n" aria-hidden="true">2</span><span class="visually-hidden" data-chip-sr>, 2 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?type=outdoor" data-facet="type" data-value="outdoor">Outdoor living<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?type=multi-unit" data-facet="type" data-value="multi-unit">Multi-unit<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?type=master-plan" data-facet="type" data-value="master-plan">Master plan &amp; study<span class="facet-chip__n" aria-hidden="true">4</span><span class="visually-hidden" data-chip-sr>, 4 projects</span></a></li></ul>
+      </div>
+      <div class="filters__group" role="group" aria-labelledby="f-location">
+        <p id="f-location" class="filters__label label">Location</p>
+        <ul class="facets"><li><a class="facet-chip" href="../projects/index.html?location=madison-wi" data-facet="location" data-value="madison-wi">Madison, WI<span class="facet-chip__n" aria-hidden="true">23</span><span class="visually-hidden" data-chip-sr>, 23 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?location=middleton-wi" data-facet="location" data-value="middleton-wi">Middleton, WI<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?location=mequon-wi" data-facet="location" data-value="mequon-wi">Mequon, WI<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?location=wisconsin" data-facet="location" data-value="wisconsin">Wisconsin<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?location=highland-park-il" data-facet="location" data-value="highland-park-il">Highland Park, IL<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?location=downers-grove-il" data-facet="location" data-value="downers-grove-il">Downers Grove, IL<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li><li><a class="facet-chip" href="../projects/index.html?location=westchester-ny" data-facet="location" data-value="westchester-ny">Westchester County, NY<span class="facet-chip__n" aria-hidden="true">1</span><span class="visually-hidden" data-chip-sr>, 1 project</span></a></li></ul>
+      </div>
+      <div class="filters__group" role="group" aria-labelledby="f-approach">
+        <p id="f-approach" class="filters__label label">Approach</p>
+        <ul class="facets"><li><a class="facet-chip" href="../projects/index.html?approach=green-design" data-facet="approach" data-value="green-design">Green design<span class="facet-chip__n" aria-hidden="true">4</span><span class="visually-hidden" data-chip-sr>, 4 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?approach=universal-design" data-facet="approach" data-value="universal-design">Universal design<span class="facet-chip__n" aria-hidden="true">3</span><span class="visually-hidden" data-chip-sr>, 3 projects</span></a></li><li><a class="facet-chip" href="../projects/index.html?approach=historic-context" data-facet="approach" data-value="historic-context">Historic context<span class="facet-chip__n" aria-hidden="true">4</span><span class="visually-hidden" data-chip-sr>, 4 projects</span></a></li></ul>
+      </div>
+    </nav>
+    </details>
+    <div class="index__main">
+    <div class="index-bar">
+      <div class="index-bar__status">
+        <p class="index-bar__count" data-index-count aria-live="polite">29 projects</p>
+        <a class="link-arrow" href="../projects/index.html" data-index-clear hidden>Clear filters</a>
+      </div>
+      <div class="view-toggle" role="group" aria-label="View" data-slot="view" data-view-toggle hidden>
+        <button type="button" data-view-set="list" aria-pressed="true">List</button><button type="button" data-view-set="grid" aria-pressed="false">Grid</button>
+      </div>
+    </div>
+    <ul class="schedule__list schedule--index" data-view="list" data-slot="cards" data-index-list>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="new-home" data-location="madison-wi" data-approach="historic-context">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/willy-street/index.html">Willy Street</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg" srcset="https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg 600w, https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg 800w, https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Willy Street — new home, Madison, WI — photograph" loading="eager" fetchpriority="high" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="addition renovation" data-location="madison-wi" data-approach="green-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/folded-roof/index.html">Folded Roof</a></h3><p class="dim dim--stack"><span>Residential · Addition &amp; renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg" srcset="https://static.wixstatic.com/media/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg 600w, https://static.wixstatic.com/media/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg 800w, https://static.wixstatic.com/media/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_81a11990ac514b6cb87847803749c5b8.jpg 1024w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1024" height="683" alt="Folded Roof — addition &amp; renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="outdoor" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/folded-roof-patio/index.html">Folded Roof Patio</a></h3><p class="dim dim--stack"><span>Residential · Outdoor living · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg 600w, https://static.wixstatic.com/media/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_30da7a517a534ad7a202caaf2439c3ce~mv2_d_3960_2640_s_4_2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Folded Roof Patio — outdoor living, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="addition renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/potter-studio/index.html">Potter Studio +</a></h3><p class="dim dim--stack"><span>Residential · Addition &amp; renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_8bea6470a1e0410ab90f9402815e8013~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Potter Studio + — addition &amp; renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/green-ribbon/index.html">Green Ribbon</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg" srcset="https://static.wixstatic.com/media/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg 600w, https://static.wixstatic.com/media/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg 800w, https://static.wixstatic.com/media/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_4f5e6ae4122944098e2408824f2a1c9b.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Green Ribbon — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation addition" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/mid-century/index.html">Mid-Century</a></h3><p class="dim dim--stack"><span>Residential · Renovation &amp; addition · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_60a15a5b6895468ca64f170a72c55c07~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Mid-Century — renovation &amp; addition, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation" data-location="madison-wi" data-approach="universal-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/50s-redoux/index.html">50's Redoux</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_6f72cc27e5ba428e9b4f44e2d1c76b08~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="50's Redoux — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/40s-re-make/index.html">40's Re-Make</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg" srcset="https://static.wixstatic.com/media/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg 600w, https://static.wixstatic.com/media/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg 800w, https://static.wixstatic.com/media/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_7161e288c70545e1b83d9ae11f333e92.jpg 1024w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1024" height="683" alt="40's Re-Make — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="new-home" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/three-gables/index.html">Three Gables</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Three Gables — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation addition" data-location="middleton-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/70s-re-make/index.html">70's Re-Make</a></h3><p class="dim dim--stack"><span>Residential · Renovation &amp; addition · Middleton, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_7902e07ca108491db8111154f17733cd~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="70's Re-Make — renovation &amp; addition, Middleton, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="new-home" data-location="westchester-ny" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/pond-house/index.html">Pond</a></h3><p class="dim dim--stack"><span>Residential · New home · Westchester County, NY</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg 600w, https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Pond — new home, Westchester County, NY — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation" data-location="mequon-wi" data-approach="historic-context">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/stone-and-siding/index.html">Stone and Siding</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Mequon, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg" srcset="https://static.wixstatic.com/media/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg 600w, https://static.wixstatic.com/media/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg 800w, https://static.wixstatic.com/media/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_223ee64a1e074d9da7174da9f60afd40.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Stone and Siding — renovation, Mequon, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation" data-location="madison-wi" data-approach="green-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/push-pull/index.html">Push-Pull</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg" srcset="https://static.wixstatic.com/media/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg 600w, https://static.wixstatic.com/media/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg 800w, https://static.wixstatic.com/media/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_c58dfedbf30243ffac7d1adee9bcaf01.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Push-Pull — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="new-home" data-location="madison-wi" data-approach="green-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/passive-light/index.html">Passive Light</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png" srcset="https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png 600w, https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png 800w, https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Passive Light — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation addition" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/channel-house/index.html">Channel</a></h3><p class="dim dim--stack"><span>Residential · Renovation &amp; addition · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg 600w, https://static.wixstatic.com/media/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ed5409c8e1504426bc2d971435695563~mv2_d_3000_2050_s_2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Channel — renovation &amp; addition, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="addition renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/tudor-extension/index.html">Tudor Extension</a></h3><p class="dim dim--stack"><span>Residential · Addition &amp; renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_26516e016ceb4978a6b15886d4759de3~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Tudor Extension — addition &amp; renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="new-home master-plan" data-location="highland-park-il" data-approach="green-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/solar-court/index.html">Solar Court</a></h3><p class="dim dim--stack"><span>Residential · New home, master plan &amp; study · Highland Park, IL</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Solar Court — new home, master plan &amp; study, Highland Park, IL — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="multi-unit renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/two-flat/index.html">Two-Flat</a></h3><p class="dim dim--stack"><span>Residential · Multi-unit &amp; renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_37a4cb1c04ad41b481bae8aead98d375~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Two-Flat — multi-unit &amp; renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/tube/index.html">Tube</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg 600w, https://static.wixstatic.com/media/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_434064e69a4544fbbd64ac5705badd32~mv2_d_4000_3000_s_4_2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Tube — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="kitchen" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/island-kitchen/index.html">Island Kitchen</a></h3><p class="dim dim--stack"><span>Residential · Kitchen · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg 600w, https://static.wixstatic.com/media/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_a7b9482f83aa443a83f1dcfc3be70885~mv2_d_4320_2880_s_4_2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Island Kitchen — kitchen, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="kitchen" data-location="madison-wi" data-approach="historic-context">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/condo-kitchen/index.html">Condo Kitchen</a></h3><p class="dim dim--stack"><span>Residential · Kitchen · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png" srcset="https://static.wixstatic.com/media/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png 600w, https://static.wixstatic.com/media/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png 800w, https://static.wixstatic.com/media/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_abd8b8e8edd74ad1ae7a614f54da94d3~mv2.png 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Condo Kitchen — kitchen, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="residential" data-type="new-home" data-location="madison-wi" data-approach="universal-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/micro-house/index.html">Micro-House</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png" srcset="https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png 600w, https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png 800w, https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Micro-House — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="commercial" data-type="renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/designcraft/index.html">designCraft</a></h3><p class="dim dim--stack"><span>Commercial · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_667,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 600w, https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 800w, https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_667,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 1000w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1000" height="667" alt="designCraft — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="community" data-type="renovation" data-location="madison-wi" data-approach="historic-context">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/wil-mar-center/index.html">Wil-Mar Center</a></h3><p class="dim dim--stack"><span>Community &amp; Faith · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg" srcset="https://static.wixstatic.com/media/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg 600w, https://static.wixstatic.com/media/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg 800w, https://static.wixstatic.com/media/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_937a66bcf40a433fb0262ab2e433e824.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Wil-Mar Center — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="recreation" data-type="master-plan" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/ridgewood-swim-club/index.html">Ridgewood Swim Club I</a></h3><p class="dim dim--stack"><span>Recreation · Master plan &amp; study · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg" srcset="https://static.wixstatic.com/media/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg 600w, https://static.wixstatic.com/media/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg 800w, https://static.wixstatic.com/media/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ec0321c433a24a7195fcf9a8e6fee198.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Ridgewood Swim Club I — master plan &amp; study, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="recreation" data-type="renovation" data-location="madison-wi" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/ridgewood-swim-club-ii/index.html">Ridgewood Swim Club II</a></h3><p class="dim dim--stack"><span>Recreation · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ee8297a26f31422e8407946e0ad1ccf3~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Ridgewood Swim Club II — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="recreation" data-type="master-plan renovation" data-location="madison-wi" data-approach="universal-design">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/hill-farm-swim-club/index.html">Hill Farm Swim Club</a></h3><p class="dim dim--stack"><span>Recreation · Master plan &amp; study, renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg" srcset="https://static.wixstatic.com/media/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg 600w, https://static.wixstatic.com/media/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg 800w, https://static.wixstatic.com/media/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0cb07641b9294650a1b7dc6ee7353a9c.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Hill Farm Swim Club — master plan &amp; study, renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="community" data-type="new-home" data-location="downers-grove-il" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/meeting-house/index.html">Meeting House</a></h3><p class="dim dim--stack"><span>Community &amp; Faith · New building · Downers Grove, IL</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg" srcset="https://static.wixstatic.com/media/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg 600w, https://static.wixstatic.com/media/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg 800w, https://static.wixstatic.com/media/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_fcd76db85a76424fa4248ba3ba2951c3.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Meeting House — new building, Downers Grove, IL — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card" data-sector="community" data-type="master-plan" data-location="wisconsin" data-approach="">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../projects/synagogue-study/index.html">Synagogue Study</a></h3><p class="dim dim--stack"><span>Community &amp; Faith · Master plan &amp; study · Wisconsin</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_85,enc_auto/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg 600w, https://static.wixstatic.com/media/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_1c768c757e174ce3ab141cf22b8be8e0~mv2.jpg 1600w" sizes="(min-width: 1440px) 400px, (min-width: 900px) 28vw, (min-width: 600px) 42vw, 100vw" width="1600" height="1067" alt="Synagogue Study — master plan &amp; study, Wisconsin — photograph" loading="lazy" decoding="async"></div>
+      </li>
+    </ul>
+    <p class="index-empty" data-index-empty hidden>No projects match these filters. <a href="../projects/index.html" data-index-clear>Show all 29 projects</a></p>
+    </div>
+    </div>
+  </section>
+
+  <section class="enquiry shell band" data-section="enquiry" data-intent="drive action" data-layout="contained" data-module="enquiry-band" aria-labelledby="enquiry-h">
+  <h2 id="enquiry-h" data-slot="heading">Please contact us</h2>
+  <div class="enquiry__body">
+    <ul class="enquiry__lines">
+      <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+      <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+    </ul>
+    <p class="dim dim--start"><span>118 North Breese Terrace, Suite I · Madison, WI 53726-4133</span></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="../index.html">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="../projects/index.html">All projects</a></li><li><a href="../residential/index.html">Residential</a></li><li><a href="../commercial/index.html">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="../photography/index.html">Collections</a></li><li><a href="../photography/fields-of-vision-2024/index.html">Fields of Vision</a></li><li><a href="../photography/iowa-2022-exhibit/index.html">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="../about/index.html">About</a></li><li><a href="../about/process/index.html">Process</a></li><li><a href="../about/todd-barnett/index.html">Todd Barnett</a></li><li><a href="../testimonials/index.html">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="../contact/index.html">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+<script>
+/* Listing filters (progressive enhancement). Without JS: chips are plain links and every project is listed.
+   With JS: chips filter in place; the URL carries ?type=&location=&sector=&approach=&view=grid (home links to /projects?type=<scope>). */
+(() => {
+  const list = document.querySelector('[data-index-list]');
+  if (!list) return;
+  const items = [...list.children], total = items.length;
+  const chips = [...document.querySelectorAll('[data-facet]')];
+  const KEYS = ['sector', 'type', 'location', 'approach'];
+  const count = document.querySelector('[data-index-count]'), empty = document.querySelector('[data-index-empty]');
+  const clears = [...document.querySelectorAll('[data-index-clear]')], toggle = document.querySelector('[data-view-toggle]');
+  const valid = (k, v) => chips.some((c) => c.dataset.facet === k && c.dataset.value === v) || [...items].some((it) => (it.dataset[k] || '').split(' ').includes(v));
+  const read = () => {
+    const u = new URLSearchParams(location.search), s = {};
+    KEYS.forEach((k) => { const v = u.get(k); if (v && valid(k, v)) s[k] = v; });
+    s.view = u.get('view') === 'grid' ? 'grid' : 'list';
+    return s;
+  };
+  const has = (it, k, v) => (it.dataset[k] || '').split(' ').includes(v);
+  const match = (it, s, skip) => KEYS.every((k) => k === skip || !s[k] || has(it, k, s[k]));
+  const href = (s) => {
+    const u = new URLSearchParams();
+    KEYS.forEach((k) => { if (s[k]) u.set(k, s[k]); });
+    if (s.view === 'grid') u.set('view', 'grid');
+    const q = u.toString();
+    return location.pathname + (q ? '?' + q : '');
+  };
+  let S = read();
+  const apply = () => {
+    let n = 0;
+    items.forEach((it) => { const ok = match(it, S); it.hidden = !ok; if (ok) n += 1; });
+    chips.forEach((c) => {
+      const k = c.dataset.facet, v = c.dataset.value, on = S[k] === v;
+      const cnt = items.filter((it) => match(it, S, k) && has(it, k, v)).length;
+      c.querySelector('.facet-chip__n').textContent = cnt;
+      c.querySelector('[data-chip-sr]').textContent = on ? ', selected — activate to remove this filter' : ', ' + cnt + (cnt === 1 ? ' project' : ' projects');
+      if (on) c.setAttribute('aria-current', 'true'); else c.removeAttribute('aria-current');
+      if (!on && cnt === 0) c.setAttribute('aria-disabled', 'true'); else c.removeAttribute('aria-disabled');
+      c.href = href({ ...S, [k]: on ? null : v });
+    });
+    const filtered = KEYS.some((k) => S[k]);
+    count.textContent = filtered ? 'Showing ' + n + ' of ' + total + ' projects' : total + ' projects';
+    empty.hidden = n > 0;
+    clears.forEach((a) => { a.href = href({ view: S.view }); if (a.closest('.index-bar')) a.hidden = !filtered; });
+    list.dataset.view = S.view;
+    toggle.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.viewSet === S.view)));
+  };
+  const go = (s, push) => { S = s; try { history[push ? 'pushState' : 'replaceState'](null, '', href(S)); } catch (e) { /* file:// or sandboxed */ } apply(); };
+  chips.forEach((c) => c.addEventListener('click', (e) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+    e.preventDefault();
+    if (c.getAttribute('aria-disabled') === 'true') return;
+    const k = c.dataset.facet, v = c.dataset.value;
+    go({ ...S, [k]: S[k] === v ? null : v }, true);
+  }));
+  clears.forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); go({ view: S.view }, true); (chips[0] || a).focus(); }));
+  toggle.addEventListener('click', (e) => { const b = e.target.closest('[data-view-set]'); if (b) go({ ...S, view: b.dataset.viewSet }, false); });
+  addEventListener('popstate', () => { S = read(); apply(); });
+  toggle.hidden = false;
+  const fold = document.querySelector('[data-filters-fold]');
+  if (fold && matchMedia('(max-width: 599px)').matches && !KEYS.some((k) => S[k])) fold.open = false;
+  if (fold) matchMedia('(min-width: 600px)').addEventListener('change', (e) => { if (e.matches) fold.open = true; });
+  apply();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{"ts":"2026-11-17T16:36:21Z","skill":"stardust:extract","phase":"prep","event":"start","detail":"full inventory crawl, 48 sitemap URLs"}
+{"ts":"2026-11-17T16:53:13Z","skill":"stardust:extract","phase":"prep","event":"end","detail":"48/48 live; types landing1 listing4 project29 gallery8 static5 form1; uncaptured first-level targets: none"}
+{"ts":"2026-11-17T16:54:30Z","skill":"stardust:extract","phase":"brand-review","event":"start","detail":"render stardust/current/brand-review.html from reused 48-page extraction"}
+{"ts":"2026-11-17T17:04:42Z","skill":"stardust:extract","phase":"brand-review","event":"end","detail":"brand-review.html rendered (2.9MB self-contained, 48 base64 viewport thumbs); tensions T-scale, T-logo-variants, T-color-imbalance x2, T-img-alt-empty + 4 agent-added; Playwright: 0 console errors, 0 external requests","artifact":"stardust/current/brand-review.html"}
+{"ts":"2026-11-17T17:04:42Z","skill":"stardust:audit","phase":"setup","event":"start","detail":"audit https://www.barnettarchitecture.com; reuse 48-page extraction"}
+{"ts":"2026-11-17T17:04:42Z","skill":"stardust:audit","phase":"setup","event":"end","detail":"extraction reused (same origin, fetchedAt 2026-11-17); marketing-skills absent; modern-web-guidance available; refero MCP absent; PSI reachable but HTTP 429 quota → playwright-lab; no rollout project"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"brand-tension","event":"start","detail":"Phase 1: carry T-* from brand-review; brandColorShare pixel-sample, ctaFragmentation, typeScale, radiusSprawl"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"brand-tension","event":"end","detail":"T-scale, T-logo-variants, T-color-imbalance x2, T-img-alt-empty fired; accent share 0.01% of painted px (index.png, 8px grid)"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"design-critique","event":"start","detail":"Phase 2: impeccable critique+audit (subagent), VISION pass on thumbs, a11y fold-in"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"design-critique","event":"end","detail":"impeccable critique 14/32, audit 7/20; 18 normalized findings; contrast accent 4.03:1, Send button 2.85:1"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"seo-technical","event":"start","detail":"Phase 3: robots/sitemap/canonical/meta/JSON-LD/redirects + CWV lab"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"seo-technical","event":"end","detail":"0/48 meta descriptions, 48/48 H1=wordmark, JSON-LD WebSite on 1/48, sitemap valid 48 URLs; PSI 429 → playwright-lab: mobile TBT 1861-1957ms poor"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"llm-visibility","event":"start","detail":"Phase 4: llms.txt, answerability, schema, ai-readability.mjs on 10 paths"}
+{"ts":"2026-11-17T17:14:53Z","skill":"stardust:audit","phase":"llm-visibility","event":"end","detail":"llms.txt present (Wix auto, misstates specialization); home 0 body words; NAP only on /contact; AI readability strict 84-99%"}
+{"ts":"2026-11-17T17:18:17Z","skill":"stardust:audit","phase":"synthesis","event":"start","detail":"Phase 6: scorecard 37/100, 32 findings (10 P1/17 P2/5 P3), audit.json written; report.html via impeccable craft","artifact":"stardust/audit/barnettarchitecture-com/audit.json"}
+{"ts":"2026-11-17T17:42:06Z","skill":"stardust:audit","phase":"synthesis","event":"end","detail":"report.html rendered via impeccable craft (981KB, 53 embedded figures); post-render validation pass: scores/finding ids/severity counts match audit.json, provenance first in head, 0 external resources, 0 emoji, 0 console errors; --deploy skipped","artifact":"stardust/audit/barnettarchitecture-com/report.html"}
+{"ts":"2026-11-17T17:48:15Z","skill":"stardust:direct","phase":"prep","event":"end","detail":"rebrand mode; 6 types; 13 modules confirmed; taxonomy+38 redirects; metadata set"}
+{"ts":"2026-11-17T17:48:49Z","skill":"stardust:prototype","phase":"prep","event":"start","detail":"wave 1: home canon-author"}
+{"ts":"2026-11-17T17:51:11Z","skill":"stardust:prototype","phase":"setup","event":"start","detail":"index (canon-author): playwright ok, provenance OK on 1 page, direction active"}
+{"ts":"2026-11-17T17:51:11Z","skill":"stardust:prototype","phase":"setup","event":"end","detail":"Provenance OK on 1 page"}
+{"ts":"2026-11-17T17:57:27Z","skill":"stardust:prototype","phase":"plan","event":"start","detail":"index shape brief (canon-author)"}
+{"ts":"2026-11-17T17:59:41Z","skill":"stardust:prototype","phase":"plan","event":"end","detail":"index-shape.md written; brief validators pass (hands-off: no confirmation wait)"}
+{"ts":"2026-11-17T17:59:51Z","skill":"stardust:prototype","phase":"render","event":"start","detail":"impeccable craft → stardust/prototypes/index-proposed.html"}
+{"ts":"2026-11-17T18:11:39Z","skill":"stardust:prototype","phase":"render","event":"end","detail":"index-proposed.html written; validators clean at 4 viewports"}
+{"ts":"2026-11-17T18:11:52Z","skill":"stardust:prototype","phase":"critique","event":"start","detail":"impeccable critique + audit (parallel) on index-proposed.html"}
+{"ts":"2026-11-17T18:27:57Z","skill":"stardust:prototype","phase":"critique","event":"end","detail":"0 P0; 2 P1 fixed; P2 5 fixed/1 declined; vision pass"}
+{"ts":"2026-11-17T18:27:57Z","skill":"stardust:prototype","phase":"audit","event":"start","detail":"audit arm (parallel with critique)"}
+{"ts":"2026-11-17T18:27:57Z","skill":"stardust:prototype","phase":"audit","event":"end","detail":"a11y3 perf3 theming3 responsive4 anti3; P1s fixed"}
+{"ts":"2026-11-17T18:27:57Z","skill":"stardust:prototype","phase":"adapt","event":"start","detail":"impeccable adapt"}
+{"ts":"2026-11-17T18:27:57Z","skill":"stardust:prototype","phase":"adapt","event":"end","detail":"9 media rules; clean 1920–320"}
+{"ts":"2026-11-17T18:28:23Z","skill":"stardust:prototype","phase":"motion","event":"start","detail":"Phase 2.4 editorial register → index-cinematic.html"}
+{"ts":"2026-11-17T18:30:21Z","skill":"stardust:prototype","phase":"motion","event":"end","detail":"index-cinematic.html: editorial register, 7 data-anim, hero parallax 10vh"}
+{"ts":"2026-11-17T18:30:21Z","skill":"stardust:prototype","phase":"motion-validation","event":"start","detail":"Passes 1–6 on index-cinematic.html"}
+{"ts":"2026-11-17T18:33:52Z","skill":"stardust:prototype","phase":"motion-validation","event":"end","detail":"clean: 0 hidden, 0 overlaps, RM + noJS complete"}
+{"ts":"2026-11-17T18:41:45Z","skill":"stardust:prototype","phase":"approval","event":"start","detail":"hands-off approval of index (all gates clean: critique/audit P0-P1 0 open, adapt clean, motion clean, finish verdict 5/5 resolved)"}
+{"ts":"2026-11-17T18:45:09Z","skill":"stardust:prototype","phase":"approval","event":"end","detail":"index approved (hands-off)"}
+{"ts":"2026-11-17T18:45:09Z","skill":"stardust:prototype","phase":"prep","event":"end","detail":"wave 1 done: home canon-author; canon written (13 files) + DESIGN.json.extensions.canon"}
+{"ts":"2026-11-17T18:50:53Z","skill":"stardust:prototype","phase":"shape","event":"start","detail":"willy-street project archetype (wave 2)"}
+{"ts":"2026-11-17T18:51:33Z","skill":"stardust:prototype","phase":"shape","event":"start","detail":"copy-of-iowa (gallery archetype) + photography (hub) — wave 2"}
+{"ts":"2026-11-17T19:18:31Z","skill":"stardust:prototype","phase":"wave2-static-process-form","event":"end","detail":"about, process, contact approved (hands-off) after finish review + verdict (0 P0/P1), validate 1440/768/390/360 clean; siblings todd-barnett + testimonials rendered; new modules process-steps, faq, testimonial-ledger, enquiry-form; pending CSS about/process/contact","artifact":"stardust/prototypes/about-proposed.html","next":"coordinator merges stardust/canon/pending/{about,process,contact}.css"}
+{"ts":"2026-11-17T19:20:44Z","skill":"stardust:prototype","phase":"render","event":"end","detail":"willy-street (project archetype) + residential (listing archetype): gates clean (0 P0/P1 open); approved hands-off"}
+{"ts":"2026-11-17T19:20:44Z","skill":"stardust:prototype","phase":"critique","event":"end","detail":"willy-street (project archetype) + residential (listing archetype): gates clean (0 P0/P1 open); approved hands-off"}
+{"ts":"2026-11-17T19:20:44Z","skill":"stardust:prototype","phase":"audit","event":"end","detail":"willy-street (project archetype) + residential (listing archetype): gates clean (0 P0/P1 open); approved hands-off"}
+{"ts":"2026-11-17T19:20:44Z","skill":"stardust:prototype","phase":"adapt","event":"end","detail":"willy-street (project archetype) + residential (listing archetype): gates clean (0 P0/P1 open); approved hands-off"}
+{"ts":"2026-11-17T19:20:44Z","skill":"stardust:prototype","phase":"approval","event":"end","detail":"willy-street (project archetype) + residential (listing archetype): gates clean (0 P0/P1 open); approved hands-off"}
+{"ts":"2026-11-17T19:20:44Z","skill":"stardust:prototype","phase":"shape","event":"end","detail":"willy-street + residential shape briefs written"}
+{"ts":"2026-11-17T19:34:54Z","skill":"stardust:prototype","phase":"plan","event":"end","detail":"copy-of-iowa + photography shape briefs written"}
+{"ts":"2026-11-17T19:34:54Z","skill":"stardust:prototype","phase":"render","event":"end","detail":"copy-of-iowa-proposed.html (89 photos) + photography-proposed.html"}
+{"ts":"2026-11-17T19:34:54Z","skill":"stardust:prototype","phase":"critique","event":"end","detail":"copy-of-iowa 27/36, photography 22/32; 1 P1 fixed (hub walls), P2s fixed"}
+{"ts":"2026-11-17T19:34:54Z","skill":"stardust:prototype","phase":"audit","event":"end","detail":"copy-of-iowa 16/20, photography 17/20; 0 P0/P1; gates a–e pass"}
+{"ts":"2026-11-17T19:34:54Z","skill":"stardust:prototype","phase":"adapt","event":"end","detail":"both clean 1920→320 + 844x390; lightbox fits"}
+{"ts":"2026-11-17T19:34:55Z","skill":"stardust:prototype","phase":"approval","event":"end","detail":"copy-of-iowa + photography approved (hands-off); canon diff: 4 new modules, pending CSS copy-of-iowa.css + photography.css, 2 deviations"}
+{"ts":"2026-11-17T19:35:05Z","skill":"stardust:prototype","phase":"shape","event":"end","detail":"copy-of-iowa + photography wave 2 done"}
+{"ts":"2026-11-17T19:35:51Z","skill":"stardust:prototype","phase":"prep","event":"end","detail":"8 archetypes approved hands-off (landing, project, listing, gallery, photo-hub, static×2, form); 14 new modules; 7 pending css"}
+{"ts":"2026-11-17T20:04:24Z","skill":"stardust:dynamics","phase":"detect","event":"start","detail":"archetype URLs from state.json + reach from stardust/current"}
+{"ts":"2026-11-17T20:06:49Z","skill":"stardust:dynamics","phase":"detect","event":"end","detail":"17 findings on 8 archetype URLs","artifact":"stardust/current/_dynamics.json"}
+{"ts":"2026-11-17T20:06:49Z","skill":"stardust:dynamics","phase":"classify","event":"start"}
+{"ts":"2026-11-17T20:06:49Z","skill":"stardust:dynamics","phase":"classify","event":"end","detail":"classified by dynamics-detect (vendors.json)"}
+{"ts":"2026-11-17T20:06:49Z","skill":"stardust:dynamics","phase":"triage","event":"start"}
+{"ts":"2026-11-17T20:09:16Z","skill":"stardust:dynamics","phase":"triage","event":"end","detail":"12 features · self 6 · owner batch 3 (D1 form backend, D2 analytics, D3 image hosting) · listings static","artifact":"stardust/dynamic-features.md"}
+{"ts":"2026-11-17T20:09:39Z","skill":"stardust:migrate","phase":"plan","event":"start","detail":"48 pages at NEW URLs (taxonomy.json) + 404; derived driver state stardust/.work/migrate/state.json"}
+{"ts":"2026-11-17T20:10:00Z","skill":"stardust:migrate","phase":"plan","event":"end","detail":"Provenance OK on 48; mobile-adapt audit pass on 10 Path A sources; dynamic-features.md present","artifact":"stardust/migrate/progress.json"}
+{"ts":"2026-11-17T20:10:01Z","skill":"stardust:migrate","phase":"render","event":"start"}
+{"ts":"2026-11-17T20:18:17Z","skill":"stardust:migrate","phase":"render","event":"end","detail":"48 pages rendered (10 A, 37 A', 1 B), 0 broken internal links","artifact":"stardust/migrate/progress.json"}
+{"ts":"2026-11-17T20:18:17Z","skill":"stardust:migrate","phase":"assets","event":"start"}
+{"ts":"2026-11-17T20:24:48Z","skill":"stardust:migrate","phase":"assets","event":"end","detail":"fonts 4 woff2 + favicon set + manifest + motion assets; robots, sitemap (47 urls / 494 images), llms.txt, redirects.csv (41)","artifact":"stardust/migrated/sitemap.xml"}
+{"ts":"2026-11-17T20:24:48Z","skill":"stardust:migrate","phase":"state-and-report","event":"start"}
+{"ts":"2026-11-17T20:25:52Z","skill":"stardust:migrate","phase":"state-and-report","event":"end","detail":"48 migrated · 48/48 validation pass · state advanced","artifact":"stardust/migrated/_validation.json"}
+{"ts":"2026-11-17T21:15:14Z","skill":"stardust:rollout","phase":"local","event":"end","detail":"EDS conversion local only: 18 blocks, 48 pages + nav/footer/fragment imported via run-bulk-import; lint clean; no DA writes"}
+{"ts":"2026-11-17T21:46:18Z","skill":"stardust:rollout","phase":"deliver","event":"end","detail":"DA source+preview 51/51, redirects 41; no live publish; code not pushed"}

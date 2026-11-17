@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/projects/70s-re-make",
+  "path": "projects/70s-re-make",
+  "timestamp": "2026-11-17T20:57:39.017Z",
+  "title": "70's Re-Make — Renovation & addition, Middleton, WI | Barnett Architecture",
+  "template": "project",
+  "blocks": [
+    "hero",
+    "breadcrumbs",
+    "facts",
+    "big-idea",
+    "gallery",
+    "pager",
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "73cd0c8f0c8f"
+}

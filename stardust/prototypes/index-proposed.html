@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:provenance
+  writtenBy:         stardust:prototype (rendered via impeccable:craft → new-work, brief-pinned world)
+  writtenAt:         2026-11-17T18:10:00Z
+  page:              index
+  pageUrl:           https://www.barnettarchitecture.com/
+  mode:              prep (canon-author), hands-off
+  againstDirection:  stardust/direction.md (Active 2026-11-17T17:20:00Z)
+  shapeBrief:        stardust/prototypes/index-shape.md
+  readArtifacts:
+    - stardust/current/pages/index.json
+    - stardust/current/pages/about.json
+    - stardust/current/pages/team.json
+    - stardust/current/pages/contact.json
+    - stardust/current/pages/photography.json
+    - stardust/current/pages/copy-of-testimonials.json
+    - stardust/current/_galleries.clean.json
+    - stardust/taxonomy.json
+    - DESIGN.md
+    - DESIGN.json
+    - PRODUCT.md
+  divergenceVersion: v1.0 (stardust v2)
+  fontDeck:          swiss-modernist (substituted) — Spectral (static-only family: display exempt from axis check) + Hanken Grotesk (variable wght engaged: 300, 450, 560, 600)
+  paletteSource:     derived (DESIGN.md colors: sage-ground, graphite, pencil, hairline, third-lake, third-lake-light, darkroom, print-white)
+  fidelity:          refined
+  unsourcedContent:  []
+  conceptSeed:       not run — world pinned by stardust direct (DESIGN.md) and structure pinned by index-shape.md (new-work § 3 "precisely specified")
+  reflexRejectAudit: 0 reject-list families (Spectral, Hanken Grotesk)
+  copyCadenceBypass: none
+  iteratedVia:       impeccable:critique, impeccable:audit, impeccable:adapt
+  critique:          # 2026-11-17 dual-agent (A a18055460aad20d3a · B a57e76ffebd8ec515); 0 P0, 0 P1, 5 P2, 1 P3; heuristics 21/28 (7, 9, 10 n/a)
+    - { priority: P2, finding: "hero scrim darkened the whole photograph", status: fixed, fix: "scrim bound to the text block (.hero__content::before)" }
+    - { priority: P2, finding: "schedule rows: photo smaller than text column; CTA isolated at end", status: fixed, fix: "6/6 split; button moved into section head" }
+    - { priority: P2, finding: "sheet numbers 01–07 from the brief dropped", status: declined, reason: "impeccable craft-floor bans section numbers that carry no information; dimension strings carry the drawing-set device" }
+    - { priority: P2, finding: "repeated sentences (services line in intro and enquiry)", status: fixed }
+    - { priority: P2, finding: "no entry point by project type (Principle 3)", status: fixed, fix: "facet-chip row → /projects?type=… (listing archetype must honour the query)" }
+    - { priority: P2, finding: "photography wall orphan below 900px", status: fixed }
+    - { priority: P3, finding: "principles top rule flush / bleeding into gutter", status: fixed }
+    - { priority: P3, finding: "Universal design excerpt ended 'or would like to plan.'", status: fixed, fix: "excerpt trimmed (no words added)" }
+  audit:             # 2026-11-17 a5b779c9e3b0d4e86; a11y 3 · perf 3 · theming 3 · responsive 4 · anti-patterns 3
+    - { priority: P1, finding: "white focus ring on sage (settled header, submenu, mobile panel) 1.21:1", status: fixed, fix: "outline-color: currentColor in header; accent in submenu" }
+    - { priority: P1, finding: "third-lake focus ring on hero scrim 1.91:1", status: fixed, fix: ".hero :focus-visible white" }
+    - { priority: P2, finding: "Escape inside Practice disclosure stranded focus", status: fixed, fix: "focus returns to summary; closes on focusout" }
+    - { priority: P2, finding: "no metric-matched fallback faces; render-blocking Google Fonts css", status: deferred, reason: "assets prep self-hosts Spectral + Hanken Grotesk with size-adjusted fallbacks" }
+    - { priority: P3, finding: "focus-within ring on mouse click", status: fixed, fix: ":has(a:focus-visible)" }
+    - { priority: P3, finding: "tall frames requested landscape crops", status: fixed, fix: "Wix fill at 4:5" }
+    - { priority: P3, finding: "theme-color sage above a dark hero", status: fixed, fix: "#121413 on this page" }
+    - { priority: P3, finding: "no-JS keyboard cannot open the mobile menu", status: accepted, reason: "stock pattern; EDS header.js renders a real <button>" }
+  detector:          { cli: "[] (0)", browserOverlay: "25 hits, all false positives: gradient underline read as background; 13px .dim labels as all-caps body; display-size quote leading" }
+  visionCheck:       { verdict: pass, observations: ["captured home = uncaptioned 9-slide carousel with wordmark H1 and no text (stardust/current/assets/screenshots/index.png); redesign keeps the photograph-first opening as one exhibited frame (signature preserved)", "eye lands on the H1 thesis, then the caption link, then the intro — as briefed", "darkroom wall is the page's richest moment; architecture leads in the first viewport and the schedule"] }
+  adapt:
+    - { at: 2026-11-17T18:40:00Z, breakpoints: [380, 599, 640, 899, 900, "pointer: coarse", "landscape max-height 500"], mediaRules: 9, decisions: ["nav → stock hamburger ≤640", "header fixed+settling ≥900 only", "schedule photo stacks above text <600", "wall spans 12/4 at 600–899, 12/6 <600", "burger label visually hidden ≤380", "44px targets on coarse pointers", "safe-area insets on .shell"], verified: "no overflow at 1920/1440/1280/800/414/375/360/320/844×390; H1 inside first screen at all" }
+  stardustVersion:   0.32.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Architectural practice in Madison, Wisconsin | Barnett Architecture</title>
+<link rel="icon" href="../migrated/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../migrated/assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../migrated/assets/apple-touch-icon.png">
+<link rel="manifest" href="../migrated/assets/site.webmanifest">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="Barnett Architecture is a full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Projects meant to “fit” the client.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/">
+<meta name="theme-color" content="#121413">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/">
+<meta property="og:title" content="Barnett Architecture — architectural practice in Madison, Wisconsin">
+<meta property="og:description" content="A full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Projects meant to “fit” the client, not serve as a pedestal for the architect.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Willy Street, a new home in Madison, Wisconsin — photograph">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://www.barnettarchitecture.com/#organization",
+      "name": "Barnett Architecture LLC",
+      "alternateName": "Barnett Architecture",
+      "url": "https://www.barnettarchitecture.com/",
+      "description": "A full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Services range from hourly consultations to the full architectural process.",
+      "image": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg",
+      "foundingDate": "2007",
+      "founder": { "@type": "Person", "name": "Todd Barnett", "jobTitle": "Architect", "url": "https://www.barnettarchitecture.com/about/todd-barnett" },
+      "address": { "@type": "PostalAddress", "streetAddress": "118 North Breese Terrace, Suite I", "addressLocality": "Madison", "addressRegion": "WI", "postalCode": "53726-4133", "addressCountry": "US" },
+      "telephone": "+1-608-233-4538",
+      "email": "todd@barnettarchitecture.com",
+      "areaServed": ["Madison, WI", "Wisconsin", "Illinois"],
+      "knowsAbout": ["residential architecture", "additions and renovations", "green design", "universal design", "charrette design process"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.barnettarchitecture.com/#website",
+      "url": "https://www.barnettarchitecture.com/",
+      "name": "Barnett Architecture",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://www.barnettarchitecture.com/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.barnettarchitecture.com/#webpage",
+      "url": "https://www.barnettarchitecture.com/",
+      "name": "Architectural practice in Madison, Wisconsin | Barnett Architecture",
+      "isPartOf": { "@id": "https://www.barnettarchitecture.com/#website" },
+      "about": { "@id": "https://www.barnettarchitecture.com/#organization" },
+      "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg"
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* Error */        --color-error: #8a1f11;            /* form validation only (7.6:1 on sage, 9.2:1 on print white) */
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+}
+@media (max-width: 599px) { :root { --section-padding: 64px; --header-h: 68px; } }
+
+/* === Fonts: self-hosted latin subsets (Google Fonts, SIL Open Font License 1.1 — Spectral © Production Type; Hanken Grotesk © Hanken Design Co.) === */
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 300; font-display: swap; src: url("../migrated/assets/fonts/spectral-300-latin.3ff652c6.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 400; font-display: swap; src: url("../migrated/assets/fonts/spectral-400-latin.cf8daee3.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 300; font-display: swap; src: url("../migrated/assets/fonts/spectral-300-italic-latin.b1dc3c4e.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Hanken Grotesk'; font-style: normal; font-weight: 300 700; font-display: swap; src: url("../migrated/assets/fonts/hanken-grotesk-var-latin.e9201edd.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* Metric-matched fallbacks (computed by .work/migrate/font-metrics.mjs over the captured About copy; Arimo/Gelasio stand in for Arial/Georgia metrics) */
+@font-face { font-family: 'Spectral Fallback'; font-style: normal; src: local('Georgia'); size-adjust: 98.62%; ascent-override: 107.38%; descent-override: 46.95%; line-gap-override: 0%; }
+@font-face { font-family: 'Spectral Fallback'; font-style: italic; src: local('Georgia Italic'), local('Georgia-Italic'); size-adjust: 89.84%; ascent-override: 117.87%; descent-override: 51.54%; line-gap-override: 0%; }
+@font-face { font-family: 'Hanken Grotesk Fallback'; src: local('Arial'), local('ArialMT'), local('Arimo'), local('Liberation Sans'); size-adjust: 101.31%; ascent-override: 98.71%; descent-override: 29.91%; line-gap-override: 0%; }
+
+/* === Stock mobile-nav-collapse pattern (base rules precede every @media) === */
+:where(header[data-nav-collapse="hamburger"]) { position: relative; } /* :where — never outranks .site-header { position: sticky } */
+.ds-nav-burger { display: none; }
+.ds-nav { display: flex; align-items: center; font-family: var(--body-font-family); }
+
+/* === Base === */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; scroll-padding-top: calc(var(--header-h) + 16px); }
+body {
+  margin: 0; background: var(--color-bg); color: var(--color-fg);
+  font-family: var(--body-font-family); font-size: var(--body); line-height: var(--line-height-body);
+  font-weight: 400; font-kerning: normal; text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+p { margin: 0; text-wrap: pretty; }
+h1, h2, h3 { margin: 0; font-family: var(--heading-font-family); font-weight: 300; line-height: var(--line-height-heading); letter-spacing: -0.02em; text-wrap: balance; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+address { font-style: normal; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.shell { width: 100%; max-width: var(--max-width); margin-inline: auto; padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right)); }
+.skip-link {
+  position: absolute; left: var(--gutter); top: 8px; z-index: 100; transform: translateY(-160%);
+  background: var(--color-fg); color: var(--color-bg); padding: 10px 16px; font-weight: 600; text-decoration: none;
+}
+.skip-link:focus-visible { transform: none; }
+
+/* === Compound language: links, dimension string, buttons === */
+.link-arrow {
+  display: inline-flex; align-items: baseline; gap: 0.5em; color: var(--color-accent);
+  font-weight: 560; text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 500ms var(--ease-hover);
+}
+.link-arrow::after { content: "→"; font-weight: 400; transition: transform 500ms var(--ease-hover); }
+.link-arrow:hover { background-size: 100% 1px; }
+.link-arrow:hover::after { transform: translateX(4px); }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.75em; padding: 18px 28px; border-radius: var(--radius);
+  background: var(--color-accent); color: var(--color-print); font-weight: 560; text-decoration: none;
+  transition: background-color 300ms var(--ease-hover);
+}
+.btn-primary::after { content: "→"; font-weight: 400; }
+.btn-primary:hover { background: var(--color-fg); }
+.label {
+  font-family: var(--body-font-family); font-size: var(--label); font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3;
+}
+/* Dimension string: |—— facts ——| — always carries real data */
+.dim {
+  display: flex; align-items: center; gap: 0.9em; color: var(--color-muted);
+  font-size: var(--label); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3;
+  font-variant-numeric: tabular-nums;
+}
+.dim::before, .dim::after {
+  content: ""; flex: 1 1 var(--spacing-md); min-width: var(--spacing-sm); height: var(--tick);
+  background: linear-gradient(currentColor, currentColor) 0 50% / 100% 1px no-repeat;
+  border-inline-start: 1px solid currentColor;
+}
+.dim::after { border-inline-start: 0; border-inline-end: 1px solid currentColor; }
+.dim > span { flex: 0 1 auto; }
+.dim--start::before { flex: 0 0 var(--spacing-md); }
+/* Stacked variant: the dimension line runs full width above the facts, so wrapping never strands the ticks */
+.dim--stack { flex-wrap: wrap; row-gap: 8px; }
+.dim--stack::before { flex: 1 0 100%; border-inline: 1px solid currentColor; }
+.dim--stack::after { display: none; }
+
+/* === Site header === */
+.site-header {
+  position: sticky; top: 0; z-index: 50; color: var(--color-fg); background: var(--color-bg);
+  border-bottom: 1px solid var(--color-hairline);
+}
+.site-header__inner {
+  position: relative; display: flex; align-items: center; justify-content: space-between;
+  gap: var(--spacing-md); min-height: var(--header-h);
+}
+.ds-wordmark {
+  font-family: var(--heading-font-family); font-weight: 400; font-size: 1.375rem; letter-spacing: -0.01em;
+  line-height: 1; text-decoration: none; white-space: nowrap;
+}
+.ds-nav__list { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 40px); }
+.ds-nav a, .ds-nav summary {
+  display: inline-block; padding: 8px 0; font-size: var(--body-sm); font-weight: 450; letter-spacing: 0.01em;
+  text-decoration: none; cursor: pointer;
+  background: linear-gradient(currentColor, currentColor) 0 calc(100% - 2px) / 0 1px no-repeat;
+  transition: background-size 450ms var(--ease-hover);
+}
+.ds-nav a:hover, .ds-nav summary:hover, .ds-nav a[aria-current], .ds-nav__group.is-current summary { background-size: 100% 1px; }
+.ds-nav summary { list-style: none; display: inline-flex; align-items: center; gap: 8px; }
+.ds-nav summary::-webkit-details-marker { display: none; }
+.ds-nav summary::after {
+  content: ""; width: 6px; height: 6px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg); transition: transform 300ms var(--ease-hover);
+}
+.ds-nav details[open] > summary::after { transform: translateY(1px) rotate(-135deg); }
+.ds-nav__group details { position: relative; }
+.ds-nav__sub {
+  position: absolute; top: calc(100% + 14px); right: -20px; min-width: 220px; padding: 10px 20px;
+  background: var(--color-bg); color: var(--color-fg); border: 1px solid var(--color-hairline);
+}
+.ds-nav__sub a { display: block; padding: 9px 0; }
+.ds-nav__sub li + li { border-top: 1px solid var(--color-hairline); }
+
+/* Over-media state: transparent header on its own scrim (home + project heroes) */
+body[data-hero="media"] .site-header {
+  position: absolute; inset: 0 0 auto; background: transparent; color: var(--color-print); border-bottom-color: transparent;
+}
+body[data-hero="media"] .site-header::before {
+  content: ""; position: absolute; inset: 0 0 -56px; z-index: -1; pointer-events: none;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--color-darkroom) 74%, transparent) 0%, color-mix(in srgb, var(--color-darkroom) 64%, transparent) 58%, transparent 100%);
+}
+body[data-hero="media"] .site-header :focus-visible { outline-color: currentColor; }
+.ds-nav__sub :focus-visible { outline-color: var(--color-accent); }
+.hero :focus-visible { outline-color: var(--color-print); }
+
+/* === Hero (project-hero, home instance) === */
+.hero { position: relative; isolation: isolate; overflow: hidden; min-height: max(100svh, 620px); display: grid; align-items: end; background: var(--color-darkroom); color: var(--color-print); }
+.hero__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Scrim is bound to the text block, not the frame: ≥0.74 darkroom behind every glyph, photo above stays clear */
+.hero__content::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  top: -45%; bottom: 0; left: calc(50% - 50vw); right: calc(50% - 50vw);
+  background: linear-gradient(to top, color-mix(in srgb, var(--color-darkroom) 88%, transparent) 0%, color-mix(in srgb, var(--color-darkroom) 74%, transparent) 68%, transparent 100%);
+}
+.hero__content {
+  position: relative;
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: end;
+  padding-block: var(--spacing-lg) clamp(40px, 6vw, 72px);
+}
+.hero__title { grid-column: 1 / span 9; display: grid; gap: clamp(16px, 2vw, 28px); letter-spacing: 0; }
+.hero__thesis {
+  font-size: clamp(3.25rem, 7.4vw, 10rem); font-weight: 300; line-height: 0.94; letter-spacing: -0.03em; max-width: 9.6em;
+}
+.hero__who {
+  font-family: var(--body-font-family); font-size: clamp(1.0625rem, 1.5vw, 1.375rem); font-weight: 450;
+  line-height: 1.4; letter-spacing: 0; max-width: 34em;
+}
+.hero__caption { grid-column: 10 / span 3; color: var(--color-print); margin-bottom: 0.45em; }
+.hero__caption a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.hero__caption a:hover { text-decoration-thickness: 2px; }
+
+/* === Section rhythm === */
+.band { padding-block: var(--section-padding); }
+.band + .band { padding-top: 0; }
+.section-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--spacing-sm) var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+.section-head h2 { font-size: var(--heading-xl); }
+
+/* === Intro (GEO): side-rail reading band — home; hub reuses it === */
+.intro { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.intro__rail { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-sm); }
+.intro__rail h2 { font-size: var(--heading-md); font-weight: 400; letter-spacing: -0.005em; }
+.intro__body { grid-column: 5 / span 8; display: grid; gap: var(--spacing-md); }
+.intro__lead { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; letter-spacing: -0.005em; max-width: 30em; }
+.intro__more { max-width: var(--measure); color: var(--color-fg); }
+.intro__more a { color: var(--color-accent); text-underline-offset: 3px; }
+
+/* === Featured projects: the drawing schedule (project-index, home instance) === */
+.schedule__list { border-bottom: 1px solid var(--color-fg); }
+.schedule__row {
+  position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px;
+  align-items: end; padding-block: var(--spacing-md); border-top: 1px solid var(--color-hairline);
+}
+.schedule__row:first-child { border-top-color: var(--color-fg); }
+.schedule__text { grid-column: 1 / span 6; display: grid; gap: var(--spacing-sm); padding-right: var(--spacing-md); }
+.schedule__title { font-size: var(--heading-xl); line-height: 1; letter-spacing: -0.025em; }
+.schedule__title a { text-decoration: none; transition: color 400ms var(--ease-hover); }
+.schedule__title a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.schedule__media { grid-column: 7 / span 6; aspect-ratio: 3 / 2; overflow: hidden; background: var(--color-hairline); }
+.schedule__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-hover); }
+.schedule__row:hover .schedule__title a, .schedule__row:has(a:focus-visible) .schedule__title a { color: var(--color-accent); }
+.schedule__row:hover .schedule__media img { transform: scale(1.02); }
+.schedule__row:has(a:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: 6px; }
+.schedule__row a:focus-visible { outline: none; }
+.schedule__foot { padding-top: var(--spacing-md); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--spacing-sm) var(--spacing-md); }
+.facets { display: flex; flex-wrap: wrap; gap: var(--spacing-xs); }
+.facet-chip {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border: 1px solid var(--color-hairline); border-radius: var(--radius);
+  color: var(--color-fg); font-size: var(--body-sm); font-weight: 450; text-decoration: none; transition: background-color 300ms var(--ease-hover), color 300ms var(--ease-hover), border-color 300ms var(--ease-hover);
+}
+.facet-chip:hover, .facet-chip[aria-current="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+
+/* === Testimonial (testimonial-list, single quote) === */
+.testimonial { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.testimonial__figure { grid-column: 2 / span 10; margin: 0; display: grid; gap: var(--spacing-md); }
+.testimonial blockquote { margin: 0; }
+.testimonial blockquote p {
+  font-family: var(--heading-font-family); font-style: italic; font-weight: 300; font-size: var(--heading-xl);
+  line-height: 1.12; letter-spacing: -0.015em; max-width: 24em; text-wrap: balance;
+}
+.testimonial figcaption { max-width: 34rem; }
+.testimonial__more { grid-column: 2 / span 10; }
+
+/* === Principles: 2×2 hairline sheet === */
+.principles { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.band.principles { padding-top: var(--spacing-lg); background: linear-gradient(var(--color-fg), var(--color-fg)) var(--gutter) 0 / calc(100% - 2 * var(--gutter)) 1px no-repeat; }
+.principles__head { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-md); }
+.principles__head h2 { font-size: var(--heading-xl); }
+.principles__links { display: grid; gap: var(--spacing-sm); justify-items: start; }
+.principles__sheet { grid-column: 5 / span 8; display: grid; grid-template-columns: 1fr 1fr; }
+.principle { display: grid; align-content: start; gap: var(--spacing-sm); padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg) 0; border-top: 1px solid var(--color-hairline); }
+.principle:nth-child(even) { padding-left: var(--spacing-md); border-left: 1px solid var(--color-hairline); }
+.principle:nth-child(-n+2) { border-top: 0; padding-top: 0; }
+.principle h3 { font-size: var(--heading-md); font-weight: 400; letter-spacing: -0.005em; line-height: 1.15; }
+.principle p { color: var(--color-fg); max-width: 40ch; }
+
+/* === Photography: the darkroom wall (collection-index, home teaser) === */
+.darkroom { background: var(--color-darkroom); color: var(--color-bg); padding-block: var(--section-padding); }
+.darkroom :focus-visible { outline-color: var(--color-accent-light); }
+.darkroom .section-head { align-items: end; padding-bottom: var(--spacing-lg); }
+.darkroom .section-head > div { display: grid; gap: var(--spacing-sm); }
+.darkroom__lead { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; max-width: 26em; color: var(--color-bg); }
+.darkroom .link-arrow { color: var(--color-accent-light); }
+.wall { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); align-items: end; }
+.frame { position: relative; margin: 0; display: grid; gap: 14px; }
+.frame__img { overflow: hidden; background: var(--color-fg); aspect-ratio: 3 / 2; }
+.frame--tall .frame__img { aspect-ratio: 4 / 5; }
+.frame__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-hover); }
+.frame:hover .frame__img img { transform: scale(1.02); }
+.frame figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.frame__title { font-family: var(--heading-font-family); font-size: 1.375rem; font-weight: 400; line-height: 1.2; }
+.frame__title a { text-decoration: none; }
+.frame__title a::after { content: ""; position: absolute; inset: 0; }
+.frame__kind { color: var(--color-muted-on-dark); }
+.frame:has(a:focus-visible) { outline: 2px solid var(--color-accent-light); outline-offset: 6px; }
+.frame a:focus-visible { outline: none; }
+.span-3 { grid-column: span 3; } .span-4 { grid-column: span 4; } .span-5 { grid-column: span 5; }
+.span-6 { grid-column: span 6; } .span-7 { grid-column: span 7; }
+.wall__divider { grid-column: 1 / -1; color: var(--color-muted-on-dark); margin-bottom: calc(var(--spacing-md) * -1); }
+
+/* === Enquiry band === */
+.enquiry { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.enquiry h2 { grid-column: 1 / span 4; font-size: var(--heading-xl); }
+.enquiry__body { grid-column: 5 / span 8; display: grid; gap: var(--spacing-md); }
+.enquiry__lines { display: grid; gap: 4px; }
+.enquiry__lines a {
+  font-family: var(--heading-font-family); font-weight: 300; font-size: clamp(1.375rem, 3.4vw, 3.75rem); line-height: 1.1;
+  letter-spacing: -0.02em; color: var(--color-accent); text-decoration: none; overflow-wrap: anywhere;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 600ms var(--ease-hover);
+}
+.enquiry__lines a:hover { background-size: 100% 1px; }
+
+/* === Site footer: graphite title block === */
+.site-footer { background: var(--color-fg); color: var(--color-bg); padding-block: var(--spacing-xl) var(--spacing-md); }
+.site-footer :focus-visible { outline-color: var(--color-accent-light); }
+.site-footer__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.site-footer__id { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-md); }
+.site-footer__id .ds-wordmark { font-size: 1.875rem; }
+.site-footer address { color: var(--color-muted-on-dark); line-height: 1.7; }
+.site-footer address a { color: var(--color-bg); text-underline-offset: 3px; }
+.site-footer__map { grid-column: 6 / span 7; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-md) 24px; }
+.site-footer__map h2 { font-family: var(--body-font-family); color: var(--color-muted-on-dark); margin-bottom: var(--spacing-sm); letter-spacing: 0.08em; }
+.site-footer__map a { display: inline-block; padding: 5px 0; text-decoration: none; font-size: var(--body-sm); }
+.site-footer__map a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer__legal {
+  grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
+  padding-top: var(--spacing-md); border-top: 1px solid var(--color-muted); color: var(--color-muted-on-dark); font-size: var(--body-sm);
+}
+
+/* === Desktop: header fixed over the hero, settles to sage at the hero's end === */
+@media (min-width: 900px) {
+  @supports (animation-timeline: scroll()) {
+    body[data-hero="media"] .site-header {
+      position: fixed;
+      animation: header-settle linear both; animation-timeline: scroll(root block);
+      animation-range: calc(max(100svh, 620px) - var(--header-h) - 1px) calc(max(100svh, 620px) - var(--header-h));
+    }
+    body[data-hero="media"] .site-header::before {
+      animation: scrim-out linear both; animation-timeline: scroll(root block);
+      animation-range: calc(max(100svh, 620px) - var(--header-h) - 1px) calc(max(100svh, 620px) - var(--header-h));
+    }
+  }
+}
+@keyframes header-settle {
+  from { background-color: transparent; color: var(--color-print); border-bottom-color: transparent; }
+  to { background-color: var(--color-bg); color: var(--color-fg); border-bottom-color: var(--color-hairline); }
+}
+@keyframes scrim-out { from { opacity: 1; } to { opacity: 0; } }
+
+/* === Tablet: 600–899 === */
+@media (max-width: 899px) {
+  .hero__title { grid-column: 1 / -1; }
+  .hero__caption { grid-column: 1 / -1; max-width: 26rem; margin-top: var(--spacing-md); }
+  .intro__rail, .intro__body, .principles__head, .principles__sheet, .enquiry h2, .enquiry__body, .site-footer__id, .site-footer__map, .testimonial__figure, .testimonial__more { grid-column: 1 / -1; }
+  .schedule__text { grid-column: 1 / span 6; }
+  .schedule__media { grid-column: 7 / span 6; }
+  .wall .span-3 { grid-column: span 4; }
+  .hero__media img { object-position: 22% 55%; }
+  .wall .span-4, .wall .span-5, .wall .span-6, .wall .span-7 { grid-column: span 12; }
+  .site-footer__map { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* === Phone: ≤640 hamburger, ≤599 single column === */
+@media (max-width: 640px) {
+  /* no JS: the list wraps under the wordmark, every link reachable */
+  .site-header__inner { flex-wrap: wrap; row-gap: 0; }
+  .ds-nav { flex: 1 0 100%; padding-bottom: 10px; }
+  .ds-nav__list { flex-wrap: wrap; column-gap: 20px; row-gap: 0; }
+  .ds-nav__sub { left: -20px; right: auto; }
+  /* JS: the stock hamburger (button toggles header[data-nav-open]) */
+  :where(.js) .site-header__inner { flex-wrap: nowrap; }
+  :where(.js) .ds-nav-burger {
+    display: inline-flex; margin: 0; line-height: inherit; letter-spacing: inherit; align-items: center; gap: 10px; cursor: pointer; padding: 10px 14px;
+    font-family: var(--body-font-family); font-size: var(--body-sm); font-weight: 560; color: currentColor;
+    background: transparent; border: 1px solid currentColor; border-radius: var(--radius); user-select: none;
+  }
+  .ds-nav-burger-icon { width: 16px; height: 10px; position: relative; }
+  .ds-nav-burger-icon::before, .ds-nav-burger-icon::after { content: ""; position: absolute; left: 0; right: 0; height: 1.5px; background: currentColor; }
+  .ds-nav-burger-icon::before { top: 0; } .ds-nav-burger-icon::after { bottom: 0; }
+  .ds-nav-burger:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  :where(.js) .ds-nav {
+    position: absolute; top: 100%; flex: none; left: 0; right: 0;
+    display: block; padding: 8px var(--gutter) 24px; background: var(--color-bg); color: var(--color-fg);
+    border-top: 1px solid var(--color-fg); border-bottom: 1px solid var(--color-hairline);
+    transform: translateY(-8px); opacity: 0; visibility: hidden; pointer-events: none;
+    transition: transform 180ms var(--ease-hover), opacity 180ms var(--ease-hover), visibility 0s linear 180ms;
+  }
+  :where(.js) [data-nav-open] .ds-nav {
+    transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto;
+    transition: transform 180ms var(--ease-hover), opacity 180ms var(--ease-hover), visibility 0s linear 0s;
+  }
+  :where(.js) .ds-nav__list { display: block; }
+  :where(.js) .ds-nav__list > li { border-bottom: 1px solid var(--color-hairline); }
+  :where(.js) .ds-nav__list > li:last-child { border-bottom: 0; }
+  :where(.js) .ds-nav a, :where(.js) .ds-nav summary { display: flex; padding: 14px 0; font-size: var(--body); }
+  :where(.js) .ds-nav summary { justify-content: space-between; }
+  :where(.js) .ds-nav__sub { position: static; min-width: 0; padding: 0 0 8px 16px; border: 0; background: transparent; }
+  :where(.js) .ds-nav__sub li + li { border-top: 0; }
+  :where(.js) .ds-nav__sub a { padding: 10px 0; }
+  .ds-nav :focus-visible { outline-color: var(--color-accent); }
+}
+@media (max-width: 599px) {
+  .hero__thesis { font-size: clamp(3.25rem, 13vw, 3.75rem); }
+  .schedule__row { row-gap: var(--spacing-sm); padding-block: var(--spacing-md) var(--spacing-md); }
+  .schedule__text, .schedule__media { grid-column: 1 / -1; padding-right: 0; }
+  .schedule__media { order: -1; }
+  .schedule__title { font-size: var(--heading-lg); }
+  .principles__sheet { grid-template-columns: 1fr; }
+  .wall .span-3 { grid-column: span 6; }
+  .wall .span-3:nth-child(3) { grid-column: span 12; }
+  .principle, .principle:nth-child(even) { padding: var(--spacing-md) 0; border-left: 0; }
+  .principle:nth-child(2) { border-top: 1px solid var(--color-hairline); padding-top: var(--spacing-md); }
+  .wall { row-gap: var(--spacing-md); }
+  .darkroom__lead { font-size: var(--heading-md); max-width: 20em; }
+  .site-footer { padding-top: var(--spacing-lg); }
+}
+/* Very narrow phones: burger collapses to a 44px square; its label stays as the accessible name */
+@media (max-width: 380px) {
+  .site-header__inner { gap: var(--spacing-sm); }
+  .ds-nav-burger { padding: 13px; min-width: 44px; min-height: 44px; justify-content: center; }
+  .ds-nav-burger-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+/* Touch: 44px targets on coarse pointers; nothing depends on hover */
+@media (pointer: coarse) {
+  .ds-nav a, .ds-nav summary { min-height: 44px; display: inline-flex; align-items: center; }
+  .site-footer__map a { padding-block: 11px; }
+  .enquiry__lines a { display: inline-block; padding-block: 6px; }
+  .hero__caption a, .intro__more a { padding-block: 12px; margin-block: -12px; }
+  .link-arrow { padding-block: 12px; margin-block: -12px; }
+}
+/* Short landscape phones: keep the H1 inside the first screen */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: max(100svh, 420px); }
+  .hero__thesis { font-size: clamp(2rem, 7vw, 3.75rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ds-nav, [data-nav-open] .ds-nav { transition: none; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+/* ==========================================================================
+   Project (archetype: willy-street) — project-hero--project, project-facts, big-idea, project-gallery, project-pager
+   ========================================================================== */
+/* === Project hero (project-hero, project instance): title is the H1, photo owns the viewport === */
+.hero--project .hero__media img { object-position: 50% 50%; }
+.hero--project .hero__thesis { font-size: var(--heading-xxl); line-height: 0.9; max-width: 11em; }
+.hero__crumbs ol { display: flex; flex-wrap: wrap; gap: 4px 0.9em; }
+.hero__crumbs li + li::before { content: "/"; margin-right: 0.9em; }
+
+/* === Facts bar: a chain dimension — one hairline, a tick at every fact boundary === */
+.facts { padding-top: var(--spacing-lg); }
+.factbar { display: flex; flex-wrap: wrap; row-gap: var(--spacing-md); margin: 0; color: var(--color-muted); }
+.factbar > div {
+  flex: 1 1 auto; min-width: min(100%, 10rem); position: relative; display: grid; align-content: start; gap: 10px;
+  padding: calc(var(--tick) + 16px) var(--spacing-sm) 0 16px;
+  background: linear-gradient(currentColor, currentColor) 0 calc(var(--tick) / 2) / 100% 1px no-repeat;
+}
+.factbar > div::before, .factbar > div::after { content: ""; position: absolute; top: 0; width: 1px; height: var(--tick); background: currentColor; }
+.factbar > div::before { left: 0; }
+.factbar > div::after { right: 0; }
+.factbar dd {
+  margin: 0; color: var(--color-fg); font-family: var(--heading-font-family); font-size: var(--heading-md);
+  font-weight: 400; line-height: 1.2; letter-spacing: -0.005em; text-wrap: balance;
+}
+.factbar dd a {
+  text-decoration: underline; text-decoration-color: var(--color-muted); text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em; transition: text-decoration-color 300ms var(--ease-hover), color 300ms var(--ease-hover);
+}
+.factbar dd a:hover { color: var(--color-accent); text-decoration-color: currentColor; }
+
+/* === Big idea: the first narrative sentence as the project's thesis; the rest in a measured column === */
+.idea { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.idea__lead {
+  grid-column: 1 / span 10; max-width: 20em; font-family: var(--heading-font-family); font-weight: 300;
+  font-size: var(--heading-xl); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance;
+}
+.idea__body { grid-column: 6 / span 7; display: grid; gap: 1.1em; max-width: var(--measure); }
+
+/* === Project gallery: alternating full-bleed plates and salon-hung pairs; every plate opens the lightbox === */
+.gallery .section-head { align-items: baseline; }
+.gallery__count { color: var(--color-muted); }
+.gallery__seq { display: grid; gap: clamp(24px, 4vw, 64px); }
+.plate { margin: 0; display: grid; gap: 12px; }
+.plate__link { position: relative; display: block; overflow: hidden; background: var(--color-hairline); cursor: zoom-in; }
+.plate__link img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-hover); }
+.plate__link:hover img { transform: scale(1.015); }
+.plate__link:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+.plate--full .plate__link { height: min(66.667vw, 92svh); }
+.plate--full figcaption { padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2 + var(--gutter))); }
+.plate-row { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: clamp(24px, 4vw, 64px); align-items: end; }
+.plate-row .plate { grid-column: var(--at, auto) / span var(--span, 6); }
+.plate figcaption { color: var(--color-muted); }
+.plate__no { font-variant-numeric: tabular-nums; }
+
+/* === Previous / next project: two ruled cells, title at index scale === */
+.pager { display: grid; grid-template-columns: 1fr 1fr; border-block: 1px solid var(--color-fg); }
+.pager a { display: grid; align-content: start; gap: 14px; padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 0; text-decoration: none; }
+.pager a + a { padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-md); border-left: 1px solid var(--color-hairline); text-align: right; justify-items: end; }
+.pager__title { font-family: var(--heading-font-family); font-weight: 300; font-size: var(--heading-lg); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance; transition: color 400ms var(--ease-hover); }
+.pager a:hover .pager__title { color: var(--color-accent); }
+.pager__dir { color: var(--color-muted); }
+.pager .dim { justify-content: inherit; }
+
+@media (max-width: 899px) {
+  .hero--project .hero__media img { object-position: 50% 50%; }
+  .idea__lead, .idea__body { grid-column: 1 / -1; }
+  .idea__body { padding-left: clamp(0px, 12vw, 96px); }
+  .plate-row .plate { grid-column: auto / span 6; }
+}
+@media (max-width: 599px) {
+  .facts { padding-top: var(--spacing-md); }
+  .factbar { display: grid; grid-template-columns: 1fr 1fr; }
+  .factbar > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .hero--project .hero__thesis { font-size: clamp(3.25rem, 13vw, 3.75rem); }
+  .idea { row-gap: var(--spacing-md); }
+  .idea__lead { font-size: var(--heading-lg); }
+  .idea__body { padding-left: 0; }
+  .plate-row .plate { grid-column: 1 / -1; }
+  .plate--full .plate__link { height: auto; aspect-ratio: var(--ar, 3 / 2); }
+  .pager { grid-template-columns: 1fr; }
+  .pager a, .pager a + a { padding: var(--spacing-md) 0; border-left: 0; text-align: left; justify-items: start; }
+  .pager a + a { border-top: 1px solid var(--color-hairline); }
+}
+@media (pointer: coarse) {
+  .factbar dd a { display: inline-block; padding-block: 8px; margin-block: -8px; }
+  .hero__crumbs a { display: inline-block; padding-block: 12px; margin-block: -12px; }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero--project .hero__thesis { font-size: clamp(2rem, 7vw, 3.75rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plate__link img { transition: none; }
+}
+
+/* ==========================================================================
+   Listing (archetype: residential) — project-index-filterable
+   ========================================================================== */
+/* === Listing head: the sector named at exhibit scale, intro from the practice's own copy === */
+.index-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); padding-block: var(--spacing-lg); }
+.index-head h1 { grid-column: 1 / -1; font-size: clamp(3.25rem, 7.4vw, 10rem); font-weight: 300; line-height: 0.94; letter-spacing: -0.03em; }
+.index-head__lead { grid-column: 1 / span 7; max-width: 30em; font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; letter-spacing: -0.005em; }
+.index-head__meta { grid-column: 9 / span 4; align-self: end; display: grid; gap: 10px; }
+.index-head__credit { color: var(--color-muted); font-size: var(--body-sm); }
+
+/* === Index: ruled filter sheet in a sticky side rail (3 cols), the schedule beside it (9 cols) === */
+.index { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: start; padding-bottom: var(--section-padding); }
+.filters-fold { grid-column: 1 / span 3; position: sticky; top: calc(var(--header-h) + 16px); max-height: calc(100svh - var(--header-h) - 32px); overflow-y: auto; overscroll-behavior: contain; }
+.filters-fold__summary { display: none; }
+.filters { border-top: 1px solid var(--color-fg); }
+.index__main { grid-column: 4 / -1; min-width: 0; }
+.filters__group { display: grid; gap: 12px; padding-block: 16px 20px; border-bottom: 1px solid var(--color-hairline); }
+.filters__label { color: var(--color-muted); }
+.filters .facet-chip { min-height: 36px; padding: 6px 12px; }
+.facet-chip__n { margin-left: 0.55em; font-variant-numeric: tabular-nums; font-weight: 400; color: var(--color-muted); transition: color 300ms var(--ease-hover); }
+.facet-chip:hover .facet-chip__n, .facet-chip[aria-current="true"] .facet-chip__n { color: inherit; }
+.facet-chip[aria-current="true"] { font-weight: 560; }
+.facet-chip[aria-disabled="true"] { color: var(--color-muted); border-style: dashed; cursor: default; }
+.facet-chip[aria-disabled="true"]:hover { background: transparent; color: var(--color-muted); border-color: var(--color-hairline); }
+
+/* === Index bar: live count, clear, list / grid view === */
+.index-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--spacing-sm) var(--spacing-md); padding-bottom: var(--spacing-sm); border-top: 1px solid var(--color-fg); padding-top: 14px; }
+.index-bar + .schedule__list .schedule__row:first-child { border-top-color: var(--color-hairline); }
+[data-index-clear][hidden] { display: none; }
+.index-bar__status { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px var(--spacing-md); }
+.index-bar__count { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.2; font-variant-numeric: tabular-nums; }
+.view-toggle { display: inline-flex; border: 1px solid var(--color-fg); }
+.view-toggle[hidden] { display: none; }
+.view-toggle button {
+  min-height: 40px; padding: 8px 18px; border: 0; border-radius: var(--radius); background: transparent; color: var(--color-fg); cursor: pointer;
+  font-family: var(--body-font-family); font-size: var(--body-sm); font-weight: 450; transition: background-color 300ms var(--ease-hover), color 300ms var(--ease-hover);
+}
+.view-toggle button + button { border-left: 1px solid var(--color-fg); }
+.view-toggle button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); font-weight: 560; }
+.view-toggle button:hover:not([aria-pressed="true"]) { background: color-mix(in srgb, var(--color-fg) 8%, transparent); }
+.index-empty { padding-block: var(--spacing-lg); border-top: 1px solid var(--color-fg); font-family: var(--heading-font-family); font-size: var(--heading-md); }
+.index-empty[hidden] { display: none; }
+.index-empty a { color: var(--color-accent); text-underline-offset: 3px; }
+
+/* === List view: the canon drawing schedule, tightened for a full index === */
+.schedule__row[hidden] { display: none; }
+.schedule--index .schedule__row { padding-block: 22px; }
+.schedule--index .schedule__text { grid-column: 1 / span 7; }
+.schedule--index .schedule__media { grid-column: 8 / span 5; }
+.schedule--index .schedule__title { font-size: var(--heading-lg); }
+
+/* === Grid view: 3:2 frames on sage, title + facts beneath === */
+.schedule--index[data-view="grid"] { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); padding-top: var(--spacing-sm); border-bottom: 0; }
+.schedule--index[data-view="grid"] .schedule__row { display: flex; flex-direction: column; align-items: stretch; gap: var(--spacing-sm); padding: 0; border-top: 0; }
+.schedule--index[data-view="grid"] .schedule__row[hidden] { display: none; }
+.schedule--index[data-view="grid"] .schedule__media { order: -1; }
+.schedule--index[data-view="grid"] .schedule__text { gap: 10px; padding-right: 0; }
+.schedule--index[data-view="grid"] .schedule__title { font-size: var(--heading-md); line-height: 1.15; letter-spacing: -0.01em; }
+
+@media (max-width: 899px) {
+  .index-head__lead, .index-head__meta { grid-column: 1 / -1; }
+  .filters-fold, .index__main { grid-column: 1 / -1; }
+  .filters-fold { position: static; max-height: none; overflow: visible; margin-bottom: var(--spacing-md); }
+  .filters__group { grid-template-columns: 7.5rem minmax(0, 1fr); align-items: center; gap: 12px; padding-block: 10px; }
+
+  .schedule--index .schedule__text { grid-column: 1 / span 7; }
+  .schedule--index .schedule__media { grid-column: 8 / span 5; }
+  .schedule--index[data-view="grid"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 599px) {
+  .index-head { padding-block: var(--spacing-md) var(--spacing-lg); }
+  .filters__group { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .index-head__lead { font-family: var(--body-font-family); font-size: var(--body); line-height: var(--line-height-body); }
+  .filters-fold { margin-bottom: 0; }
+  .filters-fold__summary {
+    display: flex; align-items: center; justify-content: space-between; min-height: 48px; padding: 10px 0; cursor: pointer; list-style: none;
+    border-top: 1px solid var(--color-fg); font-weight: 560;
+  }
+  .filters-fold__summary::-webkit-details-marker { display: none; }
+  .filters-fold__summary::after { content: ""; width: 7px; height: 7px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform 300ms var(--ease-hover); }
+  .filters-fold[open] > .filters-fold__summary::after { transform: translateY(1px) rotate(-135deg); }
+  .filters-fold[open] > .filters-fold__summary { margin-bottom: 0; }
+  .filters-fold .filters { border-top-color: var(--color-hairline); }
+  .schedule--index .schedule__text, .schedule--index .schedule__media { grid-column: 1 / -1; }
+  .schedule--index[data-view="grid"] { column-gap: 16px; row-gap: var(--spacing-md); }
+  .schedule--index[data-view="grid"] .schedule__title { font-size: var(--body); font-family: var(--heading-font-family); }
+  .schedule--index[data-view="grid"] .dim::before { display: none; }
+}
+@media (pointer: coarse) {
+  .facet-chip { min-height: 44px; }
+  .view-toggle button { min-height: 44px; }
+}
+
+/* ==========================================================================
+   Gallery (archetype: copy-of-iowa) — breadcrumb, photo-collection, photo-lightbox, collection-index--siblings
+   ========================================================================== */
+/* === Darkroom page ground: consecutive darkroom bands join === */
+.darkroom + .darkroom { padding-top: 0; box-shadow: 0 -1px 0 var(--color-darkroom); }
+/* Skip the wall (89 tab stops) — visible on focus, like the canon skip-link */
+.skip-wall { position: absolute; left: var(--gutter); top: 0; z-index: 5; transform: translateY(-50%); background: var(--color-bg); color: var(--color-fg); padding: 10px 16px; font-weight: 600; text-decoration: none; }
+.skip-wall:not(:focus) { width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.gallery { position: relative; }
+
+/* === Breadcrumb === */
+.crumbs ol { display: flex; flex-wrap: wrap; gap: 4px 0; }
+.crumbs li { display: inline-flex; align-items: baseline; }
+.crumbs li + li::before { content: "/"; padding-inline: 0.75em; color: var(--color-muted-on-dark); }
+.crumbs a { text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 450ms var(--ease-hover); }
+.crumbs a:hover { background-size: 100% 1px; }
+.crumbs [aria-current] { color: var(--color-muted-on-dark); }
+
+/* === Collection head (photo-collection) === */
+.darkroom.gallery-head { padding-block: var(--spacing-lg) var(--spacing-md); }
+.gallery-head__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); align-items: end; }
+.gallery-head__title { grid-column: 1 / span 7; display: grid; gap: var(--spacing-md); }
+.gallery-head h1 { font-size: var(--heading-xxl); line-height: 0.92; letter-spacing: -0.03em; color: var(--color-print); max-width: 9em; }
+.gallery-head .dim { color: var(--color-muted-on-dark); }
+.gallery-head__intro { grid-column: 8 / span 5; display: grid; gap: var(--spacing-sm); max-width: 34rem; color: var(--color-bg); }
+.gallery-head__intro p:first-child { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; letter-spacing: -0.005em; }
+.gallery-head__intro a { color: var(--color-accent-light); text-underline-offset: 3px; }
+
+/* === Justified wall with salon-scale features (photo-collection) ===
+   Each .photo carries --ar (w/h). Row height scales with the viewport; flex-grow ∝ ratio keeps a row
+   to one height; .photo--feature hangs 1.8× and bottom-aligns with its partner (salon hang). */
+.photo-wall {
+  --row-h: clamp(96px, 19.5vw, 280px); --wall-gap: 24px;
+  display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--wall-gap);
+}
+/* No filler: every row fills (growth capped at 1.9×); the generator composes the ending so no fork ends on a lone frame. */
+.photo {
+  --k: 1; position: relative; margin: 0; min-width: 0;
+  flex: calc(var(--ar) * var(--k)) 1 calc(var(--ar) * var(--k) * var(--row-h));
+  max-width: calc(var(--ar) * var(--k) * var(--row-h) * 1.9);
+  display: grid; gap: 10px;
+}
+.photo--feature { --k: 1.45; }
+/* Runtime rebalance (wall-balance.js): a zero-height line break pulls the previous row's last frame down so the wall never ends on a lone frame */
+.photo-wall__break { flex-basis: 100%; height: 0; margin-top: calc(-1 * var(--wall-gap)); }
+.photo--closing { flex-basis: 100%; max-width: none; } /* fallback: the lone last frame closes the wall at full row width */
+/* Lead scale for short walls (≤ 4 photos) and the hub's Selected works: 2-up ≥ 1130px, one per row below */
+.photo-wall--lead { --row-h: clamp(150px, 30vw, 420px); }
+.photo-wall--lead .photo--feature { --k: 1; }
+.photo__open { display: block; overflow: hidden; background: color-mix(in srgb, var(--color-print) 6%, var(--color-darkroom)); cursor: zoom-in; }
+.photo__open img { width: 100%; height: auto; transition: transform 900ms var(--ease-hover); }
+.photo__open:hover img { transform: scale(1.02); }
+.photo__open:focus-visible { outline: 2px solid var(--color-accent-light); outline-offset: 4px; }
+.photo figcaption { color: var(--color-muted-on-dark); font-size: var(--body-sm); line-height: 1.4; }
+.photo figcaption a { color: var(--color-bg); text-decoration: none; }
+.photo figcaption a.photo__stretch::after { content: ""; position: absolute; inset: 0; }
+.photo:has(a.photo__stretch) .photo__open { cursor: pointer; }
+.photo__title { font-family: var(--heading-font-family); font-size: 1.375rem; font-weight: 400; line-height: 1.2; color: var(--color-bg); }
+.photo:has(a.photo__stretch:focus-visible) { outline: 2px solid var(--color-accent-light); outline-offset: 6px; }
+.photo a.photo__stretch:focus-visible { outline: none; }
+.photo figcaption a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.photo figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 16px; }
+
+/* === Lightbox (photo-lightbox) === */
+.lightbox {
+  position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+  background: color-mix(in srgb, var(--color-darkroom) 96%, transparent); color: var(--color-bg);
+  grid-template-rows: auto minmax(0, 1fr) auto; overscroll-behavior: contain;
+}
+.lightbox[open] { display: grid; }
+.lightbox::backdrop { background: color-mix(in srgb, var(--color-darkroom) 96%, transparent); }
+.lightbox :focus-visible { outline: 2px solid var(--color-accent-light); outline-offset: 2px; }
+.lightbox__bar { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-sm); padding: 12px max(var(--gutter), env(safe-area-inset-left)); }
+.lightbox__title { color: var(--color-muted-on-dark); }
+.lightbox__stage { touch-action: pan-y pinch-zoom; margin: 0; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; justify-items: center; gap: 12px; padding-inline: var(--gutter); }
+/* The frame is a size container so the photograph fits both axes before its pixels arrive (no shift). */
+.lightbox__frame { container-type: size; width: 100%; min-height: 0; display: grid; place-items: center; }
+.lightbox__frame img {
+  --ar: 1.5; width: min(100cqw, 100cqh * var(--ar)); height: auto; aspect-ratio: var(--ar);
+  background: var(--color-fg) center / 100% 100% no-repeat; /* the wall thumbnail paints here until the full file lands */
+}
+.lightbox__caption { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 2px 16px; color: var(--color-muted-on-dark); font-size: var(--body-sm); text-align: center; }
+.lightbox__caption a { color: var(--color-bg); }
+.lightbox__btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 44px; min-width: 44px; padding: 10px 16px;
+  font: 560 var(--body-sm) / 1 var(--body-font-family); letter-spacing: 0.01em; color: var(--color-bg);
+  background: transparent; border: 1px solid color-mix(in srgb, var(--color-muted) 75%, var(--color-muted-on-dark)); border-radius: var(--radius); cursor: pointer; /* 3.5:1 non-text contrast (was 2.7:1) */
+  transition: border-color 300ms var(--ease-hover), background-color 300ms var(--ease-hover);
+}
+.lightbox__btn:hover { border-color: var(--color-bg); background: color-mix(in srgb, var(--color-print) 8%, transparent); }
+.lightbox__count { font-variant-numeric: tabular-nums; color: var(--color-bg); }
+html:has(.lightbox[open]) { overflow: hidden; }
+
+/* === More collections strip (collection-index, siblings instance) === */
+.siblings { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 1fr); gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; scrollbar-color: var(--color-muted) transparent; }
+.siblings li { scroll-snap-align: start; }
+.sibling { position: relative; display: grid; gap: 10px; }
+.sibling__img { aspect-ratio: 3 / 2; overflow: hidden; background: var(--color-fg); }
+.sibling__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-hover); }
+.sibling:hover .sibling__img img { transform: scale(1.03); }
+.sibling__title { font-family: var(--heading-font-family); font-size: 1.375rem; font-weight: 400; line-height: 1.2; }
+.sibling__title a { text-decoration: none; }
+.sibling__title a::after { content: ""; position: absolute; inset: 0; }
+.sibling__count { color: var(--color-muted-on-dark); }
+.sibling:has(a:focus-visible) { outline: 2px solid var(--color-accent-light); outline-offset: 6px; }
+.sibling a:focus-visible { outline: none; }
+
+@media (max-width: 899px) {
+  .gallery-head__title, .gallery-head__intro { grid-column: 1 / -1; }
+  .gallery-head__intro p:first-child { font-size: var(--heading-md); }
+}
+@media (max-width: 599px) {
+  .photo-wall { --wall-gap: 12px; }
+  .darkroom.gallery-head { padding-block: var(--spacing-md); }
+  .gallery-head__intro p:first-child { font-size: var(--body); font-family: var(--body-font-family); line-height: var(--line-height-body); }
+  .lightbox__btn-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .lightbox__bar { padding-inline: 12px; }
+  .lightbox__stage { padding-inline: 0; }
+  .siblings { grid-auto-columns: 44vw; gap: 12px; }
+}
+@media (pointer: coarse) { .crumbs a { display: inline-block; padding-block: 12px; margin-block: -12px; } }
+@media (prefers-reduced-motion: reduce) {
+  .photo__open img, .sibling__img img { transition: none; }
+}
+
+/* ==========================================================================
+   Photo hub (archetype: photography) — collection-index--hub
+   ========================================================================== */
+/* === Hub hero: H1 is the subject only; the who-line sits beside it, outside the heading === */
+.hero__title h1 { font-size: clamp(3.25rem, 7.4vw, 10rem); font-weight: 300; line-height: 0.94; letter-spacing: -0.03em; }
+
+/* === Selected works: the photo-wall with captions under each frame === */
+.selected .photo figcaption { padding-top: 2px; color: var(--color-muted-on-dark); }
+
+/* === Grouped collections (collection-index, hub instance) === */
+.wall h3.wall__divider { font-family: var(--body-font-family); font-weight: 600; letter-spacing: 0.08em; line-height: 1.3; }
+.wall__divider:first-child { margin-top: 0; }
+.wall .frame__kind { font-variant-numeric: tabular-nums; }
+.collections .frame figcaption { display: grid; justify-content: start; gap: 6px; }
+.frame__note { position: relative; z-index: 2; max-width: 40ch; color: var(--color-muted-on-dark); font-size: var(--body-sm); line-height: 1.5; }
+.frame__note a { color: var(--color-accent-light); text-underline-offset: 3px; }
+.exhibit-notes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--spacing-xs) var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-muted); color: var(--color-bg); }
+.exhibit-notes p { max-width: 52ch; }
+
+@media (max-width: 599px) {
+  .wall .frame--solo-sm { grid-column: span 12; }
+  .wall .frame--solo-sm .frame__img { aspect-ratio: 3 / 2; }
+}
+
+/* ==========================================================================
+   Static (archetype: about) — prose, text schedule, chain, ledger, notes, opening
+   ========================================================================== */
+/* === Prose: side-rail reading band (generalises the home intro) === */
+.prose { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.prose__rail { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-sm); }
+.prose__rail h2 { font-size: var(--heading-xl); }
+.prose__body { grid-column: 5 / span 8; display: grid; gap: var(--spacing-sm); max-width: var(--measure); }
+.prose__lead { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; letter-spacing: -0.005em; max-width: 30em; margin-bottom: var(--spacing-xs); }
+.prose__body a:not(.link-arrow) { color: var(--color-accent); text-underline-offset: 3px; }
+.prose__body .link-arrow { justify-self: start; margin-top: var(--spacing-sm); }
+
+/* === Text schedule: ruled rows without photographs (practice index, groups) === */
+.schedule--text .schedule__row { align-items: baseline; }
+.schedule--text .schedule__text { grid-column: 1 / span 5; }
+.schedule__note { grid-column: 6 / span 7; max-width: var(--measure); }
+.schedule--text .schedule__title { font-size: var(--heading-lg); }
+.schedule__go { grid-column: 6 / span 7; margin-top: var(--spacing-xs); color: var(--color-accent); font-weight: 560; }
+
+/* === Chain dimension: consecutive segments between ticks (sequence of stages) === */
+.chain { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); color: var(--color-fg); }
+.chain > li {
+  position: relative; display: flex; align-items: flex-end; justify-content: center; text-align: center;
+  padding: 0 12px 18px; background: linear-gradient(currentColor, currentColor) 0 calc(100% - 4px) / 100% 1px no-repeat;
+}
+.chain > li::before, .chain > li:last-child::after { content: ""; position: absolute; bottom: 0; width: 1px; height: var(--tick); background: currentColor; }
+.chain > li::before { left: 0; }
+.chain > li:last-child::after { right: 0; }
+.chain__label { font-size: var(--label); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3; }
+.chain a { text-decoration: none; color: var(--color-accent); padding-block: 6px; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 450ms var(--ease-hover); }
+.chain a:hover { background-size: 100% 1px; }
+
+/* === Services band === */
+.services { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.services .prose__rail { grid-row: 1; }
+.services .prose__body { grid-row: 1; }
+.services .chain { grid-column: 1 / -1; }
+
+/* === Testimonial ledger: testimonial-list, long variant (many entries, full text) === */
+.ledger-nav { display: flex; flex-wrap: wrap; gap: var(--spacing-xs); }
+.ledger { display: grid; gap: var(--spacing-md); }
+.ledger__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-sm); padding-bottom: var(--spacing-md); }
+.ledger__head h2 { grid-column: 1 / span 4; font-size: var(--heading-xl); }
+.ledger__intro { grid-column: 5 / span 8; display: grid; gap: var(--spacing-sm); align-content: end; max-width: var(--measure); }
+.ledger__list { border-bottom: 1px solid var(--color-hairline); }
+.ledger__entry { border-top: 1px solid var(--color-hairline); scroll-margin-top: calc(var(--header-h) + 16px); }
+.ledger__entry:first-child { border-top-color: var(--color-fg); }
+.ledger__figure { margin: 0; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-sm); padding-block: var(--spacing-md) var(--spacing-lg); }
+.ledger__quote { grid-column: 5 / span 8; grid-row: 1; margin: 0; display: grid; gap: var(--spacing-sm); max-width: var(--measure); }
+.ledger__quote p { text-wrap: pretty; }
+.ledger__lead { font-family: var(--heading-font-family); font-weight: 300; font-size: var(--heading-md); line-height: 1.38; letter-spacing: -0.005em; }
+.ledger__who {
+  grid-column: 1 / span 4; grid-row: 1; align-self: start; display: grid; gap: 6px;
+  position: sticky; top: calc(var(--header-h) + 24px); padding-right: var(--spacing-md);
+}
+.ledger__name { font-family: var(--heading-font-family); font-size: 1.375rem; font-weight: 400; line-height: 1.2; }
+.ledger__org { color: var(--color-fg); font-size: var(--body-sm); line-height: 1.45; }
+.ledger__who .dim { margin-top: 6px; }
+.ledger__foot { color: var(--color-muted); font-size: var(--body-sm); }
+
+.nowrap { white-space: nowrap; }
+/* Owner-review flag on captured text (PLACEHOLDER signature: dashed accent outline, mono eyebrow, tinted ground) */
+.review-flag { outline: 2px dashed var(--color-accent); outline-offset: 6px; background: var(--color-print); }
+.review-flag__tag { display: block; margin-bottom: 4px; font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: var(--label); color: var(--color-accent); }
+
+/* === Notes wall: captured handwritten notes hung on the sage ground (no crop, no caption) === */
+.notes { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); align-items: start; }
+.note { margin: 0; background: var(--color-print); border: 1px solid var(--color-hairline); padding: clamp(10px, 1.2vw, 18px); }
+.note img { width: 100%; height: auto; }
+.note--a { grid-column: 1 / span 5; }
+.note--b { grid-column: 6 / span 4; margin-top: var(--spacing-lg); }
+.note--c { grid-column: 10 / span 3; margin-top: var(--spacing-md); }
+
+/* Page opening without a hero photograph (type-led static pages) */
+.opening { padding-block: var(--spacing-lg) var(--spacing-md); display: grid; gap: var(--spacing-md); }
+.opening__title { display: grid; gap: clamp(12px, 1.6vw, 22px); }
+.opening__thesis { font-size: clamp(3.25rem, 7.4vw, 10rem); font-weight: 300; line-height: 0.94; letter-spacing: -0.03em; }
+.opening__who { font-family: var(--body-font-family); font-size: clamp(1.0625rem, 1.5vw, 1.375rem); font-weight: 450; line-height: 1.4; letter-spacing: 0; max-width: 34em; }
+
+@media (max-width: 899px) {
+  .prose__rail, .prose__body, .ledger__head h2, .ledger__intro, .schedule--text .schedule__text, .schedule__note, .schedule__go { grid-column: 1 / -1; }
+  .services .prose__body { grid-row: auto; }
+  .ledger__quote, .ledger__who { grid-column: 1 / -1; grid-row: auto; }
+  .ledger__who { position: static; padding-right: 0; order: -1; } /* name first when stacked: scanning a long list */
+  .chain { grid-auto-flow: row; grid-auto-columns: auto; }
+  .chain > li { justify-content: flex-start; text-align: left; padding: 10px 0 10px 28px; background: linear-gradient(currentColor, currentColor) 4px 0 / 1px 100% no-repeat; }
+  .chain > li::before, .chain > li:last-child::after { left: 0; right: auto; width: var(--tick); height: 1px; }
+  .chain > li::before { top: 0; bottom: auto; }
+  .chain > li:last-child::after { bottom: 0; }
+  .note--a { grid-column: 1 / span 7; } .note--b { grid-column: 8 / span 5; } .note--c { grid-column: 3 / span 8; margin-top: 0; }
+}
+@media (max-width: 599px) {
+  .note--a, .note--b, .note--c { grid-column: 1 / -1; margin-top: 0; }
+  .note--b, .note--c { width: 86%; justify-self: end; }
+  .ledger__figure { padding-block: var(--spacing-md); }
+}
+
+/* ==========================================================================
+   Process (archetype: process) — process-steps, faq
+   ========================================================================== */
+/* === Process steps: chain-dimension index + one ruled sheet per phase, named not numbered === */
+.steps { display: grid; gap: var(--spacing-md); }
+.steps__index { padding-top: var(--spacing-sm); }
+.steps__list { border-bottom: 1px solid var(--color-fg); }
+.step {
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md);
+  padding-block: var(--spacing-lg); border-top: 1px solid var(--color-hairline); scroll-margin-top: calc(var(--header-h) + 8px);
+}
+.step:first-child { border-top-color: var(--color-fg); }
+.step__name {
+  grid-column: 1 / span 4; align-self: start; position: sticky; top: calc(var(--header-h) + 32px);
+  font-size: var(--heading-lg); line-height: 1.04; letter-spacing: -0.02em; padding-right: var(--spacing-md);
+}
+.step__body { grid-column: 5 / span 8; display: grid; gap: var(--spacing-sm); max-width: var(--measure); }
+.step__lead { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; letter-spacing: -0.005em; margin-bottom: var(--spacing-xs); }
+.step__aside { display: grid; gap: var(--spacing-xs); margin-top: var(--spacing-sm); padding-top: var(--spacing-sm); border-top: 1px solid var(--color-hairline); }
+.step__aside .label { color: var(--color-muted); }
+.systems { display: grid; grid-template-columns: minmax(10rem, 1fr) 2fr; margin-top: var(--spacing-sm); border-top: 1px solid var(--color-hairline); }
+.systems dt, .systems dd { margin: 0; padding-block: 14px; border-bottom: 1px solid var(--color-hairline); }
+.systems dt { font-family: var(--heading-font-family); font-size: 1.375rem; font-weight: 400; line-height: 1.25; padding-right: var(--spacing-sm); }
+
+/* === FAQ: questions as headings, answers composed of captured sentences === */
+.faq { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.band.faq { padding-top: var(--spacing-lg); background: linear-gradient(var(--color-fg), var(--color-fg)) var(--gutter) 0 / calc(100% - 2 * var(--gutter)) 1px no-repeat; }
+.faq__head { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-md); }
+.faq__head h2 { font-size: var(--heading-xl); }
+.faq__list { grid-column: 5 / span 8; }
+.faq__item { display: grid; gap: var(--spacing-sm); padding-block: var(--spacing-md); border-top: 1px solid var(--color-hairline); }
+.faq__item:first-child { border-top: 0; padding-top: 0; }
+.faq__item h3 { font-size: var(--heading-md); font-weight: 400; letter-spacing: -0.005em; line-height: 1.2; }
+.faq__a { display: grid; gap: var(--spacing-sm); max-width: var(--measure); }
+
+@media (max-width: 899px) {
+  .step__name, .step__body, .faq__head, .faq__list { grid-column: 1 / -1; }
+  .step__name { position: static; padding-right: 0; }
+}
+@media (max-width: 599px) {
+  .step { padding-block: var(--spacing-md) var(--spacing-lg); row-gap: var(--spacing-sm); }
+  .systems { grid-template-columns: 1fr; }
+  .systems dt { border-bottom: 0; padding-bottom: 4px; }
+  .systems dd { padding-top: 0; }
+}
+
+/* ==========================================================================
+   Form (archetype: contact) — enquiry-form
+   ========================================================================== */
+/* === Contact opening: the facts are the first viewport; the photograph hangs beside them === */
+.contact { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); padding-top: var(--spacing-lg); }
+.contact__facts { grid-column: 1 / span 7; display: grid; align-content: start; gap: var(--spacing-md); }
+.contact__facts h1 { font-size: clamp(3.25rem, 7.4vw, 10rem); line-height: 0.94; letter-spacing: -0.03em; }
+.contact__facts h2 { font-size: var(--heading-md); font-weight: 400; letter-spacing: -0.005em; }
+.contact__facts address { display: grid; gap: var(--spacing-sm); }
+.contact__street { font-size: var(--heading-md); font-family: var(--heading-font-family); line-height: 1.3; }
+.contact__frame { grid-column: 9 / span 4; align-self: end; }
+.contact__frame .frame__img { background: var(--color-hairline); }
+.contact__frame figcaption { color: var(--color-muted); }
+.contact__frame figcaption a { color: var(--color-fg); text-underline-offset: 3px; }
+.contact__frame:has(a:focus-visible) { outline: none; }
+.contact__frame a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+
+/* === Enquiry form === */
+.enquiry-form { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.band.enquiry-form { padding-top: var(--spacing-lg); background: linear-gradient(var(--color-fg), var(--color-fg)) var(--gutter) 0 / calc(100% - 2 * var(--gutter)) 1px no-repeat; }
+.enquiry-form__head { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-md); }
+.enquiry-form__head h2 { font-size: var(--heading-xl); }
+.enquiry-form form { grid-column: 5 / span 8; display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md) 24px; }
+.field { display: grid; gap: 8px; align-content: start; }
+.field--wide { grid-column: 1 / -1; }
+.field label { font-size: var(--body-sm); font-weight: 560; letter-spacing: 0.01em; }
+.field label span { color: var(--color-muted); font-weight: 450; }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 52px; margin: 0; padding: 12px 14px; border: 1px solid var(--color-fg); border-radius: var(--radius);
+  background: var(--color-print); color: var(--color-fg); font: inherit; font-size: var(--body); line-height: 1.4;
+  transition: border-color 200ms var(--ease-hover), box-shadow 200ms var(--ease-hover);
+}
+.field textarea { min-height: 200px; resize: vertical; }
+.field select {
+  appearance: none; padding-right: 44px; cursor: pointer;
+  background: var(--color-print) linear-gradient(45deg, transparent 50%, currentColor 50%) calc(100% - 22px) 50% / 6px 6px no-repeat;
+}
+.field input:hover, .field select:hover, .field textarea:hover { box-shadow: inset 0 0 0 1px var(--color-fg); }
+.field :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.field [aria-invalid="true"] { border-color: var(--color-error); box-shadow: inset 0 0 0 1px var(--color-error); }
+.field__error { color: var(--color-error); font-size: var(--body-sm); font-weight: 560; }
+.field__error:empty { display: none; }
+.enquiry-form__actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-sm) var(--spacing-md); }
+button.btn-primary { border: 0; font: inherit; font-weight: 560; cursor: pointer; min-height: 52px; }
+button.btn-primary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.enquiry-form__status { font-size: var(--body-sm); max-width: 44ch; }
+.enquiry-form__status:empty { display: none; }
+/* Interim-tier note under the form (dynamic-features.md F1: mailto until a backend is chosen) */
+.enquiry-form__note { grid-column: 1 / -1; max-width: var(--measure); color: var(--color-muted); font-size: var(--body-sm); }
+
+/* PLACEHOLDER visual signature (proposed-file-shell § mandatory): dashed accent outline, mono eyebrow, tinted ground */
+.placeholder-note {
+  grid-column: 1 / -1; display: grid; gap: 6px; padding: 14px 16px; outline: 2px dashed var(--color-accent); outline-offset: -2px;
+  background: var(--color-print); font-size: var(--body-sm); max-width: var(--measure);
+}
+.placeholder-note__tag { font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: var(--label); letter-spacing: 0.04em; color: var(--color-accent); }
+
+@media (max-width: 899px) {
+  .contact__facts { grid-column: 1 / span 12; }
+  .contact__frame { grid-column: 1 / span 8; }
+  .enquiry-form__head, .enquiry-form form { grid-column: 1 / -1; }
+}
+@media (max-width: 599px) {
+  .contact { padding-top: var(--spacing-md); row-gap: var(--spacing-md); }
+  .contact__frame { grid-column: 1 / -1; }
+  .enquiry-form form { grid-template-columns: 1fr; }
+  .enquiry-form__actions .btn-primary { width: 100%; justify-content: center; }
+}
+.field ::placeholder { color: var(--color-muted); opacity: 1; }
+</style>
+</head>
+<body data-template="landing" data-hero="media">
+<!-- impeccable:direction-contract
+THESIS: The home is an exhibit of the work annotated like a drawing set; it refuses the carousel-plus-wordmark home and the giant-sans-hero / CTA-pair / stat-bar silhouette.
+OWN-WORLD: Sage ground, graphite drafting ink, one Third Lake accent as pointer only; darkroom wall for photography; Spectral light at exhibit scale, Hanken small caps for facts; hairline rules and dimension strings with 9px end ticks; square corners, no shadows.
+STORY: Visitors learn who, where and what in the H1, see seven projects as a drawing schedule with real facts, hear one client, read how the practice works, walk the photography wall, then write or call.
+FIRST VIEWPORT: One full-bleed Willy Street photograph; header floating on its own scrim; H1 docked bottom-left (Spectral 300 ~7vw, who/where line beneath); caption dimension string bottom-right linking the project. The who/where line sits beneath the thesis (not above it) because a label above a heading is an impeccable craft-floor ban; it stays in the H1 at 22px body scale for legibility on the photograph (Product Principle 2).
+FORM: brief-pinned (stardust direction + index-shape.md); impeccable concept-seed not run — the divergence roll happened at direction: seed "Barnett Architecture LLC|2026-11-17" MD5 9bf4874d… (stardust/direction.md § Divergence inputs); staging: static, motion layered in index-cinematic.html.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="/" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/photography">Photography</a></li>
+        <li class="ds-nav__group">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="/about">About</a></li>
+              <li><a href="/about/process">Process</a></li>
+              <li><a href="/about/todd-barnett">Todd Barnett</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" data-section="hero" data-intent="emotional hook + say who, where, what" data-layout="full-bleed" data-media="image" data-module="project-hero">
+    <div class="hero__media" data-slot="image"><img src="https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg 800w, https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg 1600w, https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg 2400w" sizes="100vw" width="1600" height="1067" alt="Willy Street, a new home in Madison, Wisconsin — photograph" loading="eager" fetchpriority="high" decoding="async"></div>
+        <div class="hero__content shell">
+      <h1 class="hero__title" data-slot="title">
+        <span class="hero__thesis">Projects meant to “fit” the client</span><span class="visually-hidden"> — </span>
+        <span class="hero__who">Barnett Architecture, an architectural practice in Madison, Wisconsin</span>
+      </h1>
+      <p class="hero__caption dim dim--stack" data-slot="facts"><span><a href="/projects/willy-street">Willy Street</a> · New home · Madison, WI</span></p>
+    </div>
+  </section>
+
+  <section class="intro shell band" data-section="intro" data-intent="crawlable practice facts (GEO)" data-layout="side-rail" aria-labelledby="intro-h">
+    <div class="intro__rail">
+      <h2 id="intro-h">About the practice</h2>
+      <p class="dim dim--start"><span>Madison, WI · Est. 2007</span></p>
+    </div>
+    <div class="intro__body">
+      <p class="intro__lead">Barnett Architecture is a full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Our philosophy is straightforward: projects are meant to “fit” the client, not serve as a pedestal for the architect.</p>
+      <p class="intro__more">Stylistic examples range from traditional to modern, and all projects strive to create places that are well-built, facilitate their intended use and raise the spirit. Services range from hourly consultations to the full architectural process, from programming and concept design to full building plans and construction administration. The practice was established by <a href="/about/todd-barnett">Todd Barnett, Architect</a>, who has made Madison his home since 1990.</p>
+    </div>
+  </section>
+
+  <section class="schedule shell band" data-section="featured-projects" data-intent="lead with the work" data-layout="stack" data-items="7" data-module="project-index" data-fragment="project-card" data-fragment-role="reuse" data-fragment-source="/projects" aria-labelledby="schedule-h">
+    <div class="section-head">
+      <h2 id="schedule-h">Selected projects</h2>
+      <a class="btn-primary" href="/projects">See all 29 projects</a>
+    </div>
+    <ul class="schedule__list" data-slot="cards">
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/willy-street">Willy Street</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI · Historic context</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg" srcset="https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg 800w, https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg 1600w, https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Willy Street — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/hill-farm-swim-club">Hill Farm Swim Club</a></h3><p class="dim dim--stack"><span>Recreation · Master plan &amp; study, renovation · Madison, WI · Universal design</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg" srcset="https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg 800w, https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg 1600w, https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Hill Farm Swim Club — master plan and renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/three-gables">Three Gables</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Three Gables — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/designcraft">designCraft</a></h3><p class="dim dim--stack"><span>Commercial · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_687,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_800,h_550,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 800w, https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_687,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 1000w" sizes="(min-width: 900px) 40vw, 100vw" width="1000" height="687" alt="designCraft — commercial renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/folded-roof">Folded Roof</a></h3><p class="dim dim--stack"><span>Residential · Addition, renovation · Madison, WI · Green design</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg/v1/fill/w_1500,h_984,al_c,q_85,enc_auto/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg" srcset="https://static.wixstatic.com/media/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg/v1/fill/w_800,h_525,al_c,q_85,enc_auto/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg 800w, https://static.wixstatic.com/media/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg/v1/fill/w_1500,h_984,al_c,q_85,enc_auto/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg 1500w" sizes="(min-width: 900px) 40vw, 100vw" width="1500" height="984" alt="Folded Roof — addition and renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/passive-light">Passive Light</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI · Green design</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1200" alt="Passive Light — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/green-ribbon">Green Ribbon</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg" srcset="https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_800,h_534,al_c,q_85,enc_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg 800w, https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg 1024w" sizes="(min-width: 900px) 40vw, 100vw" width="1024" height="683" alt="Green Ribbon — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+    </ul>
+    <nav class="schedule__foot" aria-label="Projects by type">
+      <ul class="facets">
+        <li><a class="facet-chip" href="/projects?type=new-home">New homes</a></li>
+        <li><a class="facet-chip" href="/projects?type=addition">Additions</a></li>
+        <li><a class="facet-chip" href="/projects?type=renovation">Renovations</a></li>
+        <li><a class="facet-chip" href="/projects?type=kitchen">Kitchens</a></li>
+        <li><a class="facet-chip" href="/projects?type=master-plan">Master plans &amp; studies</a></li>
+        <li><a class="facet-chip" href="/commercial">Commercial, community &amp; recreation</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="testimonial shell band" data-section="testimonial" data-intent="build trust" data-layout="contained" data-module="testimonial-list" aria-labelledby="testimonial-h">
+    <h2 id="testimonial-h" class="visually-hidden">From a client</h2>
+    <figure class="testimonial__figure">
+      <blockquote data-slot="quote"><p>“We couldn’t be happier with the house. Not only does it look great and is extremely functional, but it feels like it was meant for the site.”</p></blockquote>
+      <figcaption class="dim dim--start" data-slot="attribution"><span>JFH and KG · Madison, WI</span></figcaption>
+    </figure>
+    <p class="testimonial__more"><a class="link-arrow" href="/testimonials">Read the testimonials</a></p>
+  </section>
+
+  <section class="principles shell band" data-section="principles" data-intent="explain the practice" data-layout="grid" data-items="4" data-module="principles" aria-labelledby="principles-h">
+    <div class="principles__head">
+      <h2 id="principles-h">How we work</h2>
+      <p class="principles__links"><a class="link-arrow" href="/about">About the practice</a><a class="link-arrow" href="/about/process">The design process</a></p>
+    </div>
+    <div class="principles__sheet" data-slot="items">
+      <div class="principle">
+        <h3>Fit the client</h3>
+        <p>We do not employ a distinct architectural style but rather develop one with the client that reflects and respects the client, goals, site, budget and place in the community. Each project is informed by a single clear idea or concept which guides and unifies the overall design.</p>
+      </div>
+      <div class="principle">
+        <h3>The Charrette</h3>
+        <p>An interactive design process wherein the client, architect, contractor, engineer and other parties (e.g. neighbors, users) are active participants. Used to generate a range of ideas and reach a consensus, the Charrette can quickly confirm not only design direction but key issues such as goals, needs, schedule and budget.</p>
+      </div>
+      <div class="principle">
+        <h3>Green design</h3>
+        <p>Green materials, energy-saving heating and cooling systems, super insulation and construction waste reduction. More importantly, approaching the overall design with proper building orientation, massing and size. We believe this is the foundation for green design.</p>
+      </div>
+      <div class="principle">
+        <h3>Universal design</h3>
+        <p>Particularly for residential work, we study how a design may complement the changing needs of the building user. “Universal design” strives to create environments designed for people who are older, or may have physical disabilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="darkroom" data-section="photography" data-intent="curated photography teaser" data-layout="grid" data-items="8" data-media="image" data-module="collection-index" aria-labelledby="photo-h">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <h2 id="photo-h">Photography</h2>
+          <p class="darkroom__lead">Two of Todd’s favorite places to visit are the highlands of central Mexico and the backroads of the Midwest.</p>
+        </div>
+        <a class="link-arrow" href="/photography">All collections</a>
+      </div>
+      <div class="wall" data-slot="collections">
+        <figure class="frame span-5"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Iowa — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/iowa">Iowa</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <figure class="frame span-4"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg" srcset="https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg 800w, https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg 1600w, https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg 2400w" sizes="(min-width: 900px) 32vw, 100vw" width="1600" height="1200" alt="Mexico — Places — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/mexico-places">Mexico — Places</a></span><span class="frame__kind label">Central Mexico</span></figcaption></figure>
+        <figure class="frame frame--tall span-3"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg" srcset="https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg 800w, https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg 1600w, https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_2400,h_3000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg 2400w" sizes="(min-width: 900px) 24vw, 50vw" width="1600" height="2000" alt="Mexico — Faces — portrait photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/mexico-faces">Mexico — Faces</a></span><span class="frame__kind label">Portraits</span></figcaption></figure>
+        <figure class="frame frame--tall span-3"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_2400,h_3000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg 2400w" sizes="(min-width: 900px) 24vw, 50vw" width="1600" height="2000" alt="Wisconsin — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/wisconsin">Wisconsin</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <figure class="frame frame--tall span-3"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg 1600w" sizes="(min-width: 900px) 24vw, 50vw" width="1600" height="2000" alt="Minnesota — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/minnesota">Minnesota</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <figure class="frame span-6"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg 2400w" sizes="(min-width: 900px) 48vw, 100vw" width="1600" height="1067" alt="Illinois — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/illinois">Illinois</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <p class="wall__divider dim dim--start"><span>Exhibits</span></p>
+        <figure class="frame span-7"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_1600,h_1159,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_800,h_579,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_1600,h_1159,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_2048,h_1483,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg 2048w" sizes="(min-width: 900px) 56vw, 100vw" width="1600" height="1159" alt="Fields of Vision, 2024 exhibit — photograph" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/fields-of-vision-2024">Fields of Vision</a></span><span class="frame__kind label">Exhibit · 2024</span></figcaption></figure>
+        <figure class="frame span-5"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Iowa 2022 Exhibit — photograph" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/iowa-2022-exhibit">Iowa 2022 Exhibit</a></span><span class="frame__kind label">Exhibit · Decorah, Iowa</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="enquiry shell band" data-section="enquiry" data-intent="drive action" data-layout="contained" data-module="enquiry-band" aria-labelledby="enquiry-h">
+    <h2 id="enquiry-h" data-slot="heading">Please contact us</h2>
+    <div class="enquiry__body">
+      <ul class="enquiry__lines">
+        <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+        <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+      </ul>
+      <p class="dim dim--start"><span>118 North Breese Terrace, Suite I · Madison, WI 53726-4133</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="/">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="/projects">All projects</a></li><li><a href="/residential">Residential</a></li><li><a href="/commercial">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="/photography">Collections</a></li><li><a href="/photography/fields-of-vision-2024">Fields of Vision</a></li><li><a href="/photography/iowa-2022-exhibit">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="/about">About</a></li><li><a href="/about/process">Process</a></li><li><a href="/about/todd-barnett">Todd Barnett</a></li><li><a href="/testimonials">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="/contact">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+</body>
+</html>

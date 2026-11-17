@@ -1,0 +1,835 @@
+{
+ "measuredAt": "2026-11-17T16:59:58.504Z",
+ "method": "playwright-lab",
+ "profiles": {
+  "mobile": "375x667 DPR2, CPU 4x throttle, ~1.6Mbps/150ms RTT (CDP emulation)",
+  "desktop": "1440x900 DPR1, no throttle"
+ },
+ "results": [
+  {
+   "profile": "mobile",
+   "path": "/",
+   "navErr": null,
+   "wallMs": 11670,
+   "lcp": 2840,
+   "lcpEl": "IMG",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_514,h_683,al_c,q_80,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+   "cls": 0.0308,
+   "tbt": 1904,
+   "fcp": 428,
+   "longtasks": 15,
+   "ttfb": 192,
+   "domContentLoaded": 3008,
+   "load": 5082,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_514,h_683,al_c,q_80,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 514,
+     "natH": 683,
+     "rendW": 286,
+     "rendH": 380,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_572,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg",
+     "natW": 572,
+     "natH": 760,
+     "rendW": 286,
+     "rendH": 380,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_794e69ed985849cd8c61b94a8c948441.jpg/v1/fill/w_572,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_794e69ed985849cd8c61b94a8c948441.jpg",
+     "natW": 572,
+     "natH": 760,
+     "rendW": 286,
+     "rendH": 380,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_514,h_683,al_c,q_80,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 514,
+     "natH": 683,
+     "rendW": 286,
+     "rendH": 380,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "11px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {},
+   "scrollH": 613,
+   "requests": 141,
+   "totalKB": 1436,
+   "jsKB": 973,
+   "imgKB": 162,
+   "imgRequests": 9,
+   "imgMime": {
+    "image/png": 1,
+    "image/avif": 8
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 1,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)"
+   ]
+  },
+  {
+   "profile": "mobile",
+   "path": "/green-ribbon",
+   "navErr": null,
+   "wallMs": 18385,
+   "lcp": 3640,
+   "lcpEl": "IMG",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_560,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+   "cls": 0.0308,
+   "tbt": 1948,
+   "fcp": 1036,
+   "longtasks": 14,
+   "ttfb": 277,
+   "domContentLoaded": 3438,
+   "load": 12359,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_560,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 560,
+     "natH": 330,
+     "rendW": 280,
+     "rendH": 165,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_5832dc04e4604c6685cba9ee9f5d33a1.jpg/v1/fill/w_560,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_5832dc04e4604c6685cba9ee9f5d33a1.jpg",
+     "natW": 560,
+     "natH": 330,
+     "rendW": 280,
+     "rendH": 165,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b3be4bd5fea847f99da2ec7fb89c6ff3~mv2.jpg/v1/fill/w_560,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b3be4bd5fea847f99da2ec7fb89c6ff3~mv2.jpg",
+     "natW": 560,
+     "natH": 330,
+     "rendW": 280,
+     "rendH": 165,
+     "alt": "_",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_560,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 560,
+     "natH": 330,
+     "rendW": 280,
+     "rendH": 165,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_f44dc49c38b848638508d8533e561ad1.jpg/v1/fill/w_560,h_376,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_f44dc49c38b848638508d8533e561ad1.jpg",
+     "natW": 280,
+     "natH": 188,
+     "rendW": 280,
+     "rendH": 188,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": false
+    }
+   ],
+   "bodyFont": "11px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {
+    "14px": 4
+   },
+   "scrollH": 1163,
+   "requests": 148,
+   "totalKB": 1457,
+   "jsKB": 974,
+   "imgKB": 182,
+   "imgRequests": 15,
+   "imgMime": {
+    "image/png": 1,
+    "image/avif": 9,
+    "text/html": 5
+   },
+   "thirdPartyHosts": 16,
+   "consoleErrors": 1,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)"
+   ]
+  },
+  {
+   "profile": "mobile",
+   "path": "/copy-of-iowa",
+   "navErr": null,
+   "wallMs": 11600,
+   "lcp": 908,
+   "lcpEl": "H1",
+   "lcpUrl": null,
+   "cls": 0.022,
+   "tbt": 1957,
+   "fcp": 908,
+   "longtasks": 15,
+   "ttfb": 241,
+   "domContentLoaded": 2856,
+   "load": 5210,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_fa2961268f3d47ac80cc49c535f7710d~mv2.jpg/v1/fill/w_560,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fa2961268f3d47ac80cc49c535f7710d~mv2.jpg",
+     "natW": 560,
+     "natH": 358,
+     "rendW": 280,
+     "rendH": 179,
+     "alt": "_",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_89d30712c04e4f6a83802c6a226e0908~mv2.jpg/v1/fill/w_560,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_89d30712c04e4f6a83802c6a226e0908~mv2.jpg",
+     "natW": 560,
+     "natH": 358,
+     "rendW": 280,
+     "rendH": 179,
+     "alt": "_",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "11px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {},
+   "scrollH": 570,
+   "requests": 142,
+   "totalKB": 1355,
+   "jsKB": 974,
+   "imgKB": 78,
+   "imgRequests": 10,
+   "imgMime": {
+    "image/png": 1,
+    "text/plain": 3,
+    "image/avif": 6
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 4,
+   "consoleErrorSamples": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "profile": "mobile",
+   "path": "/residential",
+   "navErr": null,
+   "wallMs": 11544,
+   "lcp": 2916,
+   "lcpEl": "IMG",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_560,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+   "cls": 0.0226,
+   "tbt": 1861,
+   "fcp": 592,
+   "longtasks": 14,
+   "ttfb": 198,
+   "domContentLoaded": 2817,
+   "load": 5223,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_560,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+     "natW": 560,
+     "natH": 350,
+     "rendW": 280,
+     "rendH": 175,
+     "alt": "Orussa 1",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_560,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 560,
+     "natH": 350,
+     "rendW": 280,
+     "rendH": 175,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_de0377e791b0430b99195313fe96cf66.jpg/v1/fill/w_560,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_de0377e791b0430b99195313fe96cf66.jpg",
+     "natW": 560,
+     "natH": 350,
+     "rendW": 280,
+     "rendH": 175,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_560,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+     "natW": 560,
+     "natH": 350,
+     "rendW": 280,
+     "rendH": 175,
+     "alt": "Orussa 1",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "11px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1>H6",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {},
+   "scrollH": 570,
+   "requests": 141,
+   "totalKB": 1424,
+   "jsKB": 973,
+   "imgKB": 152,
+   "imgRequests": 9,
+   "imgMime": {
+    "image/png": 1,
+    "image/avif": 8
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 1,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)"
+   ]
+  },
+  {
+   "profile": "mobile",
+   "path": "/about",
+   "navErr": null,
+   "wallMs": 17066,
+   "lcp": 544,
+   "lcpEl": "P",
+   "lcpUrl": null,
+   "cls": 0.0308,
+   "tbt": 1925,
+   "fcp": 544,
+   "longtasks": 16,
+   "ttfb": 192,
+   "domContentLoaded": 2303,
+   "load": 11035,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_470,h_734,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg",
+     "natW": 235,
+     "natH": 367,
+     "rendW": 235,
+     "rendH": 367,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": false
+    }
+   ],
+   "bodyFont": "14px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1>H2",
+   "landmarks": {
+    "main": 1,
+    "nav": 1,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {
+    "14px": 6
+   },
+   "scrollH": 1993,
+   "requests": 134,
+   "totalKB": 1291,
+   "jsKB": 963,
+   "imgKB": 36,
+   "imgRequests": 3,
+   "imgMime": {
+    "image/avif": 3
+   },
+   "thirdPartyHosts": 16,
+   "consoleErrors": 1,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)"
+   ]
+  },
+  {
+   "profile": "desktop",
+   "path": "/",
+   "navErr": null,
+   "wallMs": 7317,
+   "lcp": 224,
+   "lcpEl": "IMG",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_980,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+   "cls": 0.0183,
+   "tbt": 256,
+   "fcp": 116,
+   "longtasks": 3,
+   "ttfb": 39,
+   "domContentLoaded": 165,
+   "load": 1289,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_980,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 980,
+     "natH": 615,
+     "rendW": 980,
+     "rendH": 615,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_980,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg",
+     "natW": 980,
+     "natH": 615,
+     "rendW": 980,
+     "rendH": 615,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_794e69ed985849cd8c61b94a8c948441.jpg/v1/fill/w_980,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_794e69ed985849cd8c61b94a8c948441.jpg",
+     "natW": 980,
+     "natH": 615,
+     "rendW": 980,
+     "rendH": 615,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_980,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 980,
+     "natH": 615,
+     "rendW": 980,
+     "rendH": 615,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "12px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {},
+   "scrollH": 1068,
+   "requests": 133,
+   "totalKB": 1581,
+   "jsKB": 989,
+   "imgKB": 294,
+   "imgRequests": 9,
+   "imgMime": {
+    "image/png": 1,
+    "image/avif": 8
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 3,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)",
+    "Failed to load resource: the server responded with a status of 406 ()",
+    "Failed to load resource: the server responded with a status of 406 ()"
+   ]
+  },
+  {
+   "profile": "desktop",
+   "path": "/green-ribbon",
+   "navErr": null,
+   "wallMs": 7873,
+   "lcp": 368,
+   "lcpEl": "IMG",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_646,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+   "cls": 0.0183,
+   "tbt": 275,
+   "fcp": 164,
+   "longtasks": 4,
+   "ttfb": 40,
+   "domContentLoaded": 175,
+   "load": 1860,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_646,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 646,
+     "natH": 443,
+     "rendW": 646,
+     "rendH": 443,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_5832dc04e4604c6685cba9ee9f5d33a1.jpg/v1/fill/w_646,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_5832dc04e4604c6685cba9ee9f5d33a1.jpg",
+     "natW": 646,
+     "natH": 443,
+     "rendW": 646,
+     "rendH": 443,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b3be4bd5fea847f99da2ec7fb89c6ff3~mv2.jpg/v1/fill/w_646,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b3be4bd5fea847f99da2ec7fb89c6ff3~mv2.jpg",
+     "natW": 646,
+     "natH": 443,
+     "rendW": 646,
+     "rendH": 443,
+     "alt": "_",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_646,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 646,
+     "natH": 443,
+     "rendW": 646,
+     "rendH": 443,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_f44dc49c38b848638508d8533e561ad1.jpg/v1/fill/w_262,h_176,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_f44dc49c38b848638508d8533e561ad1.jpg",
+     "natW": 262,
+     "natH": 176,
+     "rendW": 262,
+     "rendH": 176,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "12px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {
+    "13px": 4
+   },
+   "scrollH": 1094,
+   "requests": 135,
+   "totalKB": 1501,
+   "jsKB": 989,
+   "imgKB": 214,
+   "imgRequests": 10,
+   "imgMime": {
+    "image/avif": 9,
+    "image/png": 1
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 3,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)",
+    "Failed to load resource: the server responded with a status of 406 ()",
+    "Failed to load resource: the server responded with a status of 406 ()"
+   ]
+  },
+  {
+   "profile": "desktop",
+   "path": "/copy-of-iowa",
+   "navErr": null,
+   "wallMs": 6486,
+   "lcp": 164,
+   "lcpEl": "H1",
+   "lcpUrl": null,
+   "cls": 0.0183,
+   "tbt": 247,
+   "fcp": 164,
+   "longtasks": 4,
+   "ttfb": 46,
+   "domContentLoaded": 216,
+   "load": 476,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_fa2961268f3d47ac80cc49c535f7710d~mv2.jpg/v1/fill/w_783,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fa2961268f3d47ac80cc49c535f7710d~mv2.jpg",
+     "natW": 783,
+     "natH": 500,
+     "rendW": 783,
+     "rendH": 500,
+     "alt": "_",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_89d30712c04e4f6a83802c6a226e0908~mv2.jpg/v1/fill/w_783,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_89d30712c04e4f6a83802c6a226e0908~mv2.jpg",
+     "natW": 783,
+     "natH": 500,
+     "rendW": 783,
+     "rendH": 500,
+     "alt": "_",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "12px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {},
+   "scrollH": 953,
+   "requests": 136,
+   "totalKB": 1443,
+   "jsKB": 989,
+   "imgKB": 154,
+   "imgRequests": 11,
+   "imgMime": {
+    "image/avif": 6,
+    "image/png": 1,
+    "text/plain": 3,
+    "image/gif": 1
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 5,
+   "consoleErrorSamples": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)"
+   ]
+  },
+  {
+   "profile": "desktop",
+   "path": "/residential",
+   "navErr": null,
+   "wallMs": 6421,
+   "lcp": 296,
+   "lcpEl": "IMG",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+   "cls": 0.0183,
+   "tbt": 297,
+   "fcp": 160,
+   "longtasks": 5,
+   "ttfb": 35,
+   "domContentLoaded": 148,
+   "load": 412,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+     "natW": 801,
+     "natH": 500,
+     "rendW": 801,
+     "rendH": 500,
+     "alt": "Orussa 1",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg",
+     "natW": 801,
+     "natH": 500,
+     "rendW": 801,
+     "rendH": 500,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_de0377e791b0430b99195313fe96cf66.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_de0377e791b0430b99195313fe96cf66.jpg",
+     "natW": 801,
+     "natH": 500,
+     "rendW": 801,
+     "rendH": 500,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    },
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_fc45156562e24c74a878d3a808967273.jpg/v1/fill/w_801,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_fc45156562e24c74a878d3a808967273.jpg",
+     "natW": 801,
+     "natH": 500,
+     "rendW": 801,
+     "rendH": 500,
+     "alt": "Orussa 1",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "12px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1>H6",
+   "landmarks": {
+    "main": 1,
+    "nav": 2,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {},
+   "scrollH": 956,
+   "requests": 134,
+   "totalKB": 1574,
+   "jsKB": 989,
+   "imgKB": 288,
+   "imgRequests": 9,
+   "imgMime": {
+    "image/avif": 8,
+    "image/png": 1
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 3,
+   "consoleErrorSamples": [
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)",
+    "Failed to load resource: the server responded with a status of 406 ()",
+    "Failed to load resource: the server responded with a status of 406 ()"
+   ]
+  },
+  {
+   "profile": "desktop",
+   "path": "/about",
+   "navErr": null,
+   "wallMs": 6398,
+   "lcp": 148,
+   "lcpEl": "IMG#img_comp-igqu0lhd",
+   "lcpUrl": "https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_286,h_447,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg",
+   "cls": 0.0183,
+   "tbt": 33,
+   "fcp": 148,
+   "longtasks": 3,
+   "ttfb": 51,
+   "domContentLoaded": 188,
+   "load": 388,
+   "imgs": [
+    {
+     "src": "https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_286,h_447,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg",
+     "natW": 286,
+     "natH": 447,
+     "rendW": 286,
+     "rendH": 447,
+     "alt": "",
+     "loading": "auto",
+     "fetchpriority": "high",
+     "inView": true
+    }
+   ],
+   "bodyFont": "12px",
+   "h1s": [
+    "Barnett Architecture LLC"
+   ],
+   "headingOrder": "H1>H2",
+   "landmarks": {
+    "main": 1,
+    "nav": 1,
+    "header": 1,
+    "footer": 1
+   },
+   "proseFontSizes": {
+    "13px": 6
+   },
+   "scrollH": 1466,
+   "requests": 132,
+   "totalKB": 1288,
+   "jsKB": 979,
+   "imgKB": 19,
+   "imgRequests": 8,
+   "imgMime": {
+    "image/avif": 3,
+    "text/html": 5
+   },
+   "thirdPartyHosts": 15,
+   "consoleErrors": 3,
+   "consoleErrorSamples": [
+    "Failed to load resource: the server responded with a status of 406 ()",
+    "suspense rendered fallback for - tpaWorker_16 - (TPAWorker)",
+    "Failed to load resource: the server responded with a status of 406 ()"
+   ]
+  }
+ ]
+}

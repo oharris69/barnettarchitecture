@@ -1,0 +1,84 @@
+/* facts (canon module project-facts): a chain dimension, one hairline, a tick at every fact boundary */
+.facts .facts-bar {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--spacing-md);
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.facts .facts-bar > div {
+  flex: 1 1 auto;
+  min-width: min(100%, 10rem);
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: calc(var(--tick) + 16px) var(--spacing-sm) 0 16px;
+  background: linear-gradient(currentcolor, currentcolor) 0 calc(var(--tick) / 2) / 100% 1px no-repeat;
+}
+
+.facts .facts-bar > div::before,
+.facts .facts-bar > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: var(--tick);
+  background: currentcolor;
+}
+
+.facts .facts-bar > div::before {
+  left: 0;
+}
+
+.facts .facts-bar > div::after {
+  right: 0;
+}
+
+.facts dt {
+  margin: 0;
+}
+
+.facts dd {
+  margin: 0;
+  color: var(--color-fg);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+.facts dd a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-muted);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 300ms var(--ease-hover), color 300ms var(--ease-hover);
+}
+
+.facts dd a:hover {
+  color: var(--color-accent);
+  text-decoration-color: currentcolor;
+}
+
+@media (width <= 599px) {
+  .facts .facts-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .facts .facts-bar > div:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (pointer: coarse) {
+  .facts dd a {
+    display: inline-block;
+    padding-block: 8px;
+    margin-block: -8px;
+  }
+}

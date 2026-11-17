@@ -1,0 +1,30 @@
+<!-- stardust:canon (merged 2026-11-17)
+  writtenBy:        stardust:prototype --prep (wave 2)
+  sourceSlug:       process
+  sourcePrototype:  stardust/prototypes/process-proposed.html
+  region:           module:process-steps
+  css:              stardust/canon/canon.css [from canon.css [from pending/process.css]] (.steps, .step*, .systems) + canon.css [from pending/about.css] (.chain)
+  rules:            phases are NAMED, never numbered (canon declined decorative sheet numbers); order is carried by the
+                    chain dimension (consecutive segments between 9px ticks) and by <ol>; every phase name and paragraph is
+                    captured copy; lead = first captured sentence; an optional .step__aside carries a captured
+                    "Deliverables" sentence; a captured list of definitions may be set as dl.systems (verbatim clauses).
+  stardustVersion:  0.32.1
+-->
+<section class="steps shell band" data-section="process-steps" data-intent="every captured phase, in order" data-layout="stack" data-items="{{n}}" data-module="process-steps" aria-labelledby="{{id}}">
+  <div class="section-head"><h2 id="{{id}}">{{heading}}</h2><a class="link-arrow" href="#faq">{{faq link label}}</a></div>
+  <nav class="steps__index" aria-label="Phases"><ol class="chain">
+    <!-- repeat per phase --><li><a class="chain__label" href="#{{phase-slug}}">{{phase name}}</a></li>
+  </ol></nav>
+  <ol class="steps__list" data-slot="steps">
+    <!-- repeat per phase -->
+    <li class="step" id="{{phase-slug}}">
+      <h3 class="step__name">{{phase name}}</h3>
+      <div class="step__body">
+        <p class="step__lead">{{first captured sentence}}</p>
+        <p>{{remaining captured sentences}}</p>
+        <!-- optional --><div class="step__aside"><p class="label">Deliverables</p><p>{{captured deliverables sentence}}</p></div>
+        <!-- optional --><dl class="systems"><dt>{{term}}</dt><dd>{{captured definition}}</dd></dl>
+      </div>
+    </li>
+  </ol>
+</section>

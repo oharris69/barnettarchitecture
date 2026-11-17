@@ -1,0 +1,114 @@
+/* faq (canon faq): questions as headings in a ruled list beside the section head */
+.faq {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-lg) 24px;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-fg);
+}
+
+.faq .faq-head {
+  grid-column: 1 / span 4;
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: var(--spacing-sm);
+}
+
+.faq .faq-head > * {
+  margin: 0;
+}
+
+.faq .faq-head > :is(h2, h3) {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--heading-xl);
+}
+
+.faq .faq-list {
+  grid-column: 5 / span 8;
+}
+
+.faq.no-head .faq-list {
+  grid-column: 1 / -1;
+}
+
+.faq .faq-item {
+  border-top: 1px solid var(--color-hairline);
+}
+
+.faq .faq-item:first-child {
+  border-top: 0;
+}
+
+.faq .faq-item summary {
+  position: relative;
+  display: block;
+  padding: var(--spacing-md) 40px var(--spacing-md) 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq .faq-item:first-child summary {
+  padding-top: 0;
+}
+
+.faq .faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq .faq-item summary::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: calc(var(--spacing-md) + 0.55em);
+  width: 9px;
+  height: 9px;
+  border-right: 1px solid currentcolor;
+  border-bottom: 1px solid currentcolor;
+  transform: rotate(45deg);
+  transition: transform 300ms var(--ease-hover);
+}
+
+.faq .faq-item:first-child summary::after {
+  top: 0.55em;
+}
+
+.faq .faq-item[open] summary::after {
+  transform: translateY(4px) rotate(-135deg);
+}
+
+.faq .faq-question {
+  margin: 0;
+  font-size: var(--heading-md);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+  transition: color 300ms var(--ease-hover);
+}
+
+.faq .faq-item summary:hover .faq-question {
+  color: var(--color-accent);
+}
+
+.faq .faq-answer {
+  display: grid;
+  gap: var(--spacing-sm);
+  max-width: var(--measure);
+  padding-bottom: var(--spacing-md);
+}
+
+.faq .faq-answer > * {
+  margin: 0;
+}
+
+.faq .faq-answer a {
+  color: var(--color-accent);
+  text-underline-offset: 3px;
+}
+
+@media (width <= 899px) {
+  .faq .faq-head,
+  .faq .faq-list {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,2901 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-11-17T20:04:25.103Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.barnettarchitecture.com/",
+   "https://www.barnettarchitecture.com/willy-street",
+   "https://www.barnettarchitecture.com/residential",
+   "https://www.barnettarchitecture.com/copy-of-iowa",
+   "https://www.barnettarchitecture.com/photography",
+   "https://www.barnettarchitecture.com/about",
+   "https://www.barnettarchitecture.com/process",
+   "https://www.barnettarchitecture.com/contact"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.barnettarchitecture.com/",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Home | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=YXH2nB5kalR9scolpxkkuYpbCj1chMm_a9SgCvorVhs.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6MjUuNzc2WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMTczNzNiZDYtZjUyNC00N2Y1LThhYjMtYzYzOTdlZDUxMDM0Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6InNQcmk3VGpEamUtZzJpRVFTb1dwQWNScGF5bWNVNVlvdDhsNGE4SnMyQ1kiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22b39d75c2-cbb2-4bc1-9f02-dfd801681910%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%22b39d75c2-cbb2-4bc1-9f02-dfd801681910%7C1%22%7D&currentRoute=.%2F&vsi=59dfc132-79ae-48a2-ab4b-8cfb8b523493",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 47,
+   "inlineFetch": true,
+   "mainText": 3,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 8,
+    "static.parastorage.com": 100,
+    "siteassets.parastorage.com": 10,
+    "frog.wix.com": 11,
+    "browser.sentry-cdn.com": 2,
+    "panorama.wixapps.net": 7,
+    "app-worker.visitor-analytics.io": 3,
+    "www.googletagmanager.com": 2,
+    "visits.visitor-analytics.io": 4,
+    "www.google-analytics.com": 1,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdnjs.cloudflare.com": 1,
+    "cdn.jsdelivr.net": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "static.parastorage.com",
+    "siteassets.parastorage.com",
+    "frog.wix.com",
+    "browser.sentry-cdn.com",
+    "panorama.wixapps.net",
+    "app-worker.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "visits.visitor-analytics.io",
+    "www.google-analytics.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdnjs.cloudflare.com",
+    "cdn.jsdelivr.net"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.0d870deb.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.45c95b6c.bundle.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.669383f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.94c49f34.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.587a31b9.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.c1c95107.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.ebe9c2ce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.a52aed2c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.c5f19687.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_27.c4c38b3c.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.a5422983.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "POST www.google-analytics.com/g/collect",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18410.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"59dfc132-79ae-48a2-ab4b-8cfb8b523493\",\"sessionTime\":2,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945866015&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=1750964110.1794945866&f",
+     "body": ""
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":303,\"e\":[{\"dt\":1,\"f\":{\"ts\":857,\"tsn\":998,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":560,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"17373bd6-f524-47f5-8ab3-c6397ed51034\",\"appName\":\"thunderbolt\",\"corrId\":\"c55ba7e1-9c86-477f-83c9-3b77443f3af8\",\"is_rollout\":false,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"e53f690d-22e9-4020-be3a-390624d748d6\""
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":300,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":602,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"17373bd6-f524-47f5-8ab3-c6397ed51034\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"59dfc132-79ae-48a2-ab4b-8c"
+    },
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18410.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_loadComponentSdk\",\"transactionAction\":\"FINISH\",\"transactionDuration\":141,\"sessionId\":\"59dfc132-79ae-48a2-ab4b-8cfb8b523493\",\"sessionTime\":441,\"logLevel\":\"INFO\",\"requestId\":\"\""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Home | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"b39d75c2-cbb2-4bc1-9f02-dfd801681910|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=YXH2nB5kalR9scolpxkkuYpbCj1chMm_a9SgCvorVhs.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6MjUuNzc2WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMTczNzNiZDYtZjUyNC00N2Y1LThhYjMtYzYzOTdlZDUxMDM0Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 3,
+   "mainEmptyAtLoad": false
+  },
+  "/willy-street": {
+   "url": "https://www.barnettarchitecture.com/willy-street",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Willy Street | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=OkLr7rCY63UBhqs7mItv80YWcJxSCvVp_r60YsJO9dQ.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6MzYuMzI2WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiYjlhYTc3NzUtNzkzZi00OWMzLTlhMWItMDg2ZjZiMjFhMmUzIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6IlVWT2ZoM2QtdkZsUnlwZ0tfZFM4UXYzSFRhLUdHbldqQXY0bFdBXzB5TTgiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%225bd7ad21-b85d-4f63-bcf1-719fbdd57c0b%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%225bd7ad21-b85d-4f63-bcf1-719fbdd57c0b%7C1%22%7D&currentRoute=.%2Fwilly-street&vsi=243873fc-62b5-4124-88aa-3eccb54cfb37",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 42,
+   "inlineFetch": true,
+   "mainText": 1019,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 8,
+    "static.parastorage.com": 100,
+    "frog.wix.com": 10,
+    "panorama.wixapps.net": 5,
+    "siteassets.parastorage.com": 10,
+    "browser.sentry-cdn.com": 2,
+    "app-worker.visitor-analytics.io": 3,
+    "www.googletagmanager.com": 2,
+    "visits.visitor-analytics.io": 4,
+    "www.google-analytics.com": 1,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdnjs.cloudflare.com": 1,
+    "cdn.jsdelivr.net": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "static.parastorage.com",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "siteassets.parastorage.com",
+    "browser.sentry-cdn.com",
+    "app-worker.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "visits.visitor-analytics.io",
+    "www.google-analytics.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdnjs.cloudflare.com",
+    "cdn.jsdelivr.net"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7a6534d6.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.109d605e.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.17590929.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.9a70fd4a.chunk.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.6d52f2f5.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.4fee6157.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.da8b006a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.fe1edd16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.c5f19687.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "POST www.google-analytics.com/g/collect",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"243873fc-62b5-4124-88aa-3eccb54cfb37\",\"sessionTime\":3,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":303,\"e\":[{\"dt\":1,\"f\":{\"ts\":621,\"tsn\":727,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":409,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"b9aa7775-793f-49c3-9a1b-086f6b21a2e3\",\"appName\":\"thunderbolt\",\"corrId\":\"971c92f4-aaca-4e5a-b987-278c84d7498e\",\"is_rollout\":true,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"b2c55c81-d673-4bcd-8078-a7a0161dcac0\","
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":301,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":431,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"b9aa7775-793f-49c3-9a1b-086f6b21a2e3\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"243873fc-62b5-4124-88aa-3e"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945876511&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=1603539113.1794945877&f",
+     "body": ""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Willy Street | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/willy-street\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"5bd7ad21-b85d-4f63-bcf1-719fbdd57c0b|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=OkLr7rCY63UBhqs7mItv80YWcJxSCvVp_r60YsJO9dQ.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6MzYuMzI2WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiYjlhYTc3NzUtNzkzZi00OWMzLTlhMWItMDg2ZjZiMjFhMmUzIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 1019,
+   "mainEmptyAtLoad": false
+  },
+  "/residential": {
+   "url": "https://www.barnettarchitecture.com/residential",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Residential | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Orussa 1press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Orussa 1press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=VxcvQwcE9Oze5d21mt08I7c70HgMspP7F2W9gOHbFiM.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6NDcuMTQ0WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiY2ZkMGUyZDYtMmU0Ni00MDA1LTgyYzUtMWM2MWE0MGYyZWQ5Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6ImhkRkl4LVdpVThTSW9qS2plaTJvZWxBUXBlYzhzaG9ueWdlME0tR3kyYjAiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22758008c4-42ab-4f35-8597-e88f7a556423%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%22758008c4-42ab-4f35-8597-e88f7a556423%7C1%22%7D&currentRoute=.%2Fresidential&vsi=5fa797f7-4ec3-4fa2-9308-a0386b4293b1",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 42,
+   "inlineFetch": true,
+   "mainText": 39,
+   "domAddedAfterLoad": 6,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 8,
+    "static.parastorage.com": 100,
+    "siteassets.parastorage.com": 10,
+    "browser.sentry-cdn.com": 2,
+    "frog.wix.com": 10,
+    "panorama.wixapps.net": 5,
+    "app-worker.visitor-analytics.io": 3,
+    "www.googletagmanager.com": 2,
+    "visits.visitor-analytics.io": 4,
+    "www.google-analytics.com": 1,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdnjs.cloudflare.com": 1,
+    "cdn.jsdelivr.net": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "static.parastorage.com",
+    "siteassets.parastorage.com",
+    "browser.sentry-cdn.com",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "app-worker.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "visits.visitor-analytics.io",
+    "www.google-analytics.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdnjs.cloudflare.com",
+    "cdn.jsdelivr.net"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7a6534d6.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.109d605e.bundle.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.6d52f2f5.bundle.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.17590929.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.9a70fd4a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.4fee6157.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.da8b006a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.fe1edd16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.c5f19687.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "POST www.google-analytics.com/g/collect",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"5fa797f7-4ec3-4fa2-9308-a0386b4293b1\",\"sessionTime\":3,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":302,\"e\":[{\"dt\":0,\"f\":{\"ts\":563,\"tsn\":742,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":436,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"cfd0e2d6-2e46-4005-82c5-1c61a40f2ed9\",\"appName\":\"thunderbolt\",\"corrId\":\"1ece1cbb-b92e-411a-a226-b32f876544b5\",\"is_rollout\":true,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"7b47b2cf-6819-4060-9c01-1a7f0748c6b5\","
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":300,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":466,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"cfd0e2d6-2e46-4005-82c5-1c61a40f2ed9\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"5fa797f7-4ec3-4fa2-9308-a0"
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Residential | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/residential\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"758008c4-42ab-4f35-8597-e88f7a556423|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0h1v9124033750za20gxf1&_p=1794945887304&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=116348935.1794945888&",
+     "body": ""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=VxcvQwcE9Oze5d21mt08I7c70HgMspP7F2W9gOHbFiM.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6NDcuMTQ0WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiY2ZkMGUyZDYtMmU0Ni00MDA1LTgyYzUtMWM2MWE0MGYyZWQ5Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 39,
+   "mainEmptyAtLoad": false
+  },
+  "/copy-of-iowa": {
+   "url": "https://www.barnettarchitecture.com/copy-of-iowa",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Iowa | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "_press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "_press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "_press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "_press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=PP2_WoZODjnvplAyHWa6QmE6u6glswi44ScyI5dxwSg.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6NTcuNjgzWiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiNGJlYWUwOTAtODdkMS00MTk2LWJlNjEtMmNkZmMzYWUwMjk4Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6IklmUnBZc2RwRW1DamRUMVNZWEhwbUNSMkEzRXFRQmlxaGJLN2x5eV9VNUEiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22b730b09d-6c34-4292-acd9-54caac3f19fd%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%22b730b09d-6c34-4292-acd9-54caac3f19fd%7C1%22%7D&currentRoute=.%2Fcopy-of-iowa&vsi=d38e4ea6-262d-490b-8d85-01af4ea5e8e8",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 42,
+   "inlineFetch": true,
+   "mainText": 6,
+   "domAddedAfterLoad": 10,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 8,
+    "static.parastorage.com": 100,
+    "siteassets.parastorage.com": 10,
+    "browser.sentry-cdn.com": 2,
+    "frog.wix.com": 10,
+    "app-worker.visitor-analytics.io": 3,
+    "panorama.wixapps.net": 5,
+    "visits.visitor-analytics.io": 4,
+    "www.googletagmanager.com": 2,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdn.jsdelivr.net": 1,
+    "cdnjs.cloudflare.com": 1,
+    "www.google-analytics.com": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "static.parastorage.com",
+    "siteassets.parastorage.com",
+    "browser.sentry-cdn.com",
+    "frog.wix.com",
+    "app-worker.visitor-analytics.io",
+    "panorama.wixapps.net",
+    "visits.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdn.jsdelivr.net",
+    "cdnjs.cloudflare.com",
+    "www.google-analytics.com"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7a6534d6.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.109d605e.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.6d52f2f5.bundle.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.17590929.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.9a70fd4a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.4fee6157.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.da8b006a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/fingerprint.js",
+    "https://app-worker.visitor-analytics.io/750.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.fe1edd16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST www.google-analytics.com/g/collect",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Iowa | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/copy-of-iowa\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"b730b09d-6c34-4292-acd9-54caac3f19fd|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"d38e4ea6-262d-490b-8d85-01af4ea5e8e8\",\"sessionTime\":3,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":302,\"e\":[{\"dt\":0,\"f\":{\"ts\":544,\"tsn\":670,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":369,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"4beae090-87d1-4196-be61-2cdfc3ae0298\",\"appName\":\"thunderbolt\",\"corrId\":\"6d48976b-0c42-4098-a52c-9c518e1be771\",\"is_rollout\":true,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"95cbce77-acb6-403e-a755-cdc21e485f38\","
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":300,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":392,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"4beae090-87d1-4196-be61-2cdfc3ae0298\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"d38e4ea6-262d-490b-8d85-01"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945897808&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=1511716997.1794945898&f",
+     "body": ""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=PP2_WoZODjnvplAyHWa6QmE6u6glswi44ScyI5dxwSg.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDQ6NTcuNjgzWiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiNGJlYWUwOTAtODdkMS00MTk2LWJlNjEtMmNkZmMzYWUwMjk4Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 6,
+   "mainEmptyAtLoad": false
+  },
+  "/photography": {
+   "url": "https://www.barnettarchitecture.com/photography",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Photography | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "press to zoom",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "span",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=Mb7nEoCfhhHeYnzx1bVq3a4mUf7OQRKXYrL7vKW-8e0.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6MDguMjMxWiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMmQ3M2EyN2UtNzg0ZS00NzJmLWIxYjAtYzE0MjFlMjM5NmZlIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6IjFzY0l4R05DdDhkUnE4eFdLYnQ3MTgyN0RQS1N4UzhpSUxHSmpzQlZyNDgiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%2221c53175-689d-4de6-b63a-649d800905ba%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%2221c53175-689d-4de6-b63a-649d800905ba%7C1%22%7D&currentRoute=.%2Fphotography&vsi=53f75a76-051d-4592-b009-515a9da372ad",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 47,
+   "inlineFetch": true,
+   "mainText": 1183,
+   "domAddedAfterLoad": 11,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 5,
+    "static.parastorage.com": 100,
+    "siteassets.parastorage.com": 10,
+    "frog.wix.com": 11,
+    "panorama.wixapps.net": 5,
+    "browser.sentry-cdn.com": 2,
+    "app-worker.visitor-analytics.io": 3,
+    "visits.visitor-analytics.io": 4,
+    "www.googletagmanager.com": 2,
+    "www.google-analytics.com": 1,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdnjs.cloudflare.com": 1,
+    "cdn.jsdelivr.net": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "static.parastorage.com",
+    "siteassets.parastorage.com",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "browser.sentry-cdn.com",
+    "app-worker.visitor-analytics.io",
+    "visits.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdnjs.cloudflare.com",
+    "cdn.jsdelivr.net"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.0d870deb.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.45c95b6c.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.94c49f34.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.669383f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.587a31b9.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.c1c95107.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.ebe9c2ce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.a52aed2c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/fingerprint.js",
+    "https://app-worker.visitor-analytics.io/750.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.a5422983.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "POST www.google-analytics.com/g/collect",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Photography | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/photography\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"21c53175-689d-4de6-b63a-649d800905ba|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18410.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"53f75a76-051d-4592-b009-515a9da372ad\",\"sessionTime\":2,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":303,\"e\":[{\"dt\":1,\"f\":{\"ts\":589,\"tsn\":674,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":342,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"2d73a27e-784e-472f-b1b0-c1421e2396fe\",\"appName\":\"thunderbolt\",\"corrId\":\"639ffbf5-c5bc-46f9-93f8-2d4d02a06133\",\"is_rollout\":false,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"b61c5677-cdba-4292-94f5-3ee05bf52c0d\""
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":300,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":364,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"2d73a27e-784e-472f-b1b0-c1421e2396fe\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"53f75a76-051d-4592-b009-51"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945908478&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=504781683.1794945909&fr",
+     "body": ""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=Mb7nEoCfhhHeYnzx1bVq3a4mUf7OQRKXYrL7vKW-8e0.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6MDguMjMxWiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMmQ3M2EyN2UtNzg0ZS00NzJmLWIxYjAtYzE0MjFlMjM5NmZlIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 1183,
+   "mainEmptyAtLoad": false
+  },
+  "/about": {
+   "url": "https://www.barnettarchitecture.com/about",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "About | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=pJ-5om9SjB8BRl8uv3gPYSlU_pFyUi7TEJqbZGp6S6I.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6MTkuMTM3WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMzNjNDRhOWMtYzQ4NC00YTMzLWJkODAtMzAyMzM2M2NiNzZiIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6InhGd25mYnl0V296QTMyOW1STGlJWDRza1k5S0FVM201OWVpbzZBVFFHQVkiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%227e6470e0-6db1-4260-8afd-dd1dfdb00eb9%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%227e6470e0-6db1-4260-8afd-dd1dfdb00eb9%7C1%22%7D&currentRoute=.%2Fabout&vsi=c0dae3ad-819b-4ee9-b0bb-19d9f0efff19",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 42,
+   "inlineFetch": true,
+   "mainText": 2233,
+   "domAddedAfterLoad": 2,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 3,
+    "static.parastorage.com": 99,
+    "siteassets.parastorage.com": 10,
+    "frog.wix.com": 10,
+    "panorama.wixapps.net": 4,
+    "browser.sentry-cdn.com": 2,
+    "www.googletagmanager.com": 2,
+    "app-worker.visitor-analytics.io": 3,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdnjs.cloudflare.com": 1,
+    "cdn.jsdelivr.net": 1,
+    "www.google-analytics.com": 1,
+    "visits.visitor-analytics.io": 4
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "static.parastorage.com",
+    "siteassets.parastorage.com",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "browser.sentry-cdn.com",
+    "www.googletagmanager.com",
+    "app-worker.visitor-analytics.io",
+    "loadbalancer.visitor-analytics.io",
+    "cdnjs.cloudflare.com",
+    "cdn.jsdelivr.net",
+    "www.google-analytics.com",
+    "visits.visitor-analytics.io"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7a6534d6.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.109d605e.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.6d52f2f5.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.9a70fd4a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.17590929.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.4fee6157.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.da8b006a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.fe1edd16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.c5f19687.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_27.c4c38b3c.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[Container].a2c24b1",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "POST www.google-analytics.com/g/collect",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "POST visits.visitor-analytics.io/worker-log",
+    "POST visits.visitor-analytics.io/standalone/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"c0dae3ad-819b-4ee9-b0bb-19d9f0efff19\",\"sessionTime\":2,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":302,\"e\":[{\"dt\":0,\"f\":{\"ts\":711,\"tsn\":882,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":306,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"33c44a9c-c484-4a33-bd80-3023363cb76b\",\"appName\":\"thunderbolt\",\"corrId\":\"e3ad8743-257c-4150-941c-b317cbdaf4da\",\"is_rollout\":true,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"5a74dfcb-d0bf-42f0-8b7f-08f012046210\","
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":301,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":334,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"33c44a9c-c484-4a33-bd80-3023363cb76b\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"c0dae3ad-819b-4ee9-b0bb-19"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945919268&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=1952939736.1794945920&f",
+     "body": ""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=pJ-5om9SjB8BRl8uv3gPYSlU_pFyUi7TEJqbZGp6S6I.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6MTkuMTM3WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMzNjNDRhOWMtYzQ4NC00YTMzLWJkODAtMzAyMzM2M2NiNzZiIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"About | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/about\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"7e6470e0-6db1-4260-8afd-dd1dfdb00eb9|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    }
+   ],
+   "textAtLoad": 2233,
+   "mainEmptyAtLoad": false
+  },
+  "/process": {
+   "url": "https://www.barnettarchitecture.com/process",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Process | barnett-architecture",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=ku3amfli8yfrJA3opwqdjsMH-JNm1QImozL15t0L1RM.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6MjkuNzc2WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMDdjYTU3ODktMDY0Mi00ZTQ1LWFiZmEtOGNhZTY1NTkwZjZhIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6Il9qdUgwYXcwOS1CcnlsZzAtU2FrMlA4RVhTbDA5X3lfSkhfWmpVMjdJMUUiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%226f0662d9-bc38-4c5e-aa03-9fbabd28cbf3%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%226f0662d9-bc38-4c5e-aa03-9fbabd28cbf3%7C1%22%7D&currentRoute=.%2Fprocess&vsi=9c9fc2d0-affe-4b94-a14b-c6835f9ce1bc",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 42,
+   "inlineFetch": true,
+   "mainText": 4153,
+   "domAddedAfterLoad": 7,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 3,
+    "siteassets.parastorage.com": 10,
+    "static.parastorage.com": 99,
+    "frog.wix.com": 10,
+    "browser.sentry-cdn.com": 2,
+    "panorama.wixapps.net": 5,
+    "app-worker.visitor-analytics.io": 3,
+    "visits.visitor-analytics.io": 4,
+    "www.googletagmanager.com": 2,
+    "www.google-analytics.com": 1,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdn.jsdelivr.net": 1,
+    "cdnjs.cloudflare.com": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "siteassets.parastorage.com",
+    "static.parastorage.com",
+    "frog.wix.com",
+    "browser.sentry-cdn.com",
+    "panorama.wixapps.net",
+    "app-worker.visitor-analytics.io",
+    "visits.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdn.jsdelivr.net",
+    "cdnjs.cloudflare.com"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7a6534d6.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.109d605e.bundle.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.17590929.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.6d52f2f5.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.9a70fd4a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.4fee6157.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.da8b006a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.c5f19687.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tpa.32c26bdc.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[Container].a2c24b1",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "POST frog.wix.com/bolt-performance",
+    "POST frog.wix.com/bpm",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "POST www.google-analytics.com/g/collect",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"9c9fc2d0-affe-4b94-a14b-c6835f9ce1bc\",\"sessionTime\":4,\"logLevel\":\"INFO\",\"requestId\":\"\",\"messa"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":303,\"e\":[{\"dt\":1,\"f\":{\"ts\":507,\"tsn\":588,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":333,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"07ca5789-0642-4e45-abfa-8cae65590f6a\",\"appName\":\"thunderbolt\",\"corrId\":\"4a001c03-544f-4cb9-90f9-6c1e711a6a8f\",\"is_rollout\":true,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"c1e10b03-21ff-48fb-ab51-a3e88f0ca201\","
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":300,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":354,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"07ca5789-0642-4e45-abfa-8cae65590f6a\",\"src\":72,\"evid\":520,\"apps_ids\":[\"NO_APPS\"],\"widgets_ids\":[\"NO_APPS\"],\"widgets_count\":0,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"vsi\":\"9c9fc2d0-affe-4b94-a14b-c6"
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Process | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/process\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"6f0662d9-bc38-4c5e-aa03-9fbabd28cbf3|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945929926&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=62633456.1794945930&frm",
+     "body": ""
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=ku3amfli8yfrJA3opwqdjsMH-JNm1QImozL15t0L1RM.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6MjkuNzc2WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMDdjYTU3ODktMDY0Mi00ZTQ1LWFiZmEtOGNhZTY1NTkwZjZhIiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 4153,
+   "mainEmptyAtLoad": false
+  },
+  "/contact": {
+   "url": "https://www.barnettarchitecture.com/contact",
+   "status": 200,
+   "host": "www.barnettarchitecture.com",
+   "title": "Contact | barnett-architecture",
+   "forms": [
+    {
+     "name": "comp-kf4prqpx",
+     "action": null,
+     "method": "get",
+     "role": "",
+     "inChrome": false,
+     "fields": 4,
+     "signature": [
+      "text:name-*",
+      "email:email",
+      "text:subject",
+      "textarea:textarea_comp-kf4prqrn"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "About",
+     "href": "https://www.barnettarchitecture.com/about",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Residential",
+     "href": "https://www.barnettarchitecture.com/residential",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Commercial",
+     "href": "https://www.barnettarchitecture.com/commercial",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Testimonials",
+     "href": "https://www.barnettarchitecture.com/testimonials",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Photography",
+     "href": "https://www.barnettarchitecture.com/photography",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regio",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://loadbalancer.visitor-analytics.io/worker?pageId=masterPage&compId=tpaWorker_16&viewerCompId=tpaWorker_16&siteRevision=727&viewMode=site&deviceType=desktop&locale=en&tz=America%2FNew_York&regionalLanguage=en&endpointType=worker&instance=7dpxmOh__LavbrX00IEg-t7j_ISX2UbY0ASIAjaA1CQ.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6NDAuMjg5WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiZTU2MTFjZWQtMTNmMy00ZTU3LWIyY2EtYWFkOGU2YWU4MmY3Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI6IlR4NXd0MDcteFNHejI1UEowZF93aWE5NkRhMXNsQU5xLS15NHRmYlY2dWsiLCJzY2QiOiIyMDE1LTExLTA0VDIzOjMzOjE0LjQxNloifQ&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22924e28ee-989d-491e-9b5f-c3e9a431746c%7C1%22%2C%22siteRevision%22%3A%22727%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22BSI%22%3A%22924e28ee-989d-491e-9b5f-c3e9a431746c%7C1%22%7D&currentRoute=.%2Fcontact&vsi=bb54701e-789b-4a96-b8d2-b8a3549fdf4e",
+     "title": "TWIPLA Website Intelligence",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 42,
+   "inlineFetch": true,
+   "mainText": 150,
+   "domAddedAfterLoad": 14,
+   "hosts": {
+    "www.barnettarchitecture.com": 4,
+    "static.wixstatic.com": 3,
+    "siteassets.parastorage.com": 10,
+    "frog.wix.com": 12,
+    "static.parastorage.com": 117,
+    "browser.sentry-cdn.com": 2,
+    "panorama.wixapps.net": 6,
+    "app-worker.visitor-analytics.io": 3,
+    "visits.visitor-analytics.io": 4,
+    "www.googletagmanager.com": 2,
+    "www.google-analytics.com": 1,
+    "loadbalancer.visitor-analytics.io": 1,
+    "cdn.jsdelivr.net": 1,
+    "cdnjs.cloudflare.com": 1
+   },
+   "thirdPartyHosts": [
+    "static.wixstatic.com",
+    "siteassets.parastorage.com",
+    "frog.wix.com",
+    "static.parastorage.com",
+    "browser.sentry-cdn.com",
+    "panorama.wixapps.net",
+    "app-worker.visitor-analytics.io",
+    "visits.visitor-analytics.io",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "loadbalancer.visitor-analytics.io",
+    "cdn.jsdelivr.net",
+    "cdnjs.cloudflare.com"
+   ],
+   "scripts": [
+    "https://static.parastorage.com/unpkg/lodash@4.18.1/lodash.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.b325a058.bundle.min.js",
+    "https://static.parastorage.com/services/tag-manager-client/1.1075.0/siteTags.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.7a6534d6.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react@18.3.1/umd/react.production.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/browser-deprecation.bundle.es5.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/main.109d605e.bundle.min.js",
+    "https://static.parastorage.com/unpkg/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-components-registry.020a4584.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_2.bd814dce.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/assetsLoader.2c2851e4.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/businessLogger.fa4e1362.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/consentPolicy.441152e8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_3.17590929.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domSelectors.176a2465.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.d8a35f95.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ooi.d19f80f3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/renderer.dbf7bf8e.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_4.9a70fd4a.chunk.min.js",
+    "https://www.barnettarchitecture.com/_partials/wix-thunderbolt/dist/clientWorker.6d52f2f5.bundle.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/router.32ebda49.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/usedPlatformApis.2fac58dc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/warmupData.8df801a8.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/componentsLoader.c461831c.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibilityBrowserZoom.260379f9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/appMonitoring.2f1ecb6b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/contentReflow.3a7544b6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_44.a9216b9b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/cyclicTabbing.e8131f54.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_5.bf6ca1cc.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environmentWixCodeSdk.566c4d0f.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/environment.abaeef35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/domStore.1e7e6f16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/externalServices.a9aa058b.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/tslib.inline.4fee6157.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/mpaNavigation.d8459aa9.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/panorama.06b88c68.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembersWixCodeSdk.e68759a6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_9.da8b006a.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteScrollBlocker.a8693d24.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/speculationRules.3f801fab.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/ssrCache.f7fb72e6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_22.32a382c2.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platform.5fcb4fbd.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_25.1cfb33f6.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.b9d42ba3.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_6.c470736a.chunk.min.js",
+    "https://app-worker.visitor-analytics.io/main.js?s=4da9b191-90f4-11e9-b589-901b0edac50a&v=0.3",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/reporter-api.0a390084.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_0.b58e75e0.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/accessibility.b95b6406.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/group_24.d1634add.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.7cfc6e35.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/imagePlaceholder.fe1edd16.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.74301fc1.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.d41c28b7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.fd6a4352.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.1eeb7ba7.chunk.min.js",
+    "https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.c5f19687.chunk.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/v1/access-tokens",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens"
+    },
+    {
+     "method": "GET",
+     "host": "www.barnettarchitecture.com",
+     "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+     "query": [
+      "htmlsiteId",
+      "language",
+      "wixSite"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET siteassets.parastorage.com/pages/pages/thunderbolt",
+    "GET visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "GET static.parastorage.com/services/forms-viewer/1.883.0/viewerScript.bundle.min.js",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "POST visits.visitor-analytics.io/standalone/worker-log",
+    "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bund",
+    "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.um",
+    "POST panorama.wixapps.net/api/v1/bulklog",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].15",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae",
+    "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_forms.5e9c217c.bun",
+    "GET static.parastorage.com/services/forms-viewer/dc83e0b402d2bc69b79ea3a1e86f406a3ad5f4ea6bcc0c18645f2b5b/",
+    "POST frog.wix.com/bpm",
+    "POST www.google-analytics.com/g/collect",
+    "POST frog.wix.com/bolt-performance",
+    "GET visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "POST visits.visitor-analytics.io/worker-log"
+   ],
+   "postBodies": [
+    {
+     "url": "https://visits.visitor-analytics.io/standalone/worker-log",
+     "body": "{\"platform\":\"1\",\"key\":\"4da9b191-90f4-11e9-b589-901b0edac50a\",\"workerVersion\":\"0.3\",\"pageTitle\":\"Contact | barnett-architecture\",\"url\":\"https://www.barnettarchitecture.com/contact\",\"visitorFingerprint\":\"fp_27b85929bcb3be853aed21195d5d20a4\",\"tags\":{\"sessionId\":\"924e28ee-989d-491e-9b5f-c3e9a431746c|1\"},\"forceMaxPrivacyMode\":false,\"screenHeight\":900,\"screenWidth\":1440}"
+    },
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_create_registry_platform_client_cached\",\"transactionAction\":\"START\",\"sessionId\":\"bb54701e-789b-4a96-b8d2-b8a3549fdf4e\",\"sessionTime\":23,\"logLevel\":\"INFO\",\"requestId\":\"\",\"mess"
+    },
+    {
+     "url": "https://frog.wix.com/bpm",
+     "body": "{\"dt\":300,\"e\":[{\"dt\":0,\"f\":{\"_brandId\":\"wix\",\"_ms\":445,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"e5611ced-13f3-4e57-b2ca-aad8e6ae82f7\",\"src\":72,\"evid\":520,\"apps_ids\":[\"14ce1214-b278-a7e4-1373-00cebd1bef7c\"],\"widgets_ids\":[\"wixForms\"],\"slotsToWidgets\":[],\"widgets_count\":1,\"pageNumber\":1,\"hasBlocksWidget\":false,\"_isca\":1,\"_iscf\":1,\"_ispd\":0,\"_ise\":1,\"_rp\":\"bpm\"}}],\"g\":{\"_msid\":\"e5baa839-d013-4b20-b5"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-FQ1HKCQPTM&gtm=45je6bg0v9124033750za20gxf1&_p=1794945940506&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=EAAI&cid=1136623577.1794945941&f",
+     "body": ""
+    },
+    {
+     "url": "https://panorama.wixapps.net/api/v1/bulklog",
+     "body": "{\"messages\":[{\"platform\":\"viewer\",\"msid\":\"e5baa839-d013-4b20-b568-3ceed6e09261\",\"fullArtifactId\":\"com.wixpress.html-client.wix-thunderbolt\",\"artifactVersion\":\"1.18423.0\",\"componentId\":\"thunderbolt\",\"transactionName\":\"platform_invokeSdkFactory_siteMembersWixCodeSdk\",\"transactionAction\":\"START\",\"sessionId\":\"bb54701e-789b-4a96-b8d2-b8a3549fdf4e\",\"sessionTime\":332,\"logLevel\":\"INFO\",\"requestId\":\"\",\"mes"
+    },
+    {
+     "url": "https://frog.wix.com/bolt-performance",
+     "body": "{\"dt\":580,\"e\":[{\"dt\":1,\"f\":{\"ts\":585,\"tsn\":657,\"pv\":\"\",\"_brandId\":\"wix\",\"_ms\":409,\"_hostingPlatform\":\"VIEWER\",\"_visitorId\":\"e5611ced-13f3-4e57-b2ca-aad8e6ae82f7\",\"appName\":\"thunderbolt\",\"corrId\":\"6cd09c47-3f21-4d9e-a7b7-8cdf0b61d60f\",\"is_rollout\":true,\"isSuccessfulSSR\":true,\"name\":\"platform_cdn-hit-google-thunderbolt-platform\",\"src\":72,\"evid\":24,\"session_id\":\"6f87be2d-8612-4ef3-ab7b-53dab9f7f304\","
+    },
+    {
+     "url": "https://visits.visitor-analytics.io/worker-log",
+     "body": "instance=7dpxmOh__LavbrX00IEg-t7j_ISX2UbY0ASIAjaA1CQ.eyJpbnN0YW5jZUlkIjoiZDc2MmU1NzQtYWQxOS00OWUzLWJmNzAtNmZmOThmNTQ5MmFiIiwiYXBwRGVmSWQiOiIxM2VlNTNiNC0yMzQzLWI2NDEtYzg0ZC0wNTZkMmU2ZWQyZTYiLCJzaWduRGF0ZSI6IjIwMjYtMTEtMTdUMjA6MDU6NDAuMjg5WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiZTU2MTFjZWQtMTNmMy00ZTU3LWIyY2EtYWFkOGU2YWU4MmY3Iiwic2l0ZU93bmVySWQiOiI1YzhiOTc5ZS1iNDA4LTQ0Y2QtYjg1Ny1jMDIzYmExZWIzY2MiLCJicyI"
+    }
+   ],
+   "textAtLoad": 150,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-unknown-third-party-host-siteassets-parastorage-com",
+   "class": "A",
+   "feature": "unknown third-party host siteassets.parastorage.com",
+   "hint": "inspect",
+   "evidence": [
+    "siteassets.parastorage.com"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-frog-wix-com",
+   "class": "A",
+   "feature": "unknown third-party host frog.wix.com",
+   "hint": "inspect",
+   "evidence": [
+    "frog.wix.com"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-panorama-wixapps-net",
+   "class": "A",
+   "feature": "unknown third-party host panorama.wixapps.net",
+   "hint": "inspect",
+   "evidence": [
+    "panorama.wixapps.net"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-visits-visitor-analytics-io",
+   "class": "A",
+   "feature": "unknown third-party host visits.visitor-analytics.io",
+   "hint": "inspect",
+   "evidence": [
+    "visits.visitor-analytics.io"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-api-v1-access-tokens",
+   "class": "A",
+   "feature": "first-party API GET /_api/v1/access-tokens",
+   "api": {
+    "method": "GET",
+    "path": "/_api/v1/access-tokens"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_api/v1/access-tokens → 200"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ],
+   "reach": {
+    "pages": 48,
+    "of": 48
+   }
+  },
+  {
+   "id": "a-first-party-api-get-api-tag-manager-api-v1-tags-sites-uuid",
+   "class": "A",
+   "feature": "first-party API GET /_api/tag-manager/api/v1/tags/sites/{uuid}",
+   "api": {
+    "method": "GET",
+    "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_api/tag-manager/api/v1/tags/sites/{uuid}?htmlsiteId,language,wixSite → 200"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ],
+   "reach": {
+    "pages": 48,
+    "of": 48
+   }
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-static-parastorage-com",
+   "class": "A",
+   "feature": "unknown third-party host static.parastorage.com",
+   "hint": "inspect",
+   "evidence": [
+    "static.parastorage.com"
+   ],
+   "pages": [
+    "/copy-of-iowa"
+   ]
+  },
+  {
+   "id": "f-form-comp-kf4prqpx-no-action-js-wired-4-fields",
+   "class": "F",
+   "feature": "form \"comp-kf4prqpx\" → no action (JS-wired) (4 fields)",
+   "signature": [
+    "text:name-*",
+    "email:email",
+    "text:subject",
+    "textarea:textarea_comp-kf4prqrn"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:name-*,email:email,text:subject,textarea:textarea_comp-kf4prqrn"
+   ],
+   "pages": [
+    "/contact"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-span-content",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup → span:content",
+   "hint": "modal",
+   "evidence": [
+    "https://www.barnettarchitecture.com/about",
+    "https://www.barnettarchitecture.com/residential",
+    "https://www.barnettarchitecture.com/commercial",
+    "https://www.barnettarchitecture.com/testimonials"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography"
+   ],
+   "reach": {
+    "pages": 240,
+    "of": 48
+   }
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-target-outside-dom",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup (chrome only) → target outside DOM at capture",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "https://www.barnettarchitecture.com/about",
+    "https://www.barnettarchitecture.com/residential",
+    "https://www.barnettarchitecture.com/commercial",
+    "https://www.barnettarchitecture.com/testimonials"
+   ],
+   "pages": [
+    "/about",
+    "/process",
+    "/contact"
+   ],
+   "reach": {
+    "pages": 240,
+    "of": 48
+   }
+  },
+  {
+   "id": "t-unknown-third-party-host-static-wixstatic-com",
+   "class": "T",
+   "feature": "unknown third-party host static.wixstatic.com",
+   "hint": "inspect",
+   "evidence": [
+    "static.wixstatic.com"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-browser-sentry-cdn-com",
+   "class": "T",
+   "feature": "unknown third-party host browser.sentry-cdn.com",
+   "hint": "inspect",
+   "evidence": [
+    "browser.sentry-cdn.com"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-app-worker-visitor-analytics-io",
+   "class": "T",
+   "feature": "unknown third-party host app-worker.visitor-analytics.io",
+   "hint": "inspect",
+   "evidence": [
+    "app-worker.visitor-analytics.io"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "www.google-analytics.com"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-loadbalancer-visitor-analytics-io",
+   "class": "T",
+   "feature": "unknown third-party host loadbalancer.visitor-analytics.io",
+   "hint": "inspect",
+   "evidence": [
+    "loadbalancer.visitor-analytics.io"
+   ],
+   "pages": [
+    "/",
+    "/willy-street",
+    "/residential",
+    "/copy-of-iowa",
+    "/photography",
+    "/about",
+    "/process",
+    "/contact"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 48,
+  "of": 48,
+  "endpoints": {
+   "GET siteassets.parastorage.com/pages/pages/thunderbolt": 48,
+   "GET visits.visitor-analytics.io/api/standalone/websites/{uuid}/settings": 48,
+   "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js": 32,
+   "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js": 45,
+   "GET www.barnettarchitecture.com/_api/v1/access-tokens": 48,
+   "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json": 36,
+   "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json": 36,
+   "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json": 36,
+   "GET static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json": 36,
+   "GET static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json": 48,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bundle.min.js": 48,
+   "GET static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.umd.min.js": 48,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf.bundle.min.js": 48,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae9951.bundle.min.js": 48,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].152f157d.bundle.min.js": 48,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[Container].a2c24b1a.bundle.min.js": 2,
+   "GET www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/{uuid}": 48,
+   "POST panorama.wixapps.net/api/v1/bulklog": 48,
+   "POST frog.wix.com/bolt-performance": 26,
+   "POST visits.visitor-analytics.io/standalone/worker-log": 48,
+   "POST frog.wix.com/bpm": 48,
+   "GET visits.visitor-analytics.io/api/wix/websites/{uuid}/settings": 48,
+   "POST visits.visitor-analytics.io/worker-log": 48,
+   "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.a5422983.chunk.min.js": 13,
+   "GET static.parastorage.com/services/editor-elements/1.15659.0/rb_wixui.corvid.manifest.min.json": 9,
+   "GET static.parastorage.com/services/editor-elements/1.15659.0/rb_dsgnsys.corvid.manifest.min.json": 9,
+   "GET static.parastorage.com/services/editor-elements/1.15659.0/rb_wixui.thunderbolt.manifest.min.json": 9,
+   "GET static.parastorage.com/services/editor-elements/1.15659.0/rb_dsgnsys.thunderbolt.manifest.min.json": 9,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].c1332128.bundle.min.js": 41,
+   "POST www.google-analytics.com/g/collect": 5,
+   "GET static.parastorage.com/services/forms-viewer/1.883.0/viewerScript.bundle.min.js": 1,
+   "GET static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_forms.5e9c217c.bundle.min.js": 1,
+   "GET static.parastorage.com/services/forms-viewer/{hash}/assets/locales/messages_en.json": 1,
+   "GET static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.4253f3dd.chunk.min.js": 3,
+   "GET static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.71793ea0.chunk.min.js": 3,
+   "GET static.parastorage.com/services/editor-elements/1.15653.0/rb_wixui.corvid.manifest.min.json": 3,
+   "GET static.parastorage.com/services/editor-elements/1.15653.0/rb_dsgnsys.corvid.manifest.min.json": 3,
+   "GET static.parastorage.com/services/editor-elements/1.15653.0/rb_wixui.thunderbolt.manifest.min.json": 3,
+   "GET static.parastorage.com/services/editor-elements/1.15653.0/rb_dsgnsys.thunderbolt.manifest.min.json": 3
+  },
+  "searchFormPages": 0,
+  "formPages": 1,
+  "triggerPages": {
+   "aria-haspopup": 240
+  }
+ }
+}

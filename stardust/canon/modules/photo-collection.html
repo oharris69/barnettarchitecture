@@ -1,0 +1,31 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:34:39Z
+  sourceSlug:       copy-of-iowa
+  sourcePrototype:  stardust/prototypes/copy-of-iowa-proposed.html
+  region:           module:photo-collection (head + justified wall; breadcrumb inline)
+  css:              stardust/canon/canon.css [from canon.css [from pending/copy-of-iowa.css]]
+  stardustVersion:  0.32.1
+-->
+<section class="darkroom gallery-head" data-section="gallery-head" data-intent="say what this collection is" data-layout="split" data-module="photo-collection" aria-labelledby="collection-h">
+  <div class="gallery-head__grid shell">
+    <div class="gallery-head__title">
+      <nav class="crumbs label" aria-label="Breadcrumb" data-module="breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/photography">Photography</a></li><li><span aria-current="page">{{title}}</span></li></ol></nav>
+      <h1 id="collection-h" data-slot="title">{{title}}</h1>
+      <p class="dim dim--stack" data-slot="facts"><span>{{N}} photographs · {{kind label}} · Todd Barnett</span></p>
+    </div>
+    <div class="gallery-head__intro" data-slot="intro"><p>{{captured intro sentence(s) — see copy-of-iowa-shape.md forkRules}}</p></div>
+  </div>
+</section>
+<section class="darkroom gallery" data-section="gallery" data-intent="show the photographs" data-layout="justified-wall" data-items="{{N}}" data-media="image" data-module="photo-collection" data-deviation="justified native-ratio rows with salon features instead of 12-col cropped spans" aria-label="{{title}} — {{N}} photographs">
+  <a class="skip-wall" href="#more">Skip the {{N}} photographs to more collections</a>
+  <div class="shell">
+    <!-- add photo-wall--lead when N ≤ 4 -->
+    <div class="photo-wall" data-slot="photos" data-lightbox-group>
+      <!-- repeat in captured order (CDN 403s excluded); --ar = w/h; photo--feature per the composed placement (16-cycle 0 & 9, rebalanced at the end);
+           first two frames loading="eager" (frame 1 + fetchpriority="high"), the rest lazy; srcset 400/800/1600/2400 capped at original;
+           figcaption ONLY when a real title exists (not "-", "_", "=", ".", not a camera filename) -->
+      <figure class="photo {{photo--feature?}}" id="photo-{{n}}" style="--ar: {{w/h}}"><a class="photo__open" href="{{2400w file}}" data-lb data-w="{{w}}" data-h="{{h}}" aria-haspopup="dialog">{{img alt="{{title}} — photograph n of N"}}</a>{{<figcaption><span class="photo__title">real title</span></figcaption>}}</figure>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,198 @@
+{
+  "slug": "designcraft",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/designcraft",
+      "newPath": "/projects/designcraft",
+      "outputPath": "projects/designcraft/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/designcraft.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "designCraft — Renovation, Madison, WI | Barnett Architecture",
+    "description": "designCraft — renovation, Madison, WI. The owners had long hoped to give their building new life; The tired vinyl siding left much to be desired.",
+    "canonical": "https://www.barnettarchitecture.com/projects/designcraft",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/designcraft#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Commercial, community & recreation",
+            "item": "https://www.barnettarchitecture.com/commercial"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "designCraft",
+            "item": "https://www.barnettarchitecture.com/projects/designcraft"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/designcraft#work",
+        "name": "designCraft",
+        "url": "https://www.barnettarchitecture.com/projects/designcraft",
+        "description": "The owners had long hoped to give their building new life; The tired vinyl siding left much to be desired.",
+        "genre": "Architecture",
+        "keywords": "Commercial, Renovation",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Madison, WI",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Madison",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_30d678750cd5411e9ed8af7e7d7539e1.jpg/v1/fill/w_512,h_768,al_c,q_85,enc_auto/5c8b97_30d678750cd5411e9ed8af7e7d7539e1.jpg",
+          "https://static.wixstatic.com/media/5c8b97_a642d79ec0e54abc9a860e2baff2ec1d.jpg/v1/fill/w_512,h_768,al_c,q_85,enc_auto/5c8b97_a642d79ec0e54abc9a860e2baff2ec1d.jpg",
+          "https://static.wixstatic.com/media/5c8b97_b3669134ac174670b267a791b582a653.jpg/v1/fill/w_1403,h_954,al_c,q_85,enc_auto/5c8b97_b3669134ac174670b267a791b582a653.jpg",
+          "https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_687,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:56Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "5a4a12be81ef",
+  "sourceProposedSha": "9c91725b9249",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 3/3 captured strings verbatim; photos 4/4 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/designcraft/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/designcraft/_meta.json",
+  "driverVersion": "1"
+}

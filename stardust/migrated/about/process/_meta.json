@@ -1,0 +1,258 @@
+{
+  "slug": "process",
+  "type": "static",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "project-hero",
+    "process-steps",
+    "faq",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "steps",
+    "faq",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/process",
+      "newPath": "/about/process",
+      "outputPath": "about/process/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/process.html",
+      "from": "approved prototype (re-rendered from its builder after the canon merge)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Process — Architect, Madison, WI | Barnett Architecture",
+    "description": "How a Barnett Architecture project runs: pre-design, schematic design, design development, construction documents, bidding and construction administration.",
+    "canonical": "https://www.barnettarchitecture.com/about/process",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "name": "Barnett Architecture LLC",
+        "alternateName": "Barnett Architecture",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect",
+          "url": "https://www.barnettarchitecture.com/about/todd-barnett"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.barnettarchitecture.com/about/process#webpage",
+        "url": "https://www.barnettarchitecture.com/about/process",
+        "name": "Process — Architect, Madison, WI | Barnett Architecture",
+        "isPartOf": {
+          "@id": "https://www.barnettarchitecture.com/#website"
+        },
+        "about": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.barnettarchitecture.com/about/process#faq",
+        "url": "https://www.barnettarchitecture.com/about/process#faq",
+        "isPartOf": {
+          "@id": "https://www.barnettarchitecture.com/about/process#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What happens in pre-design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pre-Design involves gathering information to begin the design process. The information gathered may be assembled into the “Program Statement” which is a working and guiding document for all project team members."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens in schematic design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We begin the design process after getting to know the client: their likes and dislikes, needs and wants and goals and dreams. This is where the \"big idea\" is conceived: are we looking at a building which is long or short, compact, or elongated? We investigate key features such as the building location and orientation, entry placement, spatial relationships and site issues such as landscape, parking and service areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What deliverables come out of schematic design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deliverables typically include a site plan, floor plans, elevations, sections, massing sketches and a preliminary estimate of probable construction costs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are construction documents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is where the \"blueprints\" are developed - drawings and specifications needed to secure final pricing and permits. They also communicate to the contractors what \"goes into\" the design."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is a contractor selected?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The basic delivery systems are design-bid-build, preselection, design-build and self-contracted. Although the client always selects the contractor, the architect typically recommends contractors to the owner for consideration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the architect do during construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The architect visits the construction site to confirm general conformance with the plans. Other services may include reviews of change orders, pay requests and shop drawings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a charrette?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As part of a collaborative approach, Barnett Architecture employs the Charrette: an interactive design process wherein the client, architect, contractor, engineer and other parties (e.g. neighbors, users) are active participants. Used to generate a range of ideas and reach a consensus, the Charrette can quickly confirm not only design direction but key issues such as goals, needs, schedule and budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you design green buildings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Barnett Architecture believes in green design. This includes the use of green materials, energy-saving heating and cooling systems, super insulation and construction waste reduction. More importantly, it also includes approaching the overall design with proper building orientation, massing and size. Green design experience extends beyond the mainstream to include solar hot water and photovoltaic systems, radiant heating and cooling, wind turbines and green roofs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is universal design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Barnett Architecture’s practice, particularly for residential, embraces “universal design” and studies how a design may complement the changing needs of the building user. “Universal design” strives to create environments designed for people who are older, or may have physical disabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What services does Barnett Architecture offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Services range from hourly consultations to the full architectural process. In the latter, projects are taken from programming and concept design to full building plans and construction administration."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://www.barnettarchitecture.com/about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Process",
+            "item": "https://www.barnettarchitecture.com/about/process"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:59Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "c5b0e975658c",
+  "sourceProposedSha": "a34ebb1c65c8",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 9/10 captured strings verbatim (1 recomposed — contentDeviations kind recomposed); photos 0/0 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "recomposed",
+      "source": null,
+      "target": null,
+      "reason": "the delivery-systems sentence (four clauses joined by semicolons) is set as a definition list, one row per system; clause text verbatim"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "about/process/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "about/process/_meta.json",
+  "driverVersion": "1"
+}

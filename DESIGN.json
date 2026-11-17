@@ -1,0 +1,760 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "mode": "prep",
+    "writtenAt": "2026-11-17T17:20:00Z",
+    "read": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/DESIGN.json",
+      "stardust/audit/barnettarchitecture-com/audit.json",
+      "stardust/taxonomy.json"
+    ],
+    "stardustVersion": "0.10.0"
+  },
+  "colors": {
+    "sage-ground": "#e7ebe6",
+    "graphite": "#1b1e1c",
+    "pencil": "#5b625d",
+    "hairline": "#b9c0ba",
+    "third-lake": "#0d4b59",
+    "third-lake-light": "#8cc0cb",
+    "darkroom": "#121413",
+    "print-white": "#ffffff",
+    "error": "#8a1f11"
+  },
+  "typography": {
+    "display": {
+      "fontFamily": "Spectral",
+      "fontWeight": 300,
+      "fontSize": "clamp(3.25rem, 9.5vw, 10rem)",
+      "lineHeight": 0.92,
+      "letterSpacing": "-0.03em"
+    },
+    "headline": {
+      "fontFamily": "Spectral",
+      "fontWeight": 300,
+      "fontSize": "clamp(2rem, 4.2vw, 3.75rem)",
+      "lineHeight": 1.02
+    },
+    "lead": {
+      "fontFamily": "Spectral",
+      "fontWeight": 400,
+      "fontSize": "clamp(1.375rem, 2.1vw, 1.875rem)",
+      "lineHeight": 1.3
+    },
+    "body": {
+      "fontFamily": "Hanken Grotesk",
+      "fontWeight": 400,
+      "fontSize": "1.0625rem",
+      "lineHeight": 1.6
+    },
+    "label": {
+      "fontFamily": "Hanken Grotesk",
+      "fontWeight": 600,
+      "fontSize": "0.8125rem",
+      "letterSpacing": "0.08em",
+      "textTransform": "uppercase"
+    }
+  },
+  "rounded": {
+    "none": "0px"
+  },
+  "spacing": {
+    "xs": "8px",
+    "sm": "16px",
+    "md": "32px",
+    "lg": "64px",
+    "xl": "120px",
+    "gutter": "clamp(20px, 4vw, 56px)",
+    "sectionPadding": "120px",
+    "maxWidth": "1440px",
+    "measure": "68ch"
+  },
+  "extensions": {
+    "breakpoints": {
+      "values": [
+        600,
+        900
+      ],
+      "containerMaxWidth": 1440,
+      "note": "redesign keeps its own two breakpoints; source 980px fixed canvas is not inherited"
+    },
+    "motion": {
+      "register": "editorial",
+      "rules": [
+        "image reveal: clip-path inset 6%→0 + opacity over 700ms ease-out-quart on enter",
+        "title rise: translateY(24px)→0 over 600ms",
+        "no scroll-jacking; no parallax over 40px",
+        "prefers-reduced-motion: all transitions off, content visible immediately"
+      ]
+    },
+    "iaPriorities": [
+      {
+        "id": "projects",
+        "rank": 1,
+        "mutability": "movable",
+        "basis": "29 case studies are the core proof; currently reachable only via dropdown (audit F-005)"
+      },
+      {
+        "id": "photography",
+        "rank": 2,
+        "mutability": "movable",
+        "basis": "~300 photographs, 8 collections; owner's personal practice"
+      },
+      {
+        "id": "practice",
+        "rank": 3,
+        "mutability": "movable",
+        "basis": "about / process / team / testimonials"
+      },
+      {
+        "id": "contact",
+        "rank": 4,
+        "mutability": "movable",
+        "basis": "no CTA anywhere today (audit F-006)"
+      }
+    ],
+    "pageTypes": {
+      "landing": [
+        "index"
+      ],
+      "listing": [
+        "residential",
+        "commercial",
+        "projects (new)",
+        "photography"
+      ],
+      "project": "29 project case studies",
+      "gallery": "8 photography collections",
+      "static": [
+        "about",
+        "process",
+        "team",
+        "testimonials (merged hub + 2 era pages)"
+      ],
+      "form": [
+        "contact"
+      ]
+    },
+    "modules": [
+      {
+        "id": "site-header",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "wordmark",
+            "type": "link",
+            "required": true
+          },
+          {
+            "name": "nav",
+            "type": "link[]",
+            "required": true
+          },
+          {
+            "name": "cta",
+            "type": "link"
+          }
+        ],
+        "instances": "all pages"
+      },
+      {
+        "id": "site-footer",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "nap",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "sitemap",
+            "type": "link[]"
+          },
+          {
+            "name": "copyright",
+            "type": "text"
+          }
+        ],
+        "instances": "all pages",
+        "note": "Twitter/Facebook placeholders (twitter.com/wix, facebook.com) dropped — template junk, audit"
+      },
+      {
+        "id": "project-hero",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "image",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "facts",
+            "type": "facet[]",
+            "required": true
+          }
+        ],
+        "instances": "29 project pages"
+      },
+      {
+        "id": "big-idea",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "lead",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "narrative",
+            "type": "richtext",
+            "required": true
+          },
+          {
+            "name": "client-type",
+            "type": "text"
+          }
+        ],
+        "instances": "29 project pages",
+        "rule": "lead = first sentence of captured narrative, verbatim"
+      },
+      {
+        "id": "project-gallery",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "photos",
+            "type": "image[]",
+            "required": true
+          }
+        ],
+        "instances": "29 project pages"
+      },
+      {
+        "id": "project-index",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "facets",
+            "type": "facet-group[]"
+          },
+          {
+            "name": "cards",
+            "type": "project-card[]",
+            "required": true
+          },
+          {
+            "name": "view",
+            "type": "grid|list"
+          }
+        ],
+        "instances": "projects, residential, commercial, home (featured, no facets)"
+      },
+      {
+        "id": "photo-collection",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "intro",
+            "type": "richtext"
+          },
+          {
+            "name": "photos",
+            "type": "image[]",
+            "required": true
+          },
+          {
+            "name": "captions",
+            "type": "text[]"
+          }
+        ],
+        "instances": "8 collections"
+      },
+      {
+        "id": "collection-index",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "collections",
+            "type": "card[]",
+            "required": true
+          },
+          {
+            "name": "selected-works",
+            "type": "image[]"
+          }
+        ],
+        "instances": "photography hub, home teaser"
+      },
+      {
+        "id": "principles",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "items",
+            "type": "title+text[]",
+            "required": true
+          }
+        ],
+        "instances": "home, about",
+        "rule": "items are captured About copy (fit the client / Charrette / green design / universal design) — no invented claims"
+      },
+      {
+        "id": "process-steps",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "steps",
+            "type": "title+richtext[]",
+            "required": true
+          }
+        ],
+        "instances": "process"
+      },
+      {
+        "id": "testimonial-list",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "quote",
+            "type": "richtext",
+            "required": true
+          },
+          {
+            "name": "attribution",
+            "type": "text"
+          },
+          {
+            "name": "image",
+            "type": "image"
+          }
+        ],
+        "instances": "testimonials"
+      },
+      {
+        "id": "enquiry-band",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "heading",
+            "type": "text"
+          },
+          {
+            "name": "email",
+            "type": "link",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "link",
+            "required": true
+          }
+        ],
+        "instances": "all project, listing, landing pages"
+      },
+      {
+        "id": "faq",
+        "status": "confirmed",
+        "slots": [
+          {
+            "name": "items",
+            "type": "q+a[]",
+            "required": true
+          }
+        ],
+        "instances": "process",
+        "rule": "answers composed only of captured Process/About sentences"
+      }
+    ],
+    "colorReservations": [
+      {
+        "color": "#121413",
+        "reservedFor": [
+          "module:photo-collection",
+          "module:project-gallery lightbox",
+          "module:collection-index selected-works"
+        ]
+      },
+      {
+        "color": "#8a1f11",
+        "reservedFor": [
+          "module:enquiry-form error state (aria-invalid fields, field errors)"
+        ]
+      }
+    ],
+    "metadata": {
+      "siteName": "Barnett Architecture",
+      "titlePattern": "{subject} — {type}, {location} | Barnett Architecture",
+      "defaultOgImage": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg",
+      "themeColor": "#e7ebe6",
+      "locale": "en-US",
+      "organization": {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Middleton, WI",
+          "Fitchburg, WI",
+          "Sun Prairie, WI",
+          "Verona, WI",
+          "Waunakee, WI",
+          "Monona, WI",
+          "Maple Bluff, WI",
+          "McFarland, WI",
+          "Cottage Grove, WI",
+          "Oregon, WI",
+          "Windsor, WI",
+          "Belleville, WI",
+          "Brooklyn, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "sameAs": [
+          "https://www.houzz.com/professionals/architects-and-building-designers/barnett-architecture-llc-pfvwus-pf~914672624"
+        ],
+        "award": [
+          "Best of Houzz 2014 — Service",
+          "Best of Houzz 2016 — Service",
+          "Best of Houzz 2018 — Service"
+        ],
+        "_sourceNote": "areaServed/award/sameAs/services from the Houzz profile supplied by the user 2026-11-17; aggregateRating intentionally NOT marked up (self-serving review markup is ineligible for Google rich results); rating shown as visible text only"
+      },
+      "keyFacts": [
+        "Madison, WI",
+        "established in 2007",
+        "Todd Barnett",
+        "118 North Breese Terrace",
+        "608-233-4538"
+      ]
+    },
+    "divergence": {
+      "mode": "rebrand",
+      "modeReason": "user declined the brand-faithful option and chose 'Bold new look' (question answer); captured surface is a Wix template default (Arial 400, Wix magenta active-nav), not an authored identity",
+      "seed": {
+        "input": "Barnett Architecture LLC|2026-11-17",
+        "md5": "9bf4874d6da36574de8a141c2cabcd8c",
+        "rolled": "1980s × Map engraving × Hospital discharge paperwork × monochrome-tint",
+        "resolved": {
+          "decade": {
+            "value": "2025-now",
+            "picked_by": "reasoned: Olson Kundig + BCJ current editorial architecture sites"
+          },
+          "craft": {
+            "value": "Technical illustration",
+            "picked_by": "reasoned: captured process copy — 'pencil, sketch book', site plans, sections, elevations; Architects' Sketch Hour (team)"
+          },
+          "register": {
+            "value": "Museum didactic",
+            "picked_by": "reasoned: Aperture (photography institution) + owner's exhibits (Fields of Vision 2024, Iowa 2022)"
+          },
+          "ground": {
+            "value": "monochrome-tint",
+            "picked_by": "deterministic (research did not imply a ground)"
+          }
+        }
+      },
+      "font_deck": "swiss-modernist (substituted)",
+      "divergence_justifications": [
+        {
+          "font": "Hanken Grotesk",
+          "replaces": "Inter (reflex-reject)",
+          "reason": "toolkit substitute table: utility body"
+        },
+        {
+          "font": "Spectral",
+          "position": "display/headline/lead",
+          "reason": "museum-didactic wall-label titling; toolkit substitute for reflex serifs; out-of-deck"
+        }
+      ],
+      "palette_source": "derived: monochrome-tint ground (sage, hue 108) + graphite drafting ink + one accent named for Madison's Third Lake District; darkroom ground for photography (owner exhibits photographs)",
+      "references_used": [
+        {
+          "source": "websearch",
+          "title": "Olson Kundig",
+          "url": "https://www.olsonkundig.com/",
+          "grounds": "projects-first IA, 13 type facets + location browsing, photography-dominant white space",
+          "tag": "in-toolbox"
+        },
+        {
+          "source": "websearch",
+          "title": "Bohlin Cywinski Jackson",
+          "url": "https://www.bcj.com/",
+          "grounds": "About → Practice / Process / Commitment grouping; facts + 2–3 sentence narrative per project",
+          "tag": "in-toolbox"
+        },
+        {
+          "source": "websearch",
+          "title": "Aperture",
+          "url": "https://aperture.org/",
+          "grounds": "out-of-category: photography collections as titled portfolios with a one-line subtitle; editorial sequencing",
+          "tag": "off-toolbox"
+        }
+      ],
+      "anti_toolbox_count": 1,
+      "anti_toolbox_hits": [
+        {
+          "move": "Sticky top navigation",
+          "justification": "desktop only and transparent over heroes: 39 project/collection pages need persistent wayfinding back to the index once the dropdown mega-list is removed; mobile header is not sticky"
+        }
+      ],
+      "off_toolbox_moves": [
+        {
+          "move": "dimension-string facts bar",
+          "reason": "architectural drawing convention carrying each project's real sector/type/location; cannot transfer to a non-architecture brand"
+        },
+        {
+          "move": "big-idea lead",
+          "reason": "the practice's own process vocabulary ('This is where the \"big idea\" is conceived')"
+        },
+        {
+          "move": "darkroom walls for photography",
+          "reason": "owner exhibits photographs (Fields of Vision 2024, Iowa 2022 exhibits)"
+        }
+      ],
+      "audit_adjustments": [
+        {
+          "from": "off_toolbox_moves",
+          "to": "removed",
+          "move": "contour-line topographic background",
+          "reason": "transfers unchanged to any outdoors brand — dressed-up default"
+        }
+      ]
+    },
+    "canon": {
+      "sourceSlug": "index",
+      "sourcePrototype": "stardust/prototypes/index-proposed.html",
+      "cinematicSibling": "stardust/prototypes/index-cinematic.html",
+      "approvedAt": "2026-11-17T18:43:06Z",
+      "approvedBy": "hands-off",
+      "files": {
+        "header": {
+          "path": "stardust/canon/header.html",
+          "sha": "fc2668efd7981ee010fcff580950ff257beb84bba3e2727202b260b3382bcc77"
+        },
+        "footer": {
+          "path": "stardust/canon/footer.html",
+          "sha": "26d94e06f94815a75431bcdf430ebc1001661f633535b3d0553e638765aa8853"
+        },
+        "css": {
+          "path": "stardust/canon/canon.css",
+          "sha": "a1852a165afe44861f456a7d2fa8406e59a4d05445460bed696865dcc900468e"
+        },
+        "skipLink": {
+          "path": "stardust/canon/skip-link.html",
+          "sha": "dde2f2d7fb0e3653644d605580cf1829d75f4d61f07f192e839e0394cfbbaf09"
+        },
+        "navScript": {
+          "path": "stardust/canon/nav-script.html",
+          "sha": "ed4339f6bc443e359ac36e83d63fb7d8eef608b599cb6430397e27a13e39bd2c"
+        },
+        "headScript": {
+          "path": "stardust/canon/head-script.html",
+          "sha": "9c39f81ab298a156151653d4b76405d2632bca4b3fb135a5cc3294547f8ed42b"
+        },
+        "modules": {
+          "big-idea": {
+            "path": "stardust/canon/modules/big-idea.html",
+            "sha": "d98b3b82d6e8360d712baa7a12be35658e9b1166e9c078997a000da18c75d13c"
+          },
+          "collection-index--hub": {
+            "path": "stardust/canon/modules/collection-index--hub.html",
+            "sha": "880001ea1f7a6d2f2d42ef8fbfc025479d69e352ec421e9d329f05dfa021d4a1"
+          },
+          "collection-index--siblings": {
+            "path": "stardust/canon/modules/collection-index--siblings.html",
+            "sha": "3fcdf4d2f8314e51ed0e73b113c0dafd7683b822582968fd20deaf8701943a35"
+          },
+          "collection-index": {
+            "path": "stardust/canon/modules/collection-index.html",
+            "sha": "ff58b1c11bb8634a8eca0434dab62e17be98111cf70ce6cbeb504ecf02a49af2"
+          },
+          "enquiry-band": {
+            "path": "stardust/canon/modules/enquiry-band.html",
+            "sha": "cd11b8dbc6ae26a6b5a0b2e693c38802363e1017333e95c6d0532f690046c0c7"
+          },
+          "enquiry-form": {
+            "path": "stardust/canon/modules/enquiry-form.html",
+            "sha": "0c852a94b97a5199e38a1d0943ef412fe1352c061a87b9502beef74000e2202c"
+          },
+          "faq": {
+            "path": "stardust/canon/modules/faq.html",
+            "sha": "f221ccd3b0cc1fcc68bb1bbe1f6966d7396c62cb7fbe4c4352ab00d59f5dc6d5"
+          },
+          "photo-collection": {
+            "path": "stardust/canon/modules/photo-collection.html",
+            "sha": "3aacaf7e974dc6a27609a91a90670e45c593198a66ca26946874661b2bc5dfe7"
+          },
+          "photo-lightbox": {
+            "path": "stardust/canon/modules/photo-lightbox.html",
+            "sha": "a64b6258f67e29e3cfc6eb1b153b1f26dda505c7aed5feccf08002a8c9c8278e"
+          },
+          "principles": {
+            "path": "stardust/canon/modules/principles.html",
+            "sha": "0ef2cf080344ffbb6f7ef090e5e381b33e0c4a4998a75b63b95ca228e1301a5b"
+          },
+          "process-steps": {
+            "path": "stardust/canon/modules/process-steps.html",
+            "sha": "58c28ab36d73dd24df2ef0a21118bbc557e11d3f1f55a566dd2b452b0510d227"
+          },
+          "project-facts": {
+            "path": "stardust/canon/modules/project-facts.html",
+            "sha": "bc6abd1ba96a8ef4ff94d4bae39ae23e637cbc68dd4531d9b69170c8fefbc7eb"
+          },
+          "project-gallery": {
+            "path": "stardust/canon/modules/project-gallery.html",
+            "sha": "9a6325d5176dc0732691866445697b18f6ed2ce754edf635dadc855a442f2b40"
+          },
+          "project-hero--project": {
+            "path": "stardust/canon/modules/project-hero--project.html",
+            "sha": "7063da181b12f387def93e6062192e7a585a18614efdcb1caefa138ca36896dc"
+          },
+          "project-hero": {
+            "path": "stardust/canon/modules/project-hero.html",
+            "sha": "173c65d9821cb8e72a955db5107a0c75c58c019d86c31c30dba7fb9803461e1b"
+          },
+          "project-index-filterable": {
+            "path": "stardust/canon/modules/project-index-filterable.html",
+            "sha": "b8150b3cef2d74e9876c0beb1214212e41e9d585cb775491e7414a3776390940"
+          },
+          "project-index": {
+            "path": "stardust/canon/modules/project-index.html",
+            "sha": "b1043f6c79ff6af98fcac300714c217b7fc0918684ced0326a283b71a3e9f293"
+          },
+          "project-pager": {
+            "path": "stardust/canon/modules/project-pager.html",
+            "sha": "84130a21a40a7155b7ed70c0e66b042be69d75f626d5a0d7e4962876bbb58ab7"
+          },
+          "site-footer": {
+            "path": "stardust/canon/modules/site-footer.html",
+            "sha": "b12141ed625e435b403993f6142e3cb6ebce07e6e9097c290f2d89e4390ff840"
+          },
+          "site-header": {
+            "path": "stardust/canon/modules/site-header.html",
+            "sha": "8c44b4d191a68c11082e01cea623fc468ccbe9fd38a23f11870fddab2c48923a"
+          },
+          "testimonial-ledger": {
+            "path": "stardust/canon/modules/testimonial-ledger.html",
+            "sha": "2ca0e92096b5a50305b9459896b69fbacc63d43994e2c61ee2d1a645243209c3"
+          },
+          "testimonial-list": {
+            "path": "stardust/canon/modules/testimonial-list.html",
+            "sha": "24fe8974b48d4a399155339bb52d49a8756644b4ba46eafb596a67fd89475fa3"
+          }
+        }
+      },
+      "pinned": {
+        "sectionPadding.desktop": "120px",
+        "sectionPadding.tablet": "120px",
+        "sectionPadding.mobile": "64px (< 600px)",
+        "densityTier": "airy",
+        "typeScale": 1.36,
+        "typeScale.note": "role ramp headline → heading-lg → lead ≈ 1.36 per step; hero thesis clamp(3.25rem, 7.4vw, 10rem)",
+        "lineHeights.display": 0.94,
+        "lineHeights.headline": 1.02,
+        "lineHeights.body": 1.6,
+        "lineHeights.small": 1.3,
+        "containerMaxWidth": "1440px",
+        "gutter": "clamp(20px, 4vw, 56px)",
+        "gridColumnGap": "24px",
+        "grid.columns": "12 ≥ 600px; 1 < 600px",
+        "header.height": "84px (68px < 600px)",
+        "nav.collapse": "stock hamburger ≤ 640px: a real <button> (aria-expanded, aria-controls) toggles header[data-nav-open]; the collapse applies only under html.js (head-script.html) — without JS the list wraps under the wordmark; burger label visually hidden ≤ 380px",
+        "header.overMedia": "body[data-hero=\"media\"]: transparent on own scrim; ≥ 900px fixed + settles to sage at hero end via scroll timeline",
+        "heroScrim.minAlphaBehindText": 0.74,
+        "motion.register": "editorial (cinematic sibling only; trigger 1.0, slide 24px, stagger 0.18, parallax 10vh)",
+        "header.position": "sticky on every page (the stock rule is :where()-wrapped so it never outranks .site-header); over-media pages: absolute, then fixed ≥ 900px",
+        "nav.current": "aria-current=\"page\" on the page's own link, \"true\" on its section (Projects for /residential, /commercial, /projects/*; Photography for /photography/*); Practice pages mark their sub-link \"page\" and the group .is-current"
+      },
+      "compositionalMoves": [
+        "Every page opens on one full-bleed photograph with the header floating on its own scrim; any overlaid text sits on a scrim bound to the text block, never across the whole frame.",
+        "Facts travel only in dimension strings (hairline with end ticks + small-caps label) and always carry real data; use the stacked variant above fact lists that may wrap.",
+        "Indexes are ruled drawing schedules, not card grids: hairline-separated rows, Spectral-light title bottom-aligned beside a 3:2 photograph, the whole row one link.",
+        "Photography hangs on darkroom walls: salon-hung frames on a 12-column grid with varied spans, title + kind label beneath, no mats and no invented captions.",
+        "One sage ground per page with at most two named exceptions — darkroom for photography and the graphite footer; third-lake is a pointer only (links, one filled button, enquiry lines).",
+        "Pages close with the enquiry band (captured \"Please contact us\", large email and phone, address dimension string) followed by the graphite NAP footer.",
+        "Motion is layered, never required: the static file is complete; the editorial register adds one opacity reveal per band and ≤ 10vh hero parallax in a cinematic sibling."
+      ],
+      "conventions": {
+        "classes": "shell, band, section-head, btn-primary, link-arrow, label, dim (+ dim--start, dim--stack), facet-chip, ds-nav*, site-header*, site-footer*, hero*, schedule*, frame (+ frame--tall, span-3…7), wall, darkroom, principles/principle, testimonial*, enquiry*; merged wave 2: hero--project, hero__crumbs, facts/factbar, idea*, gallery*, plate*, pager*, index-head*, index, filters*, index-bar*, view-toggle, schedule--index, crumbs, gallery-head*, photo-wall (+ --lead), photo (+ --feature), photo__*, lightbox*, siblings/sibling*, selected, collections, frame__note, exhibit-notes, intro*, prose*, schedule--text, schedule__note/__go, chain*, services, ledger*, review-flag, notes/note--a…c, opening*, steps*, step*, systems, faq*, contact*, enquiry-form*, field*, placeholder-note",
+        "customProperties": "--color-muted, --color-hairline, --color-accent-light, --color-darkroom, --color-print, --color-muted-on-dark, --label, --measure, --tick, --gutter, --ease-hover, --header-h, --color-error (beyond the token contract minimum)",
+        "images": "Wix fill URLs /v1/fill/w_W,h_H,al_c,q_85,enc_auto/; srcset 800/1600/2400 capped at the original width; 4:5 crops requested for frame--tall; 51 captured media 403 (stardust/.work/prototype/cdn-status.txt)",
+        "facetLinks": "/projects?type=<scope> — the listing archetype must honour the query",
+        "fonts": "self-hosted latin woff2 under stardust/migrated/assets/fonts/ (Spectral 300/400/300 italic, Hanken Grotesk variable 300–700; SIL OFL 1.1) + metric-matched local fallbacks (Spectral Fallback ← Georgia, Hanken Grotesk Fallback ← Arial); @font-face url()s are relative to stardust/canon/ (../migrated/assets/fonts/)",
+        "headChrome": "favicon.svg + favicon-32.png + apple-touch-icon.png + site.webmanifest + head-script.html (no font preloads — CORS-blocked on file://; fallbacks are metric-matched) (stardust/.work/prototype/chrome.mjs HEAD_CHROME)"
+      },
+      "history": [
+        {
+          "at": "2026-11-17T18:43:06Z",
+          "from": "index",
+          "kind": "first-approval"
+        },
+        {
+          "at": "2026-11-17T20:00:00Z",
+          "from": "coordinator",
+          "kind": "canon-merge",
+          "merged": [
+            "stardust/canon/pending/willy-street.css",
+            "residential.css",
+            "copy-of-iowa.css (lightbox source; the older copy in willy-street.css dropped)",
+            "photography.css (home intro side-rail restored into canon)",
+            "about.css",
+            "process.css",
+            "contact.css"
+          ],
+          "archived": "stardust/.work/migrate/canon-merge/pending/",
+          "pageLocal": [
+            "photography hub hero focal point (≤899px) → stardust/.work/prototype/photography/page-local.css",
+            "about hero focal point (.hero--about) stays in about/build.mjs"
+          ],
+          "fixes": [
+            "header[data-nav-collapse] stock rule wrapped in :where() so .site-header stays sticky on pages without a hero",
+            "nav aria-current (page / true) set per page",
+            "burger is a <button>; ≤640 collapse only with JS, nav usable without JS",
+            "header scrim uses --color-darkroom via color-mix",
+            "lightbox button border 2.7:1 → 3.5:1; live count reads \"Photo n of N\"; preloads the next photograph only, at its drawn width",
+            "token --color-error #8a1f11 adopted (was local to .enquiry-form)",
+            "canon.css now carries :root, fonts and base resets (shells inject only canon.css + page-local CSS)"
+          ],
+          "verified": "10 approved prototypes re-rendered from their builders; pixel diff vs pre-merge at 1440/390: 0 px except the nav aria-current underline (row 59) and the gallery/hub phones now getting the canon ≤599px header (68px) and section padding (64px) their shell had omitted"
+        }
+      ]
+    }
+  }
+}

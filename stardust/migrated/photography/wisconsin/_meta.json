@@ -1,0 +1,426 @@
+{
+  "slug": "copy-of-illinois",
+  "type": "gallery",
+  "renderBranch": "A'",
+  "template": "copy-of-iowa",
+  "modules": [
+    "photo-collection",
+    "breadcrumb",
+    "collection-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "darkroom",
+    "darkroom",
+    "darkroom",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-illinois",
+      "newPath": "/photography/wisconsin",
+      "outputPath": "photography/wisconsin/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-illinois.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Wisconsin — Photography collection, Midwest | Barnett Architecture",
+    "description": "Wisconsin: 24 photographs by architect Todd Barnett from the backroads of the Midwest, for the palpable sense of history, hard work, and honesty of place.",
+    "canonical": "https://www.barnettarchitecture.com/photography/wisconsin",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "name": "Barnett Architecture LLC",
+        "alternateName": "Barnett Architecture",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person",
+        "name": "Todd Barnett",
+        "jobTitle": "Architect",
+        "url": "https://www.barnettarchitecture.com/about/todd-barnett",
+        "worksFor": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.barnettarchitecture.com/#website",
+        "url": "https://www.barnettarchitecture.com/",
+        "name": "Barnett Architecture",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "ImageGallery",
+        "@id": "https://www.barnettarchitecture.com/photography/wisconsin#gallery",
+        "url": "https://www.barnettarchitecture.com/photography/wisconsin",
+        "name": "Wisconsin",
+        "headline": "Wisconsin — photographs by Todd Barnett",
+        "description": "Wisconsin: 24 photographs by architect Todd Barnett from the backroads of the Midwest, for the palpable sense of history, hard work, and honesty of place.",
+        "inLanguage": "en-US",
+        "isPartOf": [
+          {
+            "@id": "https://www.barnettarchitecture.com/photography#webpage"
+          },
+          {
+            "@id": "https://www.barnettarchitecture.com/#website"
+          }
+        ],
+        "breadcrumb": {
+          "@id": "https://www.barnettarchitecture.com/photography/wisconsin#breadcrumb"
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_ef95c023df1b4df8a0c08d4601b700f6~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ef95c023df1b4df8a0c08d4601b700f6~mv2.jpg",
+        "associatedMedia": [
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 1,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_45ce513b7da546b3b2fd822d074162db~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_45ce513b7da546b3b2fd822d074162db~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 2,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_0db605d2a09a43c8a77df3b9502890e2~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db605d2a09a43c8a77df3b9502890e2~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 3,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_ef95c023df1b4df8a0c08d4601b700f6~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ef95c023df1b4df8a0c08d4601b700f6~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 4,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_2f5688d35efe489a8925d3f666bd5e6e~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_2f5688d35efe489a8925d3f666bd5e6e~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 5,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_e9cc3a55e78e4f3aacf19cc537f53ff1~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_e9cc3a55e78e4f3aacf19cc537f53ff1~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 6,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_6ba4508b0a9e4eb8801126528737a1df~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_6ba4508b0a9e4eb8801126528737a1df~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 7,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_676c6717a029412299f7feb55bdd3a39~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_676c6717a029412299f7feb55bdd3a39~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 8,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_5ba86f421e1e4ca89048b3eb2dd44b87~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_5ba86f421e1e4ca89048b3eb2dd44b87~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 9,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_dc943939cb724f0b930c0be1e098a117~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_dc943939cb724f0b930c0be1e098a117~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 10,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_49c85ab348a842cbaa4322f5dfcb9c01~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_49c85ab348a842cbaa4322f5dfcb9c01~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 11,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_aa41a09118b4406fa9983ad95a76c9d8~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_aa41a09118b4406fa9983ad95a76c9d8~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 12,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_47edf19a003a474daeed677a0600e117~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_47edf19a003a474daeed677a0600e117~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 13,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_56597bee724b4775a4acac20ea0b989f~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_56597bee724b4775a4acac20ea0b989f~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 14,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_56d70df914214746979fcd5981dc12dd~mv2.jpg/v1/fill/w_2400,h_1599,al_c,q_85,enc_auto/5c8b97_56d70df914214746979fcd5981dc12dd~mv2.jpg",
+            "width": 2400,
+            "height": 1599,
+            "position": 15,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_944ca2c98a764dddae36940b6afc5289~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_944ca2c98a764dddae36940b6afc5289~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 16,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_15a9baa66c1d4b31bac3d8f0faba2b4a~mv2.jpg/v1/fill/w_2400,h_1590,al_c,q_85,enc_auto/5c8b97_15a9baa66c1d4b31bac3d8f0faba2b4a~mv2.jpg",
+            "width": 2400,
+            "height": 1590,
+            "position": 17,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_78e34709fd324fdc872be089e01f93bf~mv2.jpg/v1/fill/w_2400,h_1350,al_c,q_85,enc_auto/5c8b97_78e34709fd324fdc872be089e01f93bf~mv2.jpg",
+            "width": 2400,
+            "height": 1350,
+            "position": 18,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_8a7e61dd01ef44028c6efc9a4bbcf2db~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_8a7e61dd01ef44028c6efc9a4bbcf2db~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 19,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_598c215724a14a6ebc1be3e82f2a73d9~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_598c215724a14a6ebc1be3e82f2a73d9~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 20,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_2cec5e102bf24da0b92d2dad090c7626~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_2cec5e102bf24da0b92d2dad090c7626~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 21,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_ae6689a0b59c4fedb60ba453d924b502~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ae6689a0b59c4fedb60ba453d924b502~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 22,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_be1b620e06144c55b87724ee30e86f15~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_be1b620e06144c55b87724ee30e86f15~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 23,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_7f6714eeb40e4446a3af8761664ee8f9~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_7f6714eeb40e4446a3af8761664ee8f9~mv2.jpg",
+            "width": 2400,
+            "height": 1600,
+            "position": 24,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/photography/wisconsin#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Photography",
+            "item": "https://www.barnettarchitecture.com/photography"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Wisconsin",
+            "item": "https://www.barnettarchitecture.com/photography/wisconsin"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:57Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "546d17a878a9",
+  "sourceProposedSha": "325901d03cbb",
+  "fidelityTier": "sibling",
+  "archetypeSource": "copy-of-iowa",
+  "archetypeSha": "832858272f3b",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 0/0 captured strings verbatim; photos 24/24 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → photo-collection + photo-lightbox + wall-balance (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "photography/wisconsin/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "photography/wisconsin/_meta.json",
+  "driverVersion": "1"
+}

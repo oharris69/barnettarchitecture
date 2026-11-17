@@ -1,0 +1,93 @@
+/* principles (canon principles): 2×2 hairline sheet beside its head */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-lg) 24px;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-fg);
+}
+
+.principles .principles-head {
+  grid-column: 1 / span 4;
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: var(--spacing-sm);
+}
+
+.principles .principles-head > * {
+  margin: 0;
+}
+
+.principles .principles-head > :is(h2, h3) {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--heading-xl);
+}
+
+.principles .principles-sheet {
+  grid-column: 5 / span 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.principles.no-head .principles-sheet {
+  grid-column: 1 / -1;
+}
+
+.principles .principles-item {
+  display: grid;
+  align-content: start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg) 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.principles .principles-item:nth-child(even) {
+  padding-left: var(--spacing-md);
+  border-left: 1px solid var(--color-hairline);
+}
+
+.principles .principles-item:nth-child(-n+2) {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.principles .principles-item > * {
+  margin: 0;
+}
+
+.principles .principles-item h3 {
+  font-size: var(--heading-md);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.15;
+}
+
+.principles .principles-item p {
+  color: var(--color-fg);
+  max-width: 40ch;
+}
+
+@media (width <= 899px) {
+  .principles .principles-head,
+  .principles .principles-sheet {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (width <= 599px) {
+  .principles .principles-sheet {
+    grid-template-columns: 1fr;
+  }
+
+  .principles .principles-item,
+  .principles .principles-item:nth-child(even) {
+    padding: var(--spacing-md) 0;
+    border-left: 0;
+  }
+
+  .principles .principles-item:nth-child(2) {
+    border-top: 1px solid var(--color-hairline);
+    padding-top: var(--spacing-md);
+  }
+}

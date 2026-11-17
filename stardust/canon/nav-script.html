@@ -1,0 +1,20 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-11-17T18:43:06Z
+  sourceSlug:       index
+  sourcePrototype:  stardust/prototypes/index-proposed.html
+  region:           nav-script (stock mobile-nav a11y + Practice disclosure; end of <body>)
+  stardustVersion:  0.32.1
+  revisedAt:        2026-11-17T20:00:00Z (canon merge: <button> burger toggles header[data-nav-open]; no checkbox)
+-->
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>

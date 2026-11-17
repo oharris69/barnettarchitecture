@@ -1,0 +1,314 @@
+{
+  "slug": "photography",
+  "type": "photo-hub",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "project-hero",
+    "collection-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "intro",
+    "darkroom",
+    "darkroom",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/photography",
+      "newPath": "/photography",
+      "outputPath": "photography/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/photography.html",
+      "from": "approved prototype (re-rendered from its builder after the canon merge)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Photography — Collections, Midwest and central Mexico | Barnett Architecture",
+    "description": "Todd Barnett’s photography: collections from the backroads of the Midwest and the highlands of central Mexico, and exhibits in Decorah, Iowa and Urbana, IL.",
+    "canonical": "https://www.barnettarchitecture.com/photography",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "name": "Barnett Architecture LLC",
+        "alternateName": "Barnett Architecture",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person",
+        "name": "Todd Barnett",
+        "jobTitle": "Architect",
+        "url": "https://www.barnettarchitecture.com/about/todd-barnett",
+        "worksFor": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.barnettarchitecture.com/#website",
+        "url": "https://www.barnettarchitecture.com/",
+        "name": "Barnett Architecture",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.barnettarchitecture.com/photography#webpage",
+        "url": "https://www.barnettarchitecture.com/photography",
+        "name": "Photography",
+        "headline": "Photography — Todd Barnett",
+        "description": "Todd Barnett’s photography: collections from the backroads of the Midwest and the highlands of central Mexico, and exhibits in Decorah, Iowa and Urbana, IL.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.barnettarchitecture.com/#website"
+        },
+        "about": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "author": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "breadcrumb": {
+          "@id": "https://www.barnettarchitecture.com/photography#breadcrumb"
+        },
+        "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_38d6a289814a4f34a4d2f7ffb1d6aff7~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_38d6a289814a4f34a4d2f7ffb1d6aff7~mv2_d_6000_4000_s_4_2.jpg",
+        "mainEntity": {
+          "@id": "https://www.barnettarchitecture.com/photography#collections"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.barnettarchitecture.com/photography#collections",
+        "name": "Photography collections",
+        "numberOfItems": 8,
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/iowa#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/iowa",
+              "name": "Iowa",
+              "image": "https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Midwest"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/illinois#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/illinois",
+              "name": "Illinois",
+              "image": "https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Midwest"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/wisconsin#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/wisconsin",
+              "name": "Wisconsin",
+              "image": "https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Midwest"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/minnesota#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/minnesota",
+              "name": "Minnesota",
+              "image": "https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_2400,h_1350,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Midwest"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/mexico-places#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/mexico-places",
+              "name": "Mexico — Places",
+              "image": "https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Central Mexico"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/mexico-faces#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/mexico-faces",
+              "name": "Mexico — Faces",
+              "image": "https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Portraits · Central Mexico"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024",
+              "name": "Fields of Vision",
+              "image": "https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_2048,h_1483,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Exhibit"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "ImageGallery",
+              "@id": "https://www.barnettarchitecture.com/photography/iowa-2022-exhibit#gallery",
+              "url": "https://www.barnettarchitecture.com/photography/iowa-2022-exhibit",
+              "name": "Iowa 2022 Exhibit",
+              "image": "https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg",
+              "creator": {
+                "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+              },
+              "genre": "Exhibit"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/photography#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Photography",
+            "item": "https://www.barnettarchitecture.com/photography"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:58Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "c85f68f8f930",
+  "sourceProposedSha": "b46a120d8591",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 3/6 captured strings verbatim (3 recomposed — contentDeviations kind recomposed); photos 0/0 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "recomposed",
+      "source": null,
+      "target": null,
+      "reason": "source typo \"A6300..\" → \"A6300.\"; the long discoversma.com URL is a link labelled by its event; the Iowa 2022 sentence is the exhibit note under that collection (\"These images formed …\")"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 selected works lightbox"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "photography/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "photography/_meta.json",
+  "driverVersion": "1"
+}

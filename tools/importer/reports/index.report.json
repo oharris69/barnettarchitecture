@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/",
+  "path": "index",
+  "timestamp": "2026-11-17T20:57:19.144Z",
+  "title": "Architectural practice in Madison, Wisconsin | Barnett Architecture",
+  "template": "home",
+  "blocks": [
+    "hero",
+    "project-index",
+    "testimonials",
+    "principles",
+    "collection-index",
+    "fragment"
+  ],
+  "fragments": [
+    "nav",
+    "footer",
+    "fragments/enquiry"
+  ],
+  "importScript": "35764282ff7f"
+}

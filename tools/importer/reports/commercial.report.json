@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/commercial",
+  "path": "commercial",
+  "timestamp": "2026-11-17T21:00:05.848Z",
+  "title": "Commercial, community & recreation architecture — Madison, WI | Barnett Architecture",
+  "template": "listing",
+  "blocks": [
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "d2d0caa86043"
+}

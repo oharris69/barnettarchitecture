@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/photography/iowa-2022-exhibit",
+  "path": "photography/iowa-2022-exhibit",
+  "timestamp": "2026-11-17T21:00:37.149Z",
+  "title": "Iowa 2022 Exhibit — Photography collection, exhibit | Barnett Architecture",
+  "template": "gallery",
+  "blocks": [
+    "breadcrumbs",
+    "gallery",
+    "collection-index",
+    "fragment"
+  ],
+  "importScript": "4ef22d69df9f"
+}

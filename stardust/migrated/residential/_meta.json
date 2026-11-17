@@ -1,0 +1,314 @@
+{
+  "slug": "residential",
+  "type": "listing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "index-head",
+    "shell",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/residential",
+      "newPath": "/residential",
+      "outputPath": "residential/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/residential.html",
+      "from": "approved prototype (re-rendered from its builder after the canon merge)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Residential architecture — Madison, WI | Barnett Architecture",
+    "description": "Residential projects by Barnett Architecture in Madison, WI: new homes, additions, renovations and kitchens that strive to be well-built and raise the spirit.",
+    "canonical": "https://www.barnettarchitecture.com/residential",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/residential#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential",
+            "item": "https://www.barnettarchitecture.com/residential"
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.barnettarchitecture.com/residential#webpage",
+        "url": "https://www.barnettarchitecture.com/residential",
+        "name": "Residential architecture",
+        "description": "Residential projects by Barnett Architecture in Madison, WI: new homes, additions, renovations and kitchens that strive to be well-built and raise the spirit.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.barnettarchitecture.com/#website",
+          "url": "https://www.barnettarchitecture.com/",
+          "name": "Barnett Architecture"
+        },
+        "about": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.barnettarchitecture.com/residential#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://www.barnettarchitecture.com/residential#projects"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.barnettarchitecture.com/residential#projects",
+        "name": "Residential architecture",
+        "numberOfItems": 22,
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.barnettarchitecture.com/projects/willy-street",
+            "name": "Willy Street"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.barnettarchitecture.com/projects/folded-roof",
+            "name": "Folded Roof"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://www.barnettarchitecture.com/projects/folded-roof-patio",
+            "name": "Folded Roof Patio"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.barnettarchitecture.com/projects/potter-studio",
+            "name": "Potter Studio +"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://www.barnettarchitecture.com/projects/green-ribbon",
+            "name": "Green Ribbon"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://www.barnettarchitecture.com/projects/mid-century",
+            "name": "Mid-Century"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://www.barnettarchitecture.com/projects/50s-redoux",
+            "name": "50's Redoux"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "url": "https://www.barnettarchitecture.com/projects/40s-re-make",
+            "name": "40's Re-Make"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://www.barnettarchitecture.com/projects/three-gables",
+            "name": "Three Gables"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "url": "https://www.barnettarchitecture.com/projects/70s-re-make",
+            "name": "70's Re-Make"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "url": "https://www.barnettarchitecture.com/projects/pond-house",
+            "name": "Pond"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "url": "https://www.barnettarchitecture.com/projects/stone-and-siding",
+            "name": "Stone and Siding"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "url": "https://www.barnettarchitecture.com/projects/push-pull",
+            "name": "Push-Pull"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "url": "https://www.barnettarchitecture.com/projects/passive-light",
+            "name": "Passive Light"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "url": "https://www.barnettarchitecture.com/projects/channel-house",
+            "name": "Channel"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "url": "https://www.barnettarchitecture.com/projects/tudor-extension",
+            "name": "Tudor Extension"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "url": "https://www.barnettarchitecture.com/projects/solar-court",
+            "name": "Solar Court"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "url": "https://www.barnettarchitecture.com/projects/two-flat",
+            "name": "Two-Flat"
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "url": "https://www.barnettarchitecture.com/projects/tube",
+            "name": "Tube"
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "url": "https://www.barnettarchitecture.com/projects/island-kitchen",
+            "name": "Island Kitchen"
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "url": "https://www.barnettarchitecture.com/projects/condo-kitchen",
+            "name": "Condo Kitchen"
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "url": "https://www.barnettarchitecture.com/projects/micro-house",
+            "name": "Micro-House"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:57Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "f6e0d1f5931d",
+  "sourceProposedSha": "7f287581850a",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 0/0 captured strings verbatim; photos 0/0 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F4 listing filters (client-only over authored rows; no index)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "residential/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "residential/_meta.json",
+  "driverVersion": "1"
+}

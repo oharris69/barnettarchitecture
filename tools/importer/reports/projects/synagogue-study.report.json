@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/projects/synagogue-study",
+  "path": "projects/synagogue-study",
+  "timestamp": "2026-11-17T20:59:18.475Z",
+  "title": "Synagogue Study — Master plan & study, Wisconsin | Barnett Architecture",
+  "template": "project",
+  "blocks": [
+    "hero",
+    "breadcrumbs",
+    "facts",
+    "big-idea",
+    "gallery",
+    "pager",
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "73cd0c8f0c8f"
+}

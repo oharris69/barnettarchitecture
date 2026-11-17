@@ -1,0 +1,204 @@
+{
+  "slug": "copy-of-green-ribbon",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-green-ribbon",
+      "newPath": "/projects/three-gables",
+      "outputPath": "projects/three-gables/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-green-ribbon.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Three Gables — New home, Madison, WI | Barnett Architecture",
+    "description": "Three Gables — new home, Madison, WI. Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.",
+    "canonical": "https://www.barnettarchitecture.com/projects/three-gables",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/three-gables#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential architecture",
+            "item": "https://www.barnettarchitecture.com/residential"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Three Gables",
+            "item": "https://www.barnettarchitecture.com/projects/three-gables"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/three-gables#work",
+        "name": "Three Gables",
+        "url": "https://www.barnettarchitecture.com/projects/three-gables",
+        "description": "Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.",
+        "genre": "Architecture",
+        "keywords": "Residential, New home",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Madison, WI",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Madison",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg",
+          "https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg",
+          "https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg",
+          "https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg",
+          "https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg",
+          "https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:54Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "99c642b99f8c",
+  "sourceProposedSha": "0a63b607f447",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 3/3 captured strings verbatim; photos 10/10 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/three-gables/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/three-gables/_meta.json",
+  "driverVersion": "1"
+}

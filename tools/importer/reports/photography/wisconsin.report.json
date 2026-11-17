@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/photography/wisconsin",
+  "path": "photography/wisconsin",
+  "timestamp": "2026-11-17T21:00:56.759Z",
+  "title": "Wisconsin — Photography collection, Midwest | Barnett Architecture",
+  "template": "gallery",
+  "blocks": [
+    "breadcrumbs",
+    "gallery",
+    "collection-index",
+    "fragment"
+  ],
+  "importScript": "4ef22d69df9f"
+}

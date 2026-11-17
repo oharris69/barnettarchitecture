@@ -1,0 +1,39 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:40:00Z
+  sourceSlug:       residential
+  sourcePrototype:  stardust/prototypes/residential-proposed.html
+  region:           module:project-index (filterable listing instance)
+  status:           merged into stardust/canon/canon.css (canon merge 2026-11-17)
+  stardustVersion:  0.32.1
+-->
+<section class="index-head shell" data-section="listing-head" data-intent="name the set; say what the practice does" data-layout="contained" data-deviation="listing opens on its H1 and index, not a full-bleed photograph" aria-labelledby="page-h">
+  <h1 id="page-h" data-slot="title">{{H1}}</h1>
+  <p class="index-head__lead" data-slot="intro">{{captured About sentences, or a plain statement of the sector}}</p>
+  <div class="index-head__meta"><p class="dim dim--stack"><span>{{N}} projects · {{set name}}</span></p><p class="index-head__credit" data-slot="credit">{{captured credit, only where the captured page has it}}</p></div>
+</section>
+<section class="shell" data-section="project-index" data-intent="let people find their project" data-layout="stack" data-items="{{N}}" data-module="project-index" aria-labelledby="index-h">
+  <h2 id="index-h" class="visually-hidden">{{set}} projects</h2>
+  <div class="index">
+    <details class="filters-fold" open data-filters-fold><summary class="filters-fold__summary">Filter projects</summary>
+      <nav class="filters" aria-label="Filter projects" data-slot="facets">
+        <!-- repeat per facet group with ≥2 values (sector | type | location | approach); values with ≥1 project in this set -->
+        <div class="filters__group" role="group" aria-labelledby="f-{{param}}"><p id="f-{{param}}" class="filters__label label">{{Facet label}}</p>
+          <ul class="facets"><li><a class="facet-chip" href="?{{param}}={{value}}" data-facet="{{param}}" data-value="{{value}}">{{label}}<span class="facet-chip__n" aria-hidden="true">{{n}}</span><span class="visually-hidden" data-chip-sr>, {{n}} projects</span></a></li></ul>
+        </div>
+      </nav>
+    </details>
+    <div class="index__main">
+      <div class="index-bar"><div class="index-bar__status"><p class="index-bar__count" data-index-count aria-live="polite">{{N}} projects</p><a class="link-arrow" href="{{path}}" data-index-clear hidden>Clear filters</a></div>
+        <div class="view-toggle" role="group" aria-label="View" data-slot="view" data-view-toggle hidden><button type="button" data-view-set="list" aria-pressed="true">List</button><button type="button" data-view-set="grid" aria-pressed="false">Grid</button></div></div>
+      <ul class="schedule__list schedule--index" data-view="list" data-slot="cards" data-index-list>
+        <li class="schedule__row" data-slot="card" data-sector="{{s}}" data-type="{{scope …}}" data-location="{{loc}}" data-approach="{{theme …}}">
+          <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/{{name}}">{{title}}</a></h3><p class="dim dim--stack"><span>{{[Sector · ]Type · Location}}</span></p></div>
+          <div class="schedule__media">{{cover img 3:2 crop; first row eager + fetchpriority=high}}</div>
+        </li>
+      </ul>
+      <p class="index-empty" data-index-empty hidden>No projects match these filters. <a href="{{path}}" data-index-clear>Show all {{N}} projects</a></p>
+    </div>
+  </div>
+</section>
+<!-- + filter script (residential-proposed.html): ?type=&location=&sector=&approach=&view=grid -->

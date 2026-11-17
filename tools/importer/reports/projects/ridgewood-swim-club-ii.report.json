@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/projects/ridgewood-swim-club-ii",
+  "path": "projects/ridgewood-swim-club-ii",
+  "timestamp": "2026-11-17T20:59:05.179Z",
+  "title": "Ridgewood Swim Club II — Renovation, Madison, WI | Barnett Architecture",
+  "template": "project",
+  "blocks": [
+    "hero",
+    "breadcrumbs",
+    "facts",
+    "big-idea",
+    "gallery",
+    "pager",
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "73cd0c8f0c8f"
+}

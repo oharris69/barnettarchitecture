@@ -1,0 +1,160 @@
+{
+  "slug": "testimonials",
+  "type": "static",
+  "renderBranch": "A'",
+  "template": "about",
+  "modules": [
+    "testimonial-list",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "opening",
+    "notes",
+    "ledger",
+    "ledger",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/testimonials",
+      "newPath": "/testimonials",
+      "outputPath": "testimonials/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/testimonials.html",
+      "from": "approved prototype (re-rendered from its builder after the canon merge)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Testimonials — Architect, Madison, WI | Barnett Architecture",
+    "description": "Testimonials from clients, committees and builders who have worked with Todd Barnett and Barnett Architecture in Madison, Wisconsin, 1990 to the present.",
+    "canonical": "https://www.barnettarchitecture.com/testimonials",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "name": "Barnett Architecture LLC",
+        "alternateName": "Barnett Architecture",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect",
+          "url": "https://www.barnettarchitecture.com/about/todd-barnett"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.barnettarchitecture.com/testimonials#webpage",
+        "url": "https://www.barnettarchitecture.com/testimonials",
+        "name": "Testimonials — Architect, Madison, WI | Barnett Architecture",
+        "isPartOf": {
+          "@id": "https://www.barnettarchitecture.com/#website"
+        },
+        "about": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Testimonials",
+            "item": "https://www.barnettarchitecture.com/testimonials"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:59Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "ba7452042295",
+  "sourceProposedSha": "66381d72b53e",
+  "fidelityTier": "sibling",
+  "archetypeSource": "about",
+  "archetypeSha": "68e00ddae14c",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 0/0 captured strings verbatim; photos 0/0 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "owner-review",
+      "source": "p.review-flag[data-placeholder] (PLACEHOLDER tag)",
+      "target": "p[data-owner-review] — captured sentence verbatim, including “[He/She]”",
+      "reason": "captured text contains template text “[He/She]”; kept verbatim (no fabrication), flag moved from page chrome to this sidecar for owner review"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "testimonials/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "testimonials/_meta.json",
+  "driverVersion": "1"
+}

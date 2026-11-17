@@ -1,0 +1,39 @@
+/* breadcrumbs (canon breadcrumb) */
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.breadcrumbs li + li::before {
+  content: "/";
+  padding-inline: 0.75em;
+  color: color-mix(in srgb, currentcolor 68%, transparent);
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  background: linear-gradient(currentcolor, currentcolor) 0 100% / 0 1px no-repeat;
+  transition: background-size 450ms var(--ease-hover);
+}
+
+.breadcrumbs a:hover {
+  background-size: 100% 1px;
+}
+
+.breadcrumbs [aria-current] {
+  color: color-mix(in srgb, currentcolor 68%, transparent);
+}
+
+@media (pointer: coarse) {
+  .breadcrumbs a {
+    display: inline-block;
+    padding-block: 12px;
+    margin-block: -12px;
+  }
+}

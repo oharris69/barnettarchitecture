@@ -1,0 +1,17 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:40:00Z
+  sourceSlug:       willy-street
+  sourcePrototype:  stardust/prototypes/willy-street-proposed.html
+  region:           module:big-idea
+  status:           merged into stardust/canon/canon.css (canon merge 2026-11-17)
+  stardustVersion:  0.32.1
+-->
+<section class="idea shell band" data-section="big-idea" data-intent="state the project's idea, then tell its story" data-layout="asymmetric" data-module="big-idea" aria-labelledby="idea-h">
+  <h2 id="idea-h" class="visually-hidden">About the project</h2>
+  <p class="idea__lead" data-slot="lead">{{lead: first sentence of slots.narrative[0], verbatim}}</p>
+  <div class="idea__body" data-slot="narrative">
+    <!-- repeat: remainder of narrative[0], then narrative[1..], verbatim -->
+    <p>{{paragraph}}</p>
+  </div>
+</section>

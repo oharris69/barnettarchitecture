@@ -1,0 +1,21 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:40:00Z
+  sourceSlug:       willy-street
+  sourcePrototype:  stardust/prototypes/willy-street-proposed.html
+  region:           module:project-gallery (+ photo-lightbox from copy-of-iowa)
+  status:           merged into stardust/canon/canon.css (canon merge 2026-11-17)
+  stardustVersion:  0.32.1
+-->
+<section id="photographs" class="gallery band" data-section="gallery" data-intent="let the photographs carry the project" data-layout="sequence" data-items="{{N}}" data-media="image" data-module="project-gallery" aria-labelledby="gallery-h">
+  <div class="section-head shell"><h2 id="gallery-h">Photographs</h2><p class="gallery__count label">{{N}} photographs</p></div>
+  <div class="gallery__seq" data-slot="photos" data-lightbox-group>
+    <!-- sequence: alternate full / pair (start with full when photo 1 is landscape); full takes the next landscape; the hero photo closes the sequence.
+         pair spans by orientation: L+L 1/6 + 7/6 · P+P 1/5 + 8/5 · L+P 1/7 + 8/5 · P+L 1/5 + 6/7; a lone leftover = solo (L 3/8, P 4/6). Natural aspect, no Wix crop. -->
+    <figure id="photo-{{n}}" class="plate plate--full" style="--ar: {{w}} / {{h}}"><a class="plate__link" href="{{full-size url ≤2400w}}" data-lb data-w="{{w}}" data-h="{{h}}">{{img sizes=100vw, lazy, alt "<title> — photograph n of N"}}</a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">{{nn}} / {{NN}}</span>{{<span>caption</span> only when description or a non-filename title exists}}</figcaption></figure>
+    <div class="plate-row shell">
+      <figure id="photo-{{n}}" class="plate" style="--at: {{col}}; --span: {{span}}; --ar: {{w}} / {{h}}"><a class="plate__link" href="{{full}}" style="aspect-ratio: {{w}} / {{h}}" data-lb data-w="{{w}}" data-h="{{h}}">{{img}}</a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">{{nn}} / {{NN}}</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+<!-- + <dialog id="lightbox" class="lightbox" data-module="photo-lightbox"> and its script, verbatim from stardust/prototypes/copy-of-iowa-proposed.html -->

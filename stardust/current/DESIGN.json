@@ -1,0 +1,20 @@
+{
+  "_provenance": { "writtenBy": "stardust:extract", "mode": "prep", "writtenAt": "2026-11-17T16:58:00Z", "read": ["stardust/current/_computed-styles.json", "stardust/current/_brand-extraction.json"] },
+  "colors": { "text": "#1e2f3b", "heading": "#000000", "background": "#ffffff", "accent": "#ea04b8", "surface": "#999999" },
+  "typography": { "heading": { "family": "Arial", "weight": 400 }, "body": { "family": "Arial", "weight": 400, "size": "13px" } },
+  "rounded": {},
+  "spacing": { "canvas": "980px" },
+  "extensions": {
+    "componentStyle": { "header": "wordmark+dropdown", "slideshow": "boxed pro-gallery", "footer": "copyright+social" },
+    "motifs": { "radius": [], "shadows": [], "gradients": [] },
+    "voice": { "tone": "plain-spoken, modest, precise" },
+    "breakpoints": { "containerMaxWidth": 980, "probeWidth": null, "caps": [{ "kind": "shell", "px": 980, "authoredVia": "wix fixed canvas", "tier": "observed" }], "modules": [], "note": "cap-probe not run: redesign target keeps its own breakpoints; Wix canvas is a fixed 980px observed from census + screenshots" },
+    "modules": [
+      { "id": "candidate-project-hero-slideshow", "slots": [ { "name": "gallery", "type": "image[]", "required": true }, { "name": "client-type", "type": "text" }, { "name": "location", "type": "text" }, { "name": "narrative", "type": "richtext" } ], "instances": "29 project pages", "status": "candidate" },
+      { "id": "candidate-photo-collection-grid", "slots": [ { "name": "title", "type": "text" }, { "name": "photos", "type": "image[]", "required": true } ], "instances": "8 gallery pages", "status": "candidate" },
+      { "id": "candidate-testimonial-list", "slots": [ { "name": "quote", "type": "richtext" }, { "name": "attribution", "type": "text" }, { "name": "project-photo", "type": "image" } ], "instances": "copy-of-testimonials, copy-of-barnett-architecture", "status": "candidate" },
+      { "id": "candidate-site-header", "slots": [ { "name": "wordmark", "type": "text" }, { "name": "nav", "type": "link-tree" } ], "instances": "48", "status": "candidate" },
+      { "id": "candidate-site-footer", "slots": [ { "name": "copyright", "type": "text" }, { "name": "social", "type": "link[]" } ], "instances": "48", "status": "candidate" }
+    ]
+  }
+}

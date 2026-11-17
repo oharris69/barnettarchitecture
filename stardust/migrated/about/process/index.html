@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-17T20:16:59Z
+  page:             Process
+  slug:             process
+  pagePath:         migrated/about/process/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/.work/migrate/final/process.html
+  sourceCurrent:    stardust/current/pages/process.json
+  againstDirection: stardust/.work/migrate/direction.md (Active 2026-11-17T17:20:00Z)
+  designMd:         DESIGN.md (sha: c8173d8ac4dd)
+  designJson:       DESIGN.json (sha: 624a046b06ec)
+  canonShas:        header:66b29853a09b footer:1212b39c68e1 css:ed4159ae9a2e
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.32.1
+-->
+<meta charset="UTF-8">
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* Error */        --color-error: #8a1f11;            /* form validation only (7.6:1 on sage, 9.2:1 on print white) */
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+}
+</style>
+<link rel="stylesheet" href="../../assets/canon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Process — Architect, Madison, WI | Barnett Architecture</title>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="manifest" href="../../assets/site.webmanifest">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="How a Barnett Architecture project runs: pre-design, schematic design, design development, construction documents, bidding and construction administration.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/about/process">
+<meta name="theme-color" content="#121413">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/about/process">
+<meta property="og:title" content="Process — Architect, Madison, WI">
+<meta property="og:description" content="How a Barnett Architecture project runs: pre-design, schematic design, design development, construction documents, bidding and construction administration.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ridgewood graphic design plan — drawing">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Process — Architect, Madison, WI">
+<meta name="twitter:description" content="How a Barnett Architecture project runs: pre-design, schematic design, design development, construction documents, bidding and construction administration.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg">
+<meta name="twitter:image:alt" content="Ridgewood graphic design plan — drawing">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "ProfessionalService",
+    "LocalBusiness"
+   ],
+   "@id": "https://www.barnettarchitecture.com/#organization",
+   "name": "Barnett Architecture LLC",
+   "alternateName": "Barnett Architecture",
+   "url": "https://www.barnettarchitecture.com/",
+   "foundingDate": "2007",
+   "founder": {
+    "@type": "Person",
+    "name": "Todd Barnett",
+    "jobTitle": "Architect",
+    "url": "https://www.barnettarchitecture.com/about/todd-barnett"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "118 North Breese Terrace, Suite I",
+    "addressLocality": "Madison",
+    "addressRegion": "WI",
+    "postalCode": "53726-4133",
+    "addressCountry": "US"
+   },
+   "telephone": "+1-608-233-4538",
+   "email": "todd@barnettarchitecture.com",
+   "areaServed": [
+    "Madison, WI",
+    "Wisconsin",
+    "Illinois"
+   ],
+   "knowsAbout": [
+    "residential architecture",
+    "additions and renovations",
+    "green design",
+    "universal design",
+    "charrette design process"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://www.barnettarchitecture.com/about/process#webpage",
+   "url": "https://www.barnettarchitecture.com/about/process",
+   "name": "Process — Architect, Madison, WI | Barnett Architecture",
+   "isPartOf": {
+    "@id": "https://www.barnettarchitecture.com/#website"
+   },
+   "about": {
+    "@id": "https://www.barnettarchitecture.com/#organization"
+   },
+   "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg",
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://www.barnettarchitecture.com/about/process#faq",
+   "url": "https://www.barnettarchitecture.com/about/process#faq",
+   "isPartOf": {
+    "@id": "https://www.barnettarchitecture.com/about/process#webpage"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What happens in pre-design?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pre-Design involves gathering information to begin the design process. The information gathered may be assembled into the “Program Statement” which is a working and guiding document for all project team members."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens in schematic design?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We begin the design process after getting to know the client: their likes and dislikes, needs and wants and goals and dreams. This is where the \"big idea\" is conceived: are we looking at a building which is long or short, compact, or elongated? We investigate key features such as the building location and orientation, entry placement, spatial relationships and site issues such as landscape, parking and service areas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What deliverables come out of schematic design?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Deliverables typically include a site plan, floor plans, elevations, sections, massing sketches and a preliminary estimate of probable construction costs."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are construction documents?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "This is where the \"blueprints\" are developed - drawings and specifications needed to secure final pricing and permits. They also communicate to the contractors what \"goes into\" the design."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is a contractor selected?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The basic delivery systems are design-bid-build, preselection, design-build and self-contracted. Although the client always selects the contractor, the architect typically recommends contractors to the owner for consideration."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the architect do during construction?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The architect visits the construction site to confirm general conformance with the plans. Other services may include reviews of change orders, pay requests and shop drawings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a charrette?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As part of a collaborative approach, Barnett Architecture employs the Charrette: an interactive design process wherein the client, architect, contractor, engineer and other parties (e.g. neighbors, users) are active participants. Used to generate a range of ideas and reach a consensus, the Charrette can quickly confirm not only design direction but key issues such as goals, needs, schedule and budget."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you design green buildings?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Barnett Architecture believes in green design. This includes the use of green materials, energy-saving heating and cooling systems, super insulation and construction waste reduction. More importantly, it also includes approaching the overall design with proper building orientation, massing and size. Green design experience extends beyond the mainstream to include solar hot water and photovoltaic systems, radiant heating and cooling, wind turbines and green roofs."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is universal design?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Barnett Architecture’s practice, particularly for residential, embraces “universal design” and studies how a design may complement the changing needs of the building user. “Universal design” strives to create environments designed for people who are older, or may have physical disabilities."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What services does Barnett Architecture offer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Services range from hourly consultations to the full architectural process. In the latter, projects are taken from programming and concept design to full building plans and construction administration."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.barnettarchitecture.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "About",
+     "item": "https://www.barnettarchitecture.com/about"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Process",
+     "item": "https://www.barnettarchitecture.com/about/process"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body data-template="static" data-hero="media">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="../../index.html" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="../../projects/index.html">Projects</a></li>
+        <li><a href="../../photography/index.html">Photography</a></li>
+        <li class="ds-nav__group is-current">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="../../about/index.html">About</a></li>
+              <li><a href="../../about/process/index.html" aria-current="page">Process</a></li>
+              <li><a href="../../about/todd-barnett/index.html">Todd Barnett</a></li>
+              <li><a href="../../testimonials/index.html">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="../../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" data-template="process">
+  <section class="hero" data-section="hero" data-intent="say what — the design process" data-layout="full-bleed" data-media="image" data-module="project-hero">
+    <div class="hero__media" data-slot="image"><img src="https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg/v1/fill/w_1600,h_1379,al_c,q_85,enc_auto/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg/v1/fill/w_800,h_689,al_c,q_85,enc_auto/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg/v1/fill/w_1600,h_1379,al_c,q_85,enc_auto/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg/v1/fill/w_2400,h_2068,al_c,q_85,enc_auto/5c8b97_86ee8cce278e47049e0e5d8d5077c104~mv2.jpg 2400w" sizes="100vw" width="1600" height="1379" alt="Ridgewood graphic design plan — drawing" loading="eager" fetchpriority="high" decoding="async"></div>
+    <div class="hero__content shell">
+      <h1 class="hero__title" data-slot="title">
+        <span class="hero__thesis">From <span class="nowrap">pre-design</span> to construction</span><span class="visually-hidden"> — </span>
+        <span class="hero__who">The design process at Barnett Architecture, an architectural practice in Madison, Wisconsin</span>
+      </h1>
+      <p class="hero__caption dim dim--stack" data-slot="facts"><span>Ridgewood · Graphic design plan</span></p>
+    </div>
+  </section>
+
+  <section class="steps shell band" data-section="process-steps" data-intent="every captured phase, in order" data-layout="stack" data-items="6" data-module="process-steps" aria-labelledby="steps-h">
+    <div class="section-head"><h2 id="steps-h">Six phases</h2><a class="link-arrow" href="#faq">Questions about the process</a></div>
+    <nav class="steps__index" aria-label="Phases"><ol class="chain">
+      <li><a class="chain__label" href="#pre-design">Pre-Design</a></li>
+      <li><a class="chain__label" href="#schematic-design">Schematic Design</a></li>
+      <li><a class="chain__label" href="#design-development">Design Development</a></li>
+      <li><a class="chain__label" href="#construction-documents">Construction Documents</a></li>
+      <li><a class="chain__label" href="#construction-contract-bidding-or-negotiation">Construction Contract Bidding or Negotiation</a></li>
+      <li><a class="chain__label" href="#construction-administration">Construction Administration</a></li>
+    </ol></nav>
+    <ol class="steps__list" data-slot="steps">
+      <li class="step" id="pre-design">
+        <h3 class="step__name">Pre-Design</h3>
+        <div class="step__body">
+          <p class="step__lead">Pre-Design involves gathering information to begin the design process.</p>
+          <p>This may include a needs assessment, building and zoning code research, schedule and budget confirmation, site survey, soil analysis, as-built plans, site evaluation, historical precedent study and client, user, governmental agency, and other key party reviews. Implications from issues such as potential hazardous materials and unique zoning requirements may also be investigated. The information gathered may be assembled into the “Program Statement” which is a working and guiding document for all project team members.</p>
+        </div>
+      </li>
+      <li class="step" id="schematic-design">
+        <h3 class="step__name">Schematic Design</h3>
+        <div class="step__body">
+          <p class="step__lead">We begin the design process after getting to know the client: their likes and dislikes, needs and wants and goals and dreams.</p>
+          <p>Once we’ve gathered the beginning information (although learning continues throughout the project), the design process begins with a pencil, sketch book and cup of coffee by looking at the basic site and building relationships. This is where the &quot;big idea&quot; is conceived: are we looking at a building which is long or short, compact, or elongated? Is it simple or intricate, open or closed? Modern, traditional, or other? Will the roof be pitched or flat? We investigate key features such as the building location and orientation, entry placement, spatial relationships and site issues such as landscape, parking and service areas.</p>
+          <div class="step__aside"><p class="label">Deliverables</p><p>Deliverables typically include a site plan, floor plans, elevations, sections, massing sketches and a preliminary estimate of probable construction costs.</p></div>
+        </div>
+      </li>
+      <li class="step" id="design-development">
+        <h3 class="step__name">Design Development</h3>
+        <div class="step__body">
+          <p class="step__lead">Design development takes the schematic design and refines it so that the pieces work closely together.</p>
+          <p>Plans study structural layout, wall/floor/roof systems, detailed room relationships, furnishings and, critically, exterior design. Exterior design explores architectural style, massing, window treatment, materials, patterns, and roof design. Site plans study site circulation as well as hard surfaces and landscape. We usually provide computer-generated drawings for the site, floor plans, elevations, sections, three-dimensional images, and unique details along with a preliminary estimate of probable construction costs at the end of this phase.</p>
+        </div>
+      </li>
+      <li class="step" id="construction-documents">
+        <h3 class="step__name">Construction Documents</h3>
+        <div class="step__body">
+          <p class="step__lead">This is where the &quot;blueprints&quot; are developed - drawings and specifications needed to secure final pricing and permits.</p>
+          <p>They also communicate to the contractors what &quot;goes into&quot; the design. Documents include full dimensions and annotated site and landscape plans, floor plans, exterior elevations, building sections, window and door schedules, details, interior elevations and kitchen and bath design as well as structural, electrical, mechanical and plumbing design.</p>
+        </div>
+      </li>
+      <li class="step" id="construction-contract-bidding-or-negotiation">
+        <h3 class="step__name">Construction Contract Bidding or Negotiation</h3>
+        <div class="step__body">
+          <p class="step__lead">Clients have several options when selecting a building delivery system and contractor.</p>
+          <p>The basic delivery systems are design-bid-build, preselection, design-build and self-contracted.</p>
+          <dl class="systems"><dt>Design-bid-build</dt><dd>The traditional system in which the plans are prepared and then released for competitive bidding.</dd><dt>Preselection</dt><dd>The owner selects a contractor to be part of the team during the design phase.</dd><dt>Design-build</dt><dd>An approach in which a single entity provides both the design and construction (a decision we make before the design process begins).</dd><dt>Self-contracted</dt><dd>The owner serves as the general contractor.</dd></dl>
+          <p>Although the client always selects the contractor, the architect typically recommends contractors to the owner for consideration. Permitting and plan approval are generally completed during this period.</p>
+        </div>
+      </li>
+      <li class="step" id="construction-administration">
+        <h3 class="step__name">Construction Administration</h3>
+        <div class="step__body">
+          <p class="step__lead">The architect visits the construction site to confirm general conformance with the plans.</p>
+          <p>Visits are made at key intervals such as demolition, excavation, foundations, framing, insulation, window and door installation, electrical/mechanical/plumbing installation and finishes and materials. Other services may include reviews of change orders, pay requests and shop drawings. Shop drawings are detailed drawings and specifications for off-site fabricated components of the project. Examples include window, doors, hardware, trusses, and cabinetry.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="faq shell band" id="faq" data-section="faq" data-intent="answers for people and answer engines (GEO) — captured sentences only" data-layout="side-rail" data-items="10" data-module="faq" aria-labelledby="faq-h">
+    <div class="faq__head">
+      <h2 id="faq-h">Questions about the process</h2>
+      <p class="principles__links"><a class="link-arrow" href="../../about/index.html">About the practice</a><a class="link-arrow" href="../../contact/index.html">Start a conversation</a></p>
+    </div>
+    <div class="faq__list" data-slot="items">
+      <div class="faq__item"><h3>What happens in pre-design?</h3><div class="faq__a"><p>Pre-Design involves gathering information to begin the design process. The information gathered may be assembled into the “Program Statement” which is a working and guiding document for all project team members.</p></div></div>
+      <div class="faq__item"><h3>What happens in schematic design?</h3><div class="faq__a"><p>We begin the design process after getting to know the client: their likes and dislikes, needs and wants and goals and dreams. This is where the &quot;big idea&quot; is conceived: are we looking at a building which is long or short, compact, or elongated? We investigate key features such as the building location and orientation, entry placement, spatial relationships and site issues such as landscape, parking and service areas.</p></div></div>
+      <div class="faq__item"><h3>What deliverables come out of schematic design?</h3><div class="faq__a"><p>Deliverables typically include a site plan, floor plans, elevations, sections, massing sketches and a preliminary estimate of probable construction costs.</p></div></div>
+      <div class="faq__item"><h3>What are construction documents?</h3><div class="faq__a"><p>This is where the &quot;blueprints&quot; are developed - drawings and specifications needed to secure final pricing and permits. They also communicate to the contractors what &quot;goes into&quot; the design.</p></div></div>
+      <div class="faq__item"><h3>How is a contractor selected?</h3><div class="faq__a"><p>The basic delivery systems are design-bid-build, preselection, design-build and self-contracted. Although the client always selects the contractor, the architect typically recommends contractors to the owner for consideration.</p></div></div>
+      <div class="faq__item"><h3>What does the architect do during construction?</h3><div class="faq__a"><p>The architect visits the construction site to confirm general conformance with the plans. Other services may include reviews of change orders, pay requests and shop drawings.</p></div></div>
+      <div class="faq__item"><h3>What is a charrette?</h3><div class="faq__a"><p>As part of a collaborative approach, Barnett Architecture employs the Charrette: an interactive design process wherein the client, architect, contractor, engineer and other parties (e.g. neighbors, users) are active participants. Used to generate a range of ideas and reach a consensus, the Charrette can quickly confirm not only design direction but key issues such as goals, needs, schedule and budget.</p></div></div>
+      <div class="faq__item"><h3>Do you design green buildings?</h3><div class="faq__a"><p>Barnett Architecture believes in green design. This includes the use of green materials, energy-saving heating and cooling systems, super insulation and construction waste reduction. More importantly, it also includes approaching the overall design with proper building orientation, massing and size. Green design experience extends beyond the mainstream to include solar hot water and photovoltaic systems, radiant heating and cooling, wind turbines and green roofs.</p></div></div>
+      <div class="faq__item"><h3>What is universal design?</h3><div class="faq__a"><p>Barnett Architecture’s practice, particularly for residential, embraces “universal design” and studies how a design may complement the changing needs of the building user. “Universal design” strives to create environments designed for people who are older, or may have physical disabilities.</p></div></div>
+      <div class="faq__item"><h3>What services does Barnett Architecture offer?</h3><div class="faq__a"><p>Services range from hourly consultations to the full architectural process. In the latter, projects are taken from programming and concept design to full building plans and construction administration.</p></div></div>
+    </div>
+  </section>
+
+  <section class="enquiry shell band" data-section="enquiry" data-intent="drive action" data-layout="contained" data-module="enquiry-band" aria-labelledby="enquiry-h">
+    <h2 id="enquiry-h" data-slot="heading">Please contact us</h2>
+    <div class="enquiry__body">
+      <ul class="enquiry__lines">
+        <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+        <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+      </ul>
+      <p class="dim dim--start"><span>118 North Breese Terrace, Suite I · Madison, WI 53726-4133</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="../../index.html">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="../../projects/index.html">All projects</a></li><li><a href="../../residential/index.html">Residential</a></li><li><a href="../../commercial/index.html">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="../../photography/index.html">Collections</a></li><li><a href="../../photography/fields-of-vision-2024/index.html">Fields of Vision</a></li><li><a href="../../photography/iowa-2022-exhibit/index.html">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="../../about/index.html">About</a></li><li><a href="../../about/process/index.html">Process</a></li><li><a href="../../about/todd-barnett/index.html">Todd Barnett</a></li><li><a href="../../testimonials/index.html">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="../../contact/index.html">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+
+</body>
+</html>

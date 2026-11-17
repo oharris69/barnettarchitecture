@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/about",
+  "path": "about",
+  "timestamp": "2026-11-17T21:01:04.168Z",
+  "title": "About — Architect, Madison, WI | Barnett Architecture",
+  "template": "practice",
+  "blocks": [
+    "hero",
+    "principles",
+    "fragment"
+  ],
+  "importScript": "2a8a251a3a38"
+}

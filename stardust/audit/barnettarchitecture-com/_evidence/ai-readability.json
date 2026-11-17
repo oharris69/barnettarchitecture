@@ -1,0 +1,492 @@
+{
+  "origin": "https://www.barnettarchitecture.com",
+  "min": 98,
+  "excludeBlocks": [
+    "client-app",
+    "widget"
+  ],
+  "allowlist": [],
+  "generatedAt": "2026-11-17T16:57:34.350Z",
+  "pages": [
+    {
+      "path": "/",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 91,
+        "served": 31,
+        "rendered": 34,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 97,
+        "served": 87,
+        "rendered": 90,
+        "missing": 3
+      },
+      "code": {
+        "score": 91,
+        "served": 31,
+        "rendered": 34,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/about",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 99,
+        "served": 348,
+        "rendered": 351,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 99,
+        "served": 404,
+        "rendered": 407,
+        "missing": 3
+      },
+      "code": {
+        "score": 99,
+        "served": 348,
+        "rendered": 351,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/process",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 99,
+        "served": 594,
+        "rendered": 597,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 100,
+        "served": 649,
+        "rendered": 652,
+        "missing": 3
+      },
+      "code": {
+        "score": 99,
+        "served": 594,
+        "rendered": 597,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/team",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 99,
+        "served": 418,
+        "rendered": 421,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 99,
+        "served": 473,
+        "rendered": 476,
+        "missing": 3
+      },
+      "code": {
+        "score": 99,
+        "served": 418,
+        "rendered": 421,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/contact",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 91,
+        "served": 29,
+        "rendered": 32,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 97,
+        "served": 85,
+        "rendered": 88,
+        "missing": 3
+      },
+      "code": {
+        "score": 91,
+        "served": 29,
+        "rendered": 32,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/residential",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 88,
+        "served": 23,
+        "rendered": 26,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 96,
+        "served": 78,
+        "rendered": 81,
+        "missing": 3
+      },
+      "code": {
+        "score": 88,
+        "served": 23,
+        "rendered": 26,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/green-ribbon",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 98,
+        "served": 171,
+        "rendered": 174,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 99,
+        "served": 226,
+        "rendered": 229,
+        "missing": 3
+      },
+      "code": {
+        "score": 98,
+        "served": 171,
+        "rendered": 174,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/copy-of-folded-roof-2",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 99,
+        "served": 203,
+        "rendered": 206,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 99,
+        "served": 258,
+        "rendered": 261,
+        "missing": 3
+      },
+      "code": {
+        "score": 99,
+        "served": 203,
+        "rendered": 206,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/photography",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 98,
+        "served": 187,
+        "rendered": 190,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 99,
+        "served": 243,
+        "rendered": 246,
+        "missing": 3
+      },
+      "code": {
+        "score": 98,
+        "served": 187,
+        "rendered": 190,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    },
+    {
+      "path": "/copy-of-iowa",
+      "fragments": [],
+      "chromeFragments": [],
+      "strict": {
+        "score": 84,
+        "served": 16,
+        "rendered": 19,
+        "missing": 3
+      },
+      "landmarksCounted": {
+        "score": 96,
+        "served": 72,
+        "rendered": 75,
+        "missing": 3
+      },
+      "code": {
+        "score": 84,
+        "served": 16,
+        "rendered": 19,
+        "fragmentWords": 0,
+        "excludedWords": 0,
+        "allowedWords": 0
+      },
+      "blocks": [
+        {
+          "block": "header",
+          "variants": "",
+          "words": 101,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        },
+        {
+          "block": "footer",
+          "variants": "",
+          "words": 6,
+          "servedGap": 0,
+          "excluded": false,
+          "sample": ""
+        }
+      ],
+      "servedGap": {
+        "main": 0,
+        "chrome": 0,
+        "renderedMain": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-11-17T18:43:06Z
+  sourceSlug:       index
+  sourcePrototype:  stardust/prototypes/index-proposed.html
+  region:           module:collection-index
+  stardustVersion:  0.32.1
+-->
+<section class="darkroom" data-section="photography" data-intent="curated photography" data-layout="grid" data-items="{{n}}" data-media="image" data-module="collection-index" aria-labelledby="{{id}}">
+  <div class="shell">
+    <div class="section-head">
+      <div><h2 id="{{id}}">{{heading}}</h2><p class="darkroom__lead">{{lead: captured sentence}}</p></div>
+      <a class="link-arrow" href="/photography">{{link label}}</a>
+    </div>
+    <div class="wall" data-slot="collections">
+      <!-- repeat; span-3|4|5|6|7 per salon-hang row (rows sum to 12); add frame--tall on span-3 for 4:5 crops -->
+      <figure class="frame span-{{span}}"><div class="frame__img">{{image: responsive <img>, loading="lazy"}}</div><figcaption><span class="frame__title"><a href="/photography/{{name}}">{{title}}</a></span><span class="frame__kind label">{{kind: Midwest | Central Mexico | Portraits | Exhibit · …}}</span></figcaption></figure>
+      <p class="wall__divider dim dim--start"><span>{{group label, e.g. Exhibits}}</span></p>
+    </div>
+  </div>
+</section>

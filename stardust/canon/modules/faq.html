@@ -1,0 +1,21 @@
+<!-- stardust:canon (merged 2026-11-17)
+  writtenBy:        stardust:prototype --prep (wave 2)
+  sourceSlug:       process
+  sourcePrototype:  stardust/prototypes/process-proposed.html
+  region:           module:faq
+  css:              stardust/canon/canon.css [from canon.css [from pending/process.css]] (.faq*)
+  rules:            answers are composed ONLY of captured sentences (log any edit, e.g. "BA" → "Barnett Architecture", in
+                    _provenance.faqSourcing); questions are chrome; all answers visible (no accordion) so people and answer
+                    engines read the same text; the page emits a FAQPage JSON-LD node whose Answer.text equals the
+                    visible answer byte-for-byte; sits on a top hairline like principles.
+  stardustVersion:  0.32.1
+-->
+<section class="faq shell band" id="faq" data-section="faq" data-intent="answers for people and answer engines (GEO) — captured sentences only" data-layout="side-rail" data-items="{{n}}" data-module="faq" aria-labelledby="{{id}}">
+  <div class="faq__head">
+    <h2 id="{{id}}">{{heading}}</h2>
+    <p class="principles__links"><a class="link-arrow" href="{{href}}">{{label}}</a></p>
+  </div>
+  <div class="faq__list" data-slot="items">
+    <!-- repeat --><div class="faq__item"><h3>{{question}}</h3><div class="faq__a"><p>{{captured sentences}}</p></div></div>
+  </div>
+</section>

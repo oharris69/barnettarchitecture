@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/404",
+  "path": "404",
+  "timestamp": "2026-11-17T21:01:34.591Z",
+  "title": "Page not found | Barnett Architecture",
+  "template": "404",
+  "blocks": [],
+  "importScript": "d8408da35fe7"
+}

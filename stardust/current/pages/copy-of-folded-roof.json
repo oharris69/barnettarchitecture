@@ -1,0 +1,768 @@
+{
+ "_provenance": {
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-17T16:37:28.529Z",
+  "waitMode": "medium",
+  "waitMs": 2500,
+  "httpStatus": 200
+ },
+ "slug": "copy-of-folded-roof",
+ "url": "https://www.barnettarchitecture.com/copy-of-folded-roof",
+ "renderedBy": "playwright",
+ "fetchedAt": "2026-11-17T16:37:28.529Z",
+ "finalUrl": "https://www.barnettarchitecture.com/copy-of-folded-roof",
+ "title": "Pond | barnett-architecture",
+ "description": null,
+ "og": {
+  "title": "Pond | barnett-architecture",
+  "description": null,
+  "image": null,
+  "type": "website"
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Barnett Architecture LLC"
+  }
+ ],
+ "body": [
+  "Private Residence",
+  "Westchester County, NY",
+  "This new home is situated on a scenic lot featuring mature trees, remnant gardens set for restoration and a spring-fed pond. The client commissioned Barnett Architecture to develop a design through the and then hand off to a local firm with BA reviewing the construction documents at scheduled intervals prior to construction.",
+  "The design process began by developing a series of site studies addressing wetland boundaries, existing house removal, significant topographic features and the existing entry drive and site utilities.",
+  "All living spaces face the pond—the \"jewel\"—from the living and dining rooms to the screen porch and away room to the master bedroom. The guest bedrooms are above the garage for privacy while the exercise, office and sitting room are centrally located over the main house for easy access.",
+  "The clients sought a home which gave them a feel of history and comfort. The massing is defined by simple gables with hip and shed accents to mark distinct spaces. The massing, along with a mix of siding treatment, lends to an image of the house being built over time."
+ ],
+ "codeBlocks": [],
+ "ctas": [
+  {
+   "label": "Home",
+   "href": "https://www.barnettarchitecture.com"
+  },
+  {
+   "label": "About",
+   "href": "https://www.barnettarchitecture.com/about"
+  },
+  {
+   "label": "Team",
+   "href": "https://www.barnettarchitecture.com/team"
+  },
+  {
+   "label": "Residential",
+   "href": "https://www.barnettarchitecture.com/residential"
+  },
+  {
+   "label": "Commercial",
+   "href": "https://www.barnettarchitecture.com/commercial"
+  },
+  {
+   "label": "Testimonials",
+   "href": "https://www.barnettarchitecture.com/testimonials"
+  },
+  {
+   "label": "Photography",
+   "href": "https://www.barnettarchitecture.com/photography"
+  },
+  {
+   "label": "press to zoom",
+   "href": null
+  }
+ ],
+ "links": [
+  "https://www.barnettarchitecture.com/",
+  "https://www.barnettarchitecture.com/about",
+  "https://www.barnettarchitecture.com/process",
+  "https://www.barnettarchitecture.com/contact",
+  "https://www.barnettarchitecture.com/team",
+  "https://www.barnettarchitecture.com/residential",
+  "https://www.barnettarchitecture.com/willy-street",
+  "https://www.barnettarchitecture.com/folded-roof",
+  "https://www.barnettarchitecture.com/copy-of-folded-roof-1",
+  "https://www.barnettarchitecture.com/copy-of-folded-roof-2",
+  "https://www.barnettarchitecture.com/green-ribbon",
+  "https://www.barnettarchitecture.com/copy-of-pond",
+  "https://www.barnettarchitecture.com/copy-of-micro-house-1",
+  "https://www.barnettarchitecture.com/blank",
+  "https://www.barnettarchitecture.com/copy-of-green-ribbon",
+  "https://www.barnettarchitecture.com/copy-of-40-s-re-make",
+  "https://www.barnettarchitecture.com/copy-of-folded-roof",
+  "https://www.barnettarchitecture.com/stone-house",
+  "https://www.barnettarchitecture.com/box-house",
+  "https://www.barnettarchitecture.com/copy-of-push-pull",
+  "https://www.barnettarchitecture.com/channel-house",
+  "https://www.barnettarchitecture.com/copy-of-channel-2",
+  "https://www.barnettarchitecture.com/copy-of-channel-1",
+  "https://www.barnettarchitecture.com/copy-of-channel",
+  "https://www.barnettarchitecture.com/copy-of-island-kitchen",
+  "https://www.barnettarchitecture.com/copy-of-micro-house",
+  "https://www.barnettarchitecture.com/copy-of-island-kitchen-1",
+  "https://www.barnettarchitecture.com/copy-of-channel-house",
+  "https://www.barnettarchitecture.com/commercial",
+  "https://www.barnettarchitecture.com/designcraft",
+  "https://www.barnettarchitecture.com/wil-mar-center",
+  "https://www.barnettarchitecture.com/ridgewood-swim-club",
+  "https://www.barnettarchitecture.com/copy-of-wil-mar-center",
+  "https://www.barnettarchitecture.com/hill-farm-swim-club",
+  "https://www.barnettarchitecture.com/meeting-house",
+  "https://www.barnettarchitecture.com/copy-of-meeting-house",
+  "https://www.barnettarchitecture.com/testimonials",
+  "https://www.barnettarchitecture.com/copy-of-testimonials",
+  "https://www.barnettarchitecture.com/copy-of-barnett-architecture",
+  "https://www.barnettarchitecture.com/photography",
+  "https://www.barnettarchitecture.com/copy-of-iowa-2022-exhbit",
+  "https://www.barnettarchitecture.com/copy-of-minnesota",
+  "https://www.barnettarchitecture.com/copy-of-iowa",
+  "https://www.barnettarchitecture.com/copy-of-iowa-color",
+  "https://www.barnettarchitecture.com/copy-of-illinois",
+  "https://www.barnettarchitecture.com/copy-of-mexico-places-1",
+  "https://www.barnettarchitecture.com/mexico",
+  "https://www.barnettarchitecture.com/copy-of-mexico-places",
+  "http://www.twitter.com/wix",
+  "http://www.facebook.com/"
+ ],
+ "media": {
+  "imgs": [
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_661,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg",
+    "alt": "",
+    "w": 661,
+    "h": 458
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_457b4b125c6a434b836c26585af74d55~mv2_d_3400_2200_s_2.jpg/v1/fill/w_661,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_457b4b125c6a434b836c26585af74d55~mv2_d_3400_2200_s_2.jpg",
+    "alt": "",
+    "w": 661,
+    "h": 458
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_4f3461adda0c4b69a0760670ee8b1f8c~mv2_d_2716_1536_s_2.jpeg/v1/fill/w_661,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_4f3461adda0c4b69a0760670ee8b1f8c~mv2_d_2716_1536_s_2.jpeg",
+    "alt": "",
+    "w": 661,
+    "h": 458
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg/v1/fill/w_661,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg",
+    "alt": "",
+    "w": 661,
+    "h": 458
+   },
+   {
+    "src": "https://static.wixstatic.com/media/5c8b97_cc6b6898b6154188bb9dc1b11c1d5629~mv2.png/v1/fill/w_219,h_152,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5c8b97_cc6b6898b6154188bb9dc1b11c1d5629~mv2.png",
+    "alt": "",
+    "w": 219,
+    "h": 152
+   },
+   {
+    "src": "https://static.wixstatic.com/media/01113281ebb7dfb57a8dc2a02eb1cb92.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01113281ebb7dfb57a8dc2a02eb1cb92.png",
+    "alt": "Twitter Classic",
+    "w": 25,
+    "h": 25
+   },
+   {
+    "src": "https://static.wixstatic.com/media/b1cd13f9d4dfb1450bbb325285106177.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b1cd13f9d4dfb1450bbb325285106177.png",
+    "alt": "Facebook Classic",
+    "w": 25,
+    "h": 25
+   }
+  ],
+  "allImgCount": 7,
+  "cssBackgrounds": [],
+  "modals": [],
+  "videos": [],
+  "iframes": []
+ },
+ "customProps": {},
+ "_signals": {
+  "filteredInterstitials": 0,
+  "distinctHeadings": 1,
+  "mainTextLen": 1189,
+  "realImageCount": 7,
+  "trackingOnlyMedia": false,
+  "spaShellSuspect": false,
+  "screenshotMode": "fullPage"
+ },
+ "dynamic": {
+  "endpoints": [
+   {
+    "method": "GET",
+    "host": "visits.visitor-analytics.io",
+    "path": "/api/standalone/websites/{uuid}/settings",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/api/standalone/websites/4da9b191-90f4-11e9-b589-901b0edac50a/settings",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "siteassets.parastorage.com",
+    "path": "/pages/pages/thunderbolt",
+    "query": [
+     "appDefinitionIdToSiteRevision",
+     "beckyExperiments",
+     "blocksBuilderManifestGeneratorVersion",
+     "contentType",
+     "deviceType",
+     "dfCk",
+     "dfVersion",
+     "disableStaticPagesUrlHierarchy",
+     "editorName",
+     "experiments",
+     "externalBaseUrl",
+     "fileId",
+     "formFactor",
+     "hasTPAWorkerOnSite",
+     "hasUserDomainMedia",
+     "isBuilderComponentModel",
+     "isHttps",
+     "isInSeo",
+     "isMultilingualEnabled",
+     "isPremiumDomain",
+     "isTrackClicksAnalyticsEnabled",
+     "isUrlMigrated",
+     "isWixCodeOnPage",
+     "isWixCodeOnSite",
+     "language",
+     "languageResolutionMethod",
+     "locale",
+     "metaSiteId",
+     "module",
+     "originalLanguage",
+     "pageId",
+     "pilerExperiments",
+     "quickActionsMenuEnabled",
+     "registryLibrariesTopology",
+     "remoteWidgetStructureBuilderVersion",
+     "siteId",
+     "siteRevision",
+     "staticHTMLComponentUrl",
+     "useSandboxInHTMLComp",
+     "viewMode"
+    ],
+    "resourceType": "other",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 23793,
+    "hits": 10,
+    "example": "https://siteassets.parastorage.com/pages/pages/thunderbolt",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "www.barnettarchitecture.com",
+    "path": "/_api/v1/access-tokens",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://www.barnettarchitecture.com/_api/v1/access-tokens",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 10471,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.thunderbolt.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 1288,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.thunderbolt.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "www.barnettarchitecture.com",
+    "path": "/_api/tag-manager/api/v1/tags/sites/{uuid}",
+    "query": [
+     "htmlsiteId",
+     "language",
+     "wixSite"
+    ],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://www.barnettarchitecture.com/_api/tag-manager/api/v1/tags/sites/e5baa839-d013-4b20-b568-3ceed6e09261",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 10426,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/wix-thunderbolt/dist/mainSdks.20b9d4d3.chunk.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 21878,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/wix-thunderbolt/dist/nonMainSdks.8991612f.chunk.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 2518,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_wixui.corvid.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 1222,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements/1.15668.0/rb_dsgnsys.corvid.manifest.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 154,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/auto-frontend-modules/1.6238.0/webworker/manifest-worker.min.json",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 21855,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid~core.748e8783.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.umd.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 6845,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/auto-frontend-modules/dist/webworker/auto-frontend-modules.68dbdc1c.umd.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 28779,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid_bootstrap.6c431abf.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae9951.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 2095,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[DropDownMenu].95ae9951.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].152f157d.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 15611,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[ClassicSection].152f157d.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "static.parastorage.com",
+    "path": "/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].c1332128.bundle.min.js",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/javascript",
+    "status": 200,
+    "bytes": 1924,
+    "hits": 1,
+    "example": "https://static.parastorage.com/services/editor-elements-library/dist/corvid/rb_wixui.corvid[SlideShowGallery].c1332128.bundle.min.js",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "panorama.wixapps.net",
+    "path": "/api/v1/bulklog",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": null,
+    "status": 204,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://panorama.wixapps.net/api/v1/bulklog",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "frog.wix.com",
+    "path": "/bpm",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": null,
+    "status": 204,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://frog.wix.com/bpm",
+    "sameSite": false
+   },
+   {
+    "method": "GET",
+    "host": "visits.visitor-analytics.io",
+    "path": "/api/wix/websites/{uuid}/settings",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/api/wix/websites/d762e574-ad19-49e3-bf70-6ff98f5492ab/settings",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "visits.visitor-analytics.io",
+    "path": "/standalone/worker-log",
+    "query": [],
+    "resourceType": "fetch",
+    "contentType": "application/json",
+    "status": 406,
+    "bytes": 5,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/standalone/worker-log",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "visits.visitor-analytics.io",
+    "path": "/worker-log",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 406,
+    "bytes": 5,
+    "hits": 1,
+    "example": "https://visits.visitor-analytics.io/worker-log",
+    "sameSite": false
+   },
+   {
+    "method": "POST",
+    "host": "www.google-analytics.com",
+    "path": "/g/collect",
+    "query": [
+     "_ee",
+     "_et",
+     "_eu",
+     "_p",
+     "_s",
+     "cid",
+     "dl",
+     "dma",
+     "dp",
+     "dt",
+     "en",
+     "ep.page_type_identifier",
+     "frm",
+     "gcd",
+     "gcs",
+     "gdid",
+     "gtm",
+     "ir",
+     "ngs",
+     "npa",
+     "pscdl",
+     "rcb",
+     "sct",
+     "seg",
+     "sid",
+     "sr",
+     "tag_exp",
+     "tfd",
+     "tid",
+     "uaa",
+     "uab",
+     "uafvl",
+     "uam",
+     "uamb",
+     "uap",
+     "uapv",
+     "uaw",
+     "uid",
+     "ul",
+     "v"
+    ],
+    "resourceType": "fetch",
+    "contentType": "text/plain",
+    "status": 204,
+    "bytes": null,
+    "hits": 1,
+    "example": "https://www.google-analytics.com/g/collect",
+    "sameSite": false
+   }
+  ],
+  "thirdPartyScriptHosts": [
+   {
+    "host": "static.parastorage.com",
+    "count": 77
+   },
+   {
+    "host": "app-worker.visitor-analytics.io",
+    "count": 3
+   },
+   {
+    "host": "www.googletagmanager.com",
+    "count": 2
+   },
+   {
+    "host": "browser.sentry-cdn.com",
+    "count": 1
+   },
+   {
+    "host": "cdn.jsdelivr.net",
+    "count": 1
+   },
+   {
+    "host": "cdnjs.cloudflare.com",
+    "count": 1
+   }
+  ],
+  "truncated": false,
+  "inlineData": [
+   {
+    "id": "wix-essential-viewer-model",
+    "type": "application/json",
+    "bytes": 3156,
+    "topLevelKeys": [
+     "fleetConfig",
+     "mode",
+     "componentsLibrariesTopology",
+     "siteFeaturesConfigs",
+     "language",
+     "siteAssets",
+     "siteFeatures",
+     "site",
+     "media",
+     "requestUrl",
+     "rollout",
+     "commonConfig"
+    ]
+   },
+   {
+    "id": "wix-fedops",
+    "type": "application/json",
+    "bytes": 720,
+    "topLevelKeys": [
+     "data"
+    ]
+   },
+   {
+    "id": "wix-viewer-model",
+    "type": "application/json",
+    "bytes": 162837,
+    "topLevelKeys": [
+     "siteFeaturesConfigs",
+     "siteFeatures",
+     "experiments",
+     "formFactor",
+     "isMobileDevice",
+     "viewMode",
+     "requestUrl",
+     "fleetConfig",
+     "accessTokensUrl",
+     "interactionSampleRatio",
+     "isPartialRouteMatching",
+     "siteAssetsTestModuleVersion"
+    ]
+   },
+   {
+    "id": "used-platform-apis-data",
+    "type": "application/json",
+    "bytes": 2,
+    "topLevelKeys": []
+   },
+   {
+    "id": "wix-warmup-data",
+    "type": "application/json",
+    "bytes": 986,
+    "topLevelKeys": [
+     "platform",
+     "pages",
+     "appsWarmupData",
+     "ooi",
+     "builderComponentsWarmupData"
+    ]
+   }
+  ],
+  "globalState": [
+   "dataLayer"
+  ],
+  "frameworkHints": [],
+  "forms": [],
+  "ariaLiveRegions": 1,
+  "triggers": [
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/about"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/residential"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/commercial"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/testimonials"
+   },
+   {
+    "marker": "aria-haspopup",
+    "href": "https://www.barnettarchitecture.com/photography"
+   }
+  ],
+  "mediaIds": [],
+  "summary": {
+   "sameSiteEndpoints": 2,
+   "thirdPartyEndpoints": 21,
+   "thirdPartyScriptHosts": 6,
+   "inlineDataBlobs": 5,
+   "forms": 0,
+   "searchForms": 0,
+   "hydrated": false
+  }
+ },
+ "screenshot": "assets/screenshots/copy-of-folded-roof.png",
+ "renderedHtml": "pages/copy-of-folded-roof.html",
+ "slots": {
+  "title": "Pond",
+  "clientType": "Private Residence",
+  "location": "Westchester County, NY",
+  "narrative": [
+   "This new home is situated on a scenic lot featuring mature trees, remnant gardens set for restoration and a spring-fed pond. The client commissioned Barnett Architecture to develop a design through the and then hand off to a local firm with BA reviewing the construction documents at scheduled intervals prior to construction.",
+   "The design process began by developing a series of site studies addressing wetland boundaries, existing house removal, significant topographic features and the existing entry drive and site utilities.",
+   "All living spaces face the pond—the \"jewel\"—from the living and dining rooms to the screen porch and away room to the master bedroom. The guest bedrooms are above the garage for privacy while the exercise, office and sitting room are centrally located over the main house for easy access.",
+   "The clients sought a home which gave them a feel of history and comfort. The massing is defined by simple gables with hip and shed accents to mark distinct spaces. The massing, along with a mix of siding treatment, lends to an image of the house being built over time."
+  ],
+  "gallery": [
+   {
+    "uri": "5c8b97_3a2323ecf4684d93be79f74efddb4ba7~mv2_d_3400_2200_s_2.jpg",
+    "w": 3400,
+    "h": 2200,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_457b4b125c6a434b836c26585af74d55~mv2_d_3400_2200_s_2.jpg",
+    "w": 3400,
+    "h": 2200,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_f6d4608f6df0461c91a7ddce27052393~mv2_d_3400_2200_s_2.jpg",
+    "w": 3400,
+    "h": 2200,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_b1df785831f04ec6b4a679b656d645ce~mv2_d_1959_1469_s_2.jpg",
+    "w": 1959,
+    "h": 1469,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_3a7befacb28042e196e386e2dc6219af~mv2_d_3264_1836_s_2.jpg",
+    "w": 3264,
+    "h": 1836,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_4f3461adda0c4b69a0760670ee8b1f8c~mv2_d_2716_1536_s_2.jpeg",
+    "w": 2716,
+    "h": 1536,
+    "title": "",
+    "description": ""
+   },
+   {
+    "uri": "5c8b97_cc6b6898b6154188bb9dc1b11c1d5629~mv2.png",
+    "w": 616,
+    "h": 429,
+    "title": "IMG_0709 (2).PNG",
+    "description": ""
+   }
+  ]
+ }
+}

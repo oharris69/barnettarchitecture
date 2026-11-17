@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:provenance
+  variant:           cinematic (Phase 2.4) — static source: stardust/prototypes/index-proposed.html
+  motion:            { register: editorial, registerSource: direct, runtimeVersion: v1, lenisAssets: { js: lenis.min.js, css: lenis.min.css }, attributesEmitted: [data-anim, data-parallax] }
+  motionValidation:  { at: 2026-11-17T18:45:00Z, probes: 8 positions, viewports: [1440x900, 1920x1080, 2560x1440, 768x1024, 390x844], findings: { hiddenInViewport: 0, sectionOverlaps: 0, clippedReveals: 0, rangeMismatches: 0 }, readingPosition: all ≥0.95, reducedMotion: complete, noJs: complete, lenis: ok, scrollJack: none, register: editorial (no forbidden attrs, parallax 10vh), cliff: 7 data-anim, 0 infinite, fixesApplied: ["one reveal per band (runtime peer-index stagger left the 7th schedule row hidden)", "trigger 0.85→1.0 (elements entering the bottom 15% sat at opacity 0)"] }
+  writtenBy:         stardust:prototype (rendered via impeccable:craft → new-work, brief-pinned world)
+  writtenAt:         2026-11-17T18:10:00Z
+  page:              index
+  pageUrl:           https://www.barnettarchitecture.com/
+  mode:              prep (canon-author), hands-off
+  againstDirection:  stardust/direction.md (Active 2026-11-17T17:20:00Z)
+  shapeBrief:        stardust/prototypes/index-shape.md
+  readArtifacts:
+    - stardust/current/pages/index.json
+    - stardust/current/pages/about.json
+    - stardust/current/pages/team.json
+    - stardust/current/pages/contact.json
+    - stardust/current/pages/photography.json
+    - stardust/current/pages/copy-of-testimonials.json
+    - stardust/current/_galleries.clean.json
+    - stardust/taxonomy.json
+    - DESIGN.md
+    - DESIGN.json
+    - PRODUCT.md
+  divergenceVersion: v1.0 (stardust v2)
+  fontDeck:          swiss-modernist (substituted) — Spectral (static-only family: display exempt from axis check) + Hanken Grotesk (variable wght engaged: 300, 450, 560, 600)
+  paletteSource:     derived (DESIGN.md colors: sage-ground, graphite, pencil, hairline, third-lake, third-lake-light, darkroom, print-white)
+  fidelity:          refined
+  unsourcedContent:  []
+  conceptSeed:       not run — world pinned by stardust direct (DESIGN.md) and structure pinned by index-shape.md (new-work § 3 "precisely specified")
+  reflexRejectAudit: 0 reject-list families (Spectral, Hanken Grotesk)
+  copyCadenceBypass: none
+  iteratedVia:       impeccable:critique, impeccable:audit, impeccable:adapt
+  critique:          # 2026-11-17 dual-agent (A a18055460aad20d3a · B a57e76ffebd8ec515); 0 P0, 0 P1, 5 P2, 1 P3; heuristics 21/28 (7, 9, 10 n/a)
+    - { priority: P2, finding: "hero scrim darkened the whole photograph", status: fixed, fix: "scrim bound to the text block (.hero__content::before)" }
+    - { priority: P2, finding: "schedule rows: photo smaller than text column; CTA isolated at end", status: fixed, fix: "6/6 split; button moved into section head" }
+    - { priority: P2, finding: "sheet numbers 01–07 from the brief dropped", status: declined, reason: "impeccable craft-floor bans section numbers that carry no information; dimension strings carry the drawing-set device" }
+    - { priority: P2, finding: "repeated sentences (services line in intro and enquiry)", status: fixed }
+    - { priority: P2, finding: "no entry point by project type (Principle 3)", status: fixed, fix: "facet-chip row → /projects?type=… (listing archetype must honour the query)" }
+    - { priority: P2, finding: "photography wall orphan below 900px", status: fixed }
+    - { priority: P3, finding: "principles top rule flush / bleeding into gutter", status: fixed }
+    - { priority: P3, finding: "Universal design excerpt ended 'or would like to plan.'", status: fixed, fix: "excerpt trimmed (no words added)" }
+  audit:             # 2026-11-17 a5b779c9e3b0d4e86; a11y 3 · perf 3 · theming 3 · responsive 4 · anti-patterns 3
+    - { priority: P1, finding: "white focus ring on sage (settled header, submenu, mobile panel) 1.21:1", status: fixed, fix: "outline-color: currentColor in header; accent in submenu" }
+    - { priority: P1, finding: "third-lake focus ring on hero scrim 1.91:1", status: fixed, fix: ".hero :focus-visible white" }
+    - { priority: P2, finding: "Escape inside Practice disclosure stranded focus", status: fixed, fix: "focus returns to summary; closes on focusout" }
+    - { priority: P2, finding: "no metric-matched fallback faces; render-blocking Google Fonts css", status: deferred, reason: "assets prep self-hosts Spectral + Hanken Grotesk with size-adjusted fallbacks" }
+    - { priority: P3, finding: "focus-within ring on mouse click", status: fixed, fix: ":has(a:focus-visible)" }
+    - { priority: P3, finding: "tall frames requested landscape crops", status: fixed, fix: "Wix fill at 4:5" }
+    - { priority: P3, finding: "theme-color sage above a dark hero", status: fixed, fix: "#121413 on this page" }
+    - { priority: P3, finding: "no-JS keyboard cannot open the mobile menu", status: accepted, reason: "stock pattern; EDS header.js renders a real <button>" }
+  detector:          { cli: "[] (0)", browserOverlay: "25 hits, all false positives: gradient underline read as background; 13px .dim labels as all-caps body; display-size quote leading" }
+  visionCheck:       { verdict: pass, observations: ["captured home = uncaptioned 9-slide carousel with wordmark H1 and no text (stardust/current/assets/screenshots/index.png); redesign keeps the photograph-first opening as one exhibited frame (signature preserved)", "eye lands on the H1 thesis, then the caption link, then the intro — as briefed", "darkroom wall is the page's richest moment; architecture leads in the first viewport and the schedule"] }
+  adapt:
+    - { at: 2026-11-17T18:40:00Z, breakpoints: [380, 599, 640, 899, 900, "pointer: coarse", "landscape max-height 500"], mediaRules: 9, decisions: ["nav → stock hamburger ≤640", "header fixed+settling ≥900 only", "schedule photo stacks above text <600", "wall spans 12/4 at 600–899, 12/6 <600", "burger label visually hidden ≤380", "44px targets on coarse pointers", "safe-area insets on .shell"], verified: "no overflow at 1920/1440/1280/800/414/375/360/320/844×390; H1 inside first screen at all" }
+  stardustVersion:   0.32.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- cinematic sibling of index-proposed.html; migrate consumes the static file -->
+<title>Architectural practice in Madison, Wisconsin | Barnett Architecture</title>
+<link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//w==">
+<meta name="description" content="Barnett Architecture is a full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Projects meant to “fit” the client.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/">
+<meta name="theme-color" content="#121413">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/">
+<meta property="og:title" content="Barnett Architecture — architectural practice in Madison, Wisconsin">
+<meta property="og:description" content="A full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Projects meant to “fit” the client, not serve as a pedestal for the architect.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Willy Street, a new home in Madison, Wisconsin — photograph">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..700&amp;family=Spectral:ital,wght@0,300;0,400;1,300&amp;display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://www.barnettarchitecture.com/#organization",
+      "name": "Barnett Architecture LLC",
+      "alternateName": "Barnett Architecture",
+      "url": "https://www.barnettarchitecture.com/",
+      "description": "A full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Services range from hourly consultations to the full architectural process.",
+      "image": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg",
+      "foundingDate": "2007",
+      "founder": { "@type": "Person", "name": "Todd Barnett", "jobTitle": "Architect", "url": "https://www.barnettarchitecture.com/about/todd-barnett" },
+      "address": { "@type": "PostalAddress", "streetAddress": "118 North Breese Terrace, Suite I", "addressLocality": "Madison", "addressRegion": "WI", "postalCode": "53726-4133", "addressCountry": "US" },
+      "telephone": "+1-608-233-4538",
+      "email": "todd@barnettarchitecture.com",
+      "areaServed": ["Madison, WI", "Wisconsin", "Illinois"],
+      "knowsAbout": ["residential architecture", "additions and renovations", "green design", "universal design", "charrette design process"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.barnettarchitecture.com/#website",
+      "url": "https://www.barnettarchitecture.com/",
+      "name": "Barnett Architecture",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://www.barnettarchitecture.com/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.barnettarchitecture.com/#webpage",
+      "url": "https://www.barnettarchitecture.com/",
+      "name": "Architectural practice in Madison, Wisconsin | Barnett Architecture",
+      "isPartOf": { "@id": "https://www.barnettarchitecture.com/#website" },
+      "about": { "@id": "https://www.barnettarchitecture.com/#organization" },
+      "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg"
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+  /* Motion (cinematic only) — DESIGN.json extensions.motion.register = editorial */
+  --ease-out-cubic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-quart: cubic-bezier(0.42, 0, 0, 1);
+  --ease-expo:      cubic-bezier(0.16, 1, 0.3, 1);
+  --enter-duration: 900ms;
+  --enter-stagger:  140ms;
+  --parallax-translate: 10;
+  --parallax-fade:      0.20;
+  --parallax-progress:  0;
+}
+
+/* === Stock mobile-nav-collapse pattern (base rules precede every @media) === */
+header[data-nav-collapse="hamburger"] { position: relative; }
+.ds-nav-toggle {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+.ds-nav-burger { display: none; }
+.ds-nav { display: flex; align-items: center; font-family: var(--body-font-family); }
+
+/* === Base === */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; hanging-punctuation: first; scroll-padding-top: calc(var(--header-h) + 16px); }
+body {
+  margin: 0; background: var(--color-bg); color: var(--color-fg);
+  font-family: var(--body-font-family); font-size: var(--body); line-height: var(--line-height-body);
+  font-weight: 400; font-kerning: normal; text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+p { margin: 0; text-wrap: pretty; }
+h1, h2, h3 { margin: 0; font-family: var(--heading-font-family); font-weight: 300; line-height: var(--line-height-heading); letter-spacing: -0.02em; text-wrap: balance; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+address { font-style: normal; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.shell { width: 100%; max-width: var(--max-width); margin-inline: auto; padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right)); }
+.skip-link {
+  position: absolute; left: var(--gutter); top: 8px; z-index: 100; transform: translateY(-160%);
+  background: var(--color-fg); color: var(--color-bg); padding: 10px 16px; font-weight: 600; text-decoration: none;
+}
+.skip-link:focus-visible { transform: none; }
+
+/* === Compound language: links, dimension string, buttons === */
+.link-arrow {
+  display: inline-flex; align-items: baseline; gap: 0.5em; color: var(--color-accent);
+  font-weight: 560; text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 500ms var(--ease-hover);
+}
+.link-arrow::after { content: "→"; font-weight: 400; transition: transform 500ms var(--ease-hover); }
+.link-arrow:hover { background-size: 100% 1px; }
+.link-arrow:hover::after { transform: translateX(4px); }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.75em; padding: 18px 28px; border-radius: var(--radius);
+  background: var(--color-accent); color: var(--color-print); font-weight: 560; text-decoration: none;
+  transition: background-color 300ms var(--ease-hover);
+}
+.btn-primary::after { content: "→"; font-weight: 400; }
+.btn-primary:hover { background: var(--color-fg); }
+.label {
+  font-family: var(--body-font-family); font-size: var(--label); font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3;
+}
+/* Dimension string: |—— facts ——| — always carries real data */
+.dim {
+  display: flex; align-items: center; gap: 0.9em; color: var(--color-muted);
+  font-size: var(--label); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.3;
+  font-variant-numeric: tabular-nums;
+}
+.dim::before, .dim::after {
+  content: ""; flex: 1 1 var(--spacing-md); min-width: var(--spacing-sm); height: var(--tick);
+  background: linear-gradient(currentColor, currentColor) 0 50% / 100% 1px no-repeat;
+  border-inline-start: 1px solid currentColor;
+}
+.dim::after { border-inline-start: 0; border-inline-end: 1px solid currentColor; }
+.dim > span { flex: 0 1 auto; }
+.dim--start::before { flex: 0 0 var(--spacing-md); }
+/* Stacked variant: the dimension line runs full width above the facts, so wrapping never strands the ticks */
+.dim--stack { flex-wrap: wrap; row-gap: 8px; }
+.dim--stack::before { flex: 1 0 100%; border-inline: 1px solid currentColor; }
+.dim--stack::after { display: none; }
+
+/* === Site header === */
+.site-header {
+  position: sticky; top: 0; z-index: 50; color: var(--color-fg); background: var(--color-bg);
+  border-bottom: 1px solid var(--color-hairline);
+}
+.site-header__inner {
+  position: relative; display: flex; align-items: center; justify-content: space-between;
+  gap: var(--spacing-md); min-height: var(--header-h);
+}
+.ds-wordmark {
+  font-family: var(--heading-font-family); font-weight: 400; font-size: 1.375rem; letter-spacing: -0.01em;
+  line-height: 1; text-decoration: none; white-space: nowrap;
+}
+.ds-nav__list { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 40px); }
+.ds-nav a, .ds-nav summary {
+  display: inline-block; padding: 8px 0; font-size: var(--body-sm); font-weight: 450; letter-spacing: 0.01em;
+  text-decoration: none; cursor: pointer;
+  background: linear-gradient(currentColor, currentColor) 0 calc(100% - 2px) / 0 1px no-repeat;
+  transition: background-size 450ms var(--ease-hover);
+}
+.ds-nav a:hover, .ds-nav summary:hover, .ds-nav a[aria-current="page"] { background-size: 100% 1px; }
+.ds-nav summary { list-style: none; display: inline-flex; align-items: center; gap: 8px; }
+.ds-nav summary::-webkit-details-marker { display: none; }
+.ds-nav summary::after {
+  content: ""; width: 6px; height: 6px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg); transition: transform 300ms var(--ease-hover);
+}
+.ds-nav details[open] > summary::after { transform: translateY(1px) rotate(-135deg); }
+.ds-nav__group details { position: relative; }
+.ds-nav__sub {
+  position: absolute; top: calc(100% + 14px); right: -20px; min-width: 220px; padding: 10px 20px;
+  background: var(--color-bg); color: var(--color-fg); border: 1px solid var(--color-hairline);
+}
+.ds-nav__sub a { display: block; padding: 9px 0; }
+.ds-nav__sub li + li { border-top: 1px solid var(--color-hairline); }
+
+/* Over-media state: transparent header on its own scrim (home + project heroes) */
+body[data-hero="media"] .site-header {
+  position: absolute; inset: 0 0 auto; background: transparent; color: var(--color-print); border-bottom-color: transparent;
+}
+body[data-hero="media"] .site-header::before {
+  content: ""; position: absolute; inset: 0 0 -56px; z-index: -1; pointer-events: none;
+  background: linear-gradient(to bottom, rgb(18 20 19 / 0.74) 0%, rgb(18 20 19 / 0.64) 58%, rgb(18 20 19 / 0) 100%);
+}
+body[data-hero="media"] .site-header :focus-visible { outline-color: currentColor; }
+.ds-nav__sub :focus-visible { outline-color: var(--color-accent); }
+.hero :focus-visible { outline-color: var(--color-print); }
+
+/* === Hero (project-hero, home instance) === */
+.hero { position: relative; isolation: isolate; overflow: hidden; min-height: max(100svh, 620px); display: grid; align-items: end; background: var(--color-darkroom); color: var(--color-print); }
+.hero__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Scrim is bound to the text block, not the frame: ≥0.74 darkroom behind every glyph, photo above stays clear */
+.hero__content::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  top: -45%; bottom: 0; left: calc(50% - 50vw); right: calc(50% - 50vw);
+  background: linear-gradient(to top, color-mix(in srgb, var(--color-darkroom) 88%, transparent) 0%, color-mix(in srgb, var(--color-darkroom) 74%, transparent) 68%, transparent 100%);
+}
+.hero__content {
+  position: relative;
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: end;
+  padding-block: var(--spacing-lg) clamp(40px, 6vw, 72px);
+}
+.hero__title { grid-column: 1 / span 9; display: grid; gap: clamp(16px, 2vw, 28px); letter-spacing: 0; }
+.hero__thesis {
+  font-size: clamp(3.25rem, 7.4vw, 10rem); font-weight: 300; line-height: 0.94; letter-spacing: -0.03em; max-width: 9.6em;
+}
+.hero__who {
+  font-family: var(--body-font-family); font-size: clamp(1.0625rem, 1.5vw, 1.375rem); font-weight: 450;
+  line-height: 1.4; letter-spacing: 0; max-width: 34em;
+}
+.hero__caption { grid-column: 10 / span 3; color: var(--color-print); margin-bottom: 0.45em; }
+.hero__caption a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.hero__caption a:hover { text-decoration-thickness: 2px; }
+
+/* === Section rhythm === */
+.band { padding-block: var(--section-padding); }
+.band + .band { padding-top: 0; }
+.section-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--spacing-sm) var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+.section-head h2 { font-size: var(--heading-xl); }
+
+/* === Intro (GEO) === */
+.intro { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.intro__rail { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-sm); }
+.intro__rail h2 { font-size: var(--heading-md); font-weight: 400; letter-spacing: -0.005em; }
+.intro__body { grid-column: 5 / span 8; display: grid; gap: var(--spacing-md); }
+.intro__lead { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; letter-spacing: -0.005em; max-width: 30em; }
+.intro__more { max-width: var(--measure); color: var(--color-fg); }
+.intro__more a { color: var(--color-accent); text-underline-offset: 3px; }
+
+/* === Featured projects: the drawing schedule (project-index, home instance) === */
+.schedule__list { border-bottom: 1px solid var(--color-fg); }
+.schedule__row {
+  position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px;
+  align-items: end; padding-block: var(--spacing-md); border-top: 1px solid var(--color-hairline);
+}
+.schedule__row:first-child { border-top-color: var(--color-fg); }
+.schedule__text { grid-column: 1 / span 6; display: grid; gap: var(--spacing-sm); padding-right: var(--spacing-md); }
+.schedule__title { font-size: var(--heading-xl); line-height: 1; letter-spacing: -0.025em; }
+.schedule__title a { text-decoration: none; transition: color 400ms var(--ease-hover); }
+.schedule__title a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.schedule__media { grid-column: 7 / span 6; aspect-ratio: 3 / 2; overflow: hidden; background: var(--color-hairline); }
+.schedule__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-hover); }
+.schedule__row:hover .schedule__title a, .schedule__row:has(a:focus-visible) .schedule__title a { color: var(--color-accent); }
+.schedule__row:hover .schedule__media img { transform: scale(1.02); }
+.schedule__row:has(a:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: 6px; }
+.schedule__row a:focus-visible { outline: none; }
+.schedule__foot { padding-top: var(--spacing-md); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--spacing-sm) var(--spacing-md); }
+.facets { display: flex; flex-wrap: wrap; gap: var(--spacing-xs); }
+.facet-chip {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border: 1px solid var(--color-hairline); border-radius: var(--radius);
+  color: var(--color-fg); font-size: var(--body-sm); font-weight: 450; text-decoration: none; transition: background-color 300ms var(--ease-hover), color 300ms var(--ease-hover), border-color 300ms var(--ease-hover);
+}
+.facet-chip:hover, .facet-chip[aria-current="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+
+/* === Testimonial (testimonial-list, single quote) === */
+.testimonial { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.testimonial__figure { grid-column: 2 / span 10; margin: 0; display: grid; gap: var(--spacing-md); }
+.testimonial blockquote { margin: 0; }
+.testimonial blockquote p {
+  font-family: var(--heading-font-family); font-style: italic; font-weight: 300; font-size: var(--heading-xl);
+  line-height: 1.12; letter-spacing: -0.015em; max-width: 24em; text-wrap: balance;
+}
+.testimonial figcaption { max-width: 34rem; }
+.testimonial__more { grid-column: 2 / span 10; }
+
+/* === Principles: 2×2 hairline sheet === */
+.principles { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.band.principles { padding-top: var(--spacing-lg); background: linear-gradient(var(--color-fg), var(--color-fg)) var(--gutter) 0 / calc(100% - 2 * var(--gutter)) 1px no-repeat; }
+.principles__head { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-md); }
+.principles__head h2 { font-size: var(--heading-xl); }
+.principles__links { display: grid; gap: var(--spacing-sm); justify-items: start; }
+.principles__sheet { grid-column: 5 / span 8; display: grid; grid-template-columns: 1fr 1fr; }
+.principle { display: grid; align-content: start; gap: var(--spacing-sm); padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg) 0; border-top: 1px solid var(--color-hairline); }
+.principle:nth-child(even) { padding-left: var(--spacing-md); border-left: 1px solid var(--color-hairline); }
+.principle:nth-child(-n+2) { border-top: 0; padding-top: 0; }
+.principle h3 { font-size: var(--heading-md); font-weight: 400; letter-spacing: -0.005em; line-height: 1.15; }
+.principle p { color: var(--color-fg); max-width: 40ch; }
+
+/* === Photography: the darkroom wall (collection-index, home teaser) === */
+.darkroom { background: var(--color-darkroom); color: var(--color-bg); padding-block: var(--section-padding); }
+.darkroom :focus-visible { outline-color: var(--color-accent-light); }
+.darkroom .section-head { align-items: end; padding-bottom: var(--spacing-lg); }
+.darkroom .section-head > div { display: grid; gap: var(--spacing-sm); }
+.darkroom__lead { font-family: var(--heading-font-family); font-size: var(--heading-md); line-height: 1.3; max-width: 26em; color: var(--color-bg); }
+.darkroom .link-arrow { color: var(--color-accent-light); }
+.wall { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); align-items: end; }
+.frame { position: relative; margin: 0; display: grid; gap: 14px; }
+.frame__img { overflow: hidden; background: var(--color-fg); aspect-ratio: 3 / 2; }
+.frame--tall .frame__img { aspect-ratio: 4 / 5; }
+.frame__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-hover); }
+.frame:hover .frame__img img { transform: scale(1.02); }
+.frame figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.frame__title { font-family: var(--heading-font-family); font-size: 1.375rem; font-weight: 400; line-height: 1.2; }
+.frame__title a { text-decoration: none; }
+.frame__title a::after { content: ""; position: absolute; inset: 0; }
+.frame__kind { color: var(--color-muted-on-dark); }
+.frame:has(a:focus-visible) { outline: 2px solid var(--color-accent-light); outline-offset: 6px; }
+.frame a:focus-visible { outline: none; }
+.span-3 { grid-column: span 3; } .span-4 { grid-column: span 4; } .span-5 { grid-column: span 5; }
+.span-6 { grid-column: span 6; } .span-7 { grid-column: span 7; }
+.wall__divider { grid-column: 1 / -1; color: var(--color-muted-on-dark); margin-bottom: calc(var(--spacing-md) * -1); }
+
+/* === Enquiry band === */
+.enquiry { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-md); }
+.enquiry h2 { grid-column: 1 / span 4; font-size: var(--heading-xl); }
+.enquiry__body { grid-column: 5 / span 8; display: grid; gap: var(--spacing-md); }
+.enquiry__lines { display: grid; gap: 4px; }
+.enquiry__lines a {
+  font-family: var(--heading-font-family); font-weight: 300; font-size: clamp(1.375rem, 3.4vw, 3.75rem); line-height: 1.1;
+  letter-spacing: -0.02em; color: var(--color-accent); text-decoration: none; overflow-wrap: anywhere;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 600ms var(--ease-hover);
+}
+.enquiry__lines a:hover { background-size: 100% 1px; }
+
+/* === Site footer: graphite title block === */
+.site-footer { background: var(--color-fg); color: var(--color-bg); padding-block: var(--spacing-xl) var(--spacing-md); }
+.site-footer :focus-visible { outline-color: var(--color-accent-light); }
+.site-footer__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: var(--spacing-lg); }
+.site-footer__id { grid-column: 1 / span 4; display: grid; align-content: start; gap: var(--spacing-md); }
+.site-footer__id .ds-wordmark { font-size: 1.875rem; }
+.site-footer address { color: var(--color-muted-on-dark); line-height: 1.7; }
+.site-footer address a { color: var(--color-bg); text-underline-offset: 3px; }
+.site-footer__map { grid-column: 6 / span 7; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-md) 24px; }
+.site-footer__map h2 { font-family: var(--body-font-family); color: var(--color-muted-on-dark); margin-bottom: var(--spacing-sm); letter-spacing: 0.08em; }
+.site-footer__map a { display: inline-block; padding: 5px 0; text-decoration: none; font-size: var(--body-sm); }
+.site-footer__map a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer__legal {
+  grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
+  padding-top: var(--spacing-md); border-top: 1px solid var(--color-muted); color: var(--color-muted-on-dark); font-size: var(--body-sm);
+}
+
+/* === Desktop: header fixed over the hero, settles to sage at the hero's end === */
+@media (min-width: 900px) {
+  @supports (animation-timeline: scroll()) {
+    body[data-hero="media"] .site-header {
+      position: fixed;
+      animation: header-settle linear both; animation-timeline: scroll(root block);
+      animation-range: calc(max(100svh, 620px) - var(--header-h) - 1px) calc(max(100svh, 620px) - var(--header-h));
+    }
+    body[data-hero="media"] .site-header::before {
+      animation: scrim-out linear both; animation-timeline: scroll(root block);
+      animation-range: calc(max(100svh, 620px) - var(--header-h) - 1px) calc(max(100svh, 620px) - var(--header-h));
+    }
+  }
+}
+@keyframes header-settle {
+  from { background-color: transparent; color: var(--color-print); border-bottom-color: transparent; }
+  to { background-color: var(--color-bg); color: var(--color-fg); border-bottom-color: var(--color-hairline); }
+}
+@keyframes scrim-out { from { opacity: 1; } to { opacity: 0; } }
+
+/* === Tablet: 600–899 === */
+@media (max-width: 899px) {
+  .hero__title { grid-column: 1 / -1; }
+  .hero__caption { grid-column: 1 / -1; max-width: 26rem; margin-top: var(--spacing-md); }
+  .intro__rail, .intro__body, .principles__head, .principles__sheet, .enquiry h2, .enquiry__body,
+  .site-footer__id, .site-footer__map, .testimonial__figure, .testimonial__more { grid-column: 1 / -1; }
+  .schedule__text { grid-column: 1 / span 6; }
+  .schedule__media { grid-column: 7 / span 6; }
+  .wall .span-3 { grid-column: span 4; }
+  .hero__media img { object-position: 22% 55%; }
+  .wall .span-4, .wall .span-5, .wall .span-6, .wall .span-7 { grid-column: span 12; }
+  .site-footer__map { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* === Phone: ≤640 hamburger, ≤599 single column === */
+@media (max-width: 640px) {
+  .ds-nav-burger {
+    display: inline-flex; align-items: center; gap: 10px; cursor: pointer; padding: 10px 14px;
+    font-family: var(--body-font-family); font-size: var(--body-sm); font-weight: 560; color: currentColor;
+    background: transparent; border: 1px solid currentColor; border-radius: var(--radius); user-select: none;
+  }
+  .ds-nav-burger-icon { width: 16px; height: 10px; position: relative; }
+  .ds-nav-burger-icon::before, .ds-nav-burger-icon::after { content: ""; position: absolute; left: 0; right: 0; height: 1.5px; background: currentColor; }
+  .ds-nav-burger-icon::before { top: 0; } .ds-nav-burger-icon::after { bottom: 0; }
+  .ds-nav-burger:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  .ds-nav {
+    position: absolute; top: 100%; left: 0; right: 0;
+    display: block; padding: 8px var(--gutter) 24px; background: var(--color-bg); color: var(--color-fg);
+    border-top: 1px solid var(--color-fg); border-bottom: 1px solid var(--color-hairline);
+    transform: translateY(-8px); opacity: 0; visibility: hidden; pointer-events: none;
+    transition: transform 180ms var(--ease-hover), opacity 180ms var(--ease-hover), visibility 0s linear 180ms;
+  }
+  .ds-nav-toggle:checked ~ .ds-nav {
+    transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto;
+    transition: transform 180ms var(--ease-hover), opacity 180ms var(--ease-hover), visibility 0s linear 0s;
+  }
+  .ds-nav__list { display: block; }
+  .ds-nav__list > li { border-bottom: 1px solid var(--color-hairline); }
+  .ds-nav__list > li:last-child { border-bottom: 0; }
+  .ds-nav a, .ds-nav summary { display: flex; padding: 14px 0; font-size: var(--body); }
+  .ds-nav summary { justify-content: space-between; }
+  .ds-nav__sub { position: static; min-width: 0; padding: 0 0 8px 16px; border: 0; background: transparent; }
+  .ds-nav__sub li + li { border-top: 0; }
+  .ds-nav__sub a { padding: 10px 0; }
+  .ds-nav :focus-visible { outline-color: var(--color-accent); }
+}
+@media (max-width: 599px) {
+  :root { --section-padding: 64px; --header-h: 68px; }
+  .hero__thesis { font-size: clamp(3.25rem, 13vw, 3.75rem); }
+  .schedule__row { row-gap: var(--spacing-sm); padding-block: var(--spacing-md) var(--spacing-md); }
+  .schedule__text, .schedule__media { grid-column: 1 / -1; padding-right: 0; }
+  .schedule__media { order: -1; }
+  .schedule__title { font-size: var(--heading-lg); }
+  .principles__sheet { grid-template-columns: 1fr; }
+  .wall .span-3 { grid-column: span 6; }
+  .wall .span-3:nth-child(3) { grid-column: span 12; }
+  .principle, .principle:nth-child(even) { padding: var(--spacing-md) 0; border-left: 0; }
+  .principle:nth-child(2) { border-top: 1px solid var(--color-hairline); padding-top: var(--spacing-md); }
+  .wall { row-gap: var(--spacing-md); }
+  .darkroom__lead { font-size: var(--heading-md); max-width: 20em; }
+  .site-footer { padding-top: var(--spacing-lg); }
+}
+/* Very narrow phones: burger collapses to a 44px square; its label stays as the accessible name */
+@media (max-width: 380px) {
+  .site-header__inner { gap: var(--spacing-sm); }
+  .ds-nav-burger { padding: 13px; min-width: 44px; min-height: 44px; justify-content: center; }
+  .ds-nav-burger-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+/* Touch: 44px targets on coarse pointers; nothing depends on hover */
+@media (pointer: coarse) {
+  .ds-nav a, .ds-nav summary { min-height: 44px; display: inline-flex; align-items: center; }
+  .site-footer__map a { padding-block: 11px; }
+  .enquiry__lines a { display: inline-block; padding-block: 6px; }
+  .hero__caption a, .intro__more a { padding-block: 12px; margin-block: -12px; }
+  .link-arrow { padding-block: 12px; margin-block: -12px; }
+}
+/* Short landscape phones: keep the H1 inside the first screen */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: max(100svh, 420px); }
+  .hero__thesis { font-size: clamp(2rem, 7vw, 3.75rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+  .ds-nav, .ds-nav-toggle:checked ~ .ds-nav { transition: none; }
+}
+/* === Editorial register layer === */
+.hero-marquee { inset: 0 0 -10vh 0; will-change: transform; }
+[data-anim] { transition: opacity 120ms linear; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  body[data-hero="media"] .site-header, body[data-hero="media"] .site-header::before { animation-duration: auto !important; }
+  [data-anim], [data-tile-anim], [data-split] span { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+  .hero-marquee { transform: none !important; }
+}
+</style>
+<link rel="stylesheet" href="lenis.min.css">
+<noscript>
+  <style>
+    [data-anim], [data-tile-anim], [data-split] span { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+    .word { clip-path: none !important; transform: none !important; }
+    [data-parallax] { transform: none !important; }
+    .hero-marquee { transform: none !important; }
+    .post-hero { transform: none !important; }
+  </style>
+</noscript>
+</head>
+<body data-template="landing" data-hero="media">
+<!-- impeccable:direction-contract
+THESIS: The home is an exhibit of the work annotated like a drawing set; it refuses the carousel-plus-wordmark home and the giant-sans-hero / CTA-pair / stat-bar silhouette.
+OWN-WORLD: Sage ground, graphite drafting ink, one Third Lake accent as pointer only; darkroom wall for photography; Spectral light at exhibit scale, Hanken small caps for facts; hairline rules and dimension strings with 9px end ticks; square corners, no shadows.
+STORY: Visitors learn who, where and what in the H1, see seven projects as a drawing schedule with real facts, hear one client, read how the practice works, walk the photography wall, then write or call.
+FIRST VIEWPORT: One full-bleed Willy Street photograph; header floating on its own scrim; H1 docked bottom-left (Spectral 300 ~7vw, who/where line beneath); caption dimension string bottom-right linking the project. The who/where line sits beneath the thesis (not above it) because a label above a heading is an impeccable craft-floor ban; it stays in the H1 at 22px body scale for legibility on the photograph (Product Principle 2).
+FORM: brief-pinned (stardust direction + index-shape.md); impeccable concept-seed not run — the divergence roll happened at direction: seed "Barnett Architecture LLC|2026-11-17" MD5 9bf4874d… (stardust/direction.md § Divergence inputs); staging: static, motion layered in index-cinematic.html.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="/" data-slot="wordmark">Barnett Architecture</a>
+    <input type="checkbox" id="ds-nav-toggle" class="ds-nav-toggle" tabindex="-1" aria-hidden="true">
+    <label class="ds-nav-burger" for="ds-nav-toggle" role="button" tabindex="0" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </label>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/photography">Photography</a></li>
+        <li class="ds-nav__group">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="/about">About</a></li>
+              <li><a href="/about/process">Process</a></li>
+              <li><a href="/about/todd-barnett">Todd Barnett</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" data-section="hero" data-intent="emotional hook + say who, where, what" data-layout="full-bleed" data-media="image" data-module="project-hero">
+    <div class="hero__media hero-marquee" data-slot="image" data-parallax><img src="https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg 800w, https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg 1600w, https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg 2400w" sizes="100vw" width="1600" height="1067" alt="Willy Street, a new home in Madison, Wisconsin — photograph" loading="eager" fetchpriority="high" decoding="async"></div>
+        <div class="hero__content shell">
+      <h1 class="hero__title" data-slot="title">
+        <span class="hero__thesis">Projects meant to “fit” the client</span><span class="visually-hidden"> — </span>
+        <span class="hero__who">Barnett Architecture, an architectural practice in Madison, Wisconsin</span>
+      </h1>
+      <p class="hero__caption dim dim--stack" data-slot="facts"><span><a href="/projects/willy-street">Willy Street</a> · New home · Madison, WI</span></p>
+    </div>
+  </section>
+
+  <section class="intro shell band" data-section="intro" data-intent="crawlable practice facts (GEO)" data-layout="side-rail" aria-labelledby="intro-h">
+    <div class="intro__rail">
+      <h2 id="intro-h">About the practice</h2>
+      <p class="dim dim--start"><span>Madison, WI · Est. 2007</span></p>
+    </div>
+    <div class="intro__body" data-anim>
+      <p class="intro__lead">Barnett Architecture is a full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Our philosophy is straightforward: projects are meant to “fit” the client, not serve as a pedestal for the architect.</p>
+      <p class="intro__more">Stylistic examples range from traditional to modern, and all projects strive to create places that are well-built, facilitate their intended use and raise the spirit. Services range from hourly consultations to the full architectural process, from programming and concept design to full building plans and construction administration. The practice was established by <a href="/about/todd-barnett">Todd Barnett, Architect</a>, who has made Madison his home since 1990.</p>
+    </div>
+  </section>
+
+  <section class="schedule shell band" data-section="featured-projects" data-intent="lead with the work" data-layout="stack" data-items="7" data-module="project-index" data-fragment="project-card" data-fragment-role="reuse" data-fragment-source="/projects" aria-labelledby="schedule-h">
+    <div class="section-head">
+      <h2 id="schedule-h">Selected projects</h2>
+      <a class="btn-primary" href="/projects">See all 29 projects</a>
+    </div>
+    <ul class="schedule__list" data-slot="cards" data-anim>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/willy-street">Willy Street</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI · Historic context</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg" srcset="https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg 800w, https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg 1600w, https://static.wixstatic.com/media/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_8d08d7a204934394b9ea5197043945d5.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Willy Street — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/hill-farm-swim-club">Hill Farm Swim Club</a></h3><p class="dim dim--stack"><span>Recreation · Master plan &amp; study, renovation · Madison, WI · Universal design</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg" srcset="https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg 800w, https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg 1600w, https://static.wixstatic.com/media/5c8b97_ebf27e234f504e088235da4c8087690e.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_ebf27e234f504e088235da4c8087690e.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Hill Farm Swim Club — master plan and renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/three-gables">Three Gables</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Three Gables — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/designcraft">designCraft</a></h3><p class="dim dim--stack"><span>Commercial · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_687,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_800,h_550,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 800w, https://static.wixstatic.com/media/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg/v1/fill/w_1000,h_687,al_c,q_85,enc_auto/5c8b97_f83cdf38bf164f268ea72f0985be3a01.jpg 1000w" sizes="(min-width: 900px) 40vw, 100vw" width="1000" height="687" alt="designCraft — commercial renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/folded-roof">Folded Roof</a></h3><p class="dim dim--stack"><span>Residential · Addition, renovation · Madison, WI · Green design</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg/v1/fill/w_1500,h_984,al_c,q_85,enc_auto/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg" srcset="https://static.wixstatic.com/media/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg/v1/fill/w_800,h_525,al_c,q_85,enc_auto/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg 800w, https://static.wixstatic.com/media/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg/v1/fill/w_1500,h_984,al_c,q_85,enc_auto/5c8b97_42c3e0ecdfab4c0ca9d2ffaaec332260.jpg 1500w" sizes="(min-width: 900px) 40vw, 100vw" width="1500" height="984" alt="Folded Roof — addition and renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/passive-light">Passive Light</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI · Green design</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_3b332cdccc3345f383bbd32127358884~mv2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1200" alt="Passive Light — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="/projects/green-ribbon">Green Ribbon</a></h3><p class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg" srcset="https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_800,h_534,al_c,q_85,enc_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg 800w, https://static.wixstatic.com/media/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg/v1/fill/w_1024,h_683,al_c,q_85,enc_auto/5c8b97_b1d8e90c28ed417f8ea58b4234f98727.jpg 1024w" sizes="(min-width: 900px) 40vw, 100vw" width="1024" height="683" alt="Green Ribbon — renovation, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+    </ul>
+    <nav class="schedule__foot" aria-label="Projects by type">
+      <ul class="facets">
+        <li><a class="facet-chip" href="/projects?type=new-home">New homes</a></li>
+        <li><a class="facet-chip" href="/projects?type=addition">Additions</a></li>
+        <li><a class="facet-chip" href="/projects?type=renovation">Renovations</a></li>
+        <li><a class="facet-chip" href="/projects?type=kitchen">Kitchens</a></li>
+        <li><a class="facet-chip" href="/projects?type=master-plan">Master plans &amp; studies</a></li>
+        <li><a class="facet-chip" href="/commercial">Commercial, community &amp; recreation</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="testimonial shell band" data-section="testimonial" data-intent="build trust" data-layout="contained" data-module="testimonial-list" aria-labelledby="testimonial-h">
+    <h2 id="testimonial-h" class="visually-hidden">From a client</h2>
+    <figure class="testimonial__figure" data-anim>
+      <blockquote data-slot="quote"><p>“We couldn’t be happier with the house. Not only does it look great and is extremely functional, but it feels like it was meant for the site.”</p></blockquote>
+      <figcaption class="dim dim--start" data-slot="attribution"><span>JFH and KG · Madison, WI</span></figcaption>
+    </figure>
+    <p class="testimonial__more"><a class="link-arrow" href="/testimonials">Read the testimonials</a></p>
+  </section>
+
+  <section class="principles shell band" data-section="principles" data-intent="explain the practice" data-layout="grid" data-items="4" data-module="principles" aria-labelledby="principles-h">
+    <div class="principles__head">
+      <h2 id="principles-h">How we work</h2>
+      <p class="principles__links"><a class="link-arrow" href="/about">About the practice</a><a class="link-arrow" href="/about/process">The design process</a></p>
+    </div>
+    <div class="principles__sheet" data-slot="items" data-anim>
+      <div class="principle">
+        <h3>Fit the client</h3>
+        <p>We do not employ a distinct architectural style but rather develop one with the client that reflects and respects the client, goals, site, budget and place in the community. Each project is informed by a single clear idea or concept which guides and unifies the overall design.</p>
+      </div>
+      <div class="principle">
+        <h3>The Charrette</h3>
+        <p>An interactive design process wherein the client, architect, contractor, engineer and other parties (e.g. neighbors, users) are active participants. Used to generate a range of ideas and reach a consensus, the Charrette can quickly confirm not only design direction but key issues such as goals, needs, schedule and budget.</p>
+      </div>
+      <div class="principle">
+        <h3>Green design</h3>
+        <p>Green materials, energy-saving heating and cooling systems, super insulation and construction waste reduction. More importantly, approaching the overall design with proper building orientation, massing and size. We believe this is the foundation for green design.</p>
+      </div>
+      <div class="principle">
+        <h3>Universal design</h3>
+        <p>Particularly for residential work, we study how a design may complement the changing needs of the building user. “Universal design” strives to create environments designed for people who are older, or may have physical disabilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="darkroom" data-section="photography" data-intent="curated photography teaser" data-layout="grid" data-items="8" data-media="image" data-module="collection-index" aria-labelledby="photo-h">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <h2 id="photo-h">Photography</h2>
+          <p class="darkroom__lead" data-anim>Two of Todd’s favorite places to visit are the highlands of central Mexico and the backroads of the Midwest.</p>
+        </div>
+        <a class="link-arrow" href="/photography">All collections</a>
+      </div>
+      <div class="wall" data-slot="collections" data-anim>
+        <figure class="frame span-5"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg 800w, https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_f76d34fd1ab24dbfaf2f1e5a8db31959~mv2_d_6000_4000_s_4_2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Iowa — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/iowa">Iowa</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <figure class="frame span-4"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg" srcset="https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg 800w, https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg 1600w, https://static.wixstatic.com/media/5c8b97_6c4da009f25641e79bbbd44545144174.jpg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_6c4da009f25641e79bbbd44545144174.jpg 2400w" sizes="(min-width: 900px) 32vw, 100vw" width="1600" height="1200" alt="Mexico — Places — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/mexico-places">Mexico — Places</a></span><span class="frame__kind label">Central Mexico</span></figcaption></figure>
+        <figure class="frame frame--tall span-3"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg" srcset="https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg 800w, https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg 1600w, https://static.wixstatic.com/media/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg/v1/fill/w_2400,h_3000,al_c,q_85,enc_auto/5c8b97_8acac8d2f4f24e06a8b1009522472201.jpg 2400w" sizes="(min-width: 900px) 24vw, 50vw" width="1600" height="2000" alt="Mexico — Faces — portrait photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/mexico-faces">Mexico — Faces</a></span><span class="frame__kind label">Portraits</span></figcaption></figure>
+        <figure class="frame frame--tall span-3"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg/v1/fill/w_2400,h_3000,al_c,q_85,enc_auto/5c8b97_7786ca746817428583b0aeeab431542f~mv2.jpg 2400w" sizes="(min-width: 900px) 24vw, 50vw" width="1600" height="2000" alt="Wisconsin — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/wisconsin">Wisconsin</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <figure class="frame frame--tall span-3"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_2129ee67126247b9ba455c3a3df1a22a~mv2.jpg 1600w" sizes="(min-width: 900px) 24vw, 50vw" width="1600" height="2000" alt="Minnesota — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/minnesota">Minnesota</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <figure class="frame span-6"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_b59b7ba993694c469163155ec0871055~mv2.jpg 2400w" sizes="(min-width: 900px) 48vw, 100vw" width="1600" height="1067" alt="Illinois — photograph from the collection" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/illinois">Illinois</a></span><span class="frame__kind label">Midwest</span></figcaption></figure>
+        <p class="wall__divider dim dim--start"><span>Exhibits</span></p>
+        <figure class="frame span-7"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_1600,h_1159,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_800,h_579,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_1600,h_1159,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_2048,h_1483,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg 2048w" sizes="(min-width: 900px) 56vw, 100vw" width="1600" height="1159" alt="Fields of Vision, 2024 exhibit — photograph" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/fields-of-vision-2024">Fields of Vision</a></span><span class="frame__kind label">Exhibit · 2024</span></figcaption></figure>
+        <figure class="frame span-5"><div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_7e52fc8a157748778e608c05d9618a6e~mv2.jpg 2400w" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" alt="Iowa 2022 Exhibit — photograph" loading="lazy" decoding="async"></div><figcaption><span class="frame__title"><a href="/photography/iowa-2022-exhibit">Iowa 2022 Exhibit</a></span><span class="frame__kind label">Exhibit · Decorah, Iowa</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="enquiry shell band" data-section="enquiry" data-intent="drive action" data-layout="contained" data-module="enquiry-band" aria-labelledby="enquiry-h">
+    <h2 id="enquiry-h" data-slot="heading">Please contact us</h2>
+    <div class="enquiry__body" data-anim>
+      <ul class="enquiry__lines">
+        <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+        <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+      </ul>
+      <p class="dim dim--start"><span>118 North Breese Terrace, Suite I · Madison, WI 53726-4133</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="/">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="/projects">All projects</a></li><li><a href="/residential">Residential</a></li><li><a href="/commercial">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="/photography">Collections</a></li><li><a href="/photography/fields-of-vision-2024">Fields of Vision</a></li><li><a href="/photography/iowa-2022-exhibit">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="/about">About</a></li><li><a href="/about/process">Process</a></li><li><a href="/about/todd-barnett">Todd Barnett</a></li><li><a href="/testimonials">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="/contact">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  const t = document.getElementById('ds-nav-toggle'), b = document.querySelector('.ds-nav-burger');
+  if (!t || !b) return;
+  const sync = () => b.setAttribute('aria-expanded', t.checked);
+  t.addEventListener('change', sync); sync();
+  b.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t.checked = !t.checked; sync(); } });
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (t.checked) { t.checked = false; sync(); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+<script src="lenis.min.js"></script>
+<script>
+(function () {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ── Lenis bootstrap ────────────────────────────────────────────
+  const lenis = new Lenis({ lerp: 0.1, smoothWheel: !prefersReducedMotion });
+  window.__lenis = lenis;
+  (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(performance.now());
+
+  // ── Nav scrolled state ─────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  if (nav) lenis.on('scroll', ({ scroll }) => {
+    nav.classList.toggle('scrolled', scroll > 40);
+  });
+
+  // ── Helpers ────────────────────────────────────────────────────
+  const clamp = (v, lo, hi) => v < lo ? lo : v > hi ? hi : v;
+  const easeOut3 = t => 1 - Math.pow(1 - t, 3);
+  const getDocTop = el => el.getBoundingClientRect().top + (window.__lenis ? window.__lenis.scroll : window.scrollY);
+
+  // ── Register-specific configuration ────────────────────────────
+  // `prototype --cinematic` rewrites this block per the active register.
+  const animConfig = {
+    parallax:      { translate: 10, fade: 0.20, rangeStart: 0, range: 90 },   // editorial: ≤12vh micro-parallax
+    plansParallax: { translate: 0, rangeStart: 0, range: 80 },                // no post-hero riser in editorial
+    cards:         { trigger: 1.0, range: 0.32, slide: 24, stagger: 0.18 },   // DESIGN.json title rise 24px; trigger at the viewport edge so nothing waits hidden in view
+    wordmark:      { range: 0.6, clip: 80 },
+  };
+
+  // ── data-split: pre-process letter spans ───────────────────────
+  document.querySelectorAll('[data-split]').forEach((el) => {
+    const text = el.textContent;
+    el.textContent = '';
+    text.split('').forEach((ch) => {
+      const s = document.createElement('span');
+      s.textContent = ch === ' ' ? ' ' : ch;
+      s.style.opacity = '0';
+      s.style.transform = 'translateY(60%)';
+      s.style.filter = 'blur(8px)';
+      el.appendChild(s);
+    });
+  });
+
+  // ── Register lists ─────────────────────────────────────────────
+  const animList = [];     // [data-anim] / [data-tile-anim]
+  const headWords = [];    // .display-head .word — clip-path reveals
+  const splitLetters = []; // [data-split] letters
+  let wordmarkEl = null, wordmarkTop = 0;
+
+  function measure() {
+    const postHeroEl = document.querySelector('.post-hero');
+    const savedTransform = postHeroEl ? postHeroEl.style.transform : '';
+    if (postHeroEl) postHeroEl.style.transform = '';
+
+    animList.forEach(({ el }) => { el.style.opacity = el.style.transform = el.style.willChange = ''; });
+    animList.length = 0;
+    headWords.length = 0;
+    splitLetters.length = 0;
+
+    document.querySelectorAll('[data-anim], [data-tile-anim]').forEach((el) => {
+      const parent = el.closest('.band, .ops-band, .alerts, .access, .news, .ops-section > div, .ops-tiles, .ops-alerts, .ops-mini, section');
+      let stagger = 0;
+      if (parent) {
+        const peers = parent.querySelectorAll('[data-anim], [data-tile-anim]');
+        const idx = Array.prototype.indexOf.call(peers, el);
+        stagger = (idx % 8) * animConfig.cards.stagger;
+      }
+      el.style.opacity = '0';
+      el.style.transform = el.hasAttribute('data-tile-anim')
+        ? `translateY(28px) rotateX(8deg)`
+        : `translateY(${animConfig.cards.slide}px)`;
+      el.style.willChange = 'opacity, transform';
+      animList.push({ el, triggerTop: getDocTop(el), staggerDelay: stagger });
+    });
+
+    // Display-head word clip-path reveals (kinetic-display register)
+    document.querySelectorAll('.display-head, .terminals-band__head h2').forEach((head) => {
+      const words = head.querySelectorAll('.word');
+      const top = getDocTop(head);
+      words.forEach((w, i) => {
+        w.style.clipPath = 'inset(0 100% 0 0)';
+        w.style.transform = 'translateY(110%)';
+        w.style.willChange = 'clip-path, transform';
+        headWords.push({ el: w, triggerTop: top, staggerDelay: i * 0.15 });
+      });
+    });
+
+    // [data-split] letter list
+    document.querySelectorAll('[data-split]').forEach((el) => {
+      const top = getDocTop(el);
+      el.querySelectorAll('span').forEach((s, i) => {
+        splitLetters.push({ el: s, triggerTop: top, staggerDelay: i * 0.05 });
+      });
+    });
+
+    // Footer wordmark wipe-up
+    wordmarkEl = document.querySelector('.site-footer__wordmark');
+    if (wordmarkEl) {
+      wordmarkTop = getDocTop(wordmarkEl);
+      wordmarkEl.style.clipPath = `inset(${animConfig.wordmark.clip}% 0 0 0)`;
+      wordmarkEl.style.willChange = 'clip-path';
+    }
+
+    if (postHeroEl) postHeroEl.style.transform = savedTransform;
+  }
+
+  // ── [data-countup]: IO-triggered numeric tween ─────────────────
+  const countSeen = new WeakSet();
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting || countSeen.has(entry.target)) return;
+      countSeen.add(entry.target);
+      const target = +entry.target.getAttribute('data-countup');
+      const duration = target > 20 ? 1400 : target > 5 ? 900 : 600;
+      const start = performance.now();
+      (function step(now) {
+        const t = clamp((now - start) / duration, 0, 1);
+        entry.target.textContent = String(Math.round(easeOut3(t) * target));
+        if (t < 1) requestAnimationFrame(step);
+      })(performance.now());
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-countup]').forEach((el) => countObserver.observe(el));
+
+  // ── [data-flip]: IO-triggered split-flap digit randomization ───
+  const flipObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting || entry.target.dataset.flipped === '1') return;
+      entry.target.dataset.flipped = '1';
+      const target = +entry.target.getAttribute('data-flip');
+      const total = 8 + Math.floor(Math.random() * 4);
+      let i = 0;
+      (function flap() {
+        if (i >= total) { entry.target.textContent = String(target); return; }
+        entry.target.textContent = String(Math.floor(Math.random() * 10));
+        i++;
+        setTimeout(flap, 60);
+      })();
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-flip]').forEach((el) => flipObserver.observe(el));
+
+  // ── [data-fill]: IO-triggered bar fill ─────────────────────────
+  const fillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting || entry.target.dataset.filled === '1') return;
+      entry.target.dataset.filled = '1';
+      const pct = +entry.target.getAttribute('data-fill');
+      setTimeout(() => { entry.target.style.width = pct + '%'; }, 120);
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-fill]').forEach((el) => fillObserver.observe(el));
+
+  // ── Live refresh sweep (live-systems register) ─────────────────
+  const sweepEl = document.querySelector('.live-sweep');
+  if (sweepEl && !prefersReducedMotion) {
+    setInterval(() => {
+      sweepEl.classList.add('sweep');
+      setTimeout(() => sweepEl.classList.remove('sweep'), 1700);
+    }, 5400);
+  }
+
+  // ── rAF loop: scroll-progress reveals + parallax ───────────────
+  const heroMarqueeEl = document.querySelector('.hero-marquee');
+  const postHeroEl = document.querySelector('.post-hero');
+  let _lastMB = null;
+
+  (function tick() {
+    if (prefersReducedMotion) { requestAnimationFrame(tick); return; }
+    const sY = window.__lenis ? window.__lenis.scroll : window.scrollY;
+    const vh = window.innerHeight;
+    const isDesktop = window.innerWidth > 767;
+
+    // Hero parallax
+    if (heroMarqueeEl) {
+      const pp = animConfig.parallax;
+      if (isDesktop) {
+        const rs = pp.rangeStart / 100 * vh;
+        const re = pp.range / 100 * vh;
+        const p = easeOut3(clamp((sY - rs) / (re - rs), 0, 1));
+        heroMarqueeEl.style.transform = `translateY(${p * -pp.translate}vh)`;
+        document.documentElement.style.setProperty('--parallax-progress', p);
+      } else {
+        heroMarqueeEl.style.transform = '';
+        document.documentElement.style.setProperty('--parallax-progress', 0);
+      }
+    }
+
+    // Post-hero rises faster
+    let postHeroOffsetPx = 0;
+    if (postHeroEl) {
+      const pp2 = animConfig.plansParallax;
+      if (isDesktop) {
+        const rs = pp2.rangeStart / 100 * vh;
+        const re = pp2.range / 100 * vh;
+        const p = easeOut3(clamp((sY - rs) / (re - rs), 0, 1));
+        postHeroOffsetPx = p * -pp2.translate / 100 * vh;
+        postHeroEl.style.transform = `translateY(${p * -pp2.translate}vh)`;
+        const newMB = `${p * -pp2.translate}vh`;
+        if (newMB !== _lastMB) { postHeroEl.style.marginBottom = newMB; _lastMB = newMB; }
+      } else {
+        postHeroEl.style.transform = '';
+        if (_lastMB !== '') { postHeroEl.style.marginBottom = ''; _lastMB = ''; }
+      }
+    }
+
+    // Scroll-progress entrances
+    for (let i = 0; i < animList.length; i++) {
+      const item = animList[i];
+      const { trigger, range, slide } = animConfig.cards;
+      const raw = (sY + vh * trigger - (item.triggerTop + postHeroOffsetPx)) / (vh * range);
+      const p = easeOut3(clamp(raw - item.staggerDelay, 0, 1));
+      item.el.style.opacity = String(p);
+      if (item.el.hasAttribute('data-tile-anim')) {
+        item.el.style.transform = `translateY(${(1 - p) * 28}px) rotateX(${(1 - p) * 8}deg)`;
+      } else {
+        item.el.style.transform = `translateY(${(1 - p) * slide}px)`;
+      }
+    }
+
+    // Display-head clip-path word reveals
+    for (let i = 0; i < headWords.length; i++) {
+      const item = headWords[i];
+      const raw = (sY + vh * 0.85 - (item.triggerTop + postHeroOffsetPx)) / (vh * 0.30);
+      const p = easeOut3(clamp(raw - item.staggerDelay, 0, 1));
+      item.el.style.clipPath = `inset(0 ${(1 - p) * 100}% 0 0)`;
+      item.el.style.transform = `translateY(${(1 - p) * 110}%)`;
+    }
+
+    // [data-split] letter reveals
+    for (let i = 0; i < splitLetters.length; i++) {
+      const item = splitLetters[i];
+      const raw = (sY + vh * 0.85 - (item.triggerTop + postHeroOffsetPx)) / (vh * 0.35);
+      const p = easeOut3(clamp(raw - item.staggerDelay, 0, 1));
+      item.el.style.opacity = String(p);
+      item.el.style.transform = `translateY(${(1 - p) * 60}%)`;
+      item.el.style.filter = `blur(${(1 - p) * 8}px)`;
+    }
+
+    // Footer wordmark wipe-up
+    if (wordmarkEl) {
+      const adjustedTop = wordmarkTop + postHeroOffsetPx;
+      const wP = easeOut3(clamp((sY + vh - adjustedTop) / (vh * animConfig.wordmark.range), 0, 1));
+      wordmarkEl.style.clipPath = `inset(${(1 - wP) * animConfig.wordmark.clip}% 0 0 0)`;
+    }
+
+    requestAnimationFrame(tick);
+  })();
+
+  measure();
+  window.addEventListener('load',   () => requestAnimationFrame(measure), { once: true });
+  window.addEventListener('resize', measure, { passive: true });
+
+  // ── Reduced-motion: force final states ─────────────────────────
+  if (prefersReducedMotion) {
+    document.querySelectorAll('[data-anim], [data-tile-anim], [data-split] span').forEach((el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.filter = 'none';
+      el.style.clipPath = 'none';
+    });
+    document.querySelectorAll('.word').forEach((el) => {
+      el.style.clipPath = 'none';
+      el.style.transform = 'none';
+    });
+    document.querySelectorAll('[data-countup]').forEach((el) => { el.textContent = el.getAttribute('data-countup'); });
+    document.querySelectorAll('[data-flip]').forEach((el) => { el.textContent = el.getAttribute('data-flip'); });
+    document.querySelectorAll('[data-fill]').forEach((el) => { el.style.width = el.getAttribute('data-fill') + '%'; });
+  }
+})();
+</script>
+</body>
+</html>

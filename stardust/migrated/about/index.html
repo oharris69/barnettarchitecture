@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-17T20:16:59Z
+  page:             About
+  slug:             about
+  pagePath:         migrated/about/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/.work/migrate/final/about.html
+  sourceCurrent:    stardust/current/pages/about.json
+  againstDirection: stardust/.work/migrate/direction.md (Active 2026-11-17T17:20:00Z)
+  designMd:         DESIGN.md (sha: c8173d8ac4dd)
+  designJson:       DESIGN.json (sha: 624a046b06ec)
+  canonShas:        header:66b29853a09b footer:1212b39c68e1 css:ed4159ae9a2e
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.32.1
+-->
+<meta charset="UTF-8">
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* Error */        --color-error: #8a1f11;            /* form validation only (7.6:1 on sage, 9.2:1 on print white) */
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+}
+</style>
+<link rel="stylesheet" href="../assets/canon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About — Architect, Madison, WI | Barnett Architecture</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../assets/site.webmanifest">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="Barnett Architecture is a full-service, design-focused architectural practice in Madison, WI, established in 2007. Projects are meant to “fit” the client.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/about">
+<meta name="theme-color" content="#121413">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/about">
+<meta property="og:title" content="About — Architect, Madison, WI">
+<meta property="og:description" content="Barnett Architecture is a full-service, design-focused architectural practice in Madison, WI, established in 2007. Projects are meant to “fit” the client.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="About Barnett Architecture — photograph 1 of 1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — Architect, Madison, WI">
+<meta name="twitter:description" content="Barnett Architecture is a full-service, design-focused architectural practice in Madison, WI, established in 2007. Projects are meant to “fit” the client.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg">
+<meta name="twitter:image:alt" content="About Barnett Architecture — photograph 1 of 1">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "ProfessionalService",
+    "LocalBusiness"
+   ],
+   "@id": "https://www.barnettarchitecture.com/#organization",
+   "name": "Barnett Architecture LLC",
+   "alternateName": "Barnett Architecture",
+   "url": "https://www.barnettarchitecture.com/",
+   "foundingDate": "2007",
+   "founder": {
+    "@type": "Person",
+    "name": "Todd Barnett",
+    "jobTitle": "Architect",
+    "url": "https://www.barnettarchitecture.com/about/todd-barnett"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "118 North Breese Terrace, Suite I",
+    "addressLocality": "Madison",
+    "addressRegion": "WI",
+    "postalCode": "53726-4133",
+    "addressCountry": "US"
+   },
+   "telephone": "+1-608-233-4538",
+   "email": "todd@barnettarchitecture.com",
+   "areaServed": [
+    "Madison, WI",
+    "Wisconsin",
+    "Illinois"
+   ],
+   "knowsAbout": [
+    "residential architecture",
+    "additions and renovations",
+    "green design",
+    "universal design",
+    "charrette design process"
+   ]
+  },
+  {
+   "@type": "AboutPage",
+   "@id": "https://www.barnettarchitecture.com/about#webpage",
+   "url": "https://www.barnettarchitecture.com/about",
+   "name": "About — Architect, Madison, WI | Barnett Architecture",
+   "isPartOf": {
+    "@id": "https://www.barnettarchitecture.com/#website"
+   },
+   "about": {
+    "@id": "https://www.barnettarchitecture.com/#organization"
+   },
+   "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg",
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.barnettarchitecture.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "About",
+     "item": "https://www.barnettarchitecture.com/about"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+/* === Page-local === */
+.hero--about .hero__media img { object-position: 50% 36%; }
+</style>
+</head>
+<body data-template="static" data-hero="media">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="../index.html" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../photography/index.html">Photography</a></li>
+        <li class="ds-nav__group is-current">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="../about/index.html" aria-current="page">About</a></li>
+              <li><a href="../about/process/index.html">Process</a></li>
+              <li><a href="../about/todd-barnett/index.html">Todd Barnett</a></li>
+              <li><a href="../testimonials/index.html">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" data-template="about">
+  <section class="hero hero--about" data-section="hero" data-intent="say who, where, what — the practice" data-layout="full-bleed" data-media="image" data-module="project-hero">
+    <div class="hero__media" data-slot="image"><img src="https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_1600,h_2161,al_c,q_85,enc_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg" srcset="https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_800,h_1080,al_c,q_85,enc_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg 800w, https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_1600,h_2161,al_c,q_85,enc_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg 1600w, https://static.wixstatic.com/media/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg/v1/fill/w_2205,h_2978,al_c,q_85,enc_auto/5c8b97_6c00a69817f94b949808fb420ae2d345.jpg 2205w" sizes="100vw" width="1600" height="2161" alt="About Barnett Architecture — photograph 1 of 1" loading="eager" fetchpriority="high" decoding="async"></div>
+    <div class="hero__content shell">
+      <h1 class="hero__title" data-slot="title">
+        <span class="hero__thesis">No house style</span><span class="visually-hidden"> — </span>
+        <span class="hero__who">About Barnett Architecture, a full-service, design-focused architectural practice in Madison, Wisconsin</span>
+      </h1>
+      <p class="hero__caption dim dim--stack" data-slot="facts"><span>Madison, WI · Est. 2007</span></p>
+    </div>
+  </section>
+
+  <section class="prose shell band" data-section="practice" data-intent="who the practice is (captured About copy)" data-layout="side-rail" aria-labelledby="practice-h">
+    <div class="prose__rail">
+      <h2 id="practice-h">The practice</h2>
+      <p class="dim dim--start"><span>Full-service · Design-focused</span></p>
+    </div>
+    <div class="prose__body">
+      <p class="prose__lead">Barnett Architecture is a full-service, design-focused architectural practice which was established in 2007. Our philosophy is straightforward: projects are meant to “fit” the client, not serve as a pedestal for the architect.</p>
+      <p>We do not employ a distinct architectural style but rather develop one with the client that reflects and respects the client, goals, site, budget and place in the community.</p>
+      <p>Although stylistic examples range from traditional to modern, all projects strive to create places that are well-built, facilitate their intended use and raise the spirit.</p>
+    </div>
+  </section>
+
+  <section class="principles shell band" data-section="principles" data-intent="explain the practice" data-layout="grid" data-items="4" data-module="principles" aria-labelledby="principles-h">
+    <div class="principles__head">
+      <h2 id="principles-h">How we work</h2>
+      <p class="principles__links"><a class="link-arrow" href="../about/process/index.html">The design process</a><a class="link-arrow" href="../about/todd-barnett/index.html">Todd Barnett, Architect</a></p>
+    </div>
+    <div class="principles__sheet" data-slot="items">
+      <div class="principle">
+        <h3>One clear idea</h3>
+        <p>We seek to create projects informed by a single clear idea or concept which guide and unify the overall design.</p>
+      </div>
+      <div class="principle">
+        <h3>The Charrette</h3>
+        <p>As part of a collaborative approach, we employ the Charrette: an interactive design process wherein the client, architect, contractor, engineer and other parties (e.g. neighbors, users) are active participants. The design team strives to avoid preconceived notions and invites all to share what they believe the project should or should not be. Used to generate a range of ideas and reach a consensus, the Charrette can quickly confirm not only design direction but key issues such as goals, needs, schedule and budget.</p>
+      </div>
+      <div class="principle">
+        <h3>Green design</h3>
+        <p>We believe in green design. This includes the use of green materials, energy-saving heating and cooling systems, super insulation and construction waste reduction. More importantly, it also includes approaching the overall design with proper building orientation, massing and size. We believe this is the foundation for green design. Green design experience extends beyond the mainstream to include solar hot water and photovoltaic systems, radiant heating and cooling, wind turbines and green roofs.</p>
+      </div>
+      <div class="principle">
+        <h3>Universal design</h3>
+        <p>Our practice, particularly for residential, embraces “universal design” and studies how a design may complement the changing needs of the building user. “Universal design” strives to create environments designed for people who are older, or may have physical disabilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services shell band" data-section="services" data-intent="scope of services" data-layout="side-rail" aria-labelledby="services-h">
+    <div class="prose__rail"><h2 id="services-h">Services</h2></div>
+    <div class="prose__body">
+      <p class="prose__lead">Services range from hourly consultations to the full architectural process.</p>
+      <p>In the latter, projects are taken from programming and concept design to full building plans and construction administration.</p>
+      <a class="link-arrow" href="../about/process/index.html">How each phase works</a>
+    </div>
+    <ol class="chain" aria-label="The full architectural process">
+      <li><span class="chain__label">Programming</span></li>
+      <li><span class="chain__label">Concept design</span></li>
+      <li><span class="chain__label">Full building plans</span></li>
+      <li><span class="chain__label">Construction administration</span></li>
+    </ol>
+  </section>
+
+  <section class="schedule schedule--text shell band" data-section="practice-index" data-intent="lead on to Process, Todd Barnett, Testimonials" data-layout="stack" data-items="3" aria-labelledby="more-h">
+    <div class="section-head"><h2 id="more-h">More about the practice</h2></div>
+    <ul class="schedule__list">
+      <li class="schedule__row">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../about/process/index.html">Process</a></h3></div>
+        <p class="schedule__note">Pre-Design, Schematic Design, Design Development, Construction Documents, Construction Contract Bidding or Negotiation, and Construction Administration — what happens in each phase, and what it produces.</p>
+      </li>
+      <li class="schedule__row">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../about/todd-barnett/index.html">Todd Barnett, Architect</a></h3></div>
+        <p class="schedule__note">Todd Barnett, an award-winning architect with over thirty years of experience, has led new construction, addition and renovation projects for library, religious, educational, multifamily housing, health care and private home design work.</p>
+      </li>
+      <li class="schedule__row">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../testimonials/index.html">Testimonials</a></h3><p class="dim dim--stack"><span>66 testimonials · 1990–present</span></p></div>
+        <p class="schedule__note">“I can enthusiastically recommend Todd and Barnett Architecture for your next project.” — T.S., Ridgewood Pool</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="enquiry shell band" data-section="enquiry" data-intent="drive action" data-layout="contained" data-module="enquiry-band" aria-labelledby="enquiry-h">
+    <h2 id="enquiry-h" data-slot="heading">Please contact us</h2>
+    <div class="enquiry__body">
+      <ul class="enquiry__lines">
+        <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+        <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+      </ul>
+      <p class="dim dim--start"><span>118 North Breese Terrace, Suite I · Madison, WI 53726-4133</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="../index.html">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="../projects/index.html">All projects</a></li><li><a href="../residential/index.html">Residential</a></li><li><a href="../commercial/index.html">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="../photography/index.html">Collections</a></li><li><a href="../photography/fields-of-vision-2024/index.html">Fields of Vision</a></li><li><a href="../photography/iowa-2022-exhibit/index.html">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="../about/index.html">About</a></li><li><a href="../about/process/index.html">Process</a></li><li><a href="../about/todd-barnett/index.html">Todd Barnett</a></li><li><a href="../testimonials/index.html">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="../contact/index.html">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+
+</body>
+</html>

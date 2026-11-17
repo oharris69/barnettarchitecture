@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/about/process",
+  "path": "about/process",
+  "timestamp": "2026-11-17T21:01:09.713Z",
+  "title": "Process — Architect, Madison, WI | Barnett Architecture",
+  "template": "practice",
+  "blocks": [
+    "hero",
+    "process-steps",
+    "faq",
+    "fragment"
+  ],
+  "importScript": "2a8a251a3a38"
+}

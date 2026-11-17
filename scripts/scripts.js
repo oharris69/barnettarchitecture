@@ -10,7 +10,11 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  getMetadata,
+  toClassName,
+  toCamelCase,
 } from './aem.js';
+import { sitePath, localizeLinks, textOf } from './utils.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -36,6 +40,66 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
     createScript: (input) => input,
   });
 }
+
+const SITE = 'https://www.barnettarchitecture.com';
+
+/**
+ * Organization constant — DESIGN.json extensions.metadata.organization (+ stable @id).
+ */
+const ORGANIZATION = {
+  '@type': ['ProfessionalService', 'LocalBusiness'],
+  '@id': `${SITE}/#organization`,
+  name: 'Barnett Architecture LLC',
+  alternateName: 'Barnett Architecture',
+  url: `${SITE}/`,
+  description: 'A full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Services range from hourly consultations to the full architectural process.',
+  image: 'https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg',
+  foundingDate: '2007',
+  founder: {
+    '@type': 'Person', name: 'Todd Barnett', jobTitle: 'Architect', url: `${SITE}/about/todd-barnett`,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '118 North Breese Terrace, Suite I',
+    addressLocality: 'Madison',
+    addressRegion: 'WI',
+    postalCode: '53726-4133',
+    addressCountry: 'US',
+  },
+  telephone: '+1-608-233-4538',
+  email: 'todd@barnettarchitecture.com',
+  areaServed: [
+    'Madison', 'Middleton', 'Fitchburg', 'Sun Prairie', 'Verona', 'Waunakee', 'Monona',
+    'Maple Bluff', 'McFarland', 'Cottage Grove', 'Oregon', 'Windsor', 'Belleville', 'Brooklyn',
+  ].map((name) => ({ '@type': 'City', name: `${name}, WI` }))
+    .concat([{ '@type': 'State', name: 'Wisconsin' }, { '@type': 'State', name: 'Illinois' }]),
+  knowsAbout: [
+    'residential architecture',
+    'custom homes',
+    'additions and renovations',
+    'kitchen and bathroom remodeling',
+    'accessory dwelling units',
+    'historic building conservation',
+    'green design',
+    'energy-efficient homes',
+    'universal design',
+    'charrette design process',
+  ],
+  award: ['Best of Houzz 2014 — Service', 'Best of Houzz 2016 — Service', 'Best of Houzz 2018 — Service'],
+  sameAs: ['https://www.houzz.com/professionals/architects-and-building-designers/barnett-architecture-llc-pfvwus-pf~914672624'],
+};
+
+const CRUMB_NAMES = {
+  projects: 'Projects',
+  residential: 'Residential',
+  commercial: 'Commercial, community & recreation',
+  photography: 'Photography',
+  about: 'About',
+  process: 'Process',
+  'todd-barnett': 'Todd Barnett',
+  testimonials: 'Testimonials',
+  contact: 'Contact',
+};
 
 /**
  * load fonts.css and set a session storage flag
@@ -75,6 +139,7 @@ function buildWidgetAutoBlocks(main) {
 
 /**
  * Builds all synthetic blocks in a container element.
+ * Only fragment and widget links are auto-blocked: authored blocks are never rewritten.
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
@@ -101,6 +166,27 @@ function buildAutoBlocks(main) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
   }
+}
+
+/**
+ * section-metadata is rendered server-side on aem.page/live; the local html-folder preview
+ * leaves the table in place. Apply it here (Style → classes, other keys → data-*), then drop it.
+ * @param {Element} main
+ */
+function decorateSectionMetadata(main) {
+  main.querySelectorAll(':scope > div > div.section-metadata').forEach((meta) => {
+    const section = meta.parentElement;
+    [...meta.children].forEach((row) => {
+      const [k, v] = [...row.children].map((c) => textOf(c));
+      if (!k) return;
+      const key = toClassName(k);
+      if (key === 'style') {
+        (v || '').split(',').map((s) => toClassName(s)).filter(Boolean)
+          .forEach((cls) => section.classList.add(cls));
+      } else if (v) section.dataset[toCamelCase(key)] = v;
+    });
+    meta.remove();
+  });
 }
 
 /**
@@ -143,16 +229,372 @@ function decorateButtons(main) {
 }
 
 /**
+ * Editorial prose conventions on default content (project-owned, like decorateButtons):
+ * - an H1 with a line break: thesis + who-line ("Projects meant to fit the client<br>Barnett …")
+ * - a short "a · b" paragraph is a dimension-string label line
+ * - a paragraph made only of links is a link row (→ arrows); before a project index, a primary CTA
+ * - a list of bare links after a block (or of ?/# links) is a row of chips
+ * - a paragraph holding several pictures is a notes wall
+ * @param {Element} main
+ */
+function decorateProse(main) {
+  main.querySelectorAll('h1').forEach((h1) => {
+    const br = h1.querySelector(':scope > br');
+    if (!br || h1.querySelector('.h1-who')) return;
+    const thesis = document.createElement('span');
+    thesis.className = 'h1-thesis';
+    const who = document.createElement('span');
+    who.className = 'h1-who';
+    let node = h1.firstChild;
+    while (node && node !== br) {
+      const next = node.nextSibling;
+      thesis.append(node);
+      node = next;
+    }
+    node = br.nextSibling;
+    while (node) {
+      const next = node.nextSibling;
+      who.append(node);
+      node = next;
+    }
+    const sep = document.createElement('span');
+    sep.className = 'visually-hidden';
+    sep.textContent = ' — ';
+    br.replaceWith(thesis, sep, who);
+    if (!textOf(who)) who.remove();
+  });
+
+  const wrappers = main.querySelectorAll('.default-content-wrapper');
+  wrappers.forEach((wrapper) => {
+    const nextBlock = wrapper.nextElementSibling;
+    const prevBlock = wrapper.previousElementSibling;
+    wrapper.querySelectorAll(':scope > p, :scope > ul > li > p').forEach((p) => {
+      if (p.classList.contains('button-wrapper') || p.querySelector('picture, img')) return;
+      const t = textOf(p);
+      const links = [...p.querySelectorAll(':scope > a')];
+      if (links.length && !textOf(p).replace(links.map((a) => textOf(a)).join(''), '').replace(/[\s·|]/g, '')) {
+        p.classList.add('link-row');
+        const primary = links.length === 1 && nextBlock && nextBlock.classList.contains('project-index-wrapper');
+        links.forEach((a) => {
+          if (/^(mailto|tel):/.test(a.getAttribute('href') || '')) return;
+          if (primary) {
+            p.classList.add('button-wrapper');
+            a.classList.add('button', 'primary');
+          } else a.classList.add('link-arrow');
+        });
+        return;
+      }
+      if (t.length <= 64 && /\s·\s/.test(t) && !/[.!?]$/.test(t)) {
+        const span = document.createElement('span');
+        span.append(...p.childNodes);
+        p.append(span);
+        p.classList.add('dim', 'dim-start');
+      }
+    });
+
+    wrapper.querySelectorAll(':scope > ul').forEach((ul) => {
+      const items = [...ul.children];
+      const bare = items.length && items.every((li) => {
+        const a = li.querySelector(':scope > a');
+        return a && li.children.length === 1 && textOf(li) === textOf(a);
+      });
+      if (!bare) return;
+      const hrefs = items.map((li) => li.querySelector('a').getAttribute('href') || '');
+      const afterBlock = prevBlock && !prevBlock.classList.contains('default-content-wrapper') && ul === wrapper.firstElementChild;
+      if (!afterBlock && !hrefs.every((h) => /[?#]/.test(h))) return;
+      if (hrefs.every((h) => /^(mailto|tel):/.test(h))) return;
+      ul.classList.add('facets');
+      items.forEach((li) => li.querySelector('a').classList.add('facet-chip'));
+    });
+
+    wrapper.querySelectorAll(':scope > p').forEach((p) => {
+      if (p.querySelectorAll('picture, img:not(picture img)').length > 1) p.classList.add('notes');
+    });
+  });
+}
+
+/**
+ * intro section style: split the default content into a side rail (leading headings + their label
+ * lines) and a reading body. Nodes are moved, never rebuilt.
+ * @param {Element} main
+ */
+function decorateIntros(main) {
+  main.querySelectorAll(':scope > .section.intro > .default-content-wrapper').forEach((wrapper) => {
+    if (wrapper.querySelector(':scope > .intro-rail')) return;
+    const kids = [...wrapper.children];
+    const rail = document.createElement('div');
+    rail.className = 'intro-rail';
+    const body = document.createElement('div');
+    body.className = 'intro-body';
+    let i = 0;
+    while (i < kids.length && /^H[1-6]$/.test(kids[i].tagName)) {
+      rail.append(kids[i]);
+      i += 1;
+    }
+    while (i < kids.length && kids[i].classList.contains('dim')) {
+      rail.append(kids[i]);
+      i += 1;
+    }
+    const rest = kids.slice(i);
+    // a trailing ordered list of short stages becomes a full-width chain dimension
+    const last = rest[rest.length - 1];
+    let chain = null;
+    if (last && last.tagName === 'OL' && [...last.children].every((li) => textOf(li).length <= 40)) {
+      chain = last;
+      rest.pop();
+      chain.classList.add('chain');
+    }
+    body.append(...rest);
+    wrapper.append(rail, body);
+    if (chain) wrapper.append(chain);
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
+  decorateSectionMetadata(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateProse(main);
+  decorateIntros(main);
+  localizeLinks(main);
+}
+
+/* ---------------- JSON-LD ---------------- */
+
+const abs = (src) => {
+  try {
+    return new URL(src, window.location).href;
+  } catch (e) {
+    return src;
+  }
+};
+
+const pageUrl = () => `${SITE}${sitePath() === '/' ? '/' : sitePath()}`;
+
+function pageName() {
+  const h1 = document.querySelector('main h1');
+  if (h1) {
+    // the thesis only: text before the first line break (or the .h1-thesis span once decorated)
+    const thesis = h1.querySelector('.h1-thesis');
+    let t = thesis ? textOf(thesis) : '';
+    if (!t) {
+      const parts = [];
+      [...h1.childNodes].some((n) => {
+        if (n.nodeName === 'BR') return true;
+        parts.push(n.textContent);
+        return false;
+      });
+      t = parts.join('').replace(/\s+/g, ' ').trim();
+    }
+    if (t) return t;
+  }
+  return document.title.replace(/\s*\|\s*Barnett Architecture\s*$/, '').trim();
+}
+
+function breadcrumbList() {
+  const parts = sitePath().split('/').filter(Boolean);
+  const items = [{
+    '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/`,
+  }];
+  parts.forEach((seg, i) => {
+    const last = i === parts.length - 1;
+    const name = last ? pageName() : (CRUMB_NAMES[seg] || seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()));
+    items.push({
+      '@type': 'ListItem', position: i + 2, name, item: `${SITE}/${parts.slice(0, i + 1).join('/')}`,
+    });
+  });
+  return { '@type': 'BreadcrumbList', '@id': `${pageUrl()}#breadcrumb`, itemListElement: items };
+}
+
+/** raw block rows (read before the blocks decorate) */
+const rawRows = (block) => [...block.children].map((r) => [...r.children]);
+
+function imagesIn(selector) {
+  return [...document.querySelectorAll(`main ${selector} img`)]
+    .map((img) => ({ url: abs(img.getAttribute('src')), alt: img.getAttribute('alt') || '' }))
+    .filter((i) => i.url);
+}
+
+function itemList(block) {
+  if (!block) return null;
+  const items = rawRows(block).map((cells) => {
+    const a = cells.map((c) => c.querySelector('a')).find(Boolean);
+    if (!a) return null;
+    const href = a.getAttribute('href') || '';
+    const path = href.replace(/^https?:\/\/[^/]+/, '').replace(/^\/content(?=\/)/, '').replace(/#.*$/, '');
+    return { name: textOf(a), url: `${SITE}${path}` };
+  }).filter(Boolean);
+  if (!items.length) return null;
+  return {
+    '@type': 'ItemList',
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem', position: i + 1, name: it.name, url: it.url,
+    })),
+  };
+}
+
+function buildJsonLd(main) {
+  const template = toClassName(getMetadata('template'));
+  const url = pageUrl();
+  const name = pageName();
+  const description = getMetadata('description');
+  const graph = [
+    ORGANIZATION,
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE}/#website`,
+      url: `${SITE}/`,
+      name: 'Barnett Architecture',
+      inLanguage: 'en-US',
+      publisher: { '@id': ORGANIZATION['@id'] },
+    },
+  ];
+  if (sitePath() !== '/') graph.push(breadcrumbList());
+
+  const split = (k) => (getMetadata(k) || '').split(',').map((s) => s.trim()).filter(Boolean);
+
+  if (template === 'project') {
+    const images = imagesIn('.hero').concat(imagesIn('.gallery'));
+    const work = {
+      '@type': 'CreativeWork',
+      '@id': `${url}#project`,
+      name,
+      url,
+      description,
+      creator: { '@id': ORGANIZATION['@id'] },
+      isPartOf: { '@id': `${SITE}/#website` },
+      image: [...new Set(images.map((i) => i.url))],
+    };
+    const sector = split('sector');
+    const type = split('type');
+    const approach = split('approach');
+    const location = split('location').join(', ');
+    if (sector.length) work.genre = sector.join(', ');
+    if (type.length || approach.length) work.keywords = type.concat(approach).join(', ');
+    if (location) work.locationCreated = { '@type': 'Place', name: location };
+    graph.push(work);
+  } else if (template === 'gallery') {
+    const images = imagesIn('.gallery');
+    graph.push({
+      '@type': 'ImageGallery',
+      '@id': `${url}#gallery`,
+      name,
+      url,
+      description,
+      author: ORGANIZATION.founder,
+      isPartOf: { '@id': `${SITE}/#website` },
+      numberOfItems: images.length,
+      image: images.map((i) => ({
+        '@type': 'ImageObject', contentUrl: i.url, name: i.alt || name, creator: ORGANIZATION.founder,
+      })),
+    });
+  } else if (template === 'listing' || template === 'photo-hub') {
+    const list = template === 'listing'
+      ? itemList(main.querySelector('.project-index'))
+      : itemList(main.querySelector('.collection-index:not(.selected):not(.strip)'))
+        || itemList(main.querySelector('.collection-index'));
+    let items = list;
+    if (template === 'photo-hub') {
+      // grouped collections (Regions, Exhibits) are separate blocks: one list
+      const all = [...main.querySelectorAll('.collection-index:not(.selected):not(.strip)')]
+        .map(itemList).filter(Boolean).flatMap((l) => l.itemListElement);
+      if (all.length) {
+        items = {
+          '@type': 'ItemList',
+          numberOfItems: all.length,
+          itemListElement: all.map((it, i) => ({ ...it, position: i + 1 })),
+        };
+      }
+    }
+    const page = {
+      '@type': 'CollectionPage',
+      '@id': `${url}#collection`,
+      name,
+      url,
+      description,
+      isPartOf: { '@id': `${SITE}/#website` },
+      about: { '@id': ORGANIZATION['@id'] },
+    };
+    if (items) page.mainEntity = items;
+    graph.push(page);
+  } else if (template === 'contact') {
+    graph.push({
+      '@type': 'ContactPage',
+      '@id': `${url}#contact`,
+      name,
+      url,
+      description,
+      isPartOf: { '@id': `${SITE}/#website` },
+      about: { '@id': ORGANIZATION['@id'] },
+      mainEntity: { '@id': ORGANIZATION['@id'] },
+    });
+  }
+
+  const faq = main.querySelector('.faq');
+  if (faq) {
+    const qa = rawRows(faq).map((cells) => {
+      const [q, ...a] = cells.filter((c) => textOf(c));
+      if (!q || !a.length) return null;
+      return {
+        '@type': 'Question',
+        name: textOf(q),
+        acceptedAnswer: { '@type': 'Answer', text: a.map((c) => textOf(c)).join(' ') },
+      };
+    }).filter(Boolean);
+    if (qa.length) {
+      graph.push({
+        '@type': 'FAQPage', '@id': `${url}#faq`, url, mainEntity: qa,
+      });
+    }
+  }
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+  document.head.append(script);
+}
+
+/* ---------------- motion ---------------- */
+
+/**
+ * Editorial motion: one opacity reveal per section. Sections already in (or above) the viewport
+ * are never hidden; without JS or under prefers-reduced-motion nothing is touched.
+ * @param {Element} main
+ */
+function initReveal(main) {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const seen = new WeakSet();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      const s = e.target;
+      if (!seen.has(s)) {
+        seen.add(s);
+        if (e.isIntersecting || e.boundingClientRect.top < window.innerHeight) {
+          io.unobserve(s);
+          return;
+        }
+        s.classList.add('reveal');
+        return;
+      }
+      if (e.isIntersecting) {
+        s.classList.add('is-revealed');
+        io.unobserve(s);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  main.querySelectorAll(':scope > .section').forEach((s, i) => {
+    if (i > 0) io.observe(s);
+  });
 }
 
 /**
@@ -164,7 +606,18 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
+    // JSON-LD reads the authored block tables before they are decorated
+    try {
+      decorateSectionMetadata(main);
+      buildJsonLd(main);
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error('JSON-LD failed', e);
+    }
     decorateMain(main);
+    // a full-bleed hero first: the header floats transparent over it
+    const first = main.querySelector('.section .block');
+    if (first && first.classList.contains('hero')) document.body.classList.add('hero-media');
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
@@ -197,6 +650,7 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+  initReveal(main);
 }
 
 /**

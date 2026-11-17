@@ -1,0 +1,71 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "mode": "prep",
+    "writtenAt": "2026-11-17T17:20:00Z",
+    "read": ["stardust/current/pages/*.json (slots.clientType, slots.location, slots.narrative)", "stardust/current/pages/index.html (nav tree)"],
+    "synthesized": "facet assignments are INFERRED from each project's captured narrative; every assignment carries its basis quote so the owner can correct it. Years are NOT captured anywhere and are deliberately absent (no fabrication).",
+    "status": "suggested — owner review recommended"
+  },
+  "facets": {
+    "sector": { "label": "Sector", "values": { "residential": "Residential", "commercial": "Commercial", "community": "Community & Faith", "recreation": "Recreation" } },
+    "scope": { "label": "Project type", "values": { "new-home": "New home", "addition": "Addition", "renovation": "Renovation", "kitchen": "Kitchen", "outdoor": "Outdoor living", "multi-unit": "Multi-unit", "master-plan": "Master plan & study" } },
+    "location": { "label": "Location", "values": { "madison-wi": "Madison, WI", "middleton-wi": "Middleton, WI", "mequon-wi": "Mequon, WI", "wisconsin": "Wisconsin", "highland-park-il": "Highland Park, IL", "downers-grove-il": "Downers Grove, IL", "westchester-ny": "Westchester County, NY" } },
+    "theme": { "label": "Approach", "values": { "green-design": "Green design", "universal-design": "Universal design", "historic-context": "Historic context" } }
+  },
+  "projects": [
+    { "old": "/willy-street", "new": "/projects/willy-street", "title": "Willy Street", "sector": "residential", "scope": ["new-home"], "location": "madison-wi", "theme": ["historic-context"], "basis": "new single-family home … Madison's Historic Third Lake District" , "featured": true },
+    { "old": "/folded-roof", "new": "/projects/folded-roof", "title": "Folded Roof", "sector": "residential", "scope": ["addition", "renovation"], "location": "madison-wi", "theme": ["green-design"], "basis": "replacing it with an addition … improve energy performance", "featured": true },
+    { "old": "/copy-of-folded-roof-1", "new": "/projects/folded-roof-patio", "title": "Folded Roof Patio", "sector": "residential", "scope": ["outdoor"], "location": "madison-wi", "theme": [], "basis": "flat roof section off the sitting room for a covered deck" },
+    { "old": "/copy-of-folded-roof-2", "new": "/projects/potter-studio", "title": "Potter Studio +", "sector": "residential", "scope": ["addition", "renovation"], "location": "madison-wi", "theme": [], "basis": "This addition and renovation realized … a pottery studio" },
+    { "old": "/green-ribbon", "new": "/projects/green-ribbon", "title": "Green Ribbon", "sector": "residential", "scope": ["renovation"], "location": "madison-wi", "theme": [], "basis": "bought a foreclosed house … interior spaces … lacking", "featured": true },
+    { "old": "/copy-of-pond", "new": "/projects/mid-century", "title": "Mid-Century", "sector": "residential", "scope": ["renovation", "addition"], "location": "madison-wi", "theme": [], "basis": "they decided to renovate and expand" },
+    { "old": "/copy-of-micro-house-1", "new": "/projects/50s-redoux", "title": "50's Redoux", "sector": "residential", "scope": ["renovation"], "location": "madison-wi", "theme": ["universal-design"], "basis": "1950's home … built for wheelchair use" },
+    { "old": "/blank", "new": "/projects/40s-re-make", "title": "40's Re-Make", "sector": "residential", "scope": ["renovation"], "location": "madison-wi", "theme": [], "basis": "purchased a 1940s ranch requiring considerable work" },
+    { "old": "/copy-of-green-ribbon", "new": "/projects/three-gables", "title": "Three Gables", "sector": "residential", "scope": ["new-home"], "location": "madison-wi", "theme": [], "basis": "vacant parcel in an established neighborhood … specimen trees", "featured": true, "titleNote": "source title 'tHree Gables' normalised" },
+    { "old": "/copy-of-40-s-re-make", "new": "/projects/70s-re-make", "title": "70's Re-Make", "sector": "residential", "scope": ["renovation", "addition"], "location": "middleton-wi", "theme": [], "basis": "classic 1970s home … adding master bedroom" },
+    { "old": "/copy-of-folded-roof", "new": "/projects/pond-house", "title": "Pond", "sector": "residential", "scope": ["new-home"], "location": "westchester-ny", "theme": [], "basis": "This new home is situated on a scenic lot … spring-fed pond" },
+    { "old": "/stone-house", "new": "/projects/stone-and-siding", "title": "Stone and Siding", "sector": "residential", "scope": ["renovation"], "location": "mequon-wi", "theme": ["historic-context"], "basis": "their \"new\" 1873 stone house" },
+    { "old": "/box-house", "new": "/projects/push-pull", "title": "Push-Pull", "sector": "residential", "scope": ["renovation"], "location": "madison-wi", "theme": ["green-design"], "basis": "save as much of the existing house as possible … foundation … re-purposed" },
+    { "old": "/copy-of-push-pull", "new": "/projects/passive-light", "title": "Passive Light", "sector": "residential", "scope": ["new-home"], "location": "madison-wi", "theme": ["green-design"], "basis": "design which would be energy-efficient … existing home was razed", "featured": true },
+    { "old": "/channel-house", "new": "/projects/channel-house", "title": "Channel", "sector": "residential", "scope": ["renovation", "addition"], "location": "madison-wi", "theme": [], "basis": "transform their 1940s home … three major elements" },
+    { "old": "/copy-of-channel-2", "new": "/projects/tudor-extension", "title": "Tudor Extension", "sector": "residential", "scope": ["addition", "renovation"], "location": "madison-wi", "theme": [], "basis": "house fire … plan for an addition" },
+    { "old": "/copy-of-channel-1", "new": "/projects/solar-court", "title": "Solar Court", "sector": "residential", "scope": ["new-home", "master-plan"], "location": "highland-park-il", "theme": ["green-design"], "basis": "design study … new home … progressive environmental systems" },
+    { "old": "/copy-of-channel", "new": "/projects/two-flat", "title": "Two-Flat", "sector": "residential", "scope": ["multi-unit", "renovation"], "location": "madison-wi", "theme": [], "basis": "re-purpose the building as a long-term residence with income generation" },
+    { "old": "/copy-of-island-kitchen", "new": "/projects/tube", "title": "Tube", "sector": "residential", "scope": ["renovation"], "location": "madison-wi", "theme": [], "basis": "transform the flow and aesthetics of their 1940s ranch" },
+    { "old": "/copy-of-micro-house", "new": "/projects/island-kitchen", "title": "Island Kitchen", "sector": "residential", "scope": ["kitchen"], "location": "madison-wi", "theme": [], "basis": "This project reworked the previous kitchen" },
+    { "old": "/copy-of-island-kitchen-1", "new": "/projects/condo-kitchen", "title": "Condo Kitchen", "sector": "residential", "scope": ["kitchen"], "location": "madison-wi", "theme": ["historic-context"], "basis": "kitchen was self-designed and self-built … original 1928 construction" },
+    { "old": "/copy-of-channel-house", "new": "/projects/micro-house", "title": "Micro-House", "sector": "residential", "scope": ["new-home"], "location": "madison-wi", "theme": ["universal-design"], "basis": "home fit for their golden years so that limited mobility wouldn't force them to move", "scopeNote": "new-home inferred; confirm with owner" },
+    { "old": "/designcraft", "new": "/projects/designcraft", "title": "designCraft", "sector": "commercial", "scope": ["renovation"], "location": "madison-wi", "theme": [], "basis": "give their building new life; The tired vinyl siding … removed", "featured": true },
+    { "old": "/wil-mar-center", "new": "/projects/wil-mar-center", "title": "Wil-Mar Center", "sector": "community", "scope": ["renovation"], "location": "madison-wi", "theme": ["historic-context"], "basis": "constructed as a church in 1914 … Wil-Mar Neighborhood Center" },
+    { "old": "/ridgewood-swim-club", "new": "/projects/ridgewood-swim-club", "title": "Ridgewood Swim Club I", "sector": "recreation", "scope": ["master-plan"], "location": "madison-wi", "theme": [], "basis": "Ridgewood Swim Club I Study (named in Ridgewood II copy)" },
+    { "old": "/copy-of-wil-mar-center", "new": "/projects/ridgewood-swim-club-ii", "title": "Ridgewood Swim Club II", "sector": "recreation", "scope": ["renovation"], "location": "madison-wi", "theme": [], "basis": "essentially created a new facility aside from renovating one of the original vessels" },
+    { "old": "/hill-farm-swim-club", "new": "/projects/hill-farm-swim-club", "title": "Hill Farm Swim Club", "sector": "recreation", "scope": ["master-plan", "renovation"], "location": "madison-wi", "theme": ["universal-design"], "basis": "develop a master plan … replace the pool … provide accessibility", "featured": true },
+    { "old": "/meeting-house", "new": "/projects/meeting-house", "title": "Meeting House", "sector": "community", "scope": ["new-home"], "location": "downers-grove-il", "theme": [], "basis": "This Quaker Meeting House sits on the same site as their previous building", "scopeNote": "'new building' — scope value new-home reads wrong for a civic building; rendered as 'New building' label", "scopeLabelOverride": "New building" },
+    { "old": "/copy-of-meeting-house", "new": "/projects/synagogue-study", "title": "Synagogue Study", "sector": "community", "scope": ["master-plan"], "location": "wisconsin", "theme": [], "basis": "This study is for a new synagogue" }
+  ],
+  "collections": [
+    { "old": "/copy-of-iowa-2022-exhbit", "new": "/photography/fields-of-vision-2024", "title": "Fields of Vision", "kind": "exhibit", "note": "source title 'Fields of Vision 2024 Exhibit'" },
+    { "old": "/copy-of-minnesota", "new": "/photography/iowa-2022-exhibit", "title": "Iowa 2022 Exhibit", "kind": "exhibit", "note": "source typo 'Exhbit' corrected" },
+    { "old": "/copy-of-iowa", "new": "/photography/iowa", "title": "Iowa", "kind": "region" },
+    { "old": "/copy-of-iowa-color", "new": "/photography/illinois", "title": "Illinois", "kind": "region" },
+    { "old": "/copy-of-illinois", "new": "/photography/wisconsin", "title": "Wisconsin", "kind": "region" },
+    { "old": "/copy-of-mexico-places-1", "new": "/photography/minnesota", "title": "Minnesota", "kind": "region" },
+    { "old": "/mexico", "new": "/photography/mexico-places", "title": "Mexico — Places", "kind": "region" },
+    { "old": "/copy-of-mexico-places", "new": "/photography/mexico-faces", "title": "Mexico — Faces", "kind": "portrait" }
+  ],
+  "pages": [
+    { "old": "/", "new": "/", "title": "Home" },
+    { "old": null, "new": "/projects", "title": "Projects", "note": "NEW — filterable index of all 29 projects" },
+    { "old": "/residential", "new": "/residential", "title": "Residential architecture" },
+    { "old": "/commercial", "new": "/commercial", "title": "Commercial, community & recreation" },
+    { "old": "/photography", "new": "/photography", "title": "Photography" },
+    { "old": "/about", "new": "/about", "title": "About" },
+    { "old": "/process", "new": "/about/process", "title": "Process" },
+    { "old": "/team", "new": "/about/todd-barnett", "title": "Todd Barnett, Architect" },
+    { "old": "/testimonials", "new": "/testimonials", "title": "Testimonials", "note": "absorbs both era sub-pages" },
+    { "old": "/copy-of-testimonials", "new": "/testimonials#2007-present", "title": "Testimonials 2007–present", "mergedInto": "/testimonials" },
+    { "old": "/copy-of-barnett-architecture", "new": "/testimonials#1990-2006", "title": "Testimonials 1990–2006", "mergedInto": "/testimonials" },
+    { "old": "/contact", "new": "/contact", "title": "Contact" }
+  ]
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-17T20:16:54Z
+  page:             tHree Gables
+  slug:             copy-of-green-ribbon
+  pagePath:         migrated/projects/three-gables/index.html
+  renderBranch:     A'
+  template:         willy-street
+  archetypePath:    stardust/.work/migrate/final/willy-street.html
+  archetypeSha:     e13f19da29ec
+  sourceCurrent:    stardust/current/pages/copy-of-green-ribbon.json
+  againstDirection: stardust/.work/migrate/direction.md (Active 2026-11-17T17:20:00Z)
+  designMd:         DESIGN.md (sha: c8173d8ac4dd)
+  designJson:       DESIGN.json (sha: 624a046b06ec)
+  canonShas:        header:66b29853a09b footer:1212b39c68e1 css:ed4159ae9a2e
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.32.1
+-->
+<meta charset="UTF-8">
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* Error */        --color-error: #8a1f11;            /* form validation only (7.6:1 on sage, 9.2:1 on print white) */
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+}
+</style>
+<link rel="stylesheet" href="../../assets/canon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Three Gables — New home, Madison, WI | Barnett Architecture</title>
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="manifest" href="../../assets/site.webmanifest">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="Three Gables — new home, Madison, WI. Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/projects/three-gables">
+<meta name="theme-color" content="#121413">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/projects/three-gables">
+<meta property="og:title" content="Three Gables — New home, Madison, WI">
+<meta property="og:description" content="Three Gables — new home, Madison, WI. Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Three Gables — new home, Madison, WI — photograph">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Three Gables — New home, Madison, WI">
+<meta name="twitter:description" content="Three Gables — new home, Madison, WI. Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg">
+<meta name="twitter:image:alt" content="Three Gables — new home, Madison, WI — photograph">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "ProfessionalService",
+        "LocalBusiness"
+      ],
+      "name": "Barnett Architecture LLC",
+      "url": "https://www.barnettarchitecture.com/",
+      "foundingDate": "2007",
+      "founder": {
+        "@type": "Person",
+        "name": "Todd Barnett",
+        "jobTitle": "Architect"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "118 North Breese Terrace, Suite I",
+        "addressLocality": "Madison",
+        "addressRegion": "WI",
+        "postalCode": "53726-4133",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-608-233-4538",
+      "email": "todd@barnettarchitecture.com",
+      "areaServed": [
+        "Madison, WI",
+        "Wisconsin",
+        "Illinois"
+      ],
+      "knowsAbout": [
+        "residential architecture",
+        "additions and renovations",
+        "green design",
+        "universal design",
+        "charrette design process"
+      ],
+      "@id": "https://www.barnettarchitecture.com/#organization",
+      "alternateName": "Barnett Architecture"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.barnettarchitecture.com/projects/three-gables#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.barnettarchitecture.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "https://www.barnettarchitecture.com/projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Residential architecture",
+          "item": "https://www.barnettarchitecture.com/residential"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Three Gables",
+          "item": "https://www.barnettarchitecture.com/projects/three-gables"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.barnettarchitecture.com/projects/three-gables#work",
+      "name": "Three Gables",
+      "url": "https://www.barnettarchitecture.com/projects/three-gables",
+      "description": "Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.",
+      "genre": "Architecture",
+      "keywords": "Residential, New home",
+      "locationCreated": {
+        "@type": "Place",
+        "name": "Madison, WI",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "addressCountry": "US"
+        }
+      },
+      "creator": {
+        "@id": "https://www.barnettarchitecture.com/#organization"
+      },
+      "image": [
+        "https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg",
+        "https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg",
+        "https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg",
+        "https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg",
+        "https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg",
+        "https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg",
+        "https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg",
+        "https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg",
+        "https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg",
+        "https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg"
+      ]
+    },
+    {
+      "@type": "ImageGallery",
+      "@id": "https://www.barnettarchitecture.com/projects/three-gables#gallery",
+      "name": "Three Gables — photographs",
+      "url": "https://www.barnettarchitecture.com/projects/three-gables",
+      "about": {
+        "@id": "https://www.barnettarchitecture.com/projects/three-gables#work"
+      },
+      "associatedMedia": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg",
+          "name": "Three Gables — photograph 1 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg",
+          "name": "Three Gables — photograph 2 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg",
+          "name": "Three Gables — photograph 3 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg",
+          "name": "Three Gables — photograph 4 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg",
+          "name": "Three Gables — photograph 5 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg",
+          "name": "Three Gables — photograph 6 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg",
+          "name": "Three Gables — photograph 7 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg",
+          "name": "Three Gables — photograph 8 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg",
+          "name": "Three Gables — photograph 9 of 10"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg",
+          "name": "Three Gables — photograph 10 of 10"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-template="project" data-hero="media">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="../../index.html" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="../../projects/index.html" aria-current="true">Projects</a></li>
+        <li><a href="../../photography/index.html">Photography</a></li>
+        <li class="ds-nav__group">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="../../about/index.html">About</a></li>
+              <li><a href="../../about/process/index.html">Process</a></li>
+              <li><a href="../../about/todd-barnett/index.html">Todd Barnett</a></li>
+              <li><a href="../../testimonials/index.html">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="../../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" data-template="willy-street">
+  <section class="hero hero--project" data-section="hero" data-intent="show the building; name the project" data-layout="full-bleed" data-media="image" data-module="project-hero">
+    <div class="hero__media" data-slot="image"><img src="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_800,h_534,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 2400w" sizes="100vw" width="1600" height="1067" alt="Three Gables — new home, Madison, WI — photograph" loading="eager" fetchpriority="high" decoding="async"></div>
+    <div class="hero__content shell">
+      <h1 class="hero__title" data-slot="title"><span class="hero__thesis">Three Gables</span></h1>
+      <nav class="hero__caption dim dim--stack hero__crumbs" aria-label="Breadcrumb"><ol><li><a href="../../projects/index.html">Projects</a></li><li><a href="../../residential/index.html">Residential</a></li></ol></nav>
+    </div>
+  </section>
+
+  <section class="facts shell" data-section="facts" data-intent="say what, where and for whom (dimension string)" data-layout="contained" data-module="project-hero" aria-labelledby="facts-h">
+    <h2 id="facts-h" class="visually-hidden">Project facts</h2>
+    <dl class="factbar" data-slot="facts">
+        <div><dt class="label">Sector</dt><dd><a href="../../residential/index.html">Residential</a></dd></div>
+        <div><dt class="label">Project type</dt><dd><a href="../../projects/index.html?type=new-home">New home</a></dd></div>
+        <div><dt class="label">Location</dt><dd><a href="../../projects/index.html?location=madison-wi">Madison, WI</a></dd></div>
+        <div><dt class="label">Client</dt><dd>Private Residence</dd></div>
+    </dl>
+  </section>
+
+  <section class="idea shell band" data-section="big-idea" data-intent="state the project's idea, then tell its story" data-layout="asymmetric" data-module="big-idea" aria-labelledby="idea-h">
+    <h2 id="idea-h" class="visually-hidden">About the project</h2>
+    <p class="idea__lead" data-slot="lead">Th property for this commission was a rarity in Madison as it was a vacant parcel in an established neighborhood.</p>
+    <div class="idea__body" data-slot="narrative">
+        <p>Initial site challenges were 1) working with highly unusual front and rear yard zoning limitations due to unique property conditions and, 2) respecting the specimen trees identified by the owner, arborist, and landscape architect. No-build and disturbance zones were established for the trees. The design concept was based on bringing natural light to the home and affording views of the site and trees.</p>
+        <p>Living spaces are set along the south and west for the views with more utilitarian spaces set along the north and east, where views are not optimal. A corner entry is sheltered by a cantilever screen porch on the second floor. Public spaces are located at the end of the first-floor gallery/hall where the kitchen serves as the “hub.” The master bedroom and a pair of offices for the clients are upstairs. The offices are south facing and off a sitting area all having views to the trees.</p>
+        <p>The exterior is marked by simple roof forms with wide overhangs, a timeless and clean material mix of vertical board siding, trim and glass. The gray home is accented by a burnt orange entry door. The home is about the trees. The home is heated by a mix of radiant heat and forced air. An integrated water management design features future rain garden zones, a mix of guttered and un-guttered roofs and daylight piping to water the existing trees and new plantings.</p>
+    </div>
+  </section>
+
+  <section id="photographs" class="gallery band" data-section="gallery" data-intent="let the photographs carry the project" data-layout="sequence" data-items="10" data-media="image" data-module="project-gallery" aria-labelledby="gallery-h">
+    <div class="section-head shell">
+      <h2 id="gallery-h">Photographs</h2>
+      <p class="gallery__count label">10 photographs</p>
+    </div>
+    <div class="gallery__seq" data-slot="photos" data-lightbox-group>
+      <figure id="photo-1" class="plate plate--full" style="--ar: 2508 / 1672"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg" data-lb data-w="2508" data-h="1672"><img src="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_0db3f4eff2084891bbe21a99982aff55~mv2.jpg 2400w" sizes="100vw" width="1600" height="1067" alt="Three Gables — photograph 1 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">01 / 10</span></figcaption></figure>
+      <div class="plate-row shell"><figure id="photo-2" class="plate" style="--at: 1; --span: 6; --ar: 3549 / 2662"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg" style="aspect-ratio: 3549 / 2662" data-lb data-w="3549" data-h="2662"><img src="https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg" srcset="https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg 800w, https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg 1600w, https://static.wixstatic.com/media/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_dbf684deb59c41cdb19bc968a85314be~mv2.jpeg 2400w" sizes="(min-width: 1440px) 664px, (min-width: 900px) 46vw, (min-width: 600px) 50vw, 100vw" width="1600" height="1200" alt="Three Gables — photograph 2 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">02 / 10</span></figcaption></figure><figure id="photo-3" class="plate" style="--at: 7; --span: 6; --ar: 2507 / 1672"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg" style="aspect-ratio: 2507 / 1672" data-lb data-w="2507" data-h="1672"><img src="https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_800,h_534,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_de6819aef8cf42ce93b0a2816a4c3958~mv2.jpg 2400w" sizes="(min-width: 1440px) 664px, (min-width: 900px) 46vw, (min-width: 600px) 50vw, 100vw" width="1600" height="1067" alt="Three Gables — photograph 3 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">03 / 10</span></figcaption></figure></div>
+      <figure id="photo-4" class="plate plate--full" style="--ar: 4032 / 3024"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg" data-lb data-w="4032" data-h="3024"><img src="https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg" srcset="https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg 800w, https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg 1600w, https://static.wixstatic.com/media/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_1c7bbf7f6de74167b52af128c1f2b122~mv2.jpeg 2400w" sizes="100vw" width="1600" height="1200" alt="Three Gables — photograph 4 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">04 / 10</span></figcaption></figure>
+      <div class="plate-row shell"><figure id="photo-5" class="plate" style="--at: 1; --span: 6; --ar: 3359 / 2519"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg" style="aspect-ratio: 3359 / 2519" data-lb data-w="3359" data-h="2519"><img src="https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg" srcset="https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg 800w, https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg 1600w, https://static.wixstatic.com/media/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_88fbc11b227e412982c93202db3228d3~mv2.jpeg 2400w" sizes="(min-width: 1440px) 664px, (min-width: 900px) 46vw, (min-width: 600px) 50vw, 100vw" width="1600" height="1200" alt="Three Gables — photograph 5 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">05 / 10</span></figcaption></figure><figure id="photo-6" class="plate" style="--at: 7; --span: 6; --ar: 4032 / 3024"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg" style="aspect-ratio: 4032 / 3024" data-lb data-w="4032" data-h="3024"><img src="https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg" srcset="https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg 800w, https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg 1600w, https://static.wixstatic.com/media/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_e4be8aafc7134a0ab4de2bab0a5a1dbe~mv2.jpeg 2400w" sizes="(min-width: 1440px) 664px, (min-width: 900px) 46vw, (min-width: 600px) 50vw, 100vw" width="1600" height="1200" alt="Three Gables — photograph 6 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">06 / 10</span></figcaption></figure></div>
+      <figure id="photo-7" class="plate plate--full" style="--ar: 3941 / 2955"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg" data-lb data-w="3941" data-h="2955"><img src="https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg" srcset="https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg 800w, https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_1600,h_1200,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg 1600w, https://static.wixstatic.com/media/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg/v1/fill/w_2400,h_1800,al_c,q_85,enc_auto/5c8b97_8f1d0f5cde244a6dae463f99e8be9eca~mv2.jpeg 2400w" sizes="100vw" width="1600" height="1200" alt="Three Gables — photograph 7 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">07 / 10</span></figcaption></figure>
+      <div class="plate-row shell"><figure id="photo-8" class="plate" style="--at: 1; --span: 6; --ar: 21600 / 14400"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg" style="aspect-ratio: 21600 / 14400" data-lb data-w="21600" data-h="14400"><img src="https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_505126f7579b424ca1db2b3fa85bbb62~mv2.jpg 2400w" sizes="(min-width: 1440px) 664px, (min-width: 900px) 46vw, (min-width: 600px) 50vw, 100vw" width="1600" height="1067" alt="Three Gables — photograph 8 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">08 / 10</span></figcaption></figure><figure id="photo-9" class="plate" style="--at: 7; --span: 6; --ar: 21600 / 14400"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg" style="aspect-ratio: 21600 / 14400" data-lb data-w="21600" data-h="14400"><img src="https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_75771a38b4b94fa9ad6ac51026583310~mv2.jpg 2400w" sizes="(min-width: 1440px) 664px, (min-width: 900px) 46vw, (min-width: 600px) 50vw, 100vw" width="1600" height="1067" alt="Three Gables — photograph 9 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">09 / 10</span></figcaption></figure></div>
+      <figure id="photo-10" class="plate plate--full" style="--ar: 2402 / 1602"><a class="plate__link" href="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg" data-lb data-w="2402" data-h="1602"><img src="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg" srcset="https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_800,h_534,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 800w, https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 1600w, https://static.wixstatic.com/media/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg/v1/fill/w_2400,h_1601,al_c,q_85,enc_auto/5c8b97_d41d8c87ac9b48ec878e4825ee89dedb~mv2.jpg 2400w" sizes="100vw" width="1600" height="1067" alt="Three Gables — photograph 10 of 10" loading="lazy" decoding="async"></a><figcaption class="dim dim--start"><span class="plate__no" aria-hidden="true">10 / 10</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="shell band" data-section="project-pager" data-intent="walk to the neighbouring projects" data-layout="split" aria-labelledby="pager-h">
+    <h2 id="pager-h" class="visually-hidden">More projects</h2>
+    <nav class="pager" aria-labelledby="pager-h">
+      <a href="../../projects/40s-re-make/index.html" rel="prev"><span class="pager__title">40's Re-Make</span><span class="pager__dir label">← Previous project</span><span class="dim dim--stack"><span>Residential · Renovation · Madison, WI</span></span></a>
+      <a href="../../projects/70s-re-make/index.html" rel="next"><span class="pager__title">70's Re-Make</span><span class="pager__dir label">Next project →</span><span class="dim dim--stack"><span>Residential · Renovation &amp; addition · Middleton, WI</span></span></a>
+    </nav>
+  </section>
+
+  <section class="schedule shell band" data-section="related-projects" data-intent="lead with the work" data-layout="stack" data-items="3" data-module="project-index" aria-labelledby="related-h">
+  <div class="section-head">
+    <h2 id="related-h">Related projects</h2>
+    <a class="btn-primary" href="../../projects/index.html">See all 29 projects</a>
+  </div>
+  <ul class="schedule__list" data-slot="cards">
+    <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../../projects/passive-light/index.html">Passive Light</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png" srcset="https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png 800w, https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png 1600w, https://static.wixstatic.com/media/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png/v1/fill/w_1668,h_1112,al_c,q_85,enc_auto/5c8b97_e280ae34a8404cc590bd68c0cbb64d3f~mv2.png 1668w" sizes="(min-width: 1440px) 650px, (min-width: 600px) 48vw, 100vw" width="1600" height="1067" alt="Passive Light — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../../projects/willy-street/index.html">Willy Street</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg" srcset="https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg 800w, https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg 1600w, https://static.wixstatic.com/media/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg/v1/fill/w_2400,h_1600,al_c,q_85,enc_auto/5c8b97_06c3d243bcf24d64b79c5f51c704fada.jpg 2400w" sizes="(min-width: 1440px) 650px, (min-width: 600px) 48vw, 100vw" width="1600" height="1067" alt="Willy Street — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="schedule__row" data-slot="card">
+        <div class="schedule__text"><h3 class="schedule__title"><a href="../../projects/micro-house/index.html">Micro-House</a></h3><p class="dim dim--stack"><span>Residential · New home · Madison, WI</span></p></div>
+        <div class="schedule__media"><img src="https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png" srcset="https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_800,h_533,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png 800w, https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_1600,h_1067,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png 1600w, https://static.wixstatic.com/media/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png/v1/fill/w_2000,h_1333,al_c,q_85,enc_auto/5c8b97_5a935327400440bb940d620a6a2035d9~mv2.png 2000w" sizes="(min-width: 1440px) 650px, (min-width: 600px) 48vw, 100vw" width="1600" height="1067" alt="Micro-House — new home, Madison, WI — photograph" loading="lazy" decoding="async"></div>
+      </li>
+  </ul>
+</section>
+
+  <section class="enquiry shell band" data-section="enquiry" data-intent="drive action" data-layout="contained" data-module="enquiry-band" aria-labelledby="enquiry-h">
+  <h2 id="enquiry-h" data-slot="heading">Please contact us</h2>
+  <div class="enquiry__body">
+    <ul class="enquiry__lines">
+      <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+      <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+    </ul>
+    <p class="dim dim--start"><span>118 North Breese Terrace, Suite I · Madison, WI 53726-4133</span></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="../../index.html">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="../../projects/index.html">All projects</a></li><li><a href="../../residential/index.html">Residential</a></li><li><a href="../../commercial/index.html">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="../../photography/index.html">Collections</a></li><li><a href="../../photography/fields-of-vision-2024/index.html">Fields of Vision</a></li><li><a href="../../photography/iowa-2022-exhibit/index.html">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="../../about/index.html">About</a></li><li><a href="../../about/process/index.html">Process</a></li><li><a href="../../about/todd-barnett/index.html">Todd Barnett</a></li><li><a href="../../testimonials/index.html">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="../../contact/index.html">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+
+<dialog id="lightbox" class="lightbox" aria-label="Three Gables — photograph viewer" data-module="photo-lightbox">
+  <div class="lightbox__bar"><p class="lightbox__title label">Three Gables</p><button class="lightbox__btn" type="button" data-lb-close><span class="lightbox__btn-label">Close</span><span aria-hidden="true">×</span></button></div>
+  <figure class="lightbox__stage"><div class="lightbox__frame"></div><figcaption class="lightbox__caption" hidden></figcaption></figure>
+  <div class="lightbox__bar"><button class="lightbox__btn" type="button" data-lb-prev><span aria-hidden="true">←</span><span class="lightbox__btn-label">Previous</span></button><p class="lightbox__count label" aria-live="polite"><span aria-hidden="true">1 / 10</span><span class="visually-hidden">Photo 1 of 10</span></p><button class="lightbox__btn" type="button" data-lb-next><span class="lightbox__btn-label">Next</span><span aria-hidden="true">→</span></button></div>
+</dialog>
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+<script>
+(() => {
+  const dlg = document.getElementById('lightbox'), wall = document.querySelector('[data-lightbox-group]');
+  if (!dlg || !wall || !dlg.showModal) return;
+  const links = [...wall.querySelectorAll('a[data-lb]')], n = links.length;
+  if (!n) return;
+  const q = (s) => dlg.querySelector(s), stage = q('.lightbox__stage'), frame = q('.lightbox__frame'), count = q('.lightbox__count'), cap = q('.lightbox__caption');
+  const base = location.pathname + location.search;
+  let img = null, i = 0, opener = null, x0 = null, popping = false;
+  const thumb = (a) => a.querySelector('img');
+  const load = (el, a, sizes) => { el.sizes = sizes; el.srcset = thumb(a).getAttribute('srcset'); el.src = a.href; };
+  const drawn = (a) => { const r = frame.getBoundingClientRect(); return Math.ceil(Math.min(r.width, r.height * (a.dataset.w / a.dataset.h))) + 'px'; };
+  const show = (k) => {
+    i = (k + n) % n; const a = links[i], fig = a.closest('figure'), t = thumb(a);
+    if (!img) {
+      img = new Image(); img.decoding = 'async'; frame.append(img);
+      img.addEventListener('error', () => { cap.hidden = false; cap.textContent = 'This photograph could not be loaded. Use Previous or Next to continue.'; });
+    }
+    img.width = +a.dataset.w; img.height = +a.dataset.h; img.alt = t.alt;
+    img.style.setProperty('--ar', a.dataset.w / a.dataset.h);
+    img.style.backgroundImage = t.currentSrc ? `url("${t.currentSrc}")` : 'none';
+    load(img, a, drawn(a));
+    count.innerHTML = `<span aria-hidden="true">${i + 1} / ${n}</span><span class="visually-hidden">Photo ${i + 1} of ${n}</span>`;
+    const fc = fig.querySelector('figcaption');
+    cap.innerHTML = fc ? fc.innerHTML : ''; cap.hidden = !fc;
+    if (fig.id) history.replaceState({ lb: 1 }, '', '#' + fig.id);
+    // preload the next photograph only, at the width it will be drawn (never the full 2400 rendition)
+    if (n > 1) { const nx = links[(i + 1) % n]; load(new Image(), nx, drawn(nx)); }
+  };
+  const open = (k, from) => {
+    opener = from || links[k];
+    if (!dlg.open) { dlg.showModal(); if (!(history.state && history.state.lb)) history.pushState({ lb: 1 }, '', location.href); }
+    show(k); q('[data-lb-next]').focus();
+  };
+  const close = () => { if (history.state && history.state.lb) history.back(); else dlg.close(); };
+  addEventListener('popstate', () => { if (dlg.open) { popping = true; dlg.close(); } });
+  dlg.addEventListener('cancel', (e) => { e.preventDefault(); close(); });
+  dlg.addEventListener('close', () => {
+    if (!popping && history.state && history.state.lb) history.replaceState(null, '', base);
+    popping = false;
+    if (img) { img.removeAttribute('srcset'); img.removeAttribute('src'); }
+    if (opener) opener.focus();
+  });
+  links.forEach((a, k) => a.addEventListener('click', (e) => {
+    if (e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault(); open(k, a);
+  }));
+  q('[data-lb-prev]').addEventListener('click', () => show(i - 1));
+  q('[data-lb-next]').addEventListener('click', () => show(i + 1));
+  q('[data-lb-close]').addEventListener('click', close);
+  stage.addEventListener('click', (e) => { if (e.target === stage || e.target === frame) close(); });
+  dlg.addEventListener('keydown', (e) => {
+    const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+    if (step) { e.preventDefault(); show(i + step); }
+    else if (e.key === 'Home') { e.preventDefault(); show(0); }
+    else if (e.key === 'End') { e.preventDefault(); show(n - 1); }
+    else if (e.key === 'Tab') {
+      const f = [...dlg.querySelectorAll('button, a[href]')].filter((el) => el.getClientRects().length);
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  dlg.addEventListener('pointerdown', (e) => { x0 = e.pointerType === 'mouse' ? null : e.clientX; });
+  dlg.addEventListener('pointerup', (e) => { if (x0 === null) return; const dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 48) show(i + (dx < 0 ? 1 : -1)); });
+  const deep = () => {
+    const m = location.hash.match(/^#photo-(\d+)$/), k = m ? links.findIndex((a) => a.closest('figure').id === 'photo-' + m[1]) : -1;
+    if (k >= 0 && !dlg.open) { history.replaceState(null, '', base); open(k); }
+  };
+  addEventListener('hashchange', deep); deep();
+})();
+</script>
+</body>
+</html>

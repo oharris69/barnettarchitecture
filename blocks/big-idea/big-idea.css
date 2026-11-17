@@ -1,0 +1,63 @@
+/* big-idea: the first narrative sentence as the project's thesis; the rest in a measured column */
+.big-idea {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-lg) 24px;
+}
+
+.big-idea .big-idea-lead {
+  grid-column: 1 / span 10;
+  max-width: 20em;
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: var(--heading-xl);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.big-idea .big-idea-lead > * {
+  margin: 0;
+  font: inherit;
+}
+
+.big-idea .big-idea-body {
+  grid-column: 6 / span 7;
+  display: grid;
+  gap: 1.1em;
+  max-width: var(--measure);
+}
+
+.big-idea .big-idea-body > * {
+  margin: 0;
+}
+
+.big-idea .big-idea-body a {
+  color: var(--color-accent);
+  text-underline-offset: 3px;
+}
+
+@media (width <= 899px) {
+  .big-idea .big-idea-lead,
+  .big-idea .big-idea-body {
+    grid-column: 1 / -1;
+  }
+
+  .big-idea .big-idea-body {
+    padding-left: clamp(0px, 12vw, 96px);
+  }
+}
+
+@media (width <= 599px) {
+  .big-idea {
+    row-gap: var(--spacing-md);
+  }
+
+  .big-idea .big-idea-lead {
+    font-size: var(--heading-lg);
+  }
+
+  .big-idea .big-idea-body {
+    padding-left: 0;
+  }
+}

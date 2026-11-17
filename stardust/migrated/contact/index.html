@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-17T20:16:59Z
+  page:             Contact
+  slug:             contact
+  pagePath:         migrated/contact/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/.work/migrate/final/contact.html
+  sourceCurrent:    stardust/current/pages/contact.json
+  againstDirection: stardust/.work/migrate/direction.md (Active 2026-11-17T17:20:00Z)
+  designMd:         DESIGN.md (sha: c8173d8ac4dd)
+  designJson:       DESIGN.json (sha: 624a046b06ec)
+  canonShas:        header:66b29853a09b footer:1212b39c68e1 css:ed4159ae9a2e
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.32.1
+-->
+<meta charset="UTF-8">
+<style>
+:root {
+  /* typography.display / headline / lead → Spectral; typography.body / label → Hanken Grotesk */
+  --heading-font-family: Spectral, 'Spectral Fallback', Georgia, serif;
+  --body-font-family: 'Hanken Grotesk', 'Hanken Grotesk Fallback', system-ui, sans-serif;
+  --heading-xxl: clamp(3.25rem, 9.5vw, 10rem);   /* typography.display */
+  --heading-xl: clamp(2rem, 4.2vw, 3.75rem);     /* typography.headline */
+  --heading-lg: clamp(1.75rem, 3.1vw, 2.75rem);  /* computed: headline ÷ 1.36 (index titles) */
+  --heading-md: clamp(1.375rem, 2.1vw, 1.875rem);/* typography.lead */
+  --body: 1.0625rem;                             /* typography.body */
+  --body-sm: 0.9375rem;                          /* computed: body ÷ 1.13 (captions) */
+  --label: 0.8125rem;                            /* typography.label */
+  --line-height-heading: 1.02;
+  --line-height-body: 1.6;
+  /* Sage Ground */  --color-bg: #e7ebe6;
+  /* Graphite */     --color-fg: #1b1e1c;
+  /* Third Lake */   --color-accent: #0d4b59;
+  /* Third Lake Light */ --color-accent-light: #8cc0cb;
+  /* Pencil */       --color-muted: #5b625d;
+  /* Hairline */     --color-hairline: #b9c0ba;
+  /* Darkroom */     --color-darkroom: #121413;
+  /* Print White */  --color-print: #ffffff;
+  /* Error */        --color-error: #8a1f11;            /* form validation only (7.6:1 on sage, 9.2:1 on print white) */
+  /* computed: secondary text on darkroom/graphite (7.4:1 on #121413) */ --color-muted-on-dark: #a3aba5;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+  --spacing-2xl: 180px;                          /* computed: xl × 1.5 */
+  --section-padding: 120px;                      /* spacing.sectionPadding (64px < 600px) */
+  --gutter: clamp(20px, 4vw, 56px);              /* spacing.gutter */
+  --max-width: 1440px;                           /* extensions.breakpoints.containerMaxWidth */
+  --measure: 68ch;
+  --radius: 0px;                                 /* rounded.none */
+  --tick: 9px;                                   /* dimension-string end ticks */
+  --ease-hover: cubic-bezier(0.25, 1, 0.5, 1);
+  --header-h: 84px;
+}
+</style>
+<link rel="stylesheet" href="../assets/canon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Architect, Madison, WI | Barnett Architecture</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../assets/site.webmanifest">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="Contact Barnett Architecture LLC, 118 North Breese Terrace Suite I, Madison, WI 53726-4133. Email todd@barnettarchitecture.com or call 608-233-4538.">
+<link rel="canonical" href="https://www.barnettarchitecture.com/contact">
+<meta name="theme-color" content="#e7ebe6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Barnett Architecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.barnettarchitecture.com/contact">
+<meta property="og:title" content="Contact — Architect, Madison, WI">
+<meta property="og:description" content="Contact Barnett Architecture LLC, 118 North Breese Terrace Suite I, Madison, WI 53726-4133. Email todd@barnettarchitecture.com or call 608-233-4538.">
+<meta property="og:image" content="https://static.wixstatic.com/media/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Willy Street, a new home in Madison, Wisconsin — photograph">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Architect, Madison, WI">
+<meta name="twitter:description" content="Contact Barnett Architecture LLC, 118 North Breese Terrace Suite I, Madison, WI 53726-4133. Email todd@barnettarchitecture.com or call 608-233-4538.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg/v1/fill/w_1200,h_630,al_c,q_85,enc_auto/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg">
+<meta name="twitter:image:alt" content="Willy Street, a new home in Madison, Wisconsin — photograph">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "ProfessionalService",
+    "LocalBusiness"
+   ],
+   "@id": "https://www.barnettarchitecture.com/#organization",
+   "name": "Barnett Architecture LLC",
+   "alternateName": "Barnett Architecture",
+   "url": "https://www.barnettarchitecture.com/",
+   "foundingDate": "2007",
+   "founder": {
+    "@type": "Person",
+    "name": "Todd Barnett",
+    "jobTitle": "Architect",
+    "url": "https://www.barnettarchitecture.com/about/todd-barnett"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "118 North Breese Terrace, Suite I",
+    "addressLocality": "Madison",
+    "addressRegion": "WI",
+    "postalCode": "53726-4133",
+    "addressCountry": "US"
+   },
+   "telephone": "+1-608-233-4538",
+   "email": "todd@barnettarchitecture.com",
+   "areaServed": [
+    "Madison, WI",
+    "Wisconsin",
+    "Illinois"
+   ],
+   "knowsAbout": [
+    "residential architecture",
+    "additions and renovations",
+    "green design",
+    "universal design",
+    "charrette design process"
+   ]
+  },
+  {
+   "@type": "ContactPage",
+   "@id": "https://www.barnettarchitecture.com/contact#webpage",
+   "url": "https://www.barnettarchitecture.com/contact",
+   "name": "Contact — Architect, Madison, WI | Barnett Architecture",
+   "isPartOf": {
+    "@id": "https://www.barnettarchitecture.com/#website"
+   },
+   "about": {
+    "@id": "https://www.barnettarchitecture.com/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.barnettarchitecture.com/#organization"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.barnettarchitecture.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Contact",
+     "item": "https://www.barnettarchitecture.com/contact"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body data-template="form">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-section="site-header" data-intent="navigate" data-layout="edge-to-edge" data-module="site-header" data-canon data-nav-collapse="hamburger">
+  <div class="site-header__inner shell">
+    <a class="ds-wordmark" href="../index.html" data-slot="wordmark">Barnett Architecture</a>
+    <button class="ds-nav-burger" type="button" aria-controls="ds-nav-list" aria-expanded="false">
+      <span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Menu</span>
+    </button>
+    <nav id="ds-nav-list" class="ds-nav" aria-label="Main" data-slot="nav">
+      <ul class="ds-nav__list">
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../photography/index.html">Photography</a></li>
+        <li class="ds-nav__group">
+          <details>
+            <summary>Practice</summary>
+            <ul class="ds-nav__sub">
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="../about/process/index.html">Process</a></li>
+              <li><a href="../about/todd-barnett/index.html">Todd Barnett</a></li>
+              <li><a href="../testimonials/index.html">Testimonials</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="../contact/index.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" data-template="contact">
+  <section class="contact shell" data-section="contact" data-intent="say how to reach the practice (NAP first)" data-layout="split" data-media="image" aria-labelledby="contact-h" data-deviation="form-first: a task page opens on the contact facts with the photograph as a side frame, not a 100svh hero">
+    <div class="contact__facts">
+      <h1 id="contact-h">Contact</h1>
+      <h2>Please contact us</h2>
+      <address data-slot="nap">
+        <ul class="enquiry__lines">
+          <li><a href="mailto:todd@barnettarchitecture.com" data-slot="email">todd@barnettarchitecture.com</a></li>
+          <li><a href="tel:+16082334538" data-slot="phone">608-233-4538</a></li>
+        </ul>
+        <p class="contact__street">Barnett Architecture LLC<br>118 North Breese Terrace Suite I<br>Madison, WI 53726-4133</p>
+        <p><a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=118%20North%20Breese%20Terrace%20Suite%20I%2C%20Madison%2C%20WI%2053726" rel="noopener">Map of 118 North Breese Terrace</a></p>
+      </address>
+    </div>
+    <figure class="frame frame--tall contact__frame" data-slot="image">
+      <div class="frame__img"><img src="https://static.wixstatic.com/media/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg" srcset="https://static.wixstatic.com/media/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg/v1/fill/w_800,h_1000,al_c,q_85,enc_auto/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg 800w, https://static.wixstatic.com/media/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg/v1/fill/w_1600,h_2000,al_c,q_85,enc_auto/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg 1600w, https://static.wixstatic.com/media/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg/v1/fill/w_2400,h_3000,al_c,q_85,enc_auto/5c8b97_6791d41411784ff18c17d9aa8a300492.jpg 2400w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 66vw, 100vw" width="1600" height="2000" alt="Willy Street, a new home in Madison, Wisconsin — photograph" loading="eager" fetchpriority="high" decoding="async"></div>
+      <figcaption class="dim dim--stack"><span><a href="../projects/willy-street/index.html">Willy Street</a> · New home · Madison, WI</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="enquiry-form shell band" data-section="enquiry-form" data-intent="collect a project enquiry" data-layout="side-rail" data-module="enquiry-form" aria-labelledby="form-h">
+    <div class="enquiry-form__head">
+      <h2 id="form-h">Tell us about your project</h2>
+      <p>Services range from hourly consultations to the full architectural process.</p>
+    </div>
+    <form id="enquiry" action="mailto:todd@barnettarchitecture.com" method="post" enctype="text/plain" data-dynamic="form" data-backend="none" data-tier="interim-mailto" aria-describedby="form-note">
+        <div class="field">
+          <label for="name">Name <span>(required)</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+          <p class="field__error" id="name-err" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email <span>(required)</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+          <p class="field__error" id="email-err" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span>(optional)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-err">
+          <p class="field__error" id="phone-err" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="location">Project location <span>(optional)</span></label>
+          <input id="location" name="location" type="text" autocomplete="off" aria-describedby="location-err" placeholder="e.g. Madison, WI">
+          <p class="field__error" id="location-err" aria-live="polite"></p>
+        </div>
+        <div class="field field--wide">
+          <label for="type">Project type <span>(optional)</span></label>
+          <select id="type" name="type">
+            <option value="">Choose a project type</option>
+            <option value="new-home">New home</option>
+            <option value="addition">Addition</option>
+            <option value="renovation">Renovation</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="outdoor">Outdoor living</option>
+            <option value="multi-unit">Multi-unit</option>
+            <option value="master-plan">Master plan & study</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </div>
+        <div class="field field--wide">
+          <label for="message">Message <span>(required)</span></label>
+          <textarea id="message" name="message" rows="7" required aria-describedby="message-err"></textarea>
+          <p class="field__error" id="message-err" aria-live="polite"></p>
+        </div>
+        <p class="enquiry-form__note" id="form-note">“Send by email” opens your email app with this message addressed to todd@barnettarchitecture.com.</p>
+        <div class="enquiry-form__actions">
+          <button class="btn-primary" type="submit">Send by email</button>
+          <p class="enquiry-form__status" role="status"></p>
+        </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="navigate + NAP" data-layout="grid" data-module="site-footer" data-canon>
+  <div class="site-footer__grid shell">
+    <div class="site-footer__id">
+      <a class="ds-wordmark" href="../index.html">Barnett Architecture</a>
+      <address data-slot="nap">Barnett Architecture LLC<br>118 North Breese Terrace, Suite I<br>Madison, WI 53726-4133<br><a href="tel:+16082334538">608-233-4538</a><br><a href="mailto:todd@barnettarchitecture.com">todd@barnettarchitecture.com</a></address>
+    </div>
+    <nav class="site-footer__map" aria-label="Site" data-slot="sitemap">
+      <div><h2 class="label">Projects</h2><ul><li><a href="../projects/index.html">All projects</a></li><li><a href="../residential/index.html">Residential</a></li><li><a href="../commercial/index.html">Commercial, community &amp; recreation</a></li></ul></div>
+      <div><h2 class="label">Photography</h2><ul><li><a href="../photography/index.html">Collections</a></li><li><a href="../photography/fields-of-vision-2024/index.html">Fields of Vision</a></li><li><a href="../photography/iowa-2022-exhibit/index.html">Iowa 2022 Exhibit</a></li></ul></div>
+      <div><h2 class="label">Practice</h2><ul><li><a href="../about/index.html">About</a></li><li><a href="../about/process/index.html">Process</a></li><li><a href="../about/todd-barnett/index.html">Todd Barnett</a></li><li><a href="../testimonials/index.html">Testimonials</a></li></ul></div>
+      <div><h2 class="label">Contact</h2><ul><li><a href="../contact/index.html">Contact</a></li></ul></div>
+    </nav>
+    <p class="site-footer__legal" data-slot="copyright"><span>© 2026 Barnett Architecture LLC</span><span>Madison, Wisconsin</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  document.documentElement.classList.add('js'); // head-script.html sets this first; repeated here so the nav never stays collapsed-without-a-button
+  const hd = document.querySelector('.site-header'), b = hd && hd.querySelector('.ds-nav-burger');
+  if (!b) return;
+  const set = (open) => { hd.toggleAttribute('data-nav-open', open); b.setAttribute('aria-expanded', String(open)); };
+  b.addEventListener('click', () => set(!hd.hasAttribute('data-nav-open')));
+  addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; document.querySelectorAll('.ds-nav details[open]').forEach((d) => { if (d.contains(document.activeElement)) d.querySelector('summary').focus(); d.open = false; }); if (hd.hasAttribute('data-nav-open')) { set(false); b.focus(); } });
+  document.querySelectorAll('.ds-nav details').forEach((d) => d.addEventListener('focusout', (e) => { if (!d.contains(e.relatedTarget)) d.open = false; }));
+})();
+</script>
+<script>
+(() => {
+  const f = document.getElementById('enquiry'); if (!f) return;
+  f.noValidate = true;
+  const st = f.querySelector('.enquiry-form__status');
+  const msg = { name: 'Enter your name.', email: 'Enter an email address, like name@example.com.', message: 'Write a short message about your project.' };
+  const check = (el) => { const bad = !el.checkValidity(); el.setAttribute('aria-invalid', bad); document.getElementById(el.id + '-err').textContent = bad ? msg[el.id] || 'Check this field.' : ''; return !bad; };
+  f.querySelectorAll('[required]').forEach((el) => el.addEventListener('blur', () => { if (el.value || el.getAttribute('aria-invalid')) check(el); }));
+  f.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bad = [...f.querySelectorAll('[required]')].filter((el) => !check(el));
+    if (bad.length) { bad[0].focus(); st.textContent = ''; return; }
+    const v = (k) => f.elements[k].value.trim();
+    const type = f.elements.type.selectedIndex > 0 ? f.elements.type.options[f.elements.type.selectedIndex].text : '';
+    const subject = ['Project enquiry', type, v('location')].filter(Boolean).join(' — ');
+    const lines = ['Name: ' + v('name'), 'Email: ' + v('email')];
+    if (v('phone')) lines.push('Phone: ' + v('phone'));
+    if (v('location')) lines.push('Project location: ' + v('location'));
+    if (type) lines.push('Project type: ' + type);
+    lines.push('', v('message'));
+    const body = lines.join('\n');
+    location.href = 'mailto:todd@barnettarchitecture.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    st.textContent = 'Your email app should open with the message ready to send. If nothing opened, write to todd@barnettarchitecture.com.';
+  });
+})();
+</script>
+</body>
+</html>

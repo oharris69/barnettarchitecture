@@ -1,0 +1,199 @@
+{
+  "slug": "copy-of-channel-1",
+  "type": "project",
+  "renderBranch": "A'",
+  "template": "willy-street",
+  "modules": [
+    "project-hero",
+    "big-idea",
+    "project-gallery",
+    "project-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "hero",
+    "facts",
+    "idea",
+    "gallery",
+    "shell",
+    "schedule",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-channel-1",
+      "newPath": "/projects/solar-court",
+      "outputPath": "projects/solar-court/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-channel-1.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Solar Court — New home, master plan &amp; study, Highland Park, IL | Barnett Architecture",
+    "description": "Solar Court — new home, master plan &amp; study, Highland Park, IL. This design study was created for a new home on an undeveloped site with its own “forest”—a…",
+    "canonical": "https://www.barnettarchitecture.com/projects/solar-court",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "name": "Barnett Architecture LLC",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@type": "Person",
+          "name": "Todd Barnett",
+          "jobTitle": "Architect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com",
+        "areaServed": [
+          "Madison, WI",
+          "Wisconsin",
+          "Illinois"
+        ],
+        "knowsAbout": [
+          "residential architecture",
+          "additions and renovations",
+          "green design",
+          "universal design",
+          "charrette design process"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "alternateName": "Barnett Architecture"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/projects/solar-court#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://www.barnettarchitecture.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residential architecture",
+            "item": "https://www.barnettarchitecture.com/residential"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Solar Court",
+            "item": "https://www.barnettarchitecture.com/projects/solar-court"
+          }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://www.barnettarchitecture.com/projects/solar-court#work",
+        "name": "Solar Court",
+        "url": "https://www.barnettarchitecture.com/projects/solar-court",
+        "description": "This design study was created for a new home on an undeveloped site with its own “forest”—a rarity in suburban Chicago.",
+        "genre": "Architecture",
+        "keywords": "Residential, New home, Master plan & study, Green design",
+        "locationCreated": {
+          "@type": "Place",
+          "name": "Highland Park, IL",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Highland Park",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          }
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        },
+        "image": [
+          "https://static.wixstatic.com/media/5c8b97_c83dff2b8cdf41ebbbf7a3525e6354d6~mv2.jpg/v1/fill/w_1299,h_865,al_c,q_85,enc_auto/5c8b97_c83dff2b8cdf41ebbbf7a3525e6354d6~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_70b40a48801843f38252e6e1ee5f35ba~mv2.jpg/v1/fill/w_1298,h_866,al_c,q_85,enc_auto/5c8b97_70b40a48801843f38252e6e1ee5f35ba~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_d51ba99213ee47b2bf9937f30aa65821~mv2.jpg/v1/fill/w_1299,h_865,al_c,q_85,enc_auto/5c8b97_d51ba99213ee47b2bf9937f30aa65821~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_196ce0b8d6184fbebf75f2230c7afef7~mv2.jpg/v1/fill/w_2400,h_1553,al_c,q_85,enc_auto/5c8b97_196ce0b8d6184fbebf75f2230c7afef7~mv2.jpg",
+          "https://static.wixstatic.com/media/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg/v1/fill/w_2400,h_1553,al_c,q_85,enc_auto/5c8b97_bfaeaa1404dc4edc91054f34807f4dd8~mv2.jpg"
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:53Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "02d01d73b15c",
+  "sourceProposedSha": "74dda1a33ca4",
+  "fidelityTier": "sibling",
+  "archetypeSource": "willy-street",
+  "archetypeSha": "e13f19da29ec",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 3/3 captured strings verbatim; photos 5/5 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → project-gallery + photo-lightbox (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim: hot-linked; D3)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F11 facet links → /projects?…"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "projects/solar-court/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "projects/solar-court/_meta.json",
+  "driverVersion": "1"
+}

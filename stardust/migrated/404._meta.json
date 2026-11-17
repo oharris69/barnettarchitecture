@@ -1,0 +1,74 @@
+{
+  "slug": "404",
+  "type": "unique",
+  "renderBranch": "B",
+  "template": null,
+  "modules": [],
+  "slotsFilled": [
+    "opening",
+    "schedule"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": null,
+      "newPath": "/404.html",
+      "outputPath": "404.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/404.html",
+      "from": "stardust/.work/migrate/prep-sources.mjs (Path B)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Page not found | Barnett Architecture",
+    "description": "This page has moved or no longer exists. Browse projects, photography, the practice or contact Barnett Architecture in Madison, Wisconsin.",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Page not found | Barnett Architecture",
+    "description": "This page has moved or no longer exists. Browse projects, photography, the practice or contact Barnett Architecture in Madison, Wisconsin.",
+    "url": "https://www.barnettarchitecture.com/404.html"
+  },
+  "migratedAt": "2026-11-17T20:16:59Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "810aedcaae20",
+  "fidelityTier": "thin",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "n/a — new page with no capture",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "404.html",
+  "outputPathDefault": null,
+  "sidecar": "404._meta.json",
+  "driverVersion": "1"
+}

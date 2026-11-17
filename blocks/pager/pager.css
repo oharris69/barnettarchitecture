@@ -1,0 +1,72 @@
+/* pager (canon project-pager): two ruled cells, title at index scale */
+.pager .pager-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-block: 1px solid var(--color-fg);
+}
+
+.pager .pager-nav a {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 0;
+  text-decoration: none;
+}
+
+.pager .pager-nav a + a {
+  padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+  border-left: 1px solid var(--color-hairline);
+  text-align: right;
+  justify-items: end;
+}
+
+.pager .pager-nav a.pager-next:only-child {
+  grid-column: 2;
+  padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+  border-left: 1px solid var(--color-hairline);
+  text-align: right;
+  justify-items: end;
+}
+
+.pager .pager-title {
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: var(--heading-lg);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  transition: color 400ms var(--ease-hover);
+}
+
+.pager .pager-nav a:hover .pager-title {
+  color: var(--color-accent);
+}
+
+.pager .pager-dir {
+  color: var(--color-muted);
+}
+
+.pager .dim {
+  justify-content: inherit;
+  width: 100%;
+}
+
+@media (width <= 599px) {
+  .pager .pager-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .pager .pager-nav a,
+  .pager .pager-nav a + a,
+  .pager .pager-nav a.pager-next:only-child {
+    grid-column: auto;
+    padding: var(--spacing-md) 0;
+    border-left: 0;
+    text-align: left;
+    justify-items: start;
+  }
+
+  .pager .pager-nav a + a {
+    border-top: 1px solid var(--color-hairline);
+  }
+}

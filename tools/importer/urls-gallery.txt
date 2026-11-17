@@ -1,0 +1,8 @@
+http://127.0.0.1:3110/photography/fields-of-vision-2024
+http://127.0.0.1:3110/photography/illinois
+http://127.0.0.1:3110/photography/iowa
+http://127.0.0.1:3110/photography/iowa-2022-exhibit
+http://127.0.0.1:3110/photography/mexico-faces
+http://127.0.0.1:3110/photography/mexico-places
+http://127.0.0.1:3110/photography/minnesota
+http://127.0.0.1:3110/photography/wisconsin

@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/projects/solar-court",
+  "path": "projects/solar-court",
+  "timestamp": "2026-11-17T20:59:09.065Z",
+  "title": "Solar Court — New home, master plan & study, Highland Park, IL | Barnett Architecture",
+  "template": "project",
+  "blocks": [
+    "hero",
+    "breadcrumbs",
+    "facts",
+    "big-idea",
+    "gallery",
+    "pager",
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "73cd0c8f0c8f"
+}

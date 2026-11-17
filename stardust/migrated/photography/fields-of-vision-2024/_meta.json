@@ -1,0 +1,212 @@
+{
+  "slug": "copy-of-iowa-2022-exhbit",
+  "type": "gallery",
+  "renderBranch": "A'",
+  "template": "copy-of-iowa",
+  "modules": [
+    "photo-collection",
+    "breadcrumb",
+    "collection-index",
+    "enquiry-band"
+  ],
+  "slotsFilled": [
+    "darkroom",
+    "darkroom",
+    "darkroom",
+    "enquiry"
+  ],
+  "canonShas": {
+    "header": "66b29853a09b",
+    "footer": "1212b39c68e1",
+    "css": "ed4159ae9a2e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "url-remap",
+      "sourceUrl": "https://www.barnettarchitecture.com/copy-of-iowa-2022-exhbit",
+      "newPath": "/photography/fields-of-vision-2024",
+      "outputPath": "photography/fields-of-vision-2024/index.html",
+      "rule": "output path = NEW URL from stardust/taxonomy.json (iaFidelity: reimagined) — deviation from the URL-literal rule; old URL 301 → new in stardust/migrated/redirects.csv"
+    },
+    {
+      "kind": "source-transform",
+      "source": "stardust/.work/migrate/final/copy-of-iowa-2022-exhbit.html",
+      "from": "archetype builder fork (.work/migrate/src/)",
+      "mechanical": [
+        "inlined canon.css removed — linked as assets/canon.css by the driver",
+        "prototype provenance + impeccable direction-contract comments removed",
+        "meta charset moved inside the first 1024 bytes"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Fields of Vision — Photography collection, exhibit | Barnett Architecture",
+    "description": "Fields of Vision: 2 photographs by Todd Barnett shown in the Fields of Vision Exhibit at Analog Gallery, Urbana, IL — from the backroads of the Midwest.",
+    "canonical": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ProfessionalService",
+          "LocalBusiness"
+        ],
+        "@id": "https://www.barnettarchitecture.com/#organization",
+        "name": "Barnett Architecture LLC",
+        "alternateName": "Barnett Architecture",
+        "url": "https://www.barnettarchitecture.com/",
+        "foundingDate": "2007",
+        "founder": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "118 North Breese Terrace, Suite I",
+          "addressLocality": "Madison",
+          "addressRegion": "WI",
+          "postalCode": "53726-4133",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-608-233-4538",
+        "email": "todd@barnettarchitecture.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person",
+        "name": "Todd Barnett",
+        "jobTitle": "Architect",
+        "url": "https://www.barnettarchitecture.com/about/todd-barnett",
+        "worksFor": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.barnettarchitecture.com/#website",
+        "url": "https://www.barnettarchitecture.com/",
+        "name": "Barnett Architecture",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://www.barnettarchitecture.com/#organization"
+        }
+      },
+      {
+        "@type": "ImageGallery",
+        "@id": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024#gallery",
+        "url": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024",
+        "name": "Fields of Vision",
+        "headline": "Fields of Vision — photographs by Todd Barnett",
+        "description": "Fields of Vision: 2 photographs by Todd Barnett shown in the Fields of Vision Exhibit at Analog Gallery, Urbana, IL — from the backroads of the Midwest.",
+        "inLanguage": "en-US",
+        "isPartOf": [
+          {
+            "@id": "https://www.barnettarchitecture.com/photography#webpage"
+          },
+          {
+            "@id": "https://www.barnettarchitecture.com/#website"
+          }
+        ],
+        "breadcrumb": {
+          "@id": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024#breadcrumb"
+        },
+        "creator": {
+          "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+        },
+        "primaryImageOfPage": "https://static.wixstatic.com/media/5c8b97_eb61246491ee4f3d99af50f9ad2cb6df~mv2.jpg/v1/fill/w_2048,h_1483,al_c,q_85,enc_auto/5c8b97_eb61246491ee4f3d99af50f9ad2cb6df~mv2.jpg",
+        "associatedMedia": [
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg/v1/fill/w_2048,h_1483,al_c,q_85,enc_auto/5c8b97_b58c38fced124a88b3ac93e7bcb60d25~mv2.jpg",
+            "width": 2048,
+            "height": 1483,
+            "position": 1,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://static.wixstatic.com/media/5c8b97_eb61246491ee4f3d99af50f9ad2cb6df~mv2.jpg/v1/fill/w_2048,h_1483,al_c,q_85,enc_auto/5c8b97_eb61246491ee4f3d99af50f9ad2cb6df~mv2.jpg",
+            "width": 2048,
+            "height": 1483,
+            "position": 2,
+            "creator": {
+              "@id": "https://www.barnettarchitecture.com/about/todd-barnett#person"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.barnettarchitecture.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Photography",
+            "item": "https://www.barnettarchitecture.com/photography"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fields of Vision",
+            "item": "https://www.barnettarchitecture.com/photography/fields-of-vision-2024"
+          }
+        ]
+      }
+    ]
+  },
+  "migratedAt": "2026-11-17T20:16:57Z",
+  "designMdSha": "c8173d8ac4dd",
+  "designJsonSha": "624a046b06ec",
+  "sourceCurrentSha": "719db85be37b",
+  "sourceProposedSha": "1c5bfc7c1935",
+  "fidelityTier": "sibling",
+  "archetypeSource": "copy-of-iowa",
+  "archetypeSha": "832858272f3b",
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "validation-1440-390"
+  ],
+  "gateEvidence": {
+    "content-count": "text: 0/2 captured strings verbatim (2 recomposed — contentDeviations kind recomposed); photos 2/2 (CDN 403s excluded)",
+    "validation-1440-390": "Playwright file:// 1440×900 + 390×844 + no-JS 390: 0 console errors, 0 failed requests, 0 overflow, 1 H1, alt on every img, 0 broken img, sticky header, <button> menu, internal refs resolve (stardust/migrated/_validation.json)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "recomposed",
+      "source": null,
+      "target": null,
+      "reason": "exhibit facts recomposed into the intro: \"Fields of Vision Exhibit, Analog Gallery, Urbana, IL.\" + the immaterialbooks.com link labelled by its host/path"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F2 pro-gallery → photo-collection + photo-lightbox + wall-balance (self, done)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": null,
+      "target": null,
+      "reason": "F5 Wix CDN images (interim; D3)"
+    }
+  ],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "photography/fields-of-vision-2024/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "photography/fields-of-vision-2024/_meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,24 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-11-17T18:43:06Z
+  sourceSlug:       index
+  sourcePrototype:  stardust/prototypes/index-proposed.html
+  region:           module:project-index
+  stardustVersion:  0.32.1
+-->
+<section class="schedule shell band" data-section="{{section}}" data-intent="lead with the work" data-layout="stack" data-items="{{n}}" data-module="project-index" aria-labelledby="{{id}}">
+  <div class="section-head">
+    <h2 id="{{id}}">{{heading}}</h2>
+    <a class="btn-primary" href="/projects">{{cta: e.g. See all 29 projects}}</a>
+  </div>
+  <ul class="schedule__list" data-slot="cards">
+    <!-- repeat per project-card -->
+    <li class="schedule__row" data-slot="card">
+      <div class="schedule__text"><h3 class="schedule__title"><a href="{{href}}">{{title}}</a></h3><p class="dim dim--stack"><span>{{facts: Sector · Type · Location[ · Approach]}}</span></p></div>
+      <div class="schedule__media">{{image: responsive <img>, 3:2, loading="lazy", sizes="(min-width: 900px) 40vw, 100vw"}}</div>
+    </li>
+  </ul>
+  <nav class="schedule__foot" aria-label="Projects by type" data-slot="facets">
+    <ul class="facets"><!-- repeat --><li><a class="facet-chip" href="/projects?type={{scope}}">{{label}}</a></li></ul>
+  </nav>
+</section>

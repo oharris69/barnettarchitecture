@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3110/projects",
+  "path": "projects",
+  "timestamp": "2026-11-17T20:59:54.128Z",
+  "title": "Projects — Residential & commercial architecture, Madison, WI | Barnett Architecture",
+  "template": "listing",
+  "blocks": [
+    "project-index",
+    "fragment"
+  ],
+  "importScript": "d2d0caa86043"
+}

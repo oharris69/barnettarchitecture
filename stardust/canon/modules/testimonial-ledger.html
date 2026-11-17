@@ -1,0 +1,32 @@
+<!-- stardust:canon (merged 2026-11-17)
+  writtenBy:        stardust:prototype --prep (wave 2)
+  sourceSlug:       testimonials (static archetype sibling of about)
+  sourcePrototype:  stardust/prototypes/testimonials-proposed.html
+  region:           module:testimonial-list, variant "ledger" (long list; the single-quote rendering stays in testimonial-list.html)
+  css:              stardust/canon/canon.css [from canon.css [from pending/about.css]] (.ledger*, .ledger-nav, .review-flag)
+  rules:            every testimonial in full, verbatim, in captured order; one <ol> per period with an id anchor
+                    (#2007-present, #1990-2006) and facet-chip jump links; quote precedes attribution in source order;
+                    ≥900px the attribution hangs in a sticky left rail (name in Spectral, org lines, place · year as a
+                    dimension string), <900px it stacks ABOVE the quote (order:-1) for scanning; lead = first captured
+                    sentence; no added quote marks (captured marks kept); no photos unless their pairing is captured;
+                    captured template artefacts are flagged with .review-flag (PLACEHOLDER signature), never edited.
+  stardustVersion:  0.32.1
+-->
+<section class="ledger shell band" id="{{period-id}}" data-section="testimonials-{{period-id}}" data-intent="full testimonial record, {{period}}" data-layout="stack" data-items="{{n}}" data-module="testimonial-list" data-variant="ledger" aria-labelledby="{{period-id}}-h">
+  <div class="ledger__head">
+    <h2 id="{{period-id}}-h">{{period}}</h2>
+    <div class="ledger__intro">{{optional captured note}}<p class="dim dim--start"><span>{{n}} testimonials</span></p></div>
+  </div>
+  <ol class="ledger__list" data-slot="items">
+    <!-- repeat -->
+    <li class="ledger__entry" id="{{period-id}}-{{nn}}">
+      <figure class="ledger__figure">
+        <blockquote class="ledger__quote" data-slot="quote">
+          <p class="ledger__lead">{{first sentence, verbatim}}</p>
+          <p>{{rest of paragraph}}</p>
+        </blockquote>
+        <figcaption class="ledger__who" data-slot="attribution"><span class="ledger__name">{{name}}</span><span class="ledger__org">{{org line, optional}}</span><span class="dim dim--stack"><span>{{place · year · label}}</span></span></figcaption>
+      </figure>
+    </li>
+  </ol>
+</section>

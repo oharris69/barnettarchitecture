@@ -1,0 +1,18 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep (wave 2)
+  writtenAt:        2026-11-17T19:40:00Z
+  sourceSlug:       willy-street
+  sourcePrototype:  stardust/prototypes/willy-street-proposed.html
+  region:           module:project-pager
+  status:           merged into stardust/canon/canon.css (canon merge 2026-11-17)
+  stardustVersion:  0.32.1
+-->
+<section class="shell band" data-section="project-pager" data-intent="walk to the neighbouring projects" data-layout="split" aria-labelledby="pager-h">
+  <h2 id="pager-h" class="visually-hidden">More projects</h2>
+  <nav class="pager" aria-labelledby="pager-h">
+    <!-- taxonomy.json order, wraps at both ends -->
+    <a href="{{prev.new}}" rel="prev"><span class="pager__title">{{prev.title}}</span><span class="pager__dir label">← Previous project</span><span class="dim dim--stack"><span>{{Sector · Type · Location}}</span></span></a>
+    <a href="{{next.new}}" rel="next"><span class="pager__title">{{next.title}}</span><span class="pager__dir label">Next project →</span><span class="dim dim--stack"><span>{{Sector · Type · Location}}</span></span></a>
+  </nav>
+</section>
+<!-- related projects follow as canon module project-index (3 rows, no facets foot): same sector or location; score sector 2, location 1, shared type 2 each, shared approach 1 each; prev/next excluded; ties by taxonomy distance -->
