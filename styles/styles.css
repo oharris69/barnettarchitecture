@@ -696,36 +696,36 @@ main > .section.narrow > div {
   max-width: calc(var(--measure) + 2 * var(--gutter));
 }
 
-/* === Enquiry band (fragment /fragments/enquiry, sections tagged by fragment.js) === */
-main > .section.fragment-enquiry .default-content-wrapper {
+/* === Enquiry band (inline section "Style: enquiry", or the /fragments/enquiry fragment tagged by fragment.js) === */
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 4px 24px;
   align-items: start;
 }
 
-main > .section.fragment-enquiry .default-content-wrapper > * {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > * {
   grid-column: 5 / span 8;
   margin: 0;
   max-width: none;
 }
 
-main > .section.fragment-enquiry .default-content-wrapper > :is(h2, h3) {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > :is(h2, h3) {
   grid-column: 1 / span 4;
   grid-row: 1 / span 6;
   font-size: var(--heading-xl);
 }
 
-main > .section.fragment-enquiry .default-content-wrapper ul {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper ul {
   display: grid;
   gap: 4px;
 }
 
-main > .section.fragment-enquiry .default-content-wrapper li + li {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper li + li {
   margin: 0;
 }
 
-main > .section.fragment-enquiry .default-content-wrapper a:is([href^="mailto:"], [href^="tel:"]) {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper a:is([href^="mailto:"], [href^="tel:"]) {
   font-family: var(--heading-font-family);
   font-weight: 300;
   font-size: clamp(1.375rem, 3.4vw, 3.75rem);
@@ -738,11 +738,11 @@ main > .section.fragment-enquiry .default-content-wrapper a:is([href^="mailto:"]
   transition: background-size 600ms var(--ease-hover);
 }
 
-main > .section.fragment-enquiry .default-content-wrapper a:is([href^="mailto:"], [href^="tel:"]):hover {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper a:is([href^="mailto:"], [href^="tel:"]):hover {
   background-size: 100% 1px;
 }
 
-main > .section.fragment-enquiry .default-content-wrapper > p:last-child {
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > p:last-child {
   margin-top: var(--spacing-md);
 }
 
@@ -1086,13 +1086,13 @@ main > .section.reveal.is-revealed {
 @media (width <= 899px) {
   main > .section.intro .intro-rail,
   main > .section.intro .intro-body,
-  main > .section.fragment-enquiry .default-content-wrapper > *,
-  main > .section.fragment-enquiry .default-content-wrapper > :is(h2, h3) {
+  main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > *,
+  main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > :is(h2, h3) {
     grid-column: 1 / -1;
     grid-row: auto;
   }
 
-  main > .section.fragment-enquiry .default-content-wrapper > :is(h2, h3) {
+  main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > :is(h2, h3) {
     margin-bottom: var(--spacing-md);
   }
 
@@ -1195,7 +1195,7 @@ main > .section.reveal.is-revealed {
     margin-block: -12px;
   }
 
-  main > .section.fragment-enquiry .default-content-wrapper a:is([href^="mailto:"], [href^="tel:"]) {
+  main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper a:is([href^="mailto:"], [href^="tel:"]) {
     display: inline-block;
     padding-block: 6px;
   }

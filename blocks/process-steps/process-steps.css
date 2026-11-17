@@ -84,9 +84,18 @@
   top: calc(var(--header-h) + 32px);
   margin: 0;
   padding-right: var(--spacing-md);
+  font-family: var(--heading-font-family);
+  font-weight: 300;
   font-size: var(--heading-lg);
   line-height: 1.04;
   letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.process-steps .process-steps-name :is(h2, h3, h4, h5, h6, p) {
+  font: inherit;
+  letter-spacing: inherit;
+  text-wrap: inherit;
 }
 
 .process-steps .process-steps-body {
@@ -133,26 +142,41 @@
   list-style: disc;
 }
 
-.process-steps .process-steps-systems {
+.process-steps .process-steps-body .process-steps-systems {
   display: grid;
   grid-template-columns: minmax(10rem, 1fr) 2fr;
+  gap: 0;
   margin-top: var(--spacing-sm);
+  padding-left: 0;
+  list-style: none;
   border-top: 1px solid var(--color-hairline);
 }
 
-.process-steps .process-steps-systems dt,
-.process-steps .process-steps-systems dd {
+.process-steps .process-steps-systems li {
+  display: contents;
+}
+
+.process-steps .process-steps-sep {
+  display: none;
+}
+
+.process-steps .process-steps-systems :is(.process-steps-term, .process-steps-def) {
+  display: block;
   margin: 0;
   padding-block: 14px;
   border-bottom: 1px solid var(--color-hairline);
 }
 
-.process-steps .process-steps-systems dt {
+.process-steps .process-steps-systems .process-steps-term {
   font-family: var(--heading-font-family);
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 1.25;
   padding-right: var(--spacing-sm);
+}
+
+.process-steps .process-steps-systems .process-steps-term strong {
+  font-weight: inherit;
 }
 
 @media (width <= 899px) {
@@ -202,16 +226,16 @@
     row-gap: var(--spacing-sm);
   }
 
-  .process-steps .process-steps-systems {
+  .process-steps .process-steps-body .process-steps-systems {
     grid-template-columns: 1fr;
   }
 
-  .process-steps .process-steps-systems dt {
+  .process-steps .process-steps-systems .process-steps-term {
     border-bottom: 0;
     padding-bottom: 4px;
   }
 
-  .process-steps .process-steps-systems dd {
+  .process-steps .process-steps-systems .process-steps-def {
     padding-top: 0;
   }
 }

@@ -5,10 +5,11 @@
  *           ("Regions", "Exhibits") hangs a divider; extra cells become a note under the frame.
  * selected: 2-up selected works (justified lead wall); every frame opens the lightbox.
  * strip:    "More collections" — a compact horizontal strip.
+ * Titles, meta lines, notes and dividers are the authored elements, MOVED into wrappers (EW1).
  */
 import bindLightbox from '../../scripts/lightbox.js';
 import {
-  imageAspect, imageSize, imageAt, textOf,
+  imageAspect, imageSize, imageAt, textOf, thumbPicture,
 } from '../../scripts/utils.js';
 
 function parse(block) {
@@ -48,17 +49,27 @@ function parse(block) {
   }).filter(Boolean);
 }
 
-function inline(cell) {
-  const span = document.createElement('span');
-  if (!cell) return span;
+/*
+ * A wrapper holding the cell's authored elements — MOVED, never re-created from their
+ * childNodes/text (EW1). The wrapper carries the class; the paragraphs keep their identity.
+ */
+function inline(cell, tag = 'div') {
+  const w = document.createElement(tag);
+  if (!cell) return w;
   const blocks = [...cell.children].filter((c) => /^(P|H[1-6]|DIV)$/.test(c.tagName));
-  if (blocks.length) {
-    blocks.forEach((b, i) => {
-      if (i) span.append(' ');
-      span.append(...b.childNodes);
-    });
-  } else span.append(...cell.childNodes);
-  return span;
+  if (blocks.length) w.append(...blocks);
+  else w.append(...cell.childNodes);
+  return w;
+}
+
+/* a divider ("Regions", "Exhibits"): the authored heading/paragraph inside a dim wrapper */
+function divider(nodes) {
+  const d = document.createElement('div');
+  d.className = 'collection-index-divider dim dim-start';
+  const span = document.createElement('span');
+  span.append(...nodes);
+  d.append(span);
+  return d;
 }
 
 /* default: 12-col spans — portraits take 3 (4:5 frames), landscapes share the rest of the row */
@@ -111,7 +122,8 @@ function frame(item, span) {
   const media = document.createElement('div');
   media.className = 'collection-index-img';
   media.append(item.picture);
-  item.img.loading = 'lazy';
+  // frames up to 7 of 12 columns: 750 px; a full-row cover: 1500 px (500 on phones)
+  thumbPicture(item.picture, { desktop: span >= 8 ? 1500 : 750, mobile: 500 });
   const cap = document.createElement('figcaption');
   const title = inline(item.titleCell);
   title.className = 'collection-index-title';
@@ -145,9 +157,12 @@ function buildWall(items) {
   items.forEach((it) => {
     if (it.divider) {
       flush();
-      const d = document.createElement('h3');
-      d.className = 'collection-index-divider dim dim-start';
-      d.append(inline(it.divider));
+      const h = it.divider.querySelector('h1, h2, h3, h4, h5, h6');
+      const d = divider(h ? [h] : [...it.divider.children]);
+      if (!h) {
+        d.setAttribute('role', 'heading');
+        d.setAttribute('aria-level', '3');
+      }
       wall.append(d);
     } else group.push(it);
   });
@@ -171,18 +186,22 @@ function buildSelected(items) {
     a.dataset.h = size.h;
     a.dataset.lb = '';
     a.append(it.picture);
-    it.img.loading = 'lazy';
+    thumbPicture(it.picture, { desktop: 750, mobile: 500 });
     const cap = document.createElement('figcaption');
     const label = document.createElement('span');
     label.className = 'label';
     label.dataset.lbCaption = '';
-    const t = inline(it.titleCell);
-    const meta = it.meta ? textOf(it.meta) : '';
-    const titleText = textOf(t);
-    label.append(...t.childNodes);
-    // meta often repeats the title ("Iowa · Midwest"): keep only what it adds
-    const extra = meta.startsWith(titleText) ? meta.slice(titleText.length).replace(/^\s*[·|–—-]\s*/, '') : meta;
-    if (extra) label.append(` · ${extra}`);
+    const t = inline(it.titleCell, 'span');
+    t.className = 'collection-index-part';
+    label.append(t);
+    if (it.meta) {
+      // meta often repeats the title ("Iowa · Midwest"): then it stays authored but unprinted
+      const m = inline(it.meta, 'span');
+      m.className = 'collection-index-part';
+      if (textOf(m).startsWith(textOf(t))) m.hidden = true;
+      else label.append(' · ');
+      label.append(m);
+    }
     cap.append(label);
     fig.append(a, cap);
     wall.append(fig);
@@ -200,15 +219,13 @@ function buildStrip(items) {
     const media = document.createElement('div');
     media.className = 'collection-index-img';
     media.append(it.picture);
-    it.img.loading = 'lazy';
-    const title = document.createElement('p');
+    thumbPicture(it.picture, { desktop: 500, mobile: 500 });
+    const title = inline(it.titleCell);
     title.className = 'collection-index-title';
-    title.append(...inline(it.titleCell).childNodes);
     card.append(media, title);
     if (it.meta) {
-      const meta = document.createElement('p');
+      const meta = inline(it.meta);
       meta.className = 'collection-index-meta label';
-      meta.append(...inline(it.meta).childNodes);
       card.append(meta);
     }
     li.append(card);
@@ -236,13 +253,8 @@ export default function decorate(block) {
   const prev = block.parentElement && block.parentElement.previousElementSibling;
   const last = prev && prev.classList.contains('default-content-wrapper') ? prev.lastElementChild : null;
   if (last && /^H[3-6]$/.test(last.tagName)) {
-    const d = document.createElement('h3');
-    d.className = 'collection-index-divider dim dim-start';
-    const span = document.createElement('span');
-    span.append(...last.childNodes);
-    d.append(span);
-    if (last.id) d.id = last.id;
-    last.remove();
+    // the authored heading MOVES in (it stays inline-editable as default content, EW8)
+    const d = divider([last]);
     if (!prev.children.length) prev.remove();
     wall.prepend(d);
   }

@@ -38,7 +38,7 @@ export default function decorate(block) {
     const label = document.createElement('div');
     label.className = 'big-idea-client dim dim-start';
     const span = document.createElement('span');
-    labelNodes.forEach((n) => span.append(...n.childNodes));
+    span.append(...labelNodes); // the authored label paragraph(s), moved (EW1)
     label.append(span);
     body.prepend(label);
   }

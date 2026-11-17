@@ -2,9 +2,9 @@
  * pager — row 1: previous project link · row 2: next project link.
  * Any further text in a row (e.g. "Residential · New home · Madison, WI")
  * becomes its dimension line.
+ * Card-as-link (EW6): the authored title paragraph and meta paragraph MOVE into the card
+ * <a>; the inner authored anchor is unwrapped after its href is read.
  */
-import { dimLine, textOf } from '../../scripts/utils.js';
-
 export default function decorate(block) {
   const nav = document.createElement('nav');
   nav.className = 'pager-nav';
@@ -17,16 +17,26 @@ export default function decorate(block) {
     a.href = src.getAttribute('href');
     a.rel = dir;
     a.className = `pager-${dir}`;
-    const title = document.createElement('span');
+    const title = document.createElement('div');
     title.className = 'pager-title';
-    title.append(...src.childNodes);
+    const titleP = src.closest('p, h1, h2, h3, h4, h5, h6');
+    // the rest of the row (meta line), in authored order, before anything moves
+    const extras = [...row.querySelectorAll(':scope > div > *')]
+      .filter((el) => el !== titleP && el !== src && el.textContent.trim());
+    title.append(titleP || src);
+    src.replaceWith(...src.childNodes);
     const label = document.createElement('span');
     label.className = 'pager-dir label';
     label.textContent = dir === 'prev' ? '← Previous project' : 'Next project →';
     a.append(title, label);
-    src.remove();
-    const extra = textOf(row).replace(/^[\s·|–—-]+|[\s·|–—-]+$/g, '');
-    if (extra) a.append(dimLine(extra, 'dim-stack', 'span'));
+    if (extras.length) {
+      const dim = document.createElement('div');
+      dim.className = 'dim dim-stack';
+      const span = document.createElement('span');
+      span.append(...extras);
+      dim.append(span);
+      a.append(dim);
+    }
     nav.append(a);
   });
   const heading = document.createElement('h2');

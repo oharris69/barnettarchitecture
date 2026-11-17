@@ -127,6 +127,70 @@ export function imageAt(img, width) {
 }
 
 /**
+ * Thumbnail sizing, in place: the authored <picture> keeps its identity (it is MOVED by the
+ * blocks, never rebuilt) — only the requested widths change. EDS media (`media_<hash>`):
+ * <source media=…> → `desktop`, the other sources and the <img> → `mobile`.
+ * Wix fill URLs (local content): a desktop <source> + a mobile <img>. Always lazy unless a
+ * block already made the image eager.
+ * @param {Element} el <picture> or <img>
+ * @param {{desktop?: number, mobile?: number}} widths
+ */
+export function thumbPicture(el, { desktop = 750, mobile = 500 } = {}) {
+  if (!el) return;
+  const img = el.tagName === 'IMG' ? el : el.querySelector('img');
+  if (!img) return;
+  const pic = img.closest('picture');
+  if (img.loading !== 'eager') img.loading = 'lazy';
+  const media = (src, w) => {
+    try {
+      const u = new URL(src, window.location);
+      if (!/\/media_[0-9a-f]+/.test(u.pathname)) return null;
+      u.searchParams.set('width', String(w));
+      return u.href;
+    } catch (e) {
+      return null;
+    }
+  };
+  const src = img.getAttribute('src') || '';
+  if (media(src, mobile)) {
+    if (pic) {
+      const sources = [...pic.querySelectorAll(':scope > source')];
+      sources.forEach((s) => {
+        const next = media(s.getAttribute('srcset') || '', s.media ? desktop : mobile);
+        if (next) s.setAttribute('srcset', next);
+      });
+      // AVIF first (the pipeline lists WebP first, so browsers never pick the smaller AVIF);
+      // a WebP source with no AVIF twin for the same media query gets one
+      const isAvif = (s) => s.type === 'image/avif';
+      sources.filter((s) => s.type === 'image/webp').forEach((s) => {
+        if (sources.some((o) => isAvif(o) && o.media === s.media)) return;
+        const u = new URL(s.getAttribute('srcset'), window.location);
+        if (!u.searchParams.has('format')) return;
+        u.searchParams.set('format', 'avif');
+        const twin = document.createElement('source');
+        twin.type = 'image/avif';
+        twin.srcset = u.href;
+        if (s.media) twin.media = s.media;
+        sources.push(twin);
+      });
+      const rank = (s) => (s.media ? 0 : 2) + (isAvif(s) ? 0 : 1);
+      sources.sort((a, b) => rank(a) - rank(b)).forEach((s) => img.before(s));
+    }
+    img.setAttribute('src', media(src, mobile));
+    return;
+  }
+  if (!/\/v1\/fill\/w_\d+,h_\d+/.test(src)) return;
+  const at = (w) => imageAt({ getAttribute: (a) => img.getAttribute(a), currentSrc: '' }, w);
+  if (pic && !pic.querySelector('source')) {
+    const s = document.createElement('source');
+    s.media = '(min-width: 600px)';
+    s.srcset = at(desktop);
+    pic.prepend(s);
+    img.setAttribute('src', at(mobile));
+  } else img.setAttribute('src', at(desktop));
+}
+
+/**
  * Section head reabsorption: when a block's section starts with default content
  * (eyebrow / H2 / lede),
  * MOVE those nodes into the block (they stay inline-editable) and drop the emptied wrapper.

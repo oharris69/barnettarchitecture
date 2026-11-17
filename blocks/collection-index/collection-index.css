@@ -111,6 +111,25 @@
   line-height: 1.3;
 }
 
+/* authored heading / paragraphs moved into the wrappers: the wrapper carries the type */
+.collection-index .collection-index-divider :is(h2, h3, h4, h5, h6, p),
+.collection-index .collection-index-title :is(h2, h3, h4, h5, h6, p),
+.collection-index .collection-index-meta :is(h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-wrap: inherit;
+}
+
+.collection-index .collection-index-card :is(.collection-index-title, .collection-index-meta) {
+  text-wrap: pretty;
+}
+
+.collection-index .collection-index-part p {
+  display: inline;
+}
+
 .collection-index .collection-index-note {
   position: relative;
   z-index: 2;

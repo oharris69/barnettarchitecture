@@ -43,10 +43,17 @@ export default function decorate(block) {
     const li = document.createElement('li');
     li.className = 'process-steps-step';
     li.id = s.id;
-    const h = document.createElement('h3');
+    // the authored phase name MOVES into a heading wrapper (a paragraph gets role=heading)
+    const h = document.createElement('div');
     h.className = 'process-steps-name';
-    const src = s.nameCell.querySelector('h1, h2, h3, h4, h5, h6, p');
-    h.append(...(src || s.nameCell).childNodes);
+    const authored = s.nameCell.querySelector('h1, h2, h3, h4, h5, h6');
+    if (!authored) {
+      h.setAttribute('role', 'heading');
+      h.setAttribute('aria-level', '3');
+    }
+    const src = authored || s.nameCell.querySelector('p');
+    if (src) h.append(src);
+    else h.append(...s.nameCell.childNodes);
     const body = document.createElement('div');
     body.className = 'process-steps-body';
     s.bodyCells.forEach((c) => {
@@ -71,28 +78,38 @@ export default function decorate(block) {
       if (next) aside.append(next);
     });
     // "term — definition" lists (<li><strong>Design-build</strong> An approach …</li>) read as a
-    // definition list, styled as a ruled table
+    // definition table: the authored <ul> stays (one editable unit); inside each item the term
+    // and its definition are wrapped in spans in place — textContent unchanged (EW1)
     body.querySelectorAll(':scope > ul').forEach((ul) => {
       const lis = [...ul.children];
       const termFirst = (item) => item.firstElementChild && item.firstElementChild.tagName === 'STRONG'
         && textOf(item).startsWith(textOf(item.firstElementChild));
       if (!lis.length || !lis.every(termFirst)) return;
-      const dl = document.createElement('dl');
       lis.forEach((entry) => {
-        const dt = document.createElement('dt');
         const strong = entry.firstElementChild;
-        dt.append(...strong.childNodes);
-        strong.remove();
-        const dd = document.createElement('dd');
-        dd.append(...entry.childNodes);
-        if (dd.firstChild && dd.firstChild.nodeType === 3) {
-          dd.firstChild.textContent = dd.firstChild.textContent.replace(/^[\s:–—-]+/, '');
-        }
-        dl.append(dt, dd);
+        const term = document.createElement('span');
+        term.className = 'process-steps-term';
+        const def = document.createElement('span');
+        def.className = 'process-steps-def';
+        const rest = [...entry.childNodes].filter((n) => n !== strong);
+        // a leading ": " / " — " between term and definition is kept, unprinted
+        const lead = rest[0];
+        if (lead && lead.nodeType === 3) {
+          const m = lead.textContent.match(/^[\s:–—-]+/);
+          if (m) {
+            const sep = document.createElement('span');
+            sep.className = 'process-steps-sep';
+            const [gap] = m;
+            sep.textContent = gap;
+            lead.textContent = lead.textContent.slice(gap.length);
+            term.append(strong, sep);
+          } else term.append(strong);
+        } else term.append(strong);
+        def.append(...rest);
+        entry.replaceChildren(term, def);
       });
-      ul.replaceWith(dl);
+      ul.classList.add('process-steps-systems');
     });
-    body.querySelectorAll('dl').forEach((dl) => dl.classList.add('process-steps-systems'));
     li.append(h, body);
     list.append(li);
   });

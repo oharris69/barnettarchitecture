@@ -1,5 +1,5 @@
 /* breadcrumbs (canon breadcrumb) */
-.breadcrumbs ol {
+.breadcrumbs :is(ol, ul) {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 0;

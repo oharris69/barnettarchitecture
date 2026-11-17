@@ -1,8 +1,13 @@
-/*
+/**
  * contact-form — rows: field label · type (text/email/tel/select/textarea) · required (yes/no) ·
  * options (comma list for select); last row: Submit · button label · mailto:address.
  * No backend yet: submitting validates, then composes a mailto: to the practice (interim tier).
  * The section head (H2 + lede) is reabsorbed into the side rail.
+ * The authored field-label paragraphs MOVE into their <label>s (inline-editable, EW1).
+ *
+ * @ew-exempt config — cells 2–4 (type · required · select options) and the Submit row
+ *   (keyword · button label · mailto) configure the form; the button label is rendered inside
+ *   a <button>, which cannot host the editor (EW7)
  */
 import { reabsorbHead, slugify, textOf } from '../../scripts/utils.js';
 
@@ -37,6 +42,8 @@ export default function decorate(block) {
     const flag = (cells[0].match(/\((required|optional)\)\s*$/i) || [])[1];
     fields.push({
       label: cells[0].replace(/\s*\((required|optional)\)\s*$/i, ''),
+      labelEl: row.firstElementChild.querySelector('p') || null,
+      flagged: !!flag,
       type,
       required: /^(yes|true|required|y)$/i.test(cells[2] || '') || (!cells[2] && /required/i.test(flag || '')),
       options: (cells[3] || '').split(',').map((o) => o.trim()).filter(Boolean),
@@ -60,10 +67,14 @@ export default function decorate(block) {
     if (f.type === 'textarea' || f.type === 'select') wrap.classList.add('contact-form-wide');
     const label = document.createElement('label');
     label.htmlFor = id;
-    label.textContent = `${f.label} `;
-    const req = document.createElement('span');
-    req.textContent = f.required ? '(required)' : '(optional)';
-    label.append(req);
+    if (f.labelEl) label.append(f.labelEl);
+    else label.append(f.label);
+    if (!f.flagged) {
+      // the authored label carries no "(required)" / "(optional)": the block states it
+      const req = document.createElement('span');
+      req.textContent = f.required ? '(required)' : '(optional)';
+      label.append(' ', req);
+    }
     let input;
     if (f.type === 'textarea') {
       input = document.createElement('textarea');

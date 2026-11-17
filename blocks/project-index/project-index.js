@@ -8,7 +8,7 @@
  * Rows without a picture render as a text schedule (title + note).
  */
 import {
-  FACETS, facetSlug, splitFacet, joinFacet, dimLine, textOf,
+  FACETS, facetSlug, splitFacet, textOf, thumbPicture,
 } from '../../scripts/utils.js';
 
 const KEYS = ['sector', 'type', 'location', 'approach'];
@@ -17,15 +17,26 @@ function parseFacets(cell) {
   const out = {
     sector: [], type: [], location: [], approach: [],
   };
-  if (!cell) return out;
-  let parts = [...cell.querySelectorAll(':scope > p, :scope > div, :scope > li, :scope > ul > li')]
-    .map((p) => textOf(p));
+  const els = {};
+  if (!cell) return { facets: out, els, rest: [] };
+  let nodes = [...cell.querySelectorAll(':scope > p, :scope > div, :scope > li, :scope > ul > li')];
+  let parts = nodes.map((p) => textOf(p));
   if (!parts.length) parts = [textOf(cell)];
-  if (parts.length === 1 && /\s[|·]\s/.test(parts[0])) parts = parts[0].split(/\s[|·]\s/);
+  if (parts.length === 1 && /\s[|·]\s/.test(parts[0])) {
+    // one delimited line ("Residential · New home · Madison, WI"): shown as authored
+    parts = parts[0].split(/\s[|·]\s/);
+  } else {
+    KEYS.forEach((k, i) => {
+      if (nodes[i]) els[k] = nodes[i];
+    });
+    nodes = nodes.slice(KEYS.length);
+  }
   KEYS.forEach((k, i) => {
     out[k] = splitFacet(k, parts[i]);
   });
-  return out;
+  // authored elements the dim line does not consume (a lone delimited line, or extras)
+  const rest = Object.keys(els).length ? nodes : [...cell.children];
+  return { facets: out, els, rest };
 }
 
 function parseRow(row) {
@@ -37,46 +48,94 @@ function parseRow(row) {
   const link = titleCell ? titleCell.querySelector('a') : null;
   if (!titleCell || !textOf(titleCell)) return null;
   const noteLike = factsCell && !picCell && textOf(factsCell).length > 90;
+  const parsed = noteLike ? parseFacets(null) : parseFacets(factsCell);
   return {
     picture: picCell ? (picCell.querySelector('picture') || picCell.querySelector('img')) : null,
     titleCell,
     link,
-    facets: noteLike ? parseFacets(null) : parseFacets(factsCell),
+    facets: parsed.facets,
+    facetEls: parsed.els,
+    facetRest: parsed.rest,
     note: noteLike ? factsCell : null,
   };
 }
 
+/* the authored title element (H3 > a) MOVES into the title wrapper — never rebuilt (EW1) */
 function titleEl(item) {
-  let h = item.titleCell.querySelector('h1, h2, h3, h4, h5, h6');
-  if (h) {
-    if (h.tagName !== 'H3') {
-      const h3 = document.createElement('h3');
-      h3.append(...h.childNodes);
-      h = h3;
-    }
-  } else {
-    h = document.createElement('h3');
-    const p = item.titleCell.querySelector('p');
-    h.append(...(p || item.titleCell).childNodes);
-  }
-  h.className = 'project-index-title';
-  return h;
+  const wrap = document.createElement('div');
+  wrap.className = 'project-index-title';
+  const h = item.titleCell.querySelector('h1, h2, h3, h4, h5, h6')
+    || item.titleCell.querySelector('p');
+  if (h) wrap.append(h);
+  else wrap.append(...item.titleCell.childNodes);
+  return wrap;
 }
 
-function dimText(item, variant, showSector) {
+/*
+ * Multi-value facet joined with " & " (related / filters rows): the authored text
+ * ("Addition, Renovation") is split into spans in place — textContent is unchanged, so the
+ * paragraph stays editable — and the separator is swapped in CSS (.facet-join::before).
+ */
+function joinInPlace(p, key) {
+  if (!p || p.children.length) return;
+  const text = p.textContent;
+  const values = splitFacet(key, text);
+  if (values.length < 2) return;
+  const lower = text.toLowerCase();
+  let at = 0;
+  const pieces = [];
+  const ok = values.every((v, i) => {
+    const pos = lower.indexOf(v.toLowerCase(), at);
+    if (pos < 0) return false;
+    if (i === 0 && pos > 0) pieces.push(document.createTextNode(text.slice(0, pos)));
+    if (i > 0) {
+      const sep = document.createElement('span');
+      sep.className = 'facet-sep';
+      sep.textContent = text.slice(at, pos);
+      pieces.push(sep);
+    }
+    const s = document.createElement('span');
+    s.className = i ? 'facet-v facet-join' : 'facet-v';
+    s.textContent = text.slice(pos, pos + v.length);
+    pieces.push(s);
+    at = pos + v.length;
+    return true;
+  });
+  if (!ok) return;
+  if (at < text.length) pieces.push(document.createTextNode(text.slice(at)));
+  p.replaceChildren(...pieces);
+}
+
+/* the dimension line: the authored facet paragraphs, MOVED and set inline, " · " between */
+function dimEl(item, variant, showSector) {
   const f = item.facets;
-  const parts = [];
-  if (variant === 'default') {
-    if (f.sector.length) parts.push(f.sector.join(', '));
-    if (f.type.length) parts.push(joinFacet(f.type, ', '));
-    if (f.location.length) parts.push(f.location.join(', '));
-    if (f.approach.length) parts.push(f.approach.join(', '));
-  } else {
-    if (showSector && f.sector.length) parts.push(f.sector.join(', '));
-    if (f.type.length) parts.push(joinFacet(f.type, ' & '));
-    if (f.location.length) parts.push(f.location.join(', '));
-  }
-  return parts.join(' · ');
+  const e = item.facetEls;
+  const shown = variant === 'default'
+    ? ['sector', 'type', 'location', 'approach']
+    : ['sector', 'type', 'location'].filter((k) => k !== 'sector' || showSector);
+  const line = document.createElement('div');
+  line.className = 'dim dim-stack';
+  const span = document.createElement('span');
+  const hidden = [];
+  KEYS.forEach((k) => {
+    const p = e[k];
+    if (!p) return;
+    if (!shown.includes(k) || !f[k].length) {
+      hidden.push(p);
+      return;
+    }
+    if (k === 'type' && variant !== 'default') joinInPlace(p, k);
+    const w = document.createElement('span');
+    w.className = `project-index-facet facet-${k}`;
+    w.append(p);
+    if (span.childNodes.length) span.append(' · ');
+    span.append(w);
+  });
+  // no per-facet paragraphs (one delimited line): the authored elements, as they are
+  if (!Object.keys(e).length) item.facetRest.forEach((n) => span.append(n));
+  if (!textOf(span)) return { line: null, hidden };
+  line.append(span);
+  return { line, hidden: hidden.concat(Object.keys(e).length ? item.facetRest : []) };
 }
 
 function buildRow(item, variant, showSector) {
@@ -88,9 +147,17 @@ function buildRow(item, variant, showSector) {
   const text = document.createElement('div');
   text.className = 'project-index-text';
   text.append(titleEl(item));
-  const d = dimText(item, variant, showSector);
-  if (d) text.append(dimLine(d));
+  const { line, hidden } = dimEl(item, variant, showSector);
+  if (line) text.append(line);
   li.append(text);
+  if (hidden.length) {
+    // facets that drive the filters but are not printed in this row's line stay authored here
+    const keep = document.createElement('div');
+    keep.className = 'project-index-facets';
+    keep.hidden = true;
+    keep.append(...hidden);
+    li.append(keep);
+  }
   if (item.picture) {
     const media = document.createElement('div');
     media.className = 'project-index-media';
@@ -108,6 +175,25 @@ function buildRow(item, variant, showSector) {
   return li;
 }
 
+/*
+ * The listing's section head ("Residential projects", authored as default content right before
+ * the block): the H2 MOVES into the block as a label-scale heading over the filter toolbar (EW8);
+ * the emptied
+ * default-content wrapper goes.
+ */
+function sectionHeading(block) {
+  const wrapper = block.parentElement;
+  const prev = wrapper && wrapper.previousElementSibling;
+  if (!prev || !prev.classList.contains('default-content-wrapper')) return null;
+  const h = prev.lastElementChild;
+  if (!h || !/^H[2-4]$/.test(h.tagName)) return null;
+  const head = document.createElement('div');
+  head.className = 'project-index-heading label';
+  head.append(h);
+  if (!prev.children.length) prev.remove();
+  return head;
+}
+
 /* ---------- filters variant ---------- */
 function el(tag, cls, text) {
   const e = document.createElement(tag);
@@ -116,7 +202,7 @@ function el(tag, cls, text) {
   return e;
 }
 
-function buildFilters(block, list, items, total) {
+function buildFilters(block, list, items, total, heading) {
   const rows = [...list.children];
   const uid = `pi${Math.random().toString(36).slice(2, 7)}`;
 
@@ -202,7 +288,7 @@ function buildFilters(block, list, items, total) {
   if (groups.length) layout.append(fold);
   else layout.classList.add('project-index-layout-solo');
   layout.append(main);
-  block.replaceChildren(layout);
+  block.replaceChildren(...(heading ? [heading] : []), layout);
 
   /* state */
   const clears = [clear, showAll];
@@ -305,6 +391,10 @@ export default function decorate(block) {
   items.forEach((it) => list.append(buildRow(it, variant, showSector)));
   if (items.length && items.every((it) => !it.picture)) block.classList.add('text-only');
 
+  // thumbnails: frames are at most half the measure — 750 px wide (500 on phones), lazy
+  list.querySelectorAll('.project-index-media').forEach((m) => {
+    thumbPicture(m.querySelector('picture, img'), { desktop: 750, mobile: 500 });
+  });
   // the index reaches the first viewport on listing pages: the first frame is the LCP candidate
   const section = block.closest('.section');
   const main = block.closest('main');
@@ -316,7 +406,7 @@ export default function decorate(block) {
 
   if (variant === 'filters') {
     list.dataset.view = 'list';
-    buildFilters(block, list, items, items.length);
+    buildFilters(block, list, items, items.length, sectionHeading(block));
     return;
   }
   block.replaceChildren(list);

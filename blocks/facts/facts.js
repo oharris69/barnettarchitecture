@@ -18,11 +18,8 @@ export default function decorate(block) {
     dt.className = 'label';
     dt.append(...labelCell.childNodes);
     const dd = document.createElement('dd');
-    // unwrap single paragraphs so the value reads as one line of type
-    valueNodes.forEach((nd) => {
-      if (nd.nodeType === 1 && nd.tagName === 'P') dd.append(...nd.childNodes);
-      else dd.append(nd);
-    });
+    // the authored value paragraphs MOVE into the <dd> (EW1); dd carries the type
+    dd.append(...valueNodes);
     if (!hasValue) {
       // label-only row: show it as a value under an empty label (authors sometimes omit a cell)
       dd.append(...dt.childNodes);

@@ -249,3 +249,8 @@
     transition: none;
   }
 }
+
+/* authored caption paragraphs, moved into the caption line */
+.gallery .gallery-caption p {
+  display: inline;
+}

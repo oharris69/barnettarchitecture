@@ -28,6 +28,13 @@ export async function loadFragment(path) {
     if (resp.ok) {
       const main = document.createElement('main');
       main.innerHTML = await resp.text();
+      // a document-level metadata table (e.g. Robots: noindex on /nav, /footer, /fragments/*)
+      // is page config, never fragment content — the html-folder preview leaves it in place
+      main.querySelectorAll(':scope > div > .metadata').forEach((meta) => {
+        const section = meta.parentElement;
+        meta.remove();
+        if (!section.children.length && !section.textContent.trim()) section.remove();
+      });
 
       // reset base path for media to fragment base
       const resetAttributeBase = (tag, attr) => {

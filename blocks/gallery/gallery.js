@@ -48,9 +48,10 @@ function captionSpan(photo) {
   const span = document.createElement('span');
   span.className = 'gallery-caption';
   span.dataset.lbCaption = '';
-  photo.capNodes.forEach((nd) => {
-    if (nd.nodeType === 1 && nd.tagName === 'P') span.append(...nd.childNodes, ' ');
-    else span.append(nd);
+  // the authored caption paragraphs MOVE in (set inline in CSS), a space between (EW1)
+  photo.capNodes.forEach((nd, i) => {
+    if (i && nd.nodeType === 1) span.append(' ');
+    span.append(nd);
   });
   return span.textContent.trim() ? span : null;
 }

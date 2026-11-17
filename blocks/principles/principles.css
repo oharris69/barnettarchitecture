@@ -56,16 +56,27 @@
   margin: 0;
 }
 
-.principles .principles-item h3 {
+.principles .principles-title {
+  font-family: var(--heading-font-family);
   font-size: var(--heading-md);
   font-weight: 400;
   letter-spacing: -0.005em;
   line-height: 1.15;
+  text-wrap: balance;
 }
 
 .principles .principles-item p {
   color: var(--color-fg);
   max-width: 40ch;
+}
+
+.principles .principles-title :is(h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  max-width: none;
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-wrap: inherit;
 }
 
 @media (width <= 899px) {

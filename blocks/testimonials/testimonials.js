@@ -4,6 +4,8 @@
  * default: the single featured quote at headline scale.
  * ledger:  the long list, full text; who sticks beside the quote. A one-cell row with a short text
  *          ("2007–present") opens a group. The section head (H2 + intro) is reabsorbed beside it.
+ * Every authored paragraph (quote, attribution lines, group label) MOVES into the layout;
+ * wrappers carry the classes (EW1/EW2).
  */
 import { reabsorbHead, slugify, textOf } from '../../scripts/utils.js';
 
@@ -26,24 +28,9 @@ function parse(block) {
   }).filter(Boolean);
 }
 
+/* the attribution paragraphs (name · organisation(s) · place/year), as authored elements */
 function whoLines(who) {
-  // name · organisation(s) · place/year (last line when there are several)
-  const lines = who.flatMap((p) => {
-    if (p.tagName === 'P' && p.querySelector('br')) {
-      const parts = [];
-      let cur = document.createElement('span');
-      [...p.childNodes].forEach((nd) => {
-        if (nd.nodeName === 'BR') {
-          parts.push(cur);
-          cur = document.createElement('span');
-        } else cur.append(nd);
-      });
-      parts.push(cur);
-      return parts.filter((s) => textOf(s));
-    }
-    return [p];
-  });
-  return lines;
+  return who.filter((p) => textOf(p));
 }
 
 function featured(block, items) {
@@ -56,15 +43,28 @@ function featured(block, items) {
   const cap = document.createElement('figcaption');
   cap.className = 'dim dim-start';
   const span = document.createElement('span');
-  whoLines(first.who).forEach((l, i) => {
+  // the authored attribution paragraphs MOVE in, set inline, " · " between (EW1)
+  const parts = whoLines(first.who)
+    .concat(first.extra.flatMap((c) => paragraphs(c)));
+  parts.forEach((l, i) => {
     if (i) span.append(' · ');
-    span.append(...l.childNodes);
+    const w = document.createElement('span');
+    w.className = 'testimonials-who-part';
+    w.append(l);
+    span.append(w);
   });
-  first.extra.forEach((c) => span.append(' · ', ...c.childNodes));
   cap.append(span);
   fig.append(bq);
   if (textOf(span)) fig.append(cap);
   block.replaceChildren(fig);
+}
+
+/* wrap an authored element in a generated wrapper that carries the layout class */
+function wrapNode(node, className) {
+  const w = document.createElement('span');
+  w.className = className;
+  w.append(node);
+  return w;
 }
 
 function ledger(block, items) {
@@ -90,9 +90,18 @@ function ledger(block, items) {
   };
   items.forEach((it) => {
     if (it.group) {
-      const g = document.createElement('h3');
+      // group label ("2007–present"): the authored heading, or its paragraph under a
+      // heading-role wrapper — moved, never retagged (EW1)
+      const g = document.createElement('div');
       g.className = 'testimonials-group';
-      g.append(...it.group.childNodes);
+      const h = it.group.querySelector('h1, h2, h3, h4, h5, h6');
+      if (!h) {
+        g.setAttribute('role', 'heading');
+        g.setAttribute('aria-level', '3');
+      }
+      const src = h || it.group.querySelector('p');
+      if (src) g.append(src);
+      else g.append(...it.group.childNodes);
       groupId = slugify(textOf(g)) || groupId;
       g.id = groupId;
       out.push(g);
@@ -117,22 +126,18 @@ function ledger(block, items) {
     cap.className = 'testimonials-who';
     const lines = whoLines(it.who);
     lines.forEach((l, i) => {
-      const s = document.createElement('span');
-      if (i === 0) s.className = 'testimonials-name';
-      else if (i === lines.length - 1 && lines.length > 1) s.className = 'dim dim-stack';
-      else s.className = 'testimonials-org';
-      if (s.classList.contains('dim')) {
-        const inner = document.createElement('span');
-        inner.append(...l.childNodes);
-        s.append(inner);
-      } else s.append(...l.childNodes);
-      cap.append(s);
+      if (i === lines.length - 1 && lines.length > 1) {
+        const s = document.createElement('span');
+        s.className = 'dim dim-stack';
+        s.append(wrapNode(l, 'testimonials-who-part'));
+        cap.append(s);
+      } else cap.append(wrapNode(l, i === 0 ? 'testimonials-name' : 'testimonials-org'));
     });
     it.extra.forEach((c) => {
       const s = document.createElement('span');
       s.className = 'dim dim-stack';
       const inner = document.createElement('span');
-      inner.append(...c.childNodes);
+      inner.append(...paragraphs(c));
       s.append(inner);
       cap.append(s);
     });

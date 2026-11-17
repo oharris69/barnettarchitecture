@@ -103,7 +103,7 @@
   flex: 0 1 auto;
 }
 
-.hero .hero-crumbs .breadcrumbs ol {
+.hero .hero-crumbs .breadcrumbs :is(ol, ul) {
   gap: 4px 0;
 }
 

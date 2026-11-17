@@ -51,6 +51,11 @@
   text-wrap: balance;
 }
 
+/* the authored value paragraph, moved into the <dd>: the dd sets the type */
+.facts dd p {
+  text-wrap: inherit;
+}
+
 .facts dd a {
   text-decoration: underline;
   text-decoration-color: var(--color-muted);

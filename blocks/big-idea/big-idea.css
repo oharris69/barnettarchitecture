@@ -61,3 +61,8 @@
     padding-left: 0;
   }
 }
+
+/* the authored client-type label paragraph, moved into the dimension line */
+.big-idea .big-idea-client p {
+  display: inline;
+}

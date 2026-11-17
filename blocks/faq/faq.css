@@ -40,23 +40,19 @@
   border-top: 0;
 }
 
-.faq .faq-item summary {
+.faq .faq-row {
   position: relative;
   display: block;
   padding: var(--spacing-md) 40px var(--spacing-md) 0;
   cursor: pointer;
-  list-style: none;
 }
 
-.faq .faq-item:first-child summary {
+.faq .faq-item:first-child .faq-row {
   padding-top: 0;
 }
 
-.faq .faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq .faq-item summary::after {
+/* the chevron: drawn on the row; the toggle button sits over it (chevron-only, EW7) */
+.faq .faq-row::after {
   content: "";
   position: absolute;
   right: 6px;
@@ -67,27 +63,58 @@
   border-bottom: 1px solid currentcolor;
   transform: rotate(45deg);
   transition: transform 300ms var(--ease-hover);
+  pointer-events: none;
 }
 
-.faq .faq-item:first-child summary::after {
+.faq .faq-item:first-child .faq-row::after {
   top: 0.55em;
 }
 
-.faq .faq-item[open] summary::after {
+.faq .faq-item.is-open .faq-row::after {
   transform: translateY(4px) rotate(-135deg);
+}
+
+.faq .faq-toggle {
+  position: absolute;
+  right: -9px;
+  top: calc(var(--spacing-md) + 0.55em - 15px);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.faq .faq-item:first-child .faq-toggle {
+  top: calc(0.55em - 15px);
 }
 
 .faq .faq-question {
   margin: 0;
+  font-family: var(--heading-font-family);
   font-size: var(--heading-md);
   font-weight: 400;
   letter-spacing: -0.005em;
   line-height: 1.2;
+  text-wrap: balance;
   transition: color 300ms var(--ease-hover);
 }
 
-.faq .faq-item summary:hover .faq-question {
+.faq .faq-question :is(h2, h3, h4, h5, h6, p) {
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-wrap: inherit;
+}
+
+.faq .faq-row:hover .faq-question {
   color: var(--color-accent);
+}
+
+.faq .faq-answer[hidden] {
+  display: none;
 }
 
 .faq .faq-answer {

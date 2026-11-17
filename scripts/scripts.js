@@ -53,7 +53,8 @@ const ORGANIZATION = {
   alternateName: 'Barnett Architecture',
   url: `${SITE}/`,
   description: 'A full-service, design-focused architectural practice in Madison, Wisconsin, established in 2007. Services range from hourly consultations to the full architectural process.',
-  image: 'https://static.wixstatic.com/media/5c8b97_f3ad8f25a668458da0fd91c320db6ef7.jpg',
+  image: `${SITE}/icons/icon-512.png`,
+  logo: `${SITE}/icons/icon-512.png`,
   foundingDate: '2007',
   founder: {
     '@type': 'Person', name: 'Todd Barnett', jobTitle: 'Architect', url: `${SITE}/about/todd-barnett`,
@@ -369,9 +370,20 @@ export function decorateMain(main) {
 
 /* ---------------- JSON-LD ---------------- */
 
+/**
+ * Absolute, canonical image URL for structured data: same-origin paths (aem.page / aem.live /
+ * localhost previews) are re-based on SITE (the local /content mount dropped), external hosts
+ * are kept; query strings and fragments are stripped either way.
+ */
 const abs = (src) => {
+  if (!src) return '';
   try {
-    return new URL(src, window.location).href;
+    const u = new URL(src, window.location);
+    u.search = '';
+    u.hash = '';
+    if (u.origin !== window.location.origin) return u.href;
+    const path = u.pathname.replace(/^\/content(?=\/)/, '');
+    return `${SITE}${path}`;
   } catch (e) {
     return src;
   }
@@ -605,11 +617,13 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
+  // structured data served from the page metadata ("JSON-LD" row) wins: no client copy
+  const servedJsonLd = !!document.head.querySelector('script[type="application/ld+json"]');
   if (main) {
     // JSON-LD reads the authored block tables before they are decorated
     try {
       decorateSectionMetadata(main);
-      buildJsonLd(main);
+      if (!servedJsonLd) buildJsonLd(main);
     } catch (e) {
       // eslint-disable-next-line no-console
       console.error('JSON-LD failed', e);

@@ -34,6 +34,15 @@
   max-width: 34rem;
 }
 
+/* authored attribution paragraphs, moved into the caption */
+.testimonials .testimonials-figure figcaption p {
+  display: inline;
+}
+
+.testimonials .testimonials-who p {
+  text-wrap: inherit;
+}
+
 /* ---- ledger ---- */
 .testimonials.ledger {
   display: grid;
@@ -68,7 +77,19 @@
 
 .testimonials .testimonials-group {
   margin: var(--spacing-lg) 0 0;
+  font-family: var(--heading-font-family);
   font-size: var(--heading-xl);
+  font-weight: 300;
+  line-height: var(--line-height-heading);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+.testimonials .testimonials-group :is(h2, h3, h4, h5, h6, p) {
+  font: inherit;
+  letter-spacing: inherit;
+  text-wrap: inherit;
 }
 
 .testimonials .testimonials-list {

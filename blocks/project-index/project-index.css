@@ -29,11 +29,29 @@
   padding-right: var(--spacing-md);
 }
 
-.project-index .project-index-title {
+.project-index .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
   margin: 0;
   font-size: var(--heading-xl);
   line-height: 1;
   letter-spacing: -0.025em;
+}
+
+/* authored facet paragraphs, set inline in the dimension line (moved, never rebuilt) */
+.project-index .project-index-text .dim {
+  text-wrap: pretty;
+}
+
+.project-index .project-index-facet p {
+  display: inline;
+}
+
+/* a multi-value facet ("Addition, Renovation") reads "Addition & renovation" in compact rows */
+.project-index .facet-sep {
+  display: none;
+}
+
+.project-index .facet-join::before {
+  content: " & ";
 }
 
 .project-index .project-index-title a {
@@ -95,7 +113,7 @@
   grid-column: 1 / span 5;
 }
 
-.project-index .project-index-row-text .project-index-title {
+.project-index .project-index-row-text .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
   font-size: var(--heading-lg);
 }
 
@@ -113,7 +131,7 @@
   padding-block: 22px;
 }
 
-.project-index.related .project-index-title {
+.project-index.related .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
   font-size: var(--heading-lg);
 }
 
@@ -131,6 +149,20 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: 24px;
   align-items: start;
+}
+
+/* the listing's section head (authored H2, moved in): a label over the toolbar */
+.project-index .project-index-heading {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-muted);
+}
+
+.project-index .project-index-heading :is(h2, h3, h4) {
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-wrap: balance;
 }
 
 .project-index .project-index-fold {
@@ -305,7 +337,7 @@
   grid-column: 8 / span 5;
 }
 
-.project-index.filters .project-index-title {
+.project-index.filters .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
   font-size: var(--heading-lg);
 }
 
@@ -340,7 +372,7 @@
   padding-right: 0;
 }
 
-.project-index.filters .project-index-list[data-view="grid"] .project-index-title {
+.project-index.filters .project-index-list[data-view="grid"] .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
   font-size: var(--heading-md);
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -395,7 +427,7 @@
     order: -1;
   }
 
-  .project-index .project-index-title {
+  .project-index .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
     font-size: var(--heading-lg);
   }
 
@@ -446,7 +478,7 @@
     gap: var(--spacing-md) 16px;
   }
 
-  .project-index.filters .project-index-list[data-view="grid"] .project-index-title {
+  .project-index.filters .project-index-list[data-view="grid"] .project-index-title :is(h1, h2, h3, h4, h5, h6, p) {
     font-size: var(--body);
   }
 

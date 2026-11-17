@@ -55,6 +55,11 @@
   font-weight: 450;
 }
 
+/* the authored label paragraph, moved into the <label> */
+.contact-form label p {
+  display: inline;
+}
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {

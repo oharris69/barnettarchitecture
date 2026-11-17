@@ -38,6 +38,11 @@
   transition: color 400ms var(--ease-hover);
 }
 
+/* the authored title / meta paragraphs, moved into the card */
+.pager .pager-nav p {
+  text-wrap: inherit;
+}
+
 .pager .pager-nav a:hover .pager-title {
   color: var(--color-accent);
 }
