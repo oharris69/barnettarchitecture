@@ -15,6 +15,8 @@
  * then the timeline's H2 and its framing line. All authored nodes MOVE into the layout (EW1/EW8):
  * the scale labels move into the era scale (a sticky nav of anchors, aria-current = the era at
  * the reading line); the heading's last word ("1873") is set as the numeral in place.
+ * First screen: the quote row is set just after the first chapter (moved, not copied), so the
+ * opening, the era scale and the first photograph share the first viewport.
  * Motion: numerals settle ≤ 40px behind their frame on scroll (≥ 768px), none under reduced
  * motion. Only the first chapter photograph is eager (fetchpriority high).
  */
@@ -251,8 +253,10 @@ export default function decorate(block) {
     i.append(...intro);
     head.append(i);
   }
+  let introQuote = null;
   if (quote && quote.text.length) {
     const fig = el('figure', 'era-timeline-intro-quote');
+    introQuote = fig;
     const bq = el('blockquote');
     bq.append(...quote.text);
     const by = quote.by.find((p) => p.querySelector('a'));
@@ -263,7 +267,6 @@ export default function decorate(block) {
       cap.append(...quote.by);
       fig.append(cap);
     }
-    head.append(fig);
   }
 
   /* era scale: the authored labels MOVE into the anchors */
@@ -366,6 +369,14 @@ export default function decorate(block) {
       a, art, x: xs[i],
     };
   });
+
+  // the timeline's opening sentence follows the first chapter
+  if (introQuote) {
+    const after = el('div', 'era-timeline-after');
+    after.append(introQuote);
+    if (chapters.firstElementChild) chapters.firstElementChild.after(after);
+    else head.append(introQuote);
+  }
 
   block.replaceChildren(top, head, nav, chapters);
   if (!opening.length) top.remove();

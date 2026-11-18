@@ -28,15 +28,15 @@ main > .section > .era-timeline-wrapper {
   margin: 0;
 }
 
-/* ---- opening: H1 across, the line (7) and the actions (5) on one baseline ---- */
+/* ---- opening: one compact band — H1 across, the line and the actions on one row ---- */
 .era-timeline .era-timeline-top {
-  padding-block: clamp(24px, 2vw, 36px) clamp(16px, 1.4vw, 24px);
+  padding-block: clamp(16px, 1.4vw, 24px) clamp(12px, 1vw, 16px);
 }
 
 .era-timeline .era-timeline-opening {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: clamp(14px, 1.4vw, 20px) var(--spacing-md);
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(10px, 1vw, 14px) var(--spacing-md);
   align-items: end;
 }
 
@@ -48,7 +48,7 @@ main > .section > .era-timeline-wrapper {
 .era-timeline .era-timeline-opening > p {
   font-size: var(--body);
   line-height: 1.55;
-  max-width: 38em;
+  max-width: 60em;
 }
 
 .era-timeline .era-timeline-actions {
@@ -66,21 +66,22 @@ main > .section > .era-timeline-wrapper {
   color: var(--color-accent);
 }
 
-/* ---- timeline head: H2 + framing line (6), the Push-Pull sentence (8–12) ---- */
+/* ---- timeline head: H2 (5) + framing line (7) on one row; the Push-Pull sentence follows the first chapter ---- */
 .era-timeline .era-timeline-head {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: var(--spacing-md) 24px;
   align-items: end;
-  padding-block: 12px clamp(16px, 1.6vw, 24px);
+  padding-block: 10px 12px;
   border-top: 1px solid var(--color-hairline);
 }
 
 .era-timeline .era-timeline-intro {
-  grid-column: 1 / span 6;
+  grid-column: 1 / -1;
   display: grid;
-  gap: 10px;
-  align-content: end;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 10px 24px;
+  align-items: baseline;
 }
 
 .era-timeline .era-timeline-intro h2 {
@@ -288,7 +289,7 @@ main > .section > .era-timeline-wrapper {
 }
 
 .era-timeline .era-timeline-era:first-child {
-  padding-top: clamp(16px, 1.4vw, 24px);
+  padding-top: 12px;
 }
 
 .era-timeline .era-timeline-era:last-child {
@@ -598,6 +599,31 @@ main > .section > .era-timeline-wrapper {
   color: var(--color-muted);
 }
 
+/* ---- first screen: the first chapter's numeral is smaller and its project line sits beside it,
+   so the opening band, the era scale and the photograph share the first viewport ---- */
+.era-timeline .era-timeline-era:first-child .era-timeline-num {
+  font-size: clamp(4.5rem, 7.5vw, 7.5rem);
+}
+
+.era-timeline .era-timeline-era:first-child .era-timeline-lead .era-timeline-title {
+  margin-block: 0;
+}
+
+/* the Push-Pull sentence, set after the first chapter */
+.era-timeline .era-timeline-after {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: clamp(32px, 4vw, 56px) max(var(--gutter), env(safe-area-inset-right)) 0 max(var(--gutter), env(safe-area-inset-left));
+}
+
+.era-timeline .era-timeline-after .era-timeline-intro-quote {
+  grid-column: 2 / span 5;
+}
+
 @media (width <= 899px) {
   .era-timeline .era-timeline-opening {
     grid-template-columns: 1fr;
@@ -605,6 +631,11 @@ main > .section > .era-timeline-wrapper {
 
   .era-timeline .era-timeline-intro {
     grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .era-timeline .era-timeline-after .era-timeline-intro-quote {
+    grid-column: 1 / span 9;
   }
 
   .era-timeline .era-timeline-intro-quote {
@@ -668,10 +699,15 @@ main > .section > .era-timeline-wrapper {
     row-gap: 10px;
   }
 
-  .era-timeline .era-timeline-intro-quote {
+  .era-timeline .era-timeline-intro-quote,
+  .era-timeline .era-timeline-after .era-timeline-intro-quote {
     grid-column: 1 / -1;
     padding-top: 12px;
     gap: 8px;
+  }
+
+  .era-timeline .era-timeline-era:first-child .era-timeline-num {
+    font-size: min(22vw, 6rem);
   }
 
   .era-timeline .era-timeline-era-h {
