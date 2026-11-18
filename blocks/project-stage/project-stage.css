@@ -291,6 +291,38 @@ main > .section > .project-stage-wrapper {
   content: " · ";
 }
 
+/* a quiet tag after the name ("Design study"): label type at a smaller size, hairline box, pencil */
+.project-stage .project-stage-item.has-tag {
+  flex-wrap: wrap;
+}
+
+/* the facts take no room of their own on the line: they wrap only if the name + tag do not fit */
+.project-stage .project-stage-item.has-tag .project-stage-facts {
+  margin-left: -20px;
+}
+
+.project-stage .project-stage-tags {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 6px;
+  margin-left: -8px;
+}
+
+.project-stage .project-stage-tag,
+.project-stage .project-stage-cap-tag {
+  margin: 0;
+  padding: 2px 6px 1px;
+  border: 1px solid var(--color-hairline);
+  font-size: var(--label);
+  line-height: 1.3;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.project-stage .project-stage-cap-tag[hidden] {
+  display: none;
+}
+
 /* the active entry: a dimension tick on the name's centre line + the accent */
 .project-stage .project-stage-item::before {
   content: "";

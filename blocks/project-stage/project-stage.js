@@ -16,6 +16,10 @@
 import { textOf, thumbPicture } from '../../scripts/utils.js';
 
 const FADE_MS = 300;
+/* arrival preview: the first group's next projects, one every AUTO_MS, then back to the first */
+const AUTO_STEPS = 3;
+const AUTO_MS = 2200;
+const AUTO_PRELOAD_MS = 900;
 
 function parse(block) {
   const groups = [];
@@ -55,18 +59,22 @@ function parse(block) {
   return groups.filter((g) => g.items.length || g.head);
 }
 
-/* sector | type | location → shown: type · location; the sector stays authored, unprinted */
+/*
+ * sector | type | location [| tag …] → shown: type · location; the sector stays authored,
+ * unprinted; a 4th+ paragraph ("Design study") is a quiet tag after the name
+ */
 function factsEl(item) {
   const shown = document.createElement('div');
   shown.className = 'project-stage-facts';
   const hidden = [];
+  const tags = [];
   const { facts } = item;
   if (facts.length >= 3) {
     hidden.push(facts[0]);
     shown.append(facts[1], facts[2]);
-    hidden.push(...facts.slice(3));
+    facts.slice(3).forEach((p) => (textOf(p) ? tags : hidden).push(p));
   } else shown.append(...facts);
-  return { shown, hidden };
+  return { shown, hidden, tags };
 }
 
 function itemEl(item, index) {
@@ -75,7 +83,15 @@ function itemEl(item, index) {
   li.dataset.index = String(index);
   item.title.classList.add('project-stage-name');
   li.append(item.title);
-  const { shown, hidden } = factsEl(item);
+  const { shown, hidden, tags } = factsEl(item);
+  if (tags.length) {
+    const wrap = document.createElement('div');
+    wrap.className = 'project-stage-tags';
+    tags.forEach((p) => p.classList.add('project-stage-tag', 'label'));
+    wrap.append(...tags);
+    li.append(wrap);
+    li.classList.add('has-tag');
+  }
   if (shown.children.length) li.append(shown);
   if (hidden.length) {
     const keep = document.createElement('div');
@@ -197,10 +213,12 @@ export default function decorate(block) {
   const caption = el('p', 'project-stage-caption');
   const capTitle = el('span', 'project-stage-cap-title');
   const capFacts = el('span', 'project-stage-cap-facts label');
+  const capTag = el('span', 'project-stage-cap-tag label');
+  capTag.hidden = true;
   const capGo = el('a', 'project-stage-cap-go link-arrow', 'View project');
   const capHidden = el('span', 'visually-hidden');
   capGo.append(capHidden);
-  caption.append(capTitle, capFacts, capGo);
+  caption.append(capTitle, capTag, capFacts, capGo);
   stage.append(frames, caption);
 
   block.replaceChildren(body, stage);
@@ -234,6 +252,9 @@ export default function decorate(block) {
     capTitle.textContent = textOf(it.title);
     const shown = it.li.querySelector('.project-stage-facts');
     capFacts.textContent = shown ? [...shown.children].map((p) => textOf(p)).filter(Boolean).join(' · ') : '';
+    const tags = [...it.li.querySelectorAll('.project-stage-tag')].map((p) => textOf(p)).filter(Boolean);
+    capTag.textContent = tags.join(' · ');
+    capTag.hidden = !tags.length;
     if (links[i]) capGo.href = links[i].getAttribute('href');
     capHidden.textContent = `: ${textOf(it.title)}`;
   }
@@ -262,7 +283,7 @@ export default function decorate(block) {
     if (img && img.loading !== 'eager') img.loading = 'eager';
   }
 
-  function show(i) {
+  function show(i, auto = false) {
     if (i < 0 || i >= items.length || i === want) return;
     want = i;
     items.forEach((it, k) => it.li.classList.toggle('is-active', k === i));
@@ -283,7 +304,7 @@ export default function decorate(block) {
       // a frame that fails keeps the previous one; the link still works
       img.addEventListener('error', () => { if (want === i) setCaption(i); }, { once: true });
     }
-    if (!pointerMode()) {
+    if (!pointerMode() && !auto) {
       prefetch(i + 1);
       prefetch(i - 1);
     }
@@ -353,4 +374,71 @@ export default function decorate(block) {
     if (!raf) raf = requestAnimationFrame(read);
   }, { passive: true });
   split.addEventListener('change', read);
+
+  /*
+   * Arrival preview: once the stage is in view, the first group's next projects take the stage in
+   * turn, then the first one returns and it stops. Any interaction, or the tab going hidden,
+   * stops it for good. Off under reduced motion. Each frame is requested just before its turn.
+   * Nothing is announced (the caption is not a live region).
+   */
+  const firstGroup = groups[0] ? groups[0].items.length : 0;
+  const steps = [];
+  for (let k = 1; k <= Math.min(AUTO_STEPS, firstGroup - 1); k += 1) steps.push(k);
+  if (!steps.length || reduced.matches || document.hidden) return;
+  steps.push(0);
+
+  const autoTimers = [];
+  let autoDone = false;
+  let io = null;
+  const STOP_ON = [
+    [window, 'keydown'], [window, 'wheel'], [window, 'touchstart'], [window, 'scroll'],
+    [window, 'pointerdown'], [document, 'focusin'], [block, 'pointermove'],
+  ];
+  const opts = { capture: true, passive: true };
+  let onHidden = null;
+  const stopAuto = () => {
+    if (autoDone) return;
+    autoDone = true;
+    autoTimers.forEach((t) => clearTimeout(t));
+    if (io) io.disconnect();
+    STOP_ON.forEach(([target, type]) => target.removeEventListener(type, stopAuto, opts));
+    document.removeEventListener('visibilitychange', onHidden);
+  };
+  onHidden = () => {
+    if (document.hidden) stopAuto();
+  };
+  STOP_ON.forEach(([target, type]) => target.addEventListener(type, stopAuto, opts));
+  document.addEventListener('visibilitychange', onHidden);
+  reduced.addEventListener('change', stopAuto);
+
+  const run = () => {
+    if (autoDone) return;
+    steps.forEach((k, n) => {
+      const at = AUTO_MS * (n + 1);
+      // the next frame only, shortly before its turn (no burst of downloads)
+      const pre = Math.max(0, at - AUTO_PRELOAD_MS);
+      autoTimers.push(setTimeout(() => { if (!autoDone) prefetch(k); }, pre));
+      autoTimers.push(setTimeout(() => {
+        if (autoDone) return;
+        show(k, true);
+        if (n === steps.length - 1) stopAuto();
+      }, at));
+    });
+  };
+  const start = () => {
+    const first = imgOf(pics[0]);
+    // the first photograph (the LCP) settles before anything else is requested
+    if (first && !(first.complete && first.naturalWidth)) {
+      first.addEventListener('load', run, { once: true });
+    } else run();
+  };
+  if ('IntersectionObserver' in window) {
+    io = new IntersectionObserver((entries) => {
+      if (!entries.some((e) => e.isIntersecting)) return;
+      io.disconnect();
+      io = null;
+      start();
+    }, { threshold: 0.5 });
+    io.observe(frames);
+  }
 }
