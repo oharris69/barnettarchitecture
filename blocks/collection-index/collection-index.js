@@ -5,6 +5,7 @@
  *           ("Regions", "Exhibits") hangs a divider; extra cells become a note under the frame.
  * selected: 2-up selected works (justified lead wall); every frame opens the lightbox.
  * strip:    "More collections" — a compact horizontal strip.
+ * row:      the default wall with every cover a quarter wide (home variant c teaser).
  * Titles, meta lines, notes and dividers are the authored elements, MOVED into wrappers (EW1).
  */
 import bindLightbox from '../../scripts/lightbox.js';
@@ -143,14 +144,15 @@ function frame(item, span) {
   return fig;
 }
 
-function buildWall(items) {
+function buildWall(items, row = false) {
   const wall = document.createElement('div');
   wall.className = 'collection-index-wall';
   let group = [];
   const flush = () => {
-    chunk(group).forEach((row) => {
-      const spans = spansFor(row);
-      row.forEach((it, k) => wall.append(frame(it, spans[k])));
+    // row: every cover a quarter of the wall (one row of four ≥ 900px)
+    (row ? [group] : chunk(group)).forEach((line) => {
+      const spans = row ? line.map(() => 3) : spansFor(line);
+      line.forEach((it, k) => wall.append(frame(it, spans[k])));
     });
     group = [];
   };
@@ -264,7 +266,7 @@ export default function decorate(block) {
     block.replaceChildren(buildStrip(items));
     return;
   }
-  const wall = buildWall(items);
+  const wall = buildWall(items, block.classList.contains('row'));
   // a group heading authored just above the block ("Regions", "Exhibits")
   // hangs as the wall's divider
   const prev = block.parentElement && block.parentElement.previousElementSibling;

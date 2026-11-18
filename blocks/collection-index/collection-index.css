@@ -263,6 +263,21 @@
   }
 }
 
+/* ---- row: four covers a quarter wide, caption on one line ---- */
+.collection-index.row .collection-index-frame figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+@media (width <= 599px) {
+  .collection-index.row .collection-index-wall .span-3:nth-child(3) {
+    grid-column: span 12;
+  }
+}
+
 /* ---- justified: covers at their natural ratio, rows of one height (4 + 4 ≥ 1200px, pairs 600–899) ---- */
 .collection-index .collection-index-justified {
   --row-h: clamp(96px, 14.5vw, 210px);

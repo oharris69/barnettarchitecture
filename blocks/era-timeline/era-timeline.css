@@ -1,0 +1,723 @@
+/* era-timeline — "decade by decade" (home variant c; canon pending module era-timeline, stardust/canon/pending/index-c.css).
+   The block is edge to edge: frames are full bleed, every other row sits on the shell. */
+/* stylelint-disable no-descending-specificity -- rules are ordered by component, not by specificity */
+
+main > .section.era-timeline-container {
+  padding-block: 0;
+}
+
+main > .section > .era-timeline-wrapper {
+  max-width: none;
+  padding-inline: 0;
+}
+
+.era-timeline {
+  --scale-h: 52px;
+
+  position: relative;
+}
+
+.era-timeline :is(.era-timeline-top, .era-timeline-head, .era-timeline-scale-bar, .era-timeline-era-top, .era-timeline-text, .era-timeline-plates, .era-timeline-list) {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
+}
+
+.era-timeline :is(p, h1, h2, h3, h4, blockquote, figure) {
+  margin: 0;
+}
+
+/* ---- opening: H1 across, the line (7) and the actions (5) on one baseline ---- */
+.era-timeline .era-timeline-top {
+  padding-block: clamp(24px, 2vw, 36px) clamp(16px, 1.4vw, 24px);
+}
+
+.era-timeline .era-timeline-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(14px, 1.4vw, 20px) var(--spacing-md);
+  align-items: end;
+}
+
+.era-timeline .era-timeline-h1 {
+  grid-column: 1 / -1;
+  font-size: var(--heading-lg);
+}
+
+.era-timeline .era-timeline-opening > p {
+  font-size: var(--body);
+  line-height: 1.55;
+  max-width: 38em;
+}
+
+.era-timeline .era-timeline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm) var(--spacing-md);
+}
+
+.era-timeline .era-timeline-actions a.button {
+  line-height: var(--line-height-body);
+}
+
+.era-timeline .era-timeline-actions a.link-arrow {
+  color: var(--color-accent);
+}
+
+/* ---- timeline head: H2 + framing line (6), the Push-Pull sentence (8–12) ---- */
+.era-timeline .era-timeline-head {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-md) 24px;
+  align-items: end;
+  padding-block: 12px clamp(16px, 1.6vw, 24px);
+  border-top: 1px solid var(--color-hairline);
+}
+
+.era-timeline .era-timeline-intro {
+  grid-column: 1 / span 6;
+  display: grid;
+  gap: 10px;
+  align-content: end;
+}
+
+.era-timeline .era-timeline-intro h2 {
+  font-size: var(--heading-md);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.15;
+}
+
+.era-timeline .era-timeline-intro p {
+  max-width: 46em;
+}
+
+.era-timeline .era-timeline-intro-quote {
+  grid-column: 8 / span 5;
+  display: grid;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-fg);
+}
+
+.era-timeline .era-timeline-intro-quote blockquote p {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: var(--body);
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+.era-timeline .era-timeline-intro-quote figcaption {
+  color: var(--color-muted);
+}
+
+.era-timeline .era-timeline-intro-quote figcaption p {
+  display: inline;
+}
+
+.era-timeline .era-timeline-intro-quote figcaption a {
+  display: inline-block;
+  padding-block: 4px;
+  color: var(--color-accent);
+  text-underline-offset: 3px;
+}
+
+/* ---- era scale: a dimension string of time, sticky under the header while the timeline is in view ---- */
+.era-timeline .era-timeline-scale {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 40;
+  background: var(--color-bg);
+  border-block: 1px solid var(--color-hairline);
+}
+
+.era-timeline .era-timeline-scale-bar {
+  position: relative;
+  height: var(--scale-h);
+}
+
+.era-timeline .era-timeline-scale-list {
+  display: flex;
+  gap: 4px 22px;
+  height: 100%;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  padding-inline: 6px;
+  scroll-padding-inline: 32px;
+  mask-image: linear-gradient(90deg, transparent, #000 14px, #000 calc(100% - 28px), transparent);
+}
+
+.era-timeline .era-timeline-scale-list::-webkit-scrollbar {
+  display: none;
+}
+
+.era-timeline .era-timeline-scale li {
+  position: relative;
+}
+
+.era-timeline .era-timeline-scale a {
+  display: inline-block;
+  padding: 10px 0 9px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--color-muted);
+  font-size: var(--label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-variant-numeric: lining-nums tabular-nums;
+  background: linear-gradient(currentcolor, currentcolor) 0 100% / 0 2px no-repeat;
+  transition: color 300ms var(--ease-hover), background-size 300ms var(--ease-hover);
+}
+
+.era-timeline .era-timeline-scale-label {
+  display: inline;
+}
+
+.era-timeline .era-timeline-scale a:hover,
+.era-timeline .era-timeline-scale a[aria-current] {
+  color: var(--color-fg);
+  background-size: 100% 2px;
+}
+
+.era-timeline .era-timeline-scale-fill {
+  display: none;
+}
+
+.era-timeline a {
+  scroll-margin-top: calc(var(--scale-h) + 8px);
+}
+
+@media (width >= 1100px) {
+  .era-timeline .era-timeline-scale-list {
+    position: relative;
+    display: block;
+    overflow: visible;
+    padding-inline: 0;
+    mask-image: none;
+  }
+
+  /* the measured run (solid, ticked at its start) and the off-scale run (dotted) */
+  .era-timeline .era-timeline-scale-list::before,
+  .era-timeline .era-timeline-scale-list::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: var(--tick);
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .era-timeline .era-timeline-scale-list::before {
+    left: 0;
+    width: 78%;
+    background: linear-gradient(var(--color-hairline), var(--color-hairline)) 0 50% / 100% 1px no-repeat;
+    border-left: 1px solid var(--color-muted);
+  }
+
+  .era-timeline .era-timeline-scale-list::after {
+    left: 78%;
+    right: 0;
+    background: repeating-linear-gradient(to right, var(--color-hairline) 0 3px, transparent 3px 7px) 0 50% / 100% 1px no-repeat;
+  }
+
+  .era-timeline .era-timeline-scale li {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--x) * 100%);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .era-timeline .era-timeline-scale li > a {
+    transform: translateX(-50%);
+    padding-inline: 6px;
+    background-color: var(--color-bg);
+    background-position: 6px 100%;
+  }
+
+  .era-timeline .era-timeline-scale li:first-child > a {
+    transform: none;
+    padding-left: 0;
+    background-position: 0 100%;
+  }
+
+  .era-timeline .era-timeline-scale li:last-child > a {
+    transform: translateX(-100%);
+    padding-right: 0;
+  }
+
+  .era-timeline .era-timeline-scale a:hover,
+  .era-timeline .era-timeline-scale a[aria-current] {
+    background-size: calc(100% - 12px) 2px;
+  }
+
+  .era-timeline .era-timeline-scale li:is(:first-child, :last-child) > a:is(:hover, [aria-current]) {
+    background-size: calc(100% - 6px) 2px;
+  }
+
+  .era-timeline .era-timeline-scale-fill {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: max(var(--gutter), env(safe-area-inset-left));
+    width: calc(100% - 2 * max(var(--gutter), env(safe-area-inset-left)));
+    height: 2px;
+    margin-top: -1px;
+    transform: scaleX(var(--p, 0));
+    transform-origin: 0 50%;
+    background: var(--color-fg);
+    pointer-events: none;
+    transition: transform 160ms linear;
+  }
+}
+
+/* ---- era chapter ---- */
+.era-timeline .era-timeline-era {
+  scroll-margin-top: calc(var(--scale-h) + 8px);
+  padding-top: clamp(28px, 6vw, 96px);
+}
+
+.era-timeline .era-timeline-era:first-child {
+  padding-top: clamp(16px, 1.4vw, 24px);
+}
+
+.era-timeline .era-timeline-era:last-child {
+  padding-bottom: calc(var(--section-padding) + var(--spacing-lg));
+}
+
+.era-timeline .era-timeline-era-top {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-sm) 24px;
+  align-items: end;
+}
+
+.era-timeline .era-timeline-era-h {
+  grid-column: 1 / span 8;
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1;
+  text-wrap: nowrap;
+}
+
+.era-timeline .era-timeline-label {
+  font-family: var(--heading-font-family);
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--heading-md);
+  letter-spacing: -0.005em;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+/* the numeral stands on the photograph's top edge: cap-to-baseline trimmed box */
+.era-timeline .era-timeline-num {
+  position: relative;
+  z-index: 0;
+  margin-left: -0.04em;
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: clamp(6.5rem, 17vw, 17rem);
+  line-height: 0.74;
+  letter-spacing: -0.04em;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--color-fg);
+  text-box: trim-both cap alphabetic;
+}
+
+.era-timeline .era-timeline-era-h.is-word .era-timeline-num {
+  font-size: clamp(6.5rem, 15vw, 15rem);
+}
+
+.era-timeline .era-timeline-lead {
+  grid-column: 9 / span 4;
+  display: grid;
+  gap: 8px;
+  padding-bottom: 6px;
+  justify-self: end;
+  text-align: right;
+  max-width: 22em;
+}
+
+/* alternate chapters mirror (numeral right, project left) */
+.era-timeline .is-flip .era-timeline-era-h {
+  grid-column: 5 / span 8;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.era-timeline .is-flip .era-timeline-lead {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  justify-self: start;
+  text-align: left;
+}
+
+.era-timeline .era-timeline-title {
+  font-family: var(--body-font-family); /* the approved prototype sets project titles (h4) in Hanken */
+  font-size: var(--heading-md);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.15;
+}
+
+.era-timeline .era-timeline-lead .era-timeline-title,
+.era-timeline .era-timeline-plate .era-timeline-title {
+  margin-block: 1.33em; /* the approved prototype's h4 rhythm */
+}
+
+.era-timeline .era-timeline-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.era-timeline .era-timeline-title a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.era-timeline .era-timeline-facts {
+  color: var(--color-muted);
+}
+
+.era-timeline :is(.era-timeline-facts, .era-timeline-list-facts) p {
+  display: inline;
+}
+
+.era-timeline :is(.era-timeline-facts, .era-timeline-list-facts) p + p::before {
+  content: " · ";
+}
+
+.era-timeline .era-timeline-frame {
+  position: relative;
+  z-index: 1;
+  margin: 2px 0 0;
+  height: clamp(320px, 74svh, 62vw);
+  background: var(--color-hairline);
+  overflow: hidden;
+}
+
+.era-timeline .era-timeline-frame :is(picture, img) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.era-timeline .era-timeline-frame img {
+  object-fit: cover;
+}
+
+/* plate mode: a frame narrower than 1400px is shown at its own width, right-aligned, never upscaled */
+.era-timeline .era-timeline-frame.is-native {
+  height: auto;
+  width: min(100% - 2 * var(--gutter), var(--native));
+  max-width: calc(var(--max-width) - 2 * var(--gutter));
+  margin-inline: auto max(var(--gutter), calc((100% - var(--max-width)) / 2 + var(--gutter)));
+  background: none;
+}
+
+.era-timeline .era-timeline-frame.is-native :is(picture, img) {
+  height: auto;
+}
+
+.era-timeline .era-timeline-text {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-sm) 24px;
+  align-items: end;
+  padding-top: clamp(24px, 3vw, 40px);
+}
+
+.era-timeline .era-timeline-quote {
+  grid-column: 2 / span 8;
+}
+
+.era-timeline .era-timeline-quote p {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: var(--heading-md);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  max-width: 34em;
+}
+
+.era-timeline .era-timeline-text .era-timeline-go {
+  grid-column: 10 / span 3;
+  justify-self: end;
+  padding-bottom: 0.35em;
+}
+
+/* plates: the other projects of a multi-project era */
+.era-timeline .era-timeline-plates {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-lg) clamp(24px, 4vw, 64px);
+  padding-top: clamp(48px, 6vw, 88px);
+}
+
+.era-timeline .era-timeline-plate {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.era-timeline .era-timeline-plate .era-timeline-frame {
+  height: auto;
+  margin: 0 0 6px;
+  aspect-ratio: 3 / 2;
+}
+
+.era-timeline .era-timeline-plate-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+}
+
+.era-timeline .era-timeline-plate-quote p {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: var(--body);
+  line-height: 1.55;
+  max-width: 38em;
+}
+
+.era-timeline .era-timeline-plate .era-timeline-go {
+  justify-self: start;
+}
+
+.era-timeline .era-timeline-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.era-timeline .era-timeline-tag {
+  display: inline-block;
+  padding: 3px 7px 2px;
+  border: 1px solid var(--color-hairline);
+  color: var(--color-muted);
+  font-family: var(--body-font-family);
+  font-size: var(--label);
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* undated + new: the ruled list */
+.era-timeline .is-list .era-timeline-era-h {
+  grid-column: 1 / -1;
+  grid-row: auto;
+  justify-self: start;
+  font-size: var(--heading-xl);
+  white-space: normal;
+  text-wrap: balance;
+}
+
+.era-timeline .era-timeline-era-note {
+  grid-column: 1 / -1;
+}
+
+.era-timeline .era-timeline-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 24px;
+  padding-top: var(--spacing-md);
+}
+
+.era-timeline .era-timeline-era:not(.is-list) .era-timeline-list {
+  padding-top: clamp(48px, 6vw, 88px);
+}
+
+.era-timeline .era-timeline-list-item {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  padding: 16px 0 20px;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.era-timeline .era-timeline-list-name {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  justify-self: start;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+}
+
+.era-timeline .era-timeline-list-name a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(currentcolor, currentcolor) 0 100% / 0 1px no-repeat;
+  transition: background-size 450ms var(--ease-hover);
+}
+
+/* the whole entry is the link */
+.era-timeline .era-timeline-list-name a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.era-timeline .era-timeline-list-item:hover .era-timeline-list-name a {
+  background-size: 100% 1px;
+}
+
+.era-timeline .era-timeline-list-item:has(a:focus-visible) {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.era-timeline .era-timeline-list-name a:focus-visible {
+  outline: none;
+}
+
+.era-timeline .era-timeline-list-name .era-timeline-tag {
+  transform: translateY(-3px);
+}
+
+.era-timeline .era-timeline-list-facts {
+  color: var(--color-muted);
+}
+
+@media (width <= 899px) {
+  .era-timeline .era-timeline-opening {
+    grid-template-columns: 1fr;
+  }
+
+  .era-timeline .era-timeline-intro {
+    grid-column: 1 / -1;
+  }
+
+  .era-timeline .era-timeline-intro-quote {
+    grid-column: 1 / span 9;
+  }
+
+  .era-timeline .era-timeline-era-h,
+  .era-timeline .is-flip .era-timeline-era-h {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  .era-timeline .era-timeline-lead,
+  .era-timeline .is-flip .era-timeline-lead {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: start;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .era-timeline .era-timeline-era-top {
+    row-gap: 18px;
+  }
+
+  .era-timeline .era-timeline-quote,
+  .era-timeline .era-timeline-text .era-timeline-go {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .era-timeline .era-timeline-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width <= 599px) {
+  .era-timeline {
+    --scale-h: 44px;
+  }
+
+  .era-timeline .era-timeline-top {
+    padding-bottom: 12px;
+  }
+
+  .era-timeline .era-timeline-opening {
+    row-gap: 14px;
+  }
+
+  .era-timeline .era-timeline-head {
+    row-gap: 14px;
+    padding-bottom: 14px;
+  }
+
+  .era-timeline .era-timeline-era:first-child {
+    padding-top: 10px;
+  }
+
+  .era-timeline .era-timeline-era-top {
+    row-gap: 10px;
+  }
+
+  .era-timeline .era-timeline-intro-quote {
+    grid-column: 1 / -1;
+    padding-top: 12px;
+    gap: 8px;
+  }
+
+  .era-timeline .era-timeline-era-h {
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .era-timeline .era-timeline-label {
+    font-size: var(--body);
+  }
+
+  .era-timeline .era-timeline-scale-list {
+    gap: 4px 18px;
+    padding-right: var(--gutter);
+  }
+
+  .era-timeline .era-timeline-num,
+  .era-timeline .era-timeline-era-h.is-word .era-timeline-num {
+    font-size: min(28vw, 9rem);
+  }
+
+  .era-timeline .era-timeline-frame {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .era-timeline .era-timeline-frame.is-native {
+    aspect-ratio: auto;
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .era-timeline .era-timeline-plates,
+  .era-timeline .era-timeline-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .era-timeline .era-timeline-scale a,
+  .era-timeline .era-timeline-scale-fill {
+    transition: none;
+  }
+
+  .era-timeline .era-timeline-num {
+    transform: none !important;
+  }
+}

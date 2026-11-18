@@ -3,7 +3,8 @@
  * Static server over stardust/prototypes for the home variant b import (/index-b).
  * Same resolution as serve-migrated.mjs (/x → /x/index.html, /x.html); paths the prototypes
  * do not hold fall back to stardust/migrated (the /projects index the parsers read facets from),
- * and /_jsonld/<name>.json serves the home's served structured data (stardust/.work/eds/jsonld).
+ * /_jsonld/<name>.json serves the home's served structured data (stardust/.work/eds/jsonld), and
+ * /_content/<path>.plain.html serves a local content document read-only (e.g. the home's JSON-LD row).
  * Usage: node tools/importer/serve-prototypes.mjs [port]   (default 3120, binds 127.0.0.1)
  */
 import { createServer } from 'http';
@@ -16,6 +17,7 @@ import { fileURLToPath } from 'url';
 const STARDUST = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'stardust');
 const ROOTS = [join(STARDUST, 'prototypes'), join(STARDUST, 'migrated')];
 const JSONLD = join(STARDUST, '.work', 'eds', 'jsonld');
+const CONTENT = join(STARDUST, '..', 'content');
 const PORT = Number(process.argv[2] || 3120);
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -40,6 +42,11 @@ async function resolvePath(pathname) {
   if (jl) {
     const f = join(JSONLD, jl[1]);
     return (await isFile(f)) ? f : null;
+  }
+  const doc = /^\/_content\/([\w/-]+\.plain\.html)$/.exec(rel);
+  if (doc) {
+    const f = join(CONTENT, doc[1]);
+    return f.startsWith(CONTENT) && (await isFile(f)) ? f : null;
   }
   for (const root of ROOTS) {
     const base = join(root, rel);

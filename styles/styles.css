@@ -592,35 +592,35 @@ main > .section > .default-content-wrapper:has(+ [class$="-wrapper"]) + div {
   margin-top: var(--spacing-md);
 }
 
-/* the head of a justified photo wall (home variant b): H2 + lead at left, the link bottom-right; stacked < 900px */
-main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) {
+/* the head of a justified / row photo wall (home variants b, c): H2 + lead left, link bottom-right; stacked < 900px */
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index:is(.justified, .row)) {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: var(--spacing-sm) var(--spacing-md);
   align-items: end;
 }
 
-main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) > :not(.link-row) {
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index:is(.justified, .row)) > :not(.link-row) {
   grid-column: 1;
   order: 0;
 }
 
-main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) > p.link-row {
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index:is(.justified, .row)) > p.link-row {
   grid-column: 2;
   grid-row: 1 / span 2;
   align-self: end;
 }
 
-main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) + div {
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index:is(.justified, .row)) + div {
   margin-top: var(--spacing-lg);
 }
 
 @media (width <= 899px) {
-  main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) {
+  main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index:is(.justified, .row)) {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) > p.link-row {
+  main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index:is(.justified, .row)) > p.link-row {
     grid-column: 1;
     grid-row: auto;
   }
@@ -813,6 +813,24 @@ main > .section.practice ol.chain a {
 
 main > .section.practice ol.chain a:hover {
   background-size: 100% 1px;
+}
+
+/* recognition: one band of fact lines (scripts.js decorateRecognition) */
+main > .section.recognition {
+  padding-block: var(--spacing-lg);
+}
+
+main > .section.recognition .default-content-wrapper > p.dim {
+  max-width: none;
+  color: var(--color-fg);
+  font-size: var(--body-sm);
+}
+
+main > .section.recognition .default-content-wrapper > p.dim a {
+  display: inline-block;
+  padding-block: 4px;
+  color: var(--color-accent);
+  text-underline-offset: 3px;
 }
 
 /* === Enquiry band (inline section "Style: enquiry", or the /fragments/enquiry fragment tagged by fragment.js) === */

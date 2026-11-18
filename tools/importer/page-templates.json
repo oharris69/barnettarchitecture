@@ -318,6 +318,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "index-c",
+      "description": "Home variant c (design variant at /index-c, noindex): opening + decade-by-decade era timeline (era-timeline: sticky era scale, chapters, plates, undated and new lists), Houzz recognition line, principles row, photography strip, featured testimonial, inline enquiry band.",
+      "urls": [
+        "http://127.0.0.1:3120/index-c-proposed.html"
+      ],
+      "blocks": [
+        {
+          "name": "era-timeline",
+          "instances": [
+            "section[data-section=\"timeline\"] .tl__chapters"
+          ]
+        },
+        {
+          "name": "principles",
+          "instances": [
+            "section[data-section=\"principles\"] .principles__sheet"
+          ]
+        },
+        {
+          "name": "collection-index",
+          "instances": [
+            "section[data-section=\"photography\"] .wall"
+          ]
+        },
+        {
+          "name": "testimonials",
+          "instances": [
+            "section[data-section=\"testimonial\"] figure.testimonial__figure"
+          ]
+        }
+      ]
     }
   ]
 }

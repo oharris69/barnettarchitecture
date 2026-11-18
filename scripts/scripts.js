@@ -400,6 +400,20 @@ function decoratePractice(main) {
 }
 
 /**
+ * recognition section style (home variant c): a band of fact lines — each paragraph becomes a
+ * stacked dimension string. The paragraph keeps its identity; its children move into the span.
+ * @param {Element} main
+ */
+function decorateRecognition(main) {
+  main.querySelectorAll(':scope > .section.recognition > .default-content-wrapper > p:not(.dim)').forEach((p) => {
+    const span = document.createElement('span');
+    span.append(...p.childNodes);
+    p.append(span);
+    p.classList.add('dim', 'dim-stack');
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -414,6 +428,7 @@ export function decorateMain(main) {
   decorateProse(main);
   decorateIntros(main);
   decoratePractice(main);
+  decorateRecognition(main);
   localizeLinks(main);
 }
 
