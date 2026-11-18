@@ -592,6 +592,40 @@ main > .section > .default-content-wrapper:has(+ [class$="-wrapper"]) + div {
   margin-top: var(--spacing-md);
 }
 
+/* the head of a justified photo wall (home variant b): H2 + lead at left, the link bottom-right; stacked < 900px */
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--spacing-sm) var(--spacing-md);
+  align-items: end;
+}
+
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) > :not(.link-row) {
+  grid-column: 1;
+  order: 0;
+}
+
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) > p.link-row {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+}
+
+main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) + div {
+  margin-top: var(--spacing-lg);
+}
+
+@media (width <= 899px) {
+  main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main > .section.darkroom > .default-content-wrapper:has(+ .collection-index-wrapper > .collection-index.justified) > p.link-row {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
 /* chip list authored as default content (e.g. "Projects by type" under the schedule) */
 main .default-content-wrapper ul.facets {
   display: flex;
@@ -696,6 +730,91 @@ main > .section.narrow > div {
   max-width: calc(var(--measure) + 2 * var(--gutter));
 }
 
+/* practice: side rail (heading + fact lines) · reading body · process row (H3 + chain); split by scripts.js */
+main > .section.practice .default-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-md) 24px;
+}
+
+main > .section.practice .default-content-wrapper > *,
+main > .section.practice :is(.practice-rail, .practice-body, .practice-process) > * {
+  margin: 0;
+}
+
+main > .section.practice .practice-rail {
+  grid-column: 1 / span 4;
+  display: grid;
+  align-content: start;
+  gap: var(--spacing-sm);
+}
+
+main > .section.practice .practice-rail .practice-note {
+  color: var(--color-muted);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 450;
+  font-size: var(--body-sm);
+  line-height: 1.45;
+}
+
+main > .section.practice .practice-body {
+  grid-column: 5 / span 8;
+  display: grid;
+  align-content: start;
+  gap: var(--spacing-sm);
+  max-width: var(--measure);
+}
+
+main > .section.practice .practice-body > p:first-child {
+  margin-bottom: var(--spacing-xs);
+  max-width: 30em;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+main > .section.practice .practice-body > p.link-row {
+  margin-top: var(--spacing-sm);
+}
+
+main > .section.practice .practice-process {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-md) 24px;
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-hairline);
+}
+
+main > .section.practice .practice-process > h3 {
+  grid-column: 1 / span 4;
+  line-height: 1.15;
+}
+
+main > .section.practice .practice-process > :not(h3) {
+  grid-column: 5 / span 8;
+  justify-self: start;
+}
+
+main > .section.practice .practice-process > ol.chain {
+  justify-self: stretch;
+}
+
+main > .section.practice ol.chain a {
+  padding-block: 6px;
+  color: var(--color-accent);
+  text-decoration: none;
+  background: linear-gradient(currentcolor, currentcolor) 0 100% / 0 1px no-repeat;
+  transition: background-size 450ms var(--ease-hover);
+}
+
+main > .section.practice ol.chain a:hover {
+  background-size: 100% 1px;
+}
+
 /* === Enquiry band (inline section "Style: enquiry", or the /fragments/enquiry fragment tagged by fragment.js) === */
 main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper {
   display: grid;
@@ -744,6 +863,15 @@ main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper a:is([h
 
 main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > p:last-child {
   margin-top: var(--spacing-md);
+}
+
+/* a call to action inside the band (home variant b): its own line, canon button height */
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > p.button-wrapper {
+  margin-top: calc(var(--spacing-md) - 4px);
+}
+
+main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > p.button-wrapper a.button {
+  line-height: var(--line-height-body);
 }
 
 /* === Prose conventions (scripts.js decorateProse) === */
@@ -1086,6 +1214,10 @@ main > .section.reveal.is-revealed {
 @media (width <= 899px) {
   main > .section.intro .intro-rail,
   main > .section.intro .intro-body,
+  main > .section.practice .practice-rail,
+  main > .section.practice .practice-body,
+  main > .section.practice .practice-process > h3,
+  main > .section.practice .practice-process > :not(h3),
   main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > *,
   main > .section:is(.fragment-enquiry, .enquiry) .default-content-wrapper > :is(h2, h3) {
     grid-column: 1 / -1;

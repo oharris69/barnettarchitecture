@@ -234,8 +234,25 @@ function buildStrip(items) {
   return ul;
 }
 
+/* justified: covers at their own ratio (flex-grow ∝ ratio), each a link to its collection */
+function buildJustified(items) {
+  const wall = document.createElement('div');
+  wall.className = 'collection-index-justified';
+  items.filter((it) => !it.divider).forEach((it) => {
+    const fig = frame(it, 0);
+    fig.classList.remove('span-0', 'is-tall');
+    fig.style.setProperty('--ar', it.ar.toFixed(3));
+    wall.append(fig);
+  });
+  return wall;
+}
+
 export default function decorate(block) {
   const items = parse(block);
+  if (block.classList.contains('justified')) {
+    block.replaceChildren(buildJustified(items));
+    return;
+  }
   if (block.classList.contains('selected')) {
     const wall = buildSelected(items);
     block.replaceChildren(wall);

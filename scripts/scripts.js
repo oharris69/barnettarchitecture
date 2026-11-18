@@ -352,6 +352,54 @@ function decorateIntros(main) {
 }
 
 /**
+ * practice section style (home variant b): a side rail (leading heading + the dimension-string
+ * fact lines — paragraphs holding " · "), a reading body, and from the first H3 on a process row
+ * (H3 · ordered list as a chain dimension · link). Nodes are moved, never rebuilt.
+ * @param {Element} main
+ */
+function decoratePractice(main) {
+  main.querySelectorAll(':scope > .section.practice > .default-content-wrapper').forEach((wrapper) => {
+    if (wrapper.querySelector(':scope > .practice-rail')) return;
+    const kids = [...wrapper.children];
+    const mk = (cls) => {
+      const d = document.createElement('div');
+      d.className = cls;
+      return d;
+    };
+    const rail = mk('practice-rail');
+    const body = mk('practice-body');
+    const process = mk('practice-process');
+    let i = 0;
+    while (i < kids.length && /^H[12]$/.test(kids[i].tagName)) {
+      rail.append(kids[i]);
+      i += 1;
+    }
+    while (i < kids.length && kids[i].tagName === 'P' && /\s·\s/.test(textOf(kids[i]))) {
+      const p = kids[i];
+      if (!p.classList.contains('dim')) {
+        // a long fact line (recognition): stacked dimension string, sentence case
+        const span = document.createElement('span');
+        span.append(...p.childNodes);
+        p.append(span);
+        p.classList.add('dim', 'dim-stack', 'practice-note');
+      }
+      rail.append(p);
+      i += 1;
+    }
+    while (i < kids.length && kids[i].tagName !== 'H3') {
+      body.append(kids[i]);
+      i += 1;
+    }
+    kids.slice(i).forEach((n) => {
+      if (n.tagName === 'OL') n.classList.add('chain');
+      process.append(n);
+    });
+    wrapper.append(rail, body);
+    if (process.children.length) wrapper.append(process);
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -365,6 +413,7 @@ export function decorateMain(main) {
   decorateButtons(main);
   decorateProse(main);
   decorateIntros(main);
+  decoratePractice(main);
   localizeLinks(main);
 }
 

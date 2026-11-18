@@ -291,6 +291,33 @@
         "http://127.0.0.1:3110/404"
       ],
       "blocks": []
+    },
+    {
+      "name": "index-b",
+      "description": "Home variant b (design variant at /index-b, noindex): sheet index beside a photo stage (project-stage), practice band (process chain + Houzz recognition), justified photography wall, featured testimonial, inline enquiry band.",
+      "urls": [
+        "http://127.0.0.1:3120/index-b-proposed.html"
+      ],
+      "blocks": [
+        {
+          "name": "project-stage",
+          "instances": [
+            "section[data-section=\"index\"] nav.ix__index"
+          ]
+        },
+        {
+          "name": "collection-index",
+          "instances": [
+            "section[data-section=\"photography\"] .photo-wall"
+          ]
+        },
+        {
+          "name": "testimonials",
+          "instances": [
+            "section[data-section=\"testimonial\"] figure.testimonial__figure"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "http://127.0.0.1:3120/index-b-proposed.html",
+  "path": "index-b",
+  "timestamp": "2026-11-18T02:07:14.285Z",
+  "title": "Madison, WI Residential Architect | Barnett Architecture",
+  "template": "index-b",
+  "blocks": [
+    "project-stage",
+    "collection-index",
+    "testimonials"
+  ],
+  "importScript": "6dff0c01265d"
+}

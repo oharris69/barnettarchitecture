@@ -263,6 +263,49 @@
   }
 }
 
+/* ---- justified: covers at their natural ratio, rows of one height (4 + 4 ≥ 1200px, pairs 600–899) ---- */
+.collection-index .collection-index-justified {
+  --row-h: clamp(96px, 14.5vw, 210px);
+  --wall-gap: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--wall-gap);
+}
+
+.collection-index .collection-index-justified .collection-index-frame {
+  min-width: 0;
+  flex: var(--ar) 1 calc(var(--ar) * var(--row-h));
+  max-width: calc(var(--ar) * var(--row-h) * 1.9);
+  gap: 10px;
+}
+
+.collection-index .collection-index-justified .collection-index-img {
+  aspect-ratio: var(--ar);
+  background: color-mix(in srgb, var(--color-print) 6%, var(--color-darkroom));
+}
+
+.collection-index .collection-index-justified figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2px 16px;
+}
+
+@media (width >= 600px) and (width <= 899px) {
+  .collection-index .collection-index-justified {
+    --row-h: 24vw;
+  }
+}
+
+@media (width <= 599px) {
+  .collection-index .collection-index-justified {
+    --wall-gap: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .collection-index img {
     transition: none;

@@ -1,0 +1,412 @@
+/* project-stage — sheet index beside the active project's photograph (home variant b; canon pending module sheet-index).
+   Default (< 900px): the photograph + caption bar are a sticky panel above the list.
+   ≥ 900px: split 2 / 3 — the index on sage at left, the photograph unobstructed and sticky at right. */
+/* stylelint-disable no-descending-specificity -- rules are ordered by component, not by specificity */
+
+/* the section is edge to edge: the block owns its gutters */
+main > .section.project-stage-container {
+  padding-block: 0;
+}
+
+main > .section > .project-stage-wrapper {
+  max-width: none;
+  padding-inline: 0;
+}
+
+.project-stage {
+  --stage-h: clamp(220px, 40svh, 560px);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+/* ---- stage ---- */
+.project-stage .project-stage-stage {
+  order: -1;
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 2;
+  display: grid;
+  grid-template-rows: var(--stage-h) auto;
+  background: var(--color-bg);
+}
+
+.project-stage .project-stage-frames {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-darkroom);
+}
+
+.project-stage .project-stage-frame {
+  position: absolute;
+  inset: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+.project-stage .project-stage-frame.is-shown {
+  display: block;
+}
+
+.project-stage .project-stage-frame.is-on {
+  opacity: 1;
+}
+
+.project-stage .project-stage-frame img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* caption bar: beneath the photograph, never on it */
+.project-stage .project-stage-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 16px;
+  margin: 0;
+  padding: 12px max(var(--gutter), env(safe-area-inset-right)) 13px max(var(--gutter), env(safe-area-inset-left));
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.project-stage .project-stage-cap-title {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+}
+
+.project-stage .project-stage-cap-facts {
+  color: var(--color-muted);
+}
+
+.project-stage .project-stage-cap-go {
+  margin-left: auto;
+}
+
+/* ---- body: opening + index ---- */
+.project-stage .project-stage-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) max(var(--gutter), env(safe-area-inset-right)) calc(var(--spacing-lg) + var(--section-padding)) max(var(--gutter), env(safe-area-inset-left));
+}
+
+.project-stage .project-stage-opening {
+  display: grid;
+  gap: var(--spacing-md);
+  justify-items: start;
+  min-width: 0;
+}
+
+.project-stage .project-stage-opening > * {
+  margin: 0;
+}
+
+.project-stage .project-stage-title {
+  font-size: var(--heading-lg);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  max-width: 13em;
+}
+
+.project-stage .project-stage-opening > p:not(.button-wrapper, .link-row) {
+  font-size: clamp(1.0625rem, 1.5vw, 1.375rem);
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 34em;
+}
+
+.project-stage .project-stage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm) var(--spacing-md);
+}
+
+.project-stage .project-stage-actions > p {
+  margin: 0;
+}
+
+.project-stage .project-stage-actions a.link-arrow {
+  color: var(--color-accent);
+}
+
+/* canon btn-primary: body line height (the shared button is 1.3) */
+.project-stage .project-stage-actions a.button {
+  line-height: var(--line-height-body);
+}
+
+.project-stage .project-stage-index,
+.project-stage .project-stage-group {
+  min-width: 0;
+}
+
+.project-stage .project-stage-head {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  padding-bottom: var(--spacing-sm);
+}
+
+.project-stage .project-stage-label {
+  margin: 0;
+  color: var(--color-fg);
+}
+
+.project-stage .project-stage-hint {
+  display: none;
+  font-size: var(--body-sm);
+  color: var(--color-muted);
+}
+
+.project-stage .project-stage-hint-scroll {
+  display: block;
+}
+
+.project-stage .project-stage-skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.project-stage .project-stage-skip:focus-visible {
+  position: static;
+  font-size: var(--body-sm);
+  font-weight: 560;
+  color: var(--color-accent);
+}
+
+.project-stage .project-stage-groups {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.project-stage .project-stage-group-h {
+  margin-bottom: var(--spacing-sm);
+  font-family: var(--body-font-family);
+  color: var(--color-muted);
+}
+
+.project-stage .project-stage-group-h a {
+  display: inline-block;
+  padding-block: 4px;
+  margin-block: -4px;
+  color: var(--color-fg);
+  text-underline-offset: 3px;
+}
+
+.project-stage .project-stage-count {
+  white-space: nowrap;
+}
+
+/* one name per line on a hairline; the active name's facts are drawn in on its baseline at the right */
+.project-stage .project-stage-list {
+  border-top: 1px solid var(--color-fg);
+}
+
+.project-stage .project-stage-item {
+  --item-pad: 12px;
+
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 6px 20px;
+  margin: 0;
+  padding: var(--item-pad) 0 calc(var(--item-pad) + 1px) 24px;
+  border-bottom: 1px solid var(--color-hairline);
+  color: var(--color-fg);
+  scroll-snap-align: start;
+  scroll-margin-top: calc(var(--nav-height) + var(--stage-h) + 72px);
+}
+
+.project-stage .project-stage-name {
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: var(--heading-md);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  transition: color 250ms var(--ease-hover);
+}
+
+.project-stage .project-stage-name a {
+  color: inherit;
+  text-decoration: none;
+  scroll-margin-top: calc(var(--nav-height) + var(--stage-h) + 72px);
+}
+
+/* the whole row is the link */
+.project-stage .project-stage-name a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.project-stage .project-stage-name a:focus-visible {
+  outline: none;
+}
+
+.project-stage .project-stage-item:has(a:focus-visible) {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.project-stage .project-stage-facts {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: right;
+  font-size: var(--label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: var(--color-muted);
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 280ms var(--ease-hover);
+}
+
+.project-stage .project-stage-facts > p {
+  display: inline;
+  margin: 0;
+  white-space: nowrap; /* the global p { text-wrap: pretty } would re-enable wrapping */
+}
+
+.project-stage .project-stage-facts > p + p::before {
+  content: " · ";
+}
+
+/* the active entry: a dimension tick on the name's centre line + the accent */
+.project-stage .project-stage-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(var(--item-pad) + var(--heading-md) * 0.575 - var(--tick) / 2);
+  width: 14px;
+  height: var(--tick);
+  border-left: 1px solid currentcolor;
+  background: linear-gradient(currentcolor, currentcolor) 0 50% / 100% 1px no-repeat;
+  opacity: 0;
+  transition: opacity 200ms var(--ease-hover);
+}
+
+.project-stage .project-stage-item.is-active {
+  color: var(--color-accent);
+}
+
+.project-stage .project-stage-item.is-active::before {
+  opacity: 1;
+}
+
+.project-stage .project-stage-item.is-active .project-stage-facts {
+  color: var(--color-fg);
+  clip-path: inset(0);
+}
+
+@media (pointer: coarse) {
+  html:has(.project-stage) {
+    scroll-snap-type: y proximity;
+  }
+
+  .project-stage .project-stage-group-h a,
+  .project-stage .project-stage-cap-go {
+    padding-block: 12px;
+    margin-block: -12px;
+  }
+}
+
+@media (height <= 700px) {
+  .project-stage {
+    --stage-h: clamp(140px, 24svh, 200px);
+  }
+}
+
+/* ≥ 900px: split — index left (2 of 5), photograph right (3 of 5), sticky beside the list */
+@media (width >= 900px) {
+  .project-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    align-items: start;
+  }
+
+  .project-stage .project-stage-body {
+    grid-column: 1;
+    grid-row: 1;
+    padding-inline: max(var(--gutter), env(safe-area-inset-left)) clamp(32px, 3.6vw, 56px);
+    padding-block: clamp(24px, 4vh, 48px) calc(var(--spacing-xl) + var(--section-padding));
+    gap: clamp(28px, 4.4vh, 48px);
+  }
+
+  .project-stage .project-stage-opening {
+    gap: clamp(16px, 2.6vh, 28px);
+  }
+
+  .project-stage .project-stage-opening > p:not(.button-wrapper, .link-row) {
+    font-size: var(--body);
+    line-height: 1.55;
+  }
+
+  .project-stage .project-stage-item {
+    --item-pad: 10px;
+  }
+
+  .project-stage .project-stage-stage {
+    grid-column: 2;
+    grid-row: 1;
+    order: 0;
+    height: calc(100svh - var(--nav-height));
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  .project-stage .project-stage-caption {
+    padding-inline: 24px max(var(--gutter), env(safe-area-inset-right));
+    border-bottom: 0;
+  }
+
+  .project-stage .project-stage-item,
+  .project-stage .project-stage-name a {
+    scroll-margin-top: calc(var(--nav-height) + 24px);
+  }
+
+  .project-stage .project-stage-hint-scroll {
+    display: none;
+  }
+
+  .project-stage .project-stage-hint-hover {
+    display: block;
+  }
+}
+
+@media (width >= 900px) and (pointer: coarse) {
+  .project-stage .project-stage-hint-hover {
+    display: none;
+  }
+
+  .project-stage .project-stage-hint-scroll {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-stage .project-stage-frame,
+  .project-stage .project-stage-name,
+  .project-stage .project-stage-item::before,
+  .project-stage .project-stage-facts {
+    transition: none;
+  }
+}

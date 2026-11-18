@@ -23,7 +23,10 @@ export default function parse(element, { document }) {
   const section = element.closest('section');
   const ds = section ? section.dataset.section : '';
   let name = 'Collection Index';
-  if (ds === 'selected-works') name = 'Collection Index (selected)';
+  // home variant b: a justified photo-wall teaser, each frame linked to its collection
+  const justified = !!section && section.dataset.layout === 'justified-wall' && ds === 'photography';
+  if (justified) name = 'Collection Index (justified)';
+  else if (ds === 'selected-works') name = 'Collection Index (selected)';
   else if (element.matches('ul.siblings')) name = 'Collection Index (strip)';
 
   // collection title → href from this page's links (selected works carry only a label)
@@ -65,6 +68,11 @@ export default function parse(element, { document }) {
       const [t, ...rest] = text(item.querySelector('figcaption')).split(' · ');
       title = hrefByTitle[t] ? link(hrefByTitle[t], t) : t;
       if (rest.length) meta.push(mk('p', rest.join(' · ')));
+    } else if (justified) {
+      const a = item.querySelector('figcaption a');
+      title = a ? link(a.getAttribute('href'), text(a)) : '';
+      const kind = item.querySelector('figcaption .label');
+      if (kind) meta.push(mk('p', text(kind)));
     } else {
       const a = item.querySelector('.frame__title a, .sibling__title a');
       title = a ? link(a.getAttribute('href'), text(a)) : '';
