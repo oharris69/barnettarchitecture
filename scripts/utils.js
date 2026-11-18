@@ -314,6 +314,64 @@ export function joinFacet(values, sep = ' & ') {
   return values.map((v, i) => (i ? v.charAt(0).toLowerCase() + v.slice(1) : v)).join(sep);
 }
 
+/**
+ * What an authored video link points at (video block + JSON-LD share it).
+ * YouTube (watch, youtu.be, embed, shorts, live) → youtube-nocookie; Vimeo (incl. unlisted hash)
+ * → player.vimeo.com; anything else with a .mp4/.webm/.mov path (DA media, any https host) → file.
+ * @param {string} href
+ * @returns {{kind: 'youtube'|'vimeo'|'file', url: string, id?: string,
+ *   embed?: string, player?: string}|null} embed = canonical embed URL (structured data),
+ *   player = the iframe src (privacy host, autoplay after the click)
+ */
+export function videoSource(href) {
+  if (!href) return null;
+  let u;
+  try {
+    u = new URL(href.trim(), window.location);
+  } catch (e) {
+    return null;
+  }
+  const host = u.hostname.replace(/^(www|m)\./, '');
+  const parts = u.pathname.split('/').filter(Boolean);
+  let id = '';
+  if (host === 'youtu.be') [id] = parts;
+  else if (/^youtube(-nocookie)?\.com$/.test(host)) {
+    id = u.searchParams.get('v') || (['embed', 'shorts', 'live', 'v'].includes(parts[0]) ? parts[1] : '');
+  }
+  if (id && /^[\w-]{6,}$/.test(id)) {
+    const t = parseInt(u.searchParams.get('t') || u.searchParams.get('start') || '', 10);
+    const start = t > 0 ? `&start=${t}` : '';
+    return {
+      kind: 'youtube',
+      id,
+      url: u.href,
+      embed: `https://www.youtube.com/embed/${id}`,
+      player: `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1${start}`,
+    };
+  }
+  if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+    const nums = parts.filter((p) => /^\d+$/.test(p));
+    [id] = nums;
+    if (id) {
+      // unlisted: vimeo.com/<id>/<hash> or ?h=<hash>
+      const after = parts[parts.indexOf(id) + 1];
+      const hash = u.searchParams.get('h') || (after && /^[0-9a-f]{6,}$/i.test(after) ? after : '');
+      const h = hash ? `&h=${hash}` : '';
+      return {
+        kind: 'vimeo',
+        id,
+        url: u.href,
+        embed: `https://player.vimeo.com/video/${id}${hash ? `?h=${hash}` : ''}`,
+        player: `https://player.vimeo.com/video/${id}?autoplay=1&dnt=1${h}`,
+      };
+    }
+  }
+  if (/^https?:$/.test(u.protocol) && /\.(mp4|m4v|webm|mov)$/i.test(u.pathname)) {
+    return { kind: 'file', url: u.href };
+  }
+  return null;
+}
+
 /** Build a dimension-string element (`.dim`) holding text (or nodes). */
 export function dimLine(content, variant = 'dim-stack', tag = 'p') {
   const el = document.createElement(tag);

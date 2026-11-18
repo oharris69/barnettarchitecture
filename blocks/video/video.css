@@ -1,0 +1,170 @@
+/* video: poster first; the clip or the player lands on the same frame (no shift) */
+.video {
+  display: grid;
+  gap: 12px;
+}
+
+.video .video-frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* replaced inline by the poster's own ratio */
+  background: var(--color-darkroom);
+}
+
+.video .video-poster,
+.video .video-poster img,
+.video .video-media {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.video .video-poster img,
+.video img.video-poster,
+.video .video-media {
+  object-fit: cover;
+}
+
+.video .video-media {
+  border: 0;
+}
+
+/* default (controls): the whole frame of the clip is shown */
+.video:not(.loop) .video-media {
+  object-fit: contain;
+}
+
+/* loop: the clip fades in over the poster once frames arrive (editorial: one quiet opacity move) */
+.video.loop .video-media {
+  opacity: 0;
+  transition: opacity 600ms var(--ease-hover);
+}
+
+.video:not(.loop) .video-frame.is-playing .video-media {
+  background: var(--color-darkroom);
+}
+
+.video.loop .video-frame.is-playing .video-media {
+  opacity: 1;
+}
+
+/* controls on a photograph: darkroom fill, a 3.5:1 border, a two-tone focus ring */
+.video .video-toggle,
+.video .video-play {
+  position: absolute;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-muted-on-dark);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--color-darkroom) 78%, transparent);
+  color: var(--color-print);
+  cursor: pointer;
+  transition: background-color 300ms var(--ease-hover);
+}
+
+/* loop: Pause / Play toggle, bottom right, 44px target */
+.video .video-toggle {
+  right: 16px;
+  bottom: 16px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+/* pause: two bars */
+.video .video-toggle::before {
+  content: "";
+  width: 12px;
+  height: 14px;
+  border-inline: 4px solid currentcolor;
+}
+
+/* paused (aria-pressed): a play triangle */
+.video .video-toggle[aria-pressed="true"]::before {
+  width: 13px;
+  height: 14px;
+  margin-left: 3px;
+  border: 0;
+  background: currentcolor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* embed: the large Play button, centred on the poster */
+.video .video-play {
+  top: 50%;
+  left: 50%;
+  gap: 14px;
+  min-height: 64px;
+  padding: 0 28px 0 24px;
+  transform: translate(-50%, -50%);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  font-family: var(--body-font-family);
+  font-size: var(--label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.video .video-toggle:hover {
+  background: var(--color-darkroom);
+}
+
+.video .video-play:hover {
+  background: var(--color-fg);
+  border-color: var(--color-fg);
+}
+
+.video .video-toggle:focus-visible,
+.video .video-play:focus-visible {
+  outline: 2px solid var(--color-print);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--color-darkroom);
+}
+
+.video .video-play-icon {
+  width: 16px;
+  height: 18px;
+  background: currentcolor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+@media (width >= 900px) {
+  .video .video-play {
+    min-height: 80px;
+    padding-inline: 36px 40px;
+    font-size: var(--body-sm);
+  }
+
+  .video .video-play-icon {
+    width: 20px;
+    height: 22px;
+  }
+}
+
+.video .video-caption {
+  max-width: var(--measure);
+  color: var(--color-muted);
+  font-size: var(--body-sm);
+}
+
+.video .video-caption > * + * {
+  margin-top: 4px;
+}
+
+main > .section.darkroom .video .video-caption {
+  color: var(--color-muted-on-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video .video-toggle,
+  .video .video-play,
+  .video.loop .video-media {
+    transition: none;
+  }
+}

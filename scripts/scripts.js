@@ -14,7 +14,9 @@ import {
   toClassName,
   toCamelCase,
 } from './aem.js';
-import { sitePath, localizeLinks, textOf } from './utils.js';
+import {
+  sitePath, localizeLinks, textOf, videoSource,
+} from './utils.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -518,6 +520,36 @@ function itemList(block) {
   };
 }
 
+/** A video block's raw table → VideoObject (needs a recognised source and a poster). */
+function videoObject(block, pageTitle, pageDescription) {
+  let src = null;
+  let thumb = '';
+  let text = '';
+  rawRows(block).flat().forEach((cell) => {
+    const img = cell.querySelector('img');
+    if (img) {
+      thumb = thumb || abs(img.getAttribute('src'));
+      return;
+    }
+    const href = [...cell.querySelectorAll('a[href], video[src], source[src]')]
+      .map((a) => a.getAttribute('href') || a.getAttribute('src'))
+      .concat(textOf(cell))
+      .find((h) => videoSource(h));
+    if (href) src = src || videoSource(href);
+    else if (!text) text = textOf(cell);
+  });
+  if (!src || !thumb) return null;
+  const video = {
+    '@type': 'VideoObject',
+    name: text || pageTitle,
+    description: text || pageDescription || pageTitle,
+    thumbnailUrl: thumb,
+  };
+  if (src.kind === 'file') video.contentUrl = abs(src.url);
+  else video.embedUrl = src.embed;
+  return video;
+}
+
 function buildJsonLd(main) {
   const template = toClassName(getMetadata('template'));
   const url = pageUrl();
@@ -614,6 +646,11 @@ function buildJsonLd(main) {
       mainEntity: { '@id': ORGANIZATION['@id'] },
     });
   }
+
+  main.querySelectorAll(':scope > div > .video').forEach((block, n) => {
+    const video = videoObject(block, name, description);
+    if (video) graph.push({ '@id': `${url}#video-${n + 1}`, ...video });
+  });
 
   const faq = main.querySelector('.faq');
   if (faq) {
