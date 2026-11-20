@@ -1,6 +1,33 @@
 /*
  * Shared helpers for Barnett Architecture blocks (imported from /scripts/, never block-to-block).
  */
+import { loadCSS } from './aem.js';
+
+/* the faces that set the first screen's line breaks (H1 in Spectral Light, body/CTAs in Hanken);
+   Spectral 400 / italic only set single-line labels and may swap later without moving anything */
+const BRAND_FACES = ['300 1em Spectral', '400 1em "Hanken Grotesk"'];
+
+/**
+ * First-screen blocks whose layout depends on line wrapping (H1, intro, captions): bring the
+ * brand faces in before the block's section is revealed. Phones otherwise load fonts.css late
+ * (scripts.js loadFonts in loadLazy) and the swap re-wraps the opening, shifting the page (CLS).
+ * Called at the end of decorate(), so the first photograph is already requesting in parallel.
+ * Resolves when the faces are ready, or after `timeout` ms — never blocks longer.
+ * @param {string[]} faces CSS font shorthands (default: the first screen's wrapping faces)
+ * @param {number} timeout
+ */
+export async function fontsBeforeReveal(faces = BRAND_FACES, timeout = 2000) {
+  if (!document.fonts || !document.fonts.load) return;
+  const ready = (async () => {
+    try {
+      await loadCSS(`${(window.hlx && window.hlx.codeBasePath) || ''}/styles/fonts.css`);
+      await Promise.all(faces.map((f) => document.fonts.load(f)));
+    } catch (e) {
+      // fonts are an enhancement: the fallback faces stay
+    }
+  })();
+  await Promise.race([ready, new Promise((r) => { setTimeout(r, timeout); })]);
+}
 
 /**
  * The local preview (`aem up --html-folder content`) mounts pages under /content.

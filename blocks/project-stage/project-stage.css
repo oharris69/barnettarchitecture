@@ -75,6 +75,51 @@ main > .section > .project-stage-wrapper {
   border-bottom: 1px solid var(--color-hairline);
 }
 
+/* < 900px: one fixed line for title · tag · facts (facts ellipsised), so the caption — and the list
+   under the sticky stage — keeps its height whichever project is active */
+.project-stage .project-stage-cap-line {
+  display: contents;
+}
+
+@media (width <= 899px) {
+  .project-stage .project-stage-cap-line {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: baseline;
+    gap: 2px 16px;
+    min-width: 0;
+    white-space: nowrap;
+  }
+
+  .project-stage .project-stage-cap-line > * {
+    flex: 0 0 auto;
+  }
+
+  .project-stage .project-stage-cap-line > .project-stage-cap-facts {
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (width <= 599px) {
+  .project-stage .project-stage-caption {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-stage .project-stage-caption > .project-stage-cap-go {
+    justify-self: end;
+  }
+}
+
+@media (width >= 600px) and (width <= 899px) {
+  .project-stage .project-stage-caption {
+    flex-wrap: nowrap;
+  }
+}
+
 .project-stage .project-stage-cap-title {
   font-family: var(--heading-font-family);
   font-weight: 400;

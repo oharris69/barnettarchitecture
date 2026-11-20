@@ -21,7 +21,7 @@
  * motion. Only the first chapter photograph is eager (fetchpriority high).
  */
 import {
-  imageSize, slugify, textOf, thumbPicture,
+  fontsBeforeReveal, imageSize, slugify, textOf, thumbPicture,
 } from '../../scripts/utils.js';
 
 const PARALLAX_MAX = 40;
@@ -226,7 +226,7 @@ function scaleX(eras) {
   });
 }
 
-export default function decorate(block) {
+export default async function decorate(block) {
   const { quote, eras } = parse(block);
   const { opening, intro } = takeHead(block);
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -387,6 +387,8 @@ export default function decorate(block) {
     lcp.loading = 'eager';
     lcp.fetchPriority = 'high';
   }
+  // the opening wraps in the brand faces from the first paint (no swap shift)
+  await fontsBeforeReveal();
 
   /* aria-current + progress: the era at the reading line just under the scale (read-only) */
   let cur = -2;

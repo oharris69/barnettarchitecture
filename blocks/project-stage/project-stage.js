@@ -13,7 +13,7 @@
  * stage picks it (neighbours prefetched). A swap waits for the frame to load and decode;
  * crossfade 300ms, instant under prefers-reduced-motion. The caption bar is presentational.
  */
-import { textOf, thumbPicture } from '../../scripts/utils.js';
+import { fontsBeforeReveal, textOf, thumbPicture } from '../../scripts/utils.js';
 
 const FADE_MS = 300;
 /* arrival preview: the first group's next projects, one every AUTO_MS, then back to the first */
@@ -139,7 +139,7 @@ function el(tag, cls, text) {
   return e;
 }
 
-export default function decorate(block) {
+export default async function decorate(block) {
   const groups = parse(block);
   const { opening, label } = takeHead(block);
   const uid = `project-stage-${document.querySelectorAll('.project-stage-index').length + 1}`;
@@ -218,10 +218,16 @@ export default function decorate(block) {
   const capGo = el('a', 'project-stage-cap-go link-arrow', 'View project');
   const capHidden = el('span', 'visually-hidden');
   capGo.append(capHidden);
-  caption.append(capTitle, capTag, capFacts, capGo);
+  // title · tag · facts share one line (a box of its own below 900px, so every project's caption
+  // has the same height and a swap never moves the list); ≥ 900px the box is display: contents
+  const capLine = el('span', 'project-stage-cap-line');
+  capLine.append(capTitle, capTag, capFacts);
+  caption.append(capLine, capGo);
   stage.append(frames, caption);
 
   block.replaceChildren(body, stage);
+  // the opening and the caption wrap in the brand faces from the first paint (no swap shift)
+  await fontsBeforeReveal();
 
   // the skip link lands on the section after this one
   const section = block.closest('.section');
